@@ -1,0 +1,20 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:bamboo"
+      },
+      "title": "Triple Kill",
+      "description": "Kill three players at the same time",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "ascendance:dota/double_kill",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

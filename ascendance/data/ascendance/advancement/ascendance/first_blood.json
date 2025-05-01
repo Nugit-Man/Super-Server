@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_sword"
+    },
+    "title": "Cold Blood",
+    "description": "Get your first kill",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ascendance:ascendance/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "ascendance:advancements/first_blood"
+  }
+}

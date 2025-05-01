@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:skeleton_skull"
+    },
+    "title": "A Neat Refrence",
+    "description": "Try to summon the spider boss like you used to",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ascendance:ascendance/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "ascendance:advancements/a_neat_refrence"
+  }
+}

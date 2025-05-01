@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:red_mushroom"
+      },
+      "title": "You Can't Do That...",
+      "description": "Can't Have Conflicting Abilities, Nothing Will Happen",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "gorbino:gorbino",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

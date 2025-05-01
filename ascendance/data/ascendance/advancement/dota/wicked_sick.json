@@ -1,0 +1,20 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:bamboo"
+      },
+      "title": "Wicked Sick",
+      "description": "Get a twenty killstreak",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "ascendance:dota/rampage",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

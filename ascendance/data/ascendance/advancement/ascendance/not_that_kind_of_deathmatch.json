@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:acacia_door"
+    },
+    "title": "Not that kind of deathmatch",
+    "description": "Die 50 times in a game of deathmatch",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ascendance:ascendance/first_blood",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "ascendance:advancements/not_that_kind_of_deathmatch"
+  }
+}

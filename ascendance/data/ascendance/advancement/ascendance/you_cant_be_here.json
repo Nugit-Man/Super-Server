@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:chiseled_sandstone"
+    },
+    "title": "You Can't Be Here!",
+    "description": "Get to the team spawn in a solo game of Desert Tomb",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ascendance:ascendance/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "ascendance:advancements/you_cant_do_that"
+  }
+}

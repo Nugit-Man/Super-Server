@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:blue_dye"
+    },
+    "title": "Osmar Moment",
+    "description": "Die a total of 500 times",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ascendance:milestones/philip_moment",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "ascendance:advancements/osmar_moment"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:bamboo"
+      },
+      "title": "Rampage",
+      "description": "Get a fifteen killstreak",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "ascendance:dota/unstoppable",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

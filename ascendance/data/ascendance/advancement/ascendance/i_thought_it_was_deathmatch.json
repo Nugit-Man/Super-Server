@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:skeleton_skull"
+    },
+    "title": "I thought it was Deathmatch",
+    "description": "Get 10 kills in King of the Hill without stepping on the hill",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ascendance:ascendance/large_incline",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "ascendance:advancements/i_thought_it_was_deathmatch"
+  }
+}

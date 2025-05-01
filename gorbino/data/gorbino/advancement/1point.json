@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:diamond_sword"
+      },
+      "title": "One Shot For Wonder",
+      "description": "Win A Fight With Only 1 Point",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "gorbino:2points",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

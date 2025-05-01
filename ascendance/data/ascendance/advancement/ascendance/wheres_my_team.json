@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_axe"
+    },
+    "title": "Where's My Team??",
+    "description": "Get most of the kills in a game of team deathmatch",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ascendance:ascendance/not_that_kind_of_deathmatch",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "ascendance:advancements/wheres_my_team"
+  }
+}

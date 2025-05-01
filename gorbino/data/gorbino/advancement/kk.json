@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:diamond"
+      },
+      "title": "Cringe Combo",
+      "description": "Win A Fight With Only Chad, Frog, And Cancer",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "gorbino:3points",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

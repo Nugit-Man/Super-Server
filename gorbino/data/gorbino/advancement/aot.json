@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:fire_charge"
+      },
+      "title": "Attack on Titan",
+      "description": "Win A Fight With Shirnk Against Someone With Grow",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "gorbino:little_baby_man",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

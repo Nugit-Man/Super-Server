@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:sugar"
+      },
+      "title": "Ka-Chow",
+      "description": "Win A Fight With Dash, Cocaine, Shirnk, and Flame Runner",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "gorbino:crush",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

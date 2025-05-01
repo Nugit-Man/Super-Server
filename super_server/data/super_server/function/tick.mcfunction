@@ -1,0 +1,1 @@
+execute as @a at @s if block ~ ~-0.5 ~ farmland run effect give @s slow_falling 1 1 true

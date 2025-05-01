@@ -1,0 +1,20 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:bamboo"
+      },
+      "title": "Dominating",
+      "description": "Get a seven killstreak",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "ascendance:dota/ownage",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

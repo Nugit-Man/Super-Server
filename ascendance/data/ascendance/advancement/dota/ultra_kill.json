@@ -1,0 +1,20 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:bamboo"
+      },
+      "title": "Ultra Kill",
+      "description": "Kill five players at the same time",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "ascendance:dota/mega_kill",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  
