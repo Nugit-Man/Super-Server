@@ -18,7 +18,7 @@ execute at @e[type=block_display,tag=FI_Ability_Iron_Curtain,scores={FI_Abilitie
 kill @e[type=block_display,tag=FI_Ability_Iron_Curtain,scores={FI_Abilities=20}]
 
 #Iron Curtain (Player)
-tag @a[scores={FI_Mana_Cooldown=1}] remove FI_Iron_Curtain
+tag @a[scores={FI_Mana_Cooldown=90}] remove FI_Iron_Curtain
 execute at @a[tag=FI_Iron_Curtain,scores={FI_Mana_Cooldown=118}] run summon block_display ^1 ^3 ^4 {block_state:{Name:iron_block},Tags:[FI_Ability_Iron_Curtain]}
 execute at @a[tag=FI_Iron_Curtain,scores={FI_Mana_Cooldown=118}] run summon block_display ^ ^3 ^4 {block_state:{Name:iron_block},Tags:[FI_Ability_Iron_Curtain]}
 execute at @a[tag=FI_Iron_Curtain,scores={FI_Mana_Cooldown=118}] run summon block_display ^-1 ^3 ^4 {block_state:{Name:iron_block},Tags:[FI_Ability_Iron_Curtain]}
