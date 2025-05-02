@@ -2,11 +2,11 @@
 #Display mana and restore it at spawn
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..5] FI_Mana 100
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..5] FI_Mana_Cooldown 0
-execute as @a run title @s actionbar ["Mana: ",{score:{objective:"FI_Mana",name:"@s"}},"/100"]
+execute as @a[scores={MAIN_Game=1}] run title @s actionbar ["Mana: ",{score:{objective:"FI_Mana",name:"@s"}},"/100"]
 
 
 #Mana Cooldown
-scoreboard players remove @a[scores={FI_Mana_Cooldown=1..}] FI_Mana_Cooldown 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown=1..,MAIN_Game=1}] FI_Mana_Cooldown 1
 
 
 #Iron Curtain (blocks)
