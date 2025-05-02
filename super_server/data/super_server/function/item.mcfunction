@@ -1,5 +1,4 @@
 advancement revoke @s only super_server:right_click
-#Penar Seven
 
 #Final Island Swords (Make sure it checks for FI_Mana_Cooldown to be 0) with mana checker
 execute as @s[scores={FI_Mana=60..,MAIN_Game=1}] if items entity @s[scores={FI_Mana_Cooldown=0}] weapon.mainhand *[custom_data~{FI_Stone_Sword:1b}] run function final_island:abilities/stone_sword
