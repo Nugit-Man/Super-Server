@@ -72,6 +72,8 @@ tellraw @a[scores={FI_Mana_Cooldown=100},tag=FI_Explosive_Hit] [{text:"Explosive
 give @a[scores={FI_Mana_Cooldown=100},tag=FI_Explosive_Hit] iron_ingot
 tag @a[scores={FI_Mana_Cooldown=100}] remove FI_Explosive_Hit
 
+
+#Emerald axe heal
 effect give @a[tag=FI_Ability_Health_Of_Wealth] regeneration 1 255 true
 effect clear @a[tag=!FI_Ability_Health_Of_Wealth] regeneration
 tag @a remove FI_Ability_Health_Of_Wealth
