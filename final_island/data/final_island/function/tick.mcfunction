@@ -59,23 +59,15 @@ execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown=274}] run execute at @
 execute as @a if items entity @s weapon.mainhand *[custom_data~{FI_Dripstone_Sword:1b}] run attribute @s entity_interaction_range base set 4
 execute as @a unless items entity @s weapon.mainhand *[custom_data~{FI_Dripstone_Sword:1b}] run attribute @s entity_interaction_range base set 3
 
-#flint sword explosive hit (MAKE SURE TO ADD DAMAGE TO MOBVS FOR THE EXPLOSION ASWELL)
-#execute as @a at @s on attacker if entity @s[tag=FI_Explosive_Hit] run execute as @a[distance=..4,tag=!FI_Explosive_Hit] run damage @s 6 fireworks
-execute as @a at @s on attacker if entity @s[tag=FI_Explosive_Hit] run summon marker ~ ~ ~ {Tags:["FI_Ability_Flint_Sword"]}
-execute at @e[tag=FI_Ability_Flint_Sword] run execute as @a[distance=..4,tag=!FI_Explosive_Hit] run damage @s 6 fireworks
-kill @e[tag=FI_Ability_Flint_Sword]
-execute as @a at @s on attacker if entity @s[tag=FI_Explosive_Hit] run playsound entity.generic.explode player @a ~ ~ ~
-execute as @a at @s on attacker if entity @s[tag=FI_Explosive_Hit] run particle explosion ~ ~1 ~ 1 1 1 1 100 normal @a
-
+#flint sword explosive hit
+execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] at @s on attacker if entity @s[tag=FI_Explosive_Hit] run summon marker ~ ~ ~ {Tags:["FI_Ability_Flint_Sword"]}
+execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] run execute at @e[tag=FI_Ability_Flint_Sword] run execute as @e[distance=..4,tag=!FI_Explosive_Hit] run damage @s 6 fireworks
+execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] run kill @e[tag=FI_Ability_Flint_Sword]
+execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] at @s on attacker if entity @s[tag=FI_Explosive_Hit] run playsound entity.generic.explode player @a ~ ~ ~
+execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] at @s on attacker if entity @s[tag=FI_Explosive_Hit] run particle explosion ~ ~1 ~ 1 1 1 1 100 normal @a
 #remove the tag once hit
-execute as @a at @s on attacker if entity @s[tag=FI_Explosive_Hit] run tag @s remove FI_Explosive_Hit
+execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] run execute as @s at @s on attacker if entity @s[tag=FI_Explosive_Hit] run tag @s remove FI_Explosive_Hit
 #remove the tag if it takes too long
 tellraw @a[scores={FI_Mana_Cooldown=100},tag=FI_Explosive_Hit] [{text:"Explosive Hit Wore Off",color:"gray"}]
 give @a[scores={FI_Mana_Cooldown=100},tag=FI_Explosive_Hit] iron_ingot
 tag @a[scores={FI_Mana_Cooldown=100}] remove FI_Explosive_Hit
-
-
-#THINGS TO DO FOR THE FLINT SWORD
-#TEll them the timer - Done
-#make the cooldown timer longer so they can't double trigger it - Done
-#Make tiw rok against mobs
