@@ -2,11 +2,11 @@
 #Display mana and restore it at spawn
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..5] FI_Mana 100
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..5] FI_Mana_Cooldown 0
-execute as @a[scores={MAIN_Game=1}] run title @s actionbar ["Mana: ",{score:{objective:"FI_Mana",name:"@s"}},"/100"]
+execute as @a[scores={MAIN_Game=2}] run title @s actionbar ["Mana: ",{score:{objective:"FI_Mana",name:"@s"}},"/100"]
 
 
 #Mana Cooldown
-scoreboard players remove @a[scores={FI_Mana_Cooldown=1..,MAIN_Game=1}] FI_Mana_Cooldown 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown=1..,MAIN_Game=2}] FI_Mana_Cooldown 1
 
 
 #Iron Curtain (blocks)
@@ -54,3 +54,28 @@ execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown=274}] run execute at @
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown=274}] run execute at @e[tag=FI_Sonic_Blast_Marker] run particle minecraft:sonic_boom ~ ~ ~ 0.3 0.3 0.3 1 1 normal
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown=260}] run kill @e[type=marker,tag=FI_Sonic_Blast_Marker]
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown=274}] run execute at @s run playsound entity.warden.sonic_boom player
+
+#dripstone sword extra reach
+execute as @a if items entity @s weapon.mainhand *[custom_data~{FI_Dripstone_Sword:1b}] run attribute @s entity_interaction_range base set 4
+execute as @a unless items entity @s weapon.mainhand *[custom_data~{FI_Dripstone_Sword:1b}] run attribute @s entity_interaction_range base set 3
+
+#flint sword explosive hit (MAKE SURE TO ADD DAMAGE TO MOBVS FOR THE EXPLOSION ASWELL)
+#execute as @a at @s on attacker if entity @s[tag=FI_Explosive_Hit] run execute as @a[distance=..4,tag=!FI_Explosive_Hit] run damage @s 6 fireworks
+execute as @a at @s on attacker if entity @s[tag=FI_Explosive_Hit] run summon marker ~ ~ ~ {Tags:["FI_Ability_Flint_Sword"]}
+execute at @e[tag=FI_Ability_Flint_Sword] run execute as @a[distance=..4,tag=!FI_Explosive_Hit] run damage @s 6 fireworks
+kill @e[tag=FI_Ability_Flint_Sword]
+execute as @a at @s on attacker if entity @s[tag=FI_Explosive_Hit] run playsound entity.generic.explode player @a ~ ~ ~
+execute as @a at @s on attacker if entity @s[tag=FI_Explosive_Hit] run particle explosion ~ ~1 ~ 1 1 1 1 100 normal @a
+
+#remove the tag once hit
+execute as @a at @s on attacker if entity @s[tag=FI_Explosive_Hit] run tag @s remove FI_Explosive_Hit
+#remove the tag if it takes too long
+tellraw @a[scores={FI_Mana_Cooldown=100},tag=FI_Explosive_Hit] [{text:"Explosive Hit Wore Off",color:"gray"}]
+give @a[scores={FI_Mana_Cooldown=100},tag=FI_Explosive_Hit] iron_ingot
+tag @a[scores={FI_Mana_Cooldown=100}] remove FI_Explosive_Hit
+
+
+#THINGS TO DO FOR THE FLINT SWORD
+#TEll them the timer - Done
+#make the cooldown timer longer so they can't double trigger it - Done
+#Make tiw rok against mobs
