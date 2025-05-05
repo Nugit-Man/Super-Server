@@ -19,3 +19,18 @@ execute as @a[nbt={Dimension:"parkor:game"}] run scoreboard players set @s MAIN_
 
 #Pass the MAIN_------ scoreboards into the game specific ones
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sneak_Time = @s MAIN_Sneak_Time
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Reset things like sneak time
+scoreboard players set @a MAIN_Sneak_Time 0

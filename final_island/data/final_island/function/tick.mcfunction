@@ -79,6 +79,9 @@ effect clear @a[tag=!FI_Ability_Health_Of_Wealth] regeneration
 tag @a remove FI_Ability_Health_Of_Wealth
 
 
-#diamond armor (Jimmy Invinceable) (THIS ALSO RESETS THE FI_SNEAK_TIME SO IF YOU NEED IT YOU HAVE TO MOVE THIS CODE)
-execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=20..},tag=FI_Armor_Set_Diamond] run effect give @s resistance 5 4 true
-
+#diamond armor (Jimmy Invinceable) 
+scoreboard players remove @a[scores={FI_Armor_Set_Diamond=1..}] FI_Armor_Set_Diamond 1
+execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=20..,FI_Armor_Set_Diamond=0},tag=FI_Armor_Set_Diamond] run effect give @s resistance 5 4 true
+execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=20..,FI_Armor_Set_Diamond=0},tag=FI_Armor_Set_Diamond] run tellraw @s [{text:"Jimmy Invincable Activated",color:"gray"}]
+scoreboard players set @a[scores={FI_Sneak_Time=1..,FI_Mana=20..,FI_Armor_Set_Diamond=0}] FI_Armor_Set_Diamond 101
+scoreboard players remove @a[scores={FI_Sneak_Time=1..,FI_Mana=20..,FI_Armor_Set_Diamond=101}] FI_Mana 20

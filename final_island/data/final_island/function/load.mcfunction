@@ -32,5 +32,10 @@ scoreboard objectives add FI_Mana_Cooldown dummy
 scoreboard objectives add FI_Abilities dummy
 
 
+#Armor Set System
+function final_island:check_armor
+scoreboard objectives add FI_Armor_Set_Check dummy
+scoreboard objectives add FI_Armor_Set_Diamond dummy
+
 #Scoreboards that are copies of MAIN_------
 scoreboard objectives add FI_Sneak_Time dummy
