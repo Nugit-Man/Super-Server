@@ -18,7 +18,9 @@ scoreboard objectives add FI_Random dummy
 scoreboard objectives add FI_Item_Cap dummy
 scoreboard objectives add FI_Item_Counter dummy
 
-
+#check to see if a player is wearing an armor set
+scoreboard objectives add FI_Armor_Set_Check dummy
+function final_island:check_armor
 
 #Mana System
 function final_island:mana_restore
@@ -28,3 +30,7 @@ scoreboard objectives add FI_Mana_Cooldown dummy
 
 #Abilities (Cuurently Used for the iron blocks and for checking if the player has iron for the flint ability)
 scoreboard objectives add FI_Abilities dummy
+
+
+#Scoreboards that are copies of MAIN_------
+scoreboard objectives add FI_Sneak_Time dummy

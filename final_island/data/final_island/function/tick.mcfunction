@@ -77,3 +77,8 @@ tag @a[scores={FI_Mana_Cooldown=100}] remove FI_Explosive_Hit
 effect give @a[tag=FI_Ability_Health_Of_Wealth] regeneration 1 255 true
 effect clear @a[tag=!FI_Ability_Health_Of_Wealth] regeneration
 tag @a remove FI_Ability_Health_Of_Wealth
+
+
+#diamond armor (Jimmy Invinceable) (THIS ALSO RESETS THE FI_SNEAK_TIME SO IF YOU NEED IT YOU HAVE TO MOVE THIS CODE)
+execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=20..},tag=FI_Armor_Set_Diamond] run effect give @s resistance 5 4 true
+

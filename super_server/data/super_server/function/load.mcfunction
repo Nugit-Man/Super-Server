@@ -8,6 +8,7 @@ scoreboard objectives add MAIN_Deaths deathCount
 scoreboard objectives add MAIN_Damage_Delt custom:damage_dealt
 scoreboard objectives add MAIN_Damage_Taken custom:damage_taken
 scoreboard objectives add MAIN_Health health
+scoreboard objectives add MAIN_Sneak_Time custom:sneak_time
 
 
 #Check what game you are in

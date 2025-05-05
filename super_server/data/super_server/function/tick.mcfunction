@@ -14,3 +14,8 @@ execute as @a[nbt={Dimension:"final_island:game"}] run scoreboard players set @s
 execute as @a[nbt={Dimension:"gorbino:game"}] run scoreboard players set @s MAIN_Game 3
 execute as @a[nbt={Dimension:"gorbino:lobby"}] run scoreboard players set @s MAIN_Game 3
 execute as @a[nbt={Dimension:"parkor:game"}] run scoreboard players set @s MAIN_Game 4
+
+
+
+#Pass the MAIN_------ scoreboards into the game specific ones
+execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sneak_Time = @s MAIN_Sneak_Time
