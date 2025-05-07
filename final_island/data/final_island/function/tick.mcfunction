@@ -9,6 +9,11 @@ execute as @a[scores={MAIN_Game=2}] run title @s actionbar ["Mana: ",{score:{obj
 scoreboard players remove @a[scores={FI_Mana_Cooldown=1..,MAIN_Game=2}] FI_Mana_Cooldown 1
 
 
+
+
+
+
+#Swords
 #Iron Curtain (blocks)
 scoreboard players add @e[type=block_display,tag=FI_Ability_Iron_Curtain] FI_Abilities 1
 execute as @e[type=block_display,tag=FI_Ability_Iron_Curtain,scores={FI_Abilities=10..}] run execute at @s run tp @s ~ ~-0.4 ~
@@ -73,12 +78,31 @@ give @a[scores={FI_Mana_Cooldown=100},tag=FI_Explosive_Hit] iron_ingot
 tag @a[scores={FI_Mana_Cooldown=100}] remove FI_Explosive_Hit
 
 
+
+
+
+
+
+#Axes
 #Emerald axe heal
 effect give @a[tag=FI_Ability_Health_Of_Wealth] regeneration 1 255 true
 effect clear @a[tag=!FI_Ability_Health_Of_Wealth] regeneration
 tag @a remove FI_Ability_Health_Of_Wealth
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#Armor Sets
 #diamond armor (Jimmy Invinceable) 
 scoreboard players remove @a[scores={FI_Armor_Set_Diamond=1..}] FI_Armor_Set_Diamond 1
 execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=0},tag=FI_Armor_Set_Diamond] run effect give @s resistance 5 4 true
