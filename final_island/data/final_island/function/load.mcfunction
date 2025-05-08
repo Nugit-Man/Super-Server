@@ -27,7 +27,7 @@ function final_island:mana_restore
 scoreboard objectives add FI_Mana dummy
 scoreboard objectives add FI_Mana_Cooldown dummy
 scoreboard objectives add FI_Mana_Max dummy
-
+scoreboard objectives add FI_Mana_Regen dummy
 
 #Abilities (Cuurently Used for the iron blocks and for checking if the player has iron for the flint ability)
 scoreboard objectives add FI_Abilities dummy
