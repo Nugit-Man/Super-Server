@@ -1,2 +1,2 @@
-scoreboard players add @a[scores={FI_Mana=..99,MAIN_Game=2}] FI_Mana 1
+execute as @a[scores={MAIN_Game=2}] if score @s FI_Mana < @s FI_Mana_Max run scoreboard players add @s FI_Mana 1
 schedule function final_island:mana_restore 1s
