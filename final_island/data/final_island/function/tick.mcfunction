@@ -19,7 +19,7 @@ scoreboard players remove @a[scores={FI_Mana_Cooldown=1..,MAIN_Game=2}] FI_Mana_
 #Iron Curtain (blocks)
 scoreboard players add @e[type=block_display,tag=FI_Ability_Iron_Curtain] FI_Abilities 1
 execute as @e[type=block_display,tag=FI_Ability_Iron_Curtain,scores={FI_Abilities=10..}] run execute at @s run tp @s ~ ~-0.4 ~
-execute as @e[type=block_display,tag=FI_Ability_Iron_Curtain] at @e[type=block_display,tag=FI_Ability_Iron_Curtain] run damage @e[distance=..1,limit=1,sort=nearest,tag=!FI_Ability_Iron_Curtain] 16
+execute as @e[type=block_display,tag=FI_Ability_Iron_Curtain] at @e[type=block_display,tag=FI_Ability_Iron_Curtain] run damage @e[distance=..1,limit=1,sort=nearest,tag=!FI_Ability_Iron_Curtain] 16 falling_anvil
 execute at @e[type=block_display,tag=FI_Ability_Iron_Curtain,scores={FI_Abilities=20}] run particle minecraft:explosion ~ ~1 ~ 0 0 0 0 3 normal
 execute at @e[type=block_display,tag=FI_Ability_Iron_Curtain,scores={FI_Abilities=20}] run playsound block.anvil.land block @a ~ ~ ~
 kill @e[type=block_display,tag=FI_Ability_Iron_Curtain,scores={FI_Abilities=20}]

@@ -41,7 +41,7 @@ execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Check=4}] run attribute @s fall_d
 execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Check=..3}] run attribute @s fall_damage_multiplier base reset
 
 
-
+scoreboard players set @a[scores={MAIN_Game=2}] FI_Armor_Set_Check 0
 
 #Amethyst checker
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.head *[custom_data~{FI_Amethyst_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
