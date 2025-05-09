@@ -1,2 +1,2 @@
-scoreboard players set @s[scores={FI_Mana=91..100}] FI_Mana 100
-scoreboard players add @s[scores={FI_Mana=..90}] FI_Mana 10
+scoreboard players add @s FI_Mana 10
+execute if score @s FI_Mana > @s FI_Mana_Max run scoreboard players operation @s FI_Mana = @s FI_Mana_Max
