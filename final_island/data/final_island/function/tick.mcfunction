@@ -92,8 +92,9 @@ effect give @a[tag=FI_Ability_Health_Of_Wealth] regeneration 1 255 true
 effect clear @a[tag=!FI_Ability_Health_Of_Wealth] regeneration
 tag @a remove FI_Ability_Health_Of_Wealth
 
-
-
+#Stone Axe Attack Speed
+execute as @a[scores={MAIN_Game=2,FI_Mana_Cooldown=400},tag=FI_Ability_Speed_Slice] run attribute @s attack_speed base reset
+tag @a[scores={MAIN_Game=2,FI_Mana_Cooldown=400},tag=FI_Ability_Speed_Slice] remove FI_Ability_Speed_Slice
 
 
 
