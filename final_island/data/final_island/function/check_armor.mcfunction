@@ -76,9 +76,17 @@ tag @a[scores={MAIN_Game=2,FI_Armor_Set_Check=..3}] remove FI_Armor_Set_Emerald
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Armor_Set_Check *= 8 MAIN_Num
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Mana_Bonus += @s FI_Armor_Set_Check
 
+#Lush Armor
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.head *[custom_data~{FI_Lush_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.chest *[custom_data~{FI_Lush_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Lush_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~{FI_Lush_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
 
-
-
+execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Check=0}] run attribute @s max_health base set 20
+execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Check=1}] run attribute @s max_health base set 24
+execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Check=2}] run attribute @s max_health base set 28
+execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Check=3}] run attribute @s max_health base set 32
+execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Check=4}] run attribute @s max_health base set 40
 
 
 
