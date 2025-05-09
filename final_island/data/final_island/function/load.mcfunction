@@ -28,6 +28,9 @@ scoreboard objectives add FI_Mana dummy
 scoreboard objectives add FI_Mana_Cooldown dummy
 scoreboard objectives add FI_Mana_Max dummy
 scoreboard objectives add FI_Mana_Regen dummy
+#Mana Bonus is used to calculate how much extra mana a player gets for the wizzard armor sets
+scoreboard objectives add FI_Mana_Bonus dummy
+
 
 #Abilities (Cuurently Used for the iron blocks and for checking if the player has iron for the flint ability)
 scoreboard objectives add FI_Abilities dummy
@@ -38,6 +41,7 @@ function final_island:check_armor
 scoreboard objectives add FI_Armor_Set_Check dummy
 scoreboard objectives add FI_Armor_Set_Diamond dummy
 scoreboard objectives add FI_Armor_Set_Iron dummy
+scoreboard objectives add FI_Armor_Set_Stone dummy
 
 #Scoreboards that are copies of MAIN_------
 scoreboard objectives add FI_Sneak_Time dummy
