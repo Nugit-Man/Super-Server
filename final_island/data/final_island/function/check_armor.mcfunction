@@ -30,6 +30,23 @@ scoreboard players set @a[scores={MAIN_Game=2,FI_Armor_Set_Check=..3}] FI_Armor_
 scoreboard players set @a[scores={MAIN_Game=2}] FI_Armor_Set_Check 0
 
 
+#Gold Armor
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.head *[custom_data~{FI_Gold_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.chest *[custom_data~{FI_Gold_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Gold_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~{FI_Gold_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
+
+tag @a[scores={MAIN_Game=2,FI_Armor_Set_Check=4}] add FI_Armor_Set_Gold
+tag @a[scores={MAIN_Game=2,FI_Armor_Set_Check=..3}] remove FI_Armor_Set_Gold
+
+
+scoreboard players set @a[scores={MAIN_Game=2}] FI_Armor_Set_Check 0
+#Tuff Armor
+
+
+
+
+
 #Magical Armor Sets
 scoreboard players set @a[scores={MAIN_Game=2}] FI_Mana_Bonus 100
 #Lapis checker
@@ -76,6 +93,8 @@ tag @a[scores={MAIN_Game=2,FI_Armor_Set_Check=..3}] remove FI_Armor_Set_Emerald
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Armor_Set_Check *= 8 MAIN_Num
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Mana_Bonus += @s FI_Armor_Set_Check
 
+scoreboard players set @a[scores={MAIN_Game=2}] FI_Armor_Set_Check 0
+
 #Lush Armor
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.head *[custom_data~{FI_Lush_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.chest *[custom_data~{FI_Lush_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
@@ -90,9 +109,9 @@ execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Check=4}] run attribute @s max_he
 
 
 
+scoreboard players set @a[scores={MAIN_Game=2}] FI_Armor_Set_Check 0
 
-
-#Basic Armor Set
+#Basic Armor Sets
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.head *[custom_data~{FI_Stone_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.chest *[custom_data~{FI_Stone_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Stone_Armor:1b}] run scoreboard players add @s FI_Armor_Set_Check 1
@@ -101,7 +120,7 @@ execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~
 tag @a[scores={MAIN_Game=2,FI_Armor_Set_Check=4}] add FI_Armor_Set_Stone
 tag @a[scores={MAIN_Game=2,FI_Armor_Set_Check=..3}] remove FI_Armor_Set_Stone
 
-
+#Copper
 
 #Get the updated max Mana from the mana bonus
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Mana_Max = @s FI_Mana_Bonus

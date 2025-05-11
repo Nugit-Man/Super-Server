@@ -134,3 +134,6 @@ execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Stone=0},tag=F
 execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Stone=0},tag=FI_Armor_Set_Stone] run tellraw @s [{text:"Rock Hard Activated",color:"gray"}]
 scoreboard players set @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Stone=0}] FI_Armor_Set_Stone 101
 scoreboard players remove @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Stone=101}] FI_Mana 60
+
+#Gold Armor Speed reset
+execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Gold=1..}] run scoreboard players remove @s FI_Armor_Set_Gold 1
