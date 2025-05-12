@@ -107,7 +107,8 @@ execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Check=2}] run attribute @s max_he
 execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Check=3}] run attribute @s max_health base set 32
 execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Check=4}] run attribute @s max_health base set 40
 
-
+execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Armor_Set_Check *= 10 MAIN_Num
+execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Mana_Bonus += @s FI_Armor_Set_Check
 
 scoreboard players set @a[scores={MAIN_Game=2}] FI_Armor_Set_Check 0
 

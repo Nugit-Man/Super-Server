@@ -2,6 +2,7 @@
 #Display mana and restore it at spawn
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..5] FI_Mana 100
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..5,scores={FI_Mana_Max=0}] FI_Mana_Regen 1
+execute in final_island:game at @e[tag=FI_Mana_Restore] run tag @a[distance=..5] remove FI_Armor_Set_Emerald
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..5,scores={FI_Mana_Max=0}] FI_Mana_Max 100
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..5] FI_Mana_Cooldown 0
 execute as @a[scores={MAIN_Game=2}] run title @s actionbar ["Mana: ",{score:{objective:"FI_Mana",name:"@s"}},"/",{score:{objective:"FI_Mana_Max",name:"@s"}}]
@@ -111,29 +112,29 @@ tag @a[scores={MAIN_Game=2,FI_Mana_Cooldown=400},tag=FI_Ability_Speed_Slice] rem
 scoreboard players remove @a[scores={FI_Armor_Set_Diamond=1..}] FI_Armor_Set_Diamond 1
 execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=0},tag=FI_Armor_Set_Diamond] run effect give @s resistance 5 4 true
 execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=0},tag=FI_Armor_Set_Diamond] run tellraw @s [{text:"Jimmy Invincable Activated",color:"gray"}]
-scoreboard players set @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=0}] FI_Armor_Set_Diamond 101
-scoreboard players remove @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=101}] FI_Mana 30
+scoreboard players set @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=0},tag=FI_Armor_Set_Diamond] FI_Armor_Set_Diamond 101
+scoreboard players remove @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=101},tag=FI_Armor_Set_Diamond] FI_Mana 30
 
 #Iron Clad
 scoreboard players remove @a[scores={FI_Armor_Set_Iron=1..}] FI_Armor_Set_Iron 1
-execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=15..,FI_Armor_Set_Iron=0},tag=FI_Armor_Set_Iron] run effect give @s resistance 5 2 true
-execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=15..,FI_Armor_Set_Iron=0},tag=FI_Armor_Set_Iron] run effect give @s slowness 5 1 true
+execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=15..,FI_Armor_Set_Iron=0},tag=FI_Armor_Set_Iron] run effect give @s resistance 10 2 true
+execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=15..,FI_Armor_Set_Iron=0},tag=FI_Armor_Set_Iron] run effect give @s slowness 10 1 true
 tag @a[scores={FI_Sneak_Time=1..,FI_Mana=15..,FI_Armor_Set_Iron=0},tag=FI_Armor_Set_Iron] add FI_Armor_Set_Ability_Iron
 execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=15..,FI_Armor_Set_Iron=0},tag=FI_Armor_Set_Iron] run tellraw @s [{text:"Iron Clad Activated",color:"gray"}]
-scoreboard players set @a[scores={FI_Sneak_Time=1..,FI_Mana=15..,FI_Armor_Set_Iron=0}] FI_Armor_Set_Iron 201
-scoreboard players remove @a[scores={FI_Sneak_Time=1..,FI_Mana=15..,FI_Armor_Set_Iron=201}] FI_Mana 30
+scoreboard players set @a[scores={FI_Sneak_Time=1..,FI_Mana=15..,FI_Armor_Set_Iron=0},tag=FI_Armor_Set_Iron] FI_Armor_Set_Iron 201
+scoreboard players remove @a[scores={FI_Sneak_Time=1..,FI_Mana=15..,FI_Armor_Set_Iron=201},tag=FI_Armor_Set_Iron] FI_Mana 15
 
 #These next 3 lines of code only deal with the knockback resistance that is apart of the iron clad ability
 execute as @a[scores={FI_Armor_Set_Iron=201},tag=FI_Armor_Set_Ability_Iron] run attribute @s knockback_resistance base set 5
 execute as @a[scores={FI_Armor_Set_Iron=1},tag=FI_Armor_Set_Ability_Iron] run attribute @s knockback_resistance base set 0
-tag @a[scores={FI_Armor_Set_Iron=1}] remove FI_Armor_Set_Ability_Iron
+tag @a[scores={FI_Armor_Set_Iron=0}] remove FI_Armor_Set_Ability_Iron
 
 #Rock Hard
 scoreboard players remove @a[scores={FI_Armor_Set_Stone=1..}] FI_Armor_Set_Stone 1
 execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Stone=0},tag=FI_Armor_Set_Stone] run effect give @s strength 5 2 true
 execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Stone=0},tag=FI_Armor_Set_Stone] run tellraw @s [{text:"Rock Hard Activated",color:"gray"}]
-scoreboard players set @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Stone=0}] FI_Armor_Set_Stone 101
-scoreboard players remove @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Stone=101}] FI_Mana 60
+scoreboard players set @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Stone=0},tag=FI_Armor_Set_Stone] FI_Armor_Set_Stone 101
+scoreboard players remove @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Stone=101},tag=FI_Armor_Set_Stone] FI_Mana 60
 
 #Gold Armor Speed reset
 execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Gold=1..}] run scoreboard players remove @s FI_Armor_Set_Gold 1
