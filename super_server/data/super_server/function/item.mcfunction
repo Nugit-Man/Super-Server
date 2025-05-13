@@ -13,6 +13,7 @@ execute as @s[scores={FI_Mana=10..,MAIN_Game=2}] if items entity @s[scores={FI_M
 
 #Final Island Axes
 execute as @s[scores={FI_Mana=3..,MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown=0}] weapon.mainhand *[custom_data~{FI_Emerald_Axe:1b}] run function final_island:abilities/emerald_axe
+execute as @s[scores={FI_Mana=75..,MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown=0}] weapon.mainhand *[custom_data~{FI_Diamond_Axe:1b}] run function final_island:abilities/diamond_axe
 
 #octothorpe
 
