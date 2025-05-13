@@ -43,6 +43,7 @@ scoreboard objectives add FI_Armor_Set_Diamond dummy
 scoreboard objectives add FI_Armor_Set_Iron dummy
 scoreboard objectives add FI_Armor_Set_Stone dummy
 scoreboard objectives add FI_Armor_Set_Gold dummy
+scoreboard objectives add FI_Armor_Set_Copper dummy
 
 #Scoreboards that are copies of MAIN_------
 scoreboard objectives add FI_Sneak_Time dummy
