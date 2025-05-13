@@ -1,0 +1,7 @@
+{
+    "death_message_type": "default",
+    "message_id": "cringe",
+    "scaling": "never",
+    "effects": "hurt",
+    "exhaustion": 0.1
+}
