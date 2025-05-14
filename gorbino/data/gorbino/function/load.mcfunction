@@ -3,8 +3,8 @@ scoreboard objectives add GB_Mode dummy
 scoreboard objectives add GB_Select dummy
 scoreboard objectives add GB_velocity dummy
 scoreboard objectives add GB_Points dummy
-scoreboard objectives add GB_Shotgun minecraft.used:minecraft.crossbow
-scoreboard objectives add GB_Deaths deathCount
+scoreboard objectives add GB_Shotgun dummy
+scoreboard objectives add GB_Deaths dummy
 scoreboard objectives add GB_Dash_Check dummy
 scoreboard objectives add GB_Arrow dummy
 

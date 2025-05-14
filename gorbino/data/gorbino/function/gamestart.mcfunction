@@ -3,46 +3,46 @@ execute store result score Map Select run random value 0..16
 scoreboard players set 2 Select 0
 
 #move border
-execute in gorbino:void run execute if score Map Select matches 0 run worldborder center 0.5 0.5
-execute in gorbino:void run execute if score Map Select matches 1 run worldborder center 1000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 2 run worldborder center 2000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 3 run worldborder center 3000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 4 run worldborder center 4000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 5 run worldborder center 5000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 6 run worldborder center 6000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 7 run worldborder center 7000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 8 run worldborder center 8000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 9 run worldborder center 9000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 10 run worldborder center 10000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 11 run worldborder center 11000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 12 run worldborder center 12000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 13 run worldborder center 13000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 14 run worldborder center 14000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 15 run worldborder center 15000.5 0.5
-execute in gorbino:void run execute if score Map Select matches 16 run worldborder center 16000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 0 run worldborder center 0.5 0.5
+execute in gorbino:game run execute if score Map Select matches 1 run worldborder center 1000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 2 run worldborder center 2000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 3 run worldborder center 3000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 4 run worldborder center 4000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 5 run worldborder center 5000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 6 run worldborder center 6000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 7 run worldborder center 7000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 8 run worldborder center 8000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 9 run worldborder center 9000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 10 run worldborder center 10000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 11 run worldborder center 11000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 12 run worldborder center 12000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 13 run worldborder center 13000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 14 run worldborder center 14000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 15 run worldborder center 15000.5 0.5
+execute in gorbino:game run execute if score Map Select matches 16 run worldborder center 16000.5 0.5
 
 #teleport players
-execute in gorbino:void run execute if score Map Select matches 0 run tp @a[scores={Mode=1..}] 0 1 0
-execute in gorbino:void run execute if score Map Select matches 1 run tp @a[scores={Mode=1..}] 1000 6 0
-execute in gorbino:void run execute if score Map Select matches 2 run tp @a[scores={Mode=1..}] 2000 1 0
-execute in gorbino:void run execute if score Map Select matches 3 run tp @a[scores={Mode=1..}] 3000 9 0
-execute in gorbino:void run execute if score Map Select matches 4 run tp @a[scores={Mode=1..}] 4000 1 0
-execute in gorbino:void run execute if score Map Select matches 5 run tp @a[scores={Mode=1..}] 5000 2 0
-execute in gorbino:void run execute if score Map Select matches 6 run tp @a[scores={Mode=1..}] 6000 2 0
-execute in gorbino:void run execute if score Map Select matches 7 run tp @a[scores={Mode=1..}] 7000 5 0
-execute in gorbino:void run execute if score Map Select matches 8 run tp @a[scores={Mode=1..}] 8000 4 0
-execute in gorbino:void run execute if score Map Select matches 9 run tp @a[scores={Mode=1..}] 9000 1 0
-execute in gorbino:void run execute if score Map Select matches 10 run tp @a[scores={Mode=1..}] 10000 5 0
-execute in gorbino:void run execute if score Map Select matches 11 run tp @a[scores={Mode=1..}] 11000 4 0
-execute in gorbino:void run execute if score Map Select matches 12 run tp @a[scores={Mode=1..}] 12000 1 0
-execute in gorbino:void run execute if score Map Select matches 13 run tp @a[scores={Mode=1..}] 13000 5 0
-execute in gorbino:void run execute if score Map Select matches 14 run tp @a[scores={Mode=1..}] 14000 4 0
-execute in gorbino:void run execute if score Map Select matches 15 run tp @a[scores={Mode=1..}] 15000 1 0
-execute in gorbino:void run execute if score Map Select matches 16 run tp @a[scores={Mode=1..}] 16000 3 0
+execute in gorbino:game run execute if score Map Select matches 0 run tp @a[scores={Mode=1..}] 0 1 0
+execute in gorbino:game run execute if score Map Select matches 1 run tp @a[scores={Mode=1..}] 1000 6 0
+execute in gorbino:game run execute if score Map Select matches 2 run tp @a[scores={Mode=1..}] 2000 1 0
+execute in gorbino:game run execute if score Map Select matches 3 run tp @a[scores={Mode=1..}] 3000 9 0
+execute in gorbino:game run execute if score Map Select matches 4 run tp @a[scores={Mode=1..}] 4000 1 0
+execute in gorbino:game run execute if score Map Select matches 5 run tp @a[scores={Mode=1..}] 5000 2 0
+execute in gorbino:game run execute if score Map Select matches 6 run tp @a[scores={Mode=1..}] 6000 2 0
+execute in gorbino:game run execute if score Map Select matches 7 run tp @a[scores={Mode=1..}] 7000 5 0
+execute in gorbino:game run execute if score Map Select matches 8 run tp @a[scores={Mode=1..}] 8000 4 0
+execute in gorbino:game run execute if score Map Select matches 9 run tp @a[scores={Mode=1..}] 9000 1 0
+execute in gorbino:game run execute if score Map Select matches 10 run tp @a[scores={Mode=1..}] 10000 5 0
+execute in gorbino:game run execute if score Map Select matches 11 run tp @a[scores={Mode=1..}] 11000 4 0
+execute in gorbino:game run execute if score Map Select matches 12 run tp @a[scores={Mode=1..}] 12000 1 0
+execute in gorbino:game run execute if score Map Select matches 13 run tp @a[scores={Mode=1..}] 13000 5 0
+execute in gorbino:game run execute if score Map Select matches 14 run tp @a[scores={Mode=1..}] 14000 4 0
+execute in gorbino:game run execute if score Map Select matches 15 run tp @a[scores={Mode=1..}] 15000 1 0
+execute in gorbino:game run execute if score Map Select matches 16 run tp @a[scores={Mode=1..}] 16000 3 0
 
 #more border
-execute in gorbino:void run worldborder set 100
-execute in gorbino:void run worldborder set 33 180
+execute in gorbino:game run worldborder set 100
+execute in gorbino:game run worldborder set 33 180
 schedule clear gorbino:border/sudden_death
 schedule clear gorbino:border/border2
 schedule function gorbino:border/border2 180s

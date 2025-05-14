@@ -21,8 +21,8 @@ execute as @a[nbt={Dimension:"parkor:game"}] run scoreboard players set @s MAIN_
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sneak_Time = @s MAIN_Sneak_Time
 
 
-
-
+execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Deaths = @s MAIN_Deaths
+execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Shotgun = @s MAIN_Crossbow_Used
 
 
 
@@ -34,3 +34,5 @@ execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sneak
 
 #Reset things like sneak time
 scoreboard players set @a MAIN_Sneak_Time 0
+scoreboard players set @a MAIN_Deaths 0
+scoreboard players set @a MAIN_Crossbow_Used 0
