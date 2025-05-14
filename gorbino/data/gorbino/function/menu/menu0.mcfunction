@@ -26,12 +26,12 @@ item replace entity @s inventory.24 with air
 item replace entity @s inventory.25 with air
 item replace entity @s inventory.26 with air
 
-execute store result score @s Select run clear @s diamond_sword 0
-execute if score @s Select matches 2 run scoreboard players set @s Mode 2
-execute if score @s Select matches 2 run clear @s
-scoreboard players set @s Select 1
+execute store result score @s GB_Select run clear @s diamond_sword 0
+execute if score @s GB_Select matches 2 run scoreboard players set @s GB_Mode 2
+execute if score @s GB_Select matches 2 run clear @s
+scoreboard players set @s GB_Select 1
 
-execute store result score @s Select run clear @s diamond_chestplate 0
-execute if score @s Select matches 2 run scoreboard players set @s Menu 1
-execute if score @s Select matches 2 run clear @s
-scoreboard players set @s Select 1
+execute store result score @s GB_Select run clear @s diamond_chestplate 0
+execute if score @s GB_Select matches 2 run scoreboard players set @s GB_Menu 1
+execute if score @s GB_Select matches 2 run clear @s
+scoreboard players set @s GB_Select 1

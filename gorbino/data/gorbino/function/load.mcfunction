@@ -1,15 +1,12 @@
-say Reloaded
+scoreboard objectives add GB_Menu dummy
+scoreboard objectives add GB_Mode dummy
+scoreboard objectives add GB_Select dummy
+scoreboard objectives add GB_velocity dummy
+scoreboard objectives add GB_Points dummy
+scoreboard objectives add GB_Shotgun minecraft.used:minecraft.crossbow
+scoreboard objectives add GB_Deaths deathCount
+scoreboard objectives add GB_Dash_Check dummy
+scoreboard objectives add GB_Arrow dummy
 
-
-scoreboard objectives add Menu dummy
-scoreboard objectives add Mode dummy
-scoreboard objectives add Select dummy
-scoreboard objectives add velocity dummy
-scoreboard objectives add Points dummy
-scoreboard objectives add Shotgun minecraft.used:minecraft.crossbow
-scoreboard objectives add Deaths deathCount
-scoreboard objectives add Dash_Check dummy
-scoreboard objectives add Arrow dummy
-
-scoreboard players set @a Mode 0
-scoreboard players set @a Menu 0
+scoreboard players set @a GB_Mode 0
+scoreboard players set @a GB_Menu 0

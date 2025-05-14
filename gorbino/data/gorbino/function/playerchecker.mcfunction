@@ -38,4 +38,4 @@ execute if score 1 Select matches 0 run execute if score 2 Select matches 2..16 
 execute if score 1 Select matches 0 run execute if score 2 Select matches 2..16 run scoreboard players set 2 Select -1
 #YO DUMBASS, I'm too tired to figure this shit out so make sure this schedule doesnt get called like 20 times restartingit over and over and preventing a game from actually stating!!!!!!!
 #it works I think?
-
+#LMAO what is this?
