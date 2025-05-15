@@ -1,2 +1,2 @@
 effect give @s speed 5 24 true
-give @s minecraft:ghast_tear[custom_name='["",{"text":"Cocaine","italic":false}]',consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.generic.eat",has_consume_particles:0b},use_cooldown={seconds:17}]
+give @s minecraft:ghast_tear[custom_name=[{text:"Cocaine",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.generic.eat",has_consume_particles:0b},use_cooldown={seconds:17}]

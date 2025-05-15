@@ -1,2 +1,2 @@
-give @s minecraft:diamond[custom_name='["",{"text":"Chad","italic":false}]',consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:10,animation:block,sound:"entity.experience_orb.pickup",has_consume_particles:0b},use_cooldown={seconds:24}]
+give @s minecraft:diamond[custom_name=[{text:"Chad",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:10,animation:block,sound:"entity.experience_orb.pickup",has_consume_particles:0b},use_cooldown={seconds:24}]
 summon ravager ~ ~100 ~ {Invulnerable:1b}

@@ -9,11 +9,11 @@ item replace entity @s inventory.7 with air
 item replace entity @s inventory.8 with air
 item replace entity @s inventory.9 with air
 item replace entity @s inventory.10 with air
-item replace entity @s inventory.11 with diamond_sword[custom_name='["",{"text":"Join The Fight!","italic":false}]',!tool,!damage,!max_damage,!attribute_modifiers]
+item replace entity @s inventory.11 with diamond_sword[custom_name=[{text:"Join The Fight!",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers]
 item replace entity @s inventory.12 with air
 item replace entity @s inventory.13 with air
 item replace entity @s inventory.14 with air
-item replace entity @s inventory.15 with diamond_chestplate[custom_name='["",{"text":"Change Your Loadout!","italic":false}]',!attribute_modifiers]
+item replace entity @s inventory.15 with diamond_chestplate[custom_name=[{text:"Change Your Loadout!",italic:false}],!attribute_modifiers]
 item replace entity @s inventory.16 with air
 item replace entity @s inventory.17 with air
 item replace entity @s inventory.18 with air

@@ -5,48 +5,48 @@
     "lore": [
       [
         {
-          "text": "Profession: ",
+          text: "Profession: ",
           "color": "gray",
-          "italic": false
+          italic: false
         },
         {
           "nbt": "data.Profession",
           "entity": "@s",
           "color": "white",
-          "italic": false
+          italic: false
         }
       ],
       [
         {
-          "text": "Biome: ",
+          text: "Biome: ",
           "color": "gray",
-          "italic": false
+          italic: false
         },
         {
           "nbt": "data.Biome",
           "entity": "@s",
           "color": "white",
-          "italic": false
+          italic: false
         }
       ],
       [
         {
-          "text": "Level: ",
+          text: "Level: ",
           "color": "gray",
-          "italic": false
+          italic: false
         },
         {
           "nbt": "data.Level",
           "entity": "@s",
           "color": "white",
-          "italic": false
+          italic: false
         }
       ],
       [
         {
-          "text": "Has AI: ",
+          text: "Has AI: ",
           "color": "gray",
-          "italic": false
+          italic: false
         },
         {
           "nbt": "data.AI",
@@ -56,9 +56,9 @@
       ],
       [
         {
-          "text": "Silent: ",
+          text: "Silent: ",
           "color": "gray",
-          "italic": false
+          italic: false
         },
         {
           "nbt": "data.Silent",
@@ -68,9 +68,9 @@
       ],
       [
         {
-          "text": "Glowing: ",
+          text: "Glowing: ",
           "color": "gray",
-          "italic": false
+          italic: false
         },
         {
           "nbt": "data.Glow",
@@ -80,9 +80,9 @@
       ],
       [
         {
-          "text": "Trades: ",
+          text: "Trades: ",
           "color": "gray",
-          "italic": false
+          italic: false
         },
         {
           "nbt": "data.Trades",
@@ -91,12 +91,12 @@
         }
       ],
       {
-        "text": ""
+        text: ""
       },
       {
-        "text": "ℹ Created with VillEdit",
+        text: "ℹ Created with VillEdit",
         "color": "dark_gray",
-        "italic": false
+        italic: false
       }
     ],
     "mode": "replace_all"
@@ -110,12 +110,12 @@
         "nbt": "CustomName",
         "entity": "@e[type=villager,limit=1,sort=nearest,tag=ve.editing]",
         "interpret": true,
-        "italic": false
+        italic: false
       },
       {
-        "text": " Spawn Egg",
+        text: " Spawn Egg",
         "color": "green",
-        "italic": false
+        italic: false
       }
     ]
   }

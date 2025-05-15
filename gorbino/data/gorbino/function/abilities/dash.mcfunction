@@ -69,9 +69,9 @@ execute if score @s velocity matches 15 run tp @s @e[limit=1,sort=nearest,tag=Da
 kill @e[type=armor_stand]
 
 tag @s remove dasher
-execute as @s[tag=!elytra] run give @s[tag=!lightweight] sugar[custom_name='["",{"text":"Dash","italic":false}]',consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:2}]
-give @s[tag=lightweight] sugar[custom_name='["",{"text":"Dash","italic":false}]',consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:10}]
-give @s[tag=elytra] sugar[custom_name='["",{"text":"Dash","italic":false}]',consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:10}]
+execute as @s[tag=!elytra] run give @s[tag=!lightweight] sugar[custom_name=[{text:"Dash",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:2}]
+give @s[tag=lightweight] sugar[custom_name=[{text:"Dash",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:10}]
+give @s[tag=elytra] sugar[custom_name=[{text:"Dash",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:10}]
 
 #Acdancement
 scoreboard players add @s Dash_Check 1

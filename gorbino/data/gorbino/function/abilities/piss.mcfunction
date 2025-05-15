@@ -1,4 +1,4 @@
-give @p minecraft:honey_bottle[custom_name='["",{"text":"Super Laser Piss","italic":false}]',consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"block.beacon.activate",has_consume_particles:0b},use_cooldown={seconds:12}]
+give @p minecraft:honey_bottle[custom_name=[{text:"Super Laser Piss",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"block.beacon.activate",has_consume_particles:0b},use_cooldown={seconds:12}]
 
 tag @s add piss
 summon armor_stand ^ ^ ^1 {Invisible:1b,Invulnerable:1b,Silent:1b,Tags:["piss"]}

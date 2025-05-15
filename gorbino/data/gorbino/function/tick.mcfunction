@@ -70,11 +70,11 @@ kill @e[tag=GB_Lava,scores={GB_velocity=300}]
 #Shotgun
 execute as @a[scores={GB_Shotgun=1..}] run scoreboard players add @s GB_Shotgun 1
 clear @a[scores={GB_Shotgun=300..},tag=GB_GB_Shotgun] crossbow
-#give @a[scores={GB_Shotgun=300},tag=GB_GB_Shotgun] crossbow[custom_name='["",{"text": "Shotgun","bold": true,"italic":false,"color":"red"}]',charged_projectiles=[{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:1,explosions:[{shape:"large_ball",has_trail:true,colors:[I;3684408],fade_colors:[I;1644568]},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"}]}}}],enchantments={levels:{"minecraft:multishot":1}},unbreakable={show_in_tooltip:false}] 1
+#give @a[scores={GB_Shotgun=300},tag=GB_GB_Shotgun] crossbow[custom_name=[{text: "Shotgun","bold": true,italic:false,"color":"red"}],charged_projectiles=[{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:1,explosions:[{shape:"large_ball",has_trail:true,colors:[I;3684408],fade_colors:[I;1644568]},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"}]}}}],enchantments={levels:{"minecraft:multishot":1}},unbreakable={show_in_tooltip:false}] 1
 scoreboard players set @a[scores={GB_Shotgun=300}] GB_Shotgun 0
 
 #leave game
-item replace entity @a[scores={GB_Mode=1..}] inventory.13 with barrier[custom_name='["",{"text":"Leave The Fight","italic":false}]']
+item replace entity @a[scores={GB_Mode=1..}] inventory.13 with barrier[custom_name=[{text:"Leave The Fight",italic:false}]]
 execute as @a run execute store result score @s[scores={GB_Mode=1..}] GB_Select run clear @s[scores={GB_Mode=1..}] barrier 0
 tp @a[scores={GB_Mode=1..,GB_Select=2}] 57 5 26
 effect clear @a[scores={GB_Mode=1..,GB_Select=2}]

@@ -1,46 +1,46 @@
 item replace entity @s inventory.0 with air
 item replace entity @s inventory.1 with air
-item replace entity @s[tag=!GB_simple_armor] inventory.2 with leather_chestplate[custom_name='["",{"text":"Light Armor [1]","italic":false}]',!attribute_modifiers]
-item replace entity @s[tag=GB_simple_armor] inventory.2 with leather_chestplate[custom_name='["",{"text":"Light Armor [1]","italic":false}]',!attribute_modifiers,enchantment_glint_override=true]
-item replace entity @s[tag=!GB_knight] inventory.3 with iron_sword[custom_name='["",{"text":"Knight [2]","italic":false}]',!tool,!damage,!max_damage,!attribute_modifiers]
-item replace entity @s[tag=GB_knight] inventory.3 with iron_sword[custom_name='["",{"text":"Knight [2]","italic":false}]',!tool,!damage,!max_damage,!attribute_modifiers,enchantment_glint_override=true]
-item replace entity @s[tag=!GB_frog] inventory.6 with ochre_froglight[custom_name='["",{"text":"Frog [1]","italic":false}]']
-item replace entity @s[tag=GB_frog] inventory.6 with ochre_froglight[custom_name='["",{"text":"Frog [1]","italic":false}]',enchantment_glint_override=true]
-item replace entity @s[tag=!GB_builder] inventory.5 with oak_planks[custom_name='["",{"text":"Builder [1]","italic":false}]']
-item replace entity @s[tag=GB_builder] inventory.5 with oak_planks[custom_name='["",{"text":"Builder [1]","italic":false}]',enchantment_glint_override=true]
-item replace entity @s[tag=!GB_dash] inventory.4 with sugar[custom_name='["",{"text":"Dash [1]","italic":false}]']
+item replace entity @s[tag=!GB_simple_armor] inventory.2 with leather_chestplate[custom_name=[{text:"Light Armor [1]",italic:false}],!attribute_modifiers]
+item replace entity @s[tag=GB_simple_armor] inventory.2 with leather_chestplate[custom_name=[{text:"Light Armor [1]",italic:false}],!attribute_modifiers,enchantment_glint_override=true]
+item replace entity @s[tag=!GB_knight] inventory.3 with iron_sword[custom_name=[{text:"Knight [2]",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers]
+item replace entity @s[tag=GB_knight] inventory.3 with iron_sword[custom_name=[{text:"Knight [2]",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers,enchantment_glint_override=true]
+item replace entity @s[tag=!GB_frog] inventory.6 with ochre_froglight[custom_name=[{text:"Frog [1]",italic:false}]]
+item replace entity @s[tag=GB_frog] inventory.6 with ochre_froglight[custom_name=[{text:"Frog [1]",italic:false}],enchantment_glint_override=true]
+item replace entity @s[tag=!GB_builder] inventory.5 with oak_planks[custom_name=[{text:"Builder [1]",italic:false}]]
+item replace entity @s[tag=GB_builder] inventory.5 with oak_planks[custom_name=[{text:"Builder [1]",italic:false}],enchantment_glint_override=true]
+item replace entity @s[tag=!GB_dash] inventory.4 with sugar[custom_name=[{text:"Dash [1]",italic:false}]]
 item replace entity @s inventory.7 with air
 item replace entity @s inventory.8 with air
-item replace entity @s inventory.9 with arrow[custom_name='["",{"text":"Main Menu","italic":false}]']
+item replace entity @s inventory.9 with arrow[custom_name=[{text:"Main Menu",italic:false}]]
 item replace entity @s inventory.10 with air
-item replace entity @s[tag=!GB_chain_armor] inventory.11 with chainmail_chestplate[custom_name='["",{"text":"Chain Armor [2]","italic":false}]',!attribute_modifiers]
-item replace entity @s[tag=GB_chain_armor] inventory.11 with chainmail_chestplate[custom_name='["",{"text":"Chain Armor [2]","italic":false}]',!attribute_modifiers,enchantment_glint_override=true]
-item replace entity @s[tag=!GB_lumberjack] inventory.12 with iron_axe[custom_name='["",{"text":"Lumberjack [1]","italic":false}]',!tool,!damage,!max_damage,!attribute_modifiers]
-item replace entity @s[tag=!GB_burst_charm] inventory.13 with nether_star[custom_name='["",{"text":"Burst Charm [1]","italic":false}]',enchantment_glint_override=false]
-item replace entity @s[tag=!GB_fireball] inventory.14 with fire_charge[custom_name='["",{"text":"Fireball [2]","italic":false}]']
-item replace entity @s[tag=!GB_dripstone] inventory.15 with dripstone_block[custom_name='["",{"text":"Dripstone [1]","italic":false}]']
-item replace entity @s[tag=GB_dripstone] inventory.15 with dripstone_block[custom_name='["",{"text":"Dripstone [1]","italic":false}]',enchantment_glint_override=true]
+item replace entity @s[tag=!GB_chain_armor] inventory.11 with chainmail_chestplate[custom_name=[{text:"Chain Armor [2]",italic:false}],!attribute_modifiers]
+item replace entity @s[tag=GB_chain_armor] inventory.11 with chainmail_chestplate[custom_name=[{text:"Chain Armor [2]",italic:false}],!attribute_modifiers,enchantment_glint_override=true]
+item replace entity @s[tag=!GB_lumberjack] inventory.12 with iron_axe[custom_name=[{text:"Lumberjack [1]",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers]
+item replace entity @s[tag=!GB_burst_charm] inventory.13 with nether_star[custom_name=[{text:"Burst Charm [1]",italic:false}],enchantment_glint_override=false]
+item replace entity @s[tag=!GB_fireball] inventory.14 with fire_charge[custom_name=[{text:"Fireball [2]",italic:false}]]
+item replace entity @s[tag=!GB_dripstone] inventory.15 with dripstone_block[custom_name=[{text:"Dripstone [1]",italic:false}]]
+item replace entity @s[tag=GB_dripstone] inventory.15 with dripstone_block[custom_name=[{text:"Dripstone [1]",italic:false}],enchantment_glint_override=true]
 item replace entity @s inventory.16 with air
-item replace entity @s inventory.17 with spectral_arrow[custom_name='["",{"text":"Page 2","italic":false}]']
+item replace entity @s inventory.17 with spectral_arrow[custom_name=[{text:"Page 2",italic:false}]]
 item replace entity @s inventory.18 with air
 item replace entity @s inventory.19 with air
-item replace entity @s[tag=!GB_heavy_armor] inventory.20 with iron_chestplate[custom_name='["",{"text":"Plate Armor [3]","italic":false}]',!attribute_modifiers]
-item replace entity @s[tag=GB_heavy_armor] inventory.20 with iron_chestplate[custom_name='["",{"text":"Plate Armor [3]","italic":false}]',!attribute_modifiers,enchantment_glint_override=true]
-item replace entity @s[tag=!GB_archer] inventory.21 with bow[custom_name='["",{"text":"Archer [2]","italic":false}]']
-item replace entity @s[tag=!GB_freeze_bolt] inventory.22 with breeze_rod[custom_name='["",{"text":"Freeze Bolt [1]","italic":false}]']
-item replace entity @s[tag=!GB_flame_runner] inventory.23 with flint_and_steel[custom_name='["",{"text":"Flame Runner [1]","italic":false}]']
-item replace entity @s[tag=!GB_ground_slam] inventory.24 with dirt[custom_name='["",{"text":"Ground Slam [1]","italic":false}]']
+item replace entity @s[tag=!GB_heavy_armor] inventory.20 with iron_chestplate[custom_name=[{text:"Plate Armor [3]",italic:false}],!attribute_modifiers]
+item replace entity @s[tag=GB_heavy_armor] inventory.20 with iron_chestplate[custom_name=[{text:"Plate Armor [3]",italic:false}],!attribute_modifiers,enchantment_glint_override=true]
+item replace entity @s[tag=!GB_archer] inventory.21 with bow[custom_name=[{text:"Archer [2]",italic:false}]]
+item replace entity @s[tag=!GB_freeze_bolt] inventory.22 with breeze_rod[custom_name=[{text:"Freeze Bolt [1]",italic:false}]]
+item replace entity @s[tag=!GB_flame_runner] inventory.23 with flint_and_steel[custom_name=[{text:"Flame Runner [1]",italic:false}]]
+item replace entity @s[tag=!GB_ground_slam] inventory.24 with dirt[custom_name=[{text:"Ground Slam [1]",italic:false}]]
 item replace entity @s inventory.25 with air
 item replace entity @s inventory.26 with air
 
-item replace entity @s[tag=GB_dash] inventory.4 with sugar[custom_name='["",{"text":"Dash [1]","italic":false}]',enchantment_glint_override=true]
-item replace entity @s[tag=GB_lumberjack] inventory.12 with iron_axe[custom_name='["",{"text":"Lumberjack [1]","italic":false}]',!tool,!damage,!max_damage,!attribute_modifiers,enchantment_glint_override=true]
-item replace entity @s[tag=GB_burst_charm] inventory.13 with nether_star[custom_name='["",{"text":"Burst Charm [1]","italic":false}]',enchantment_glint_override=true]
-item replace entity @s[tag=GB_fireball] inventory.14 with fire_charge[custom_name='["",{"text":"Fireball [2]","italic":false}]',enchantment_glint_override=true]
-item replace entity @s[tag=GB_archer] inventory.21 with bow[custom_name='["",{"text":"Archer [2]","italic":false}]',enchantment_glint_override=true]
-item replace entity @s[tag=GB_freeze_bolt] inventory.22 with breeze_rod[custom_name='["",{"text":"Freeze Bolt [1]","italic":false}]',enchantment_glint_override=true]
-item replace entity @s[tag=GB_flame_runner] inventory.23 with flint_and_steel[custom_name='["",{"text":"Flame Runner [1]","italic":false}]',enchantment_glint_override=true]
-item replace entity @s[tag=GB_ground_slam] inventory.24 with dirt[custom_name='["",{"text":"Ground Slam [1]","italic":false}]',enchantment_glint_override=true]
+item replace entity @s[tag=GB_dash] inventory.4 with sugar[custom_name=[{text:"Dash [1]",italic:false}],enchantment_glint_override=true]
+item replace entity @s[tag=GB_lumberjack] inventory.12 with iron_axe[custom_name=[{text:"Lumberjack [1]",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers,enchantment_glint_override=true]
+item replace entity @s[tag=GB_burst_charm] inventory.13 with nether_star[custom_name=[{text:"Burst Charm [1]",italic:false}],enchantment_glint_override=true]
+item replace entity @s[tag=GB_fireball] inventory.14 with fire_charge[custom_name=[{text:"Fireball [2]",italic:false}],enchantment_glint_override=true]
+item replace entity @s[tag=GB_archer] inventory.21 with bow[custom_name=[{text:"Archer [2]",italic:false}],enchantment_glint_override=true]
+item replace entity @s[tag=GB_freeze_bolt] inventory.22 with breeze_rod[custom_name=[{text:"Freeze Bolt [1]",italic:false}],enchantment_glint_override=true]
+item replace entity @s[tag=GB_flame_runner] inventory.23 with flint_and_steel[custom_name=[{text:"Flame Runner [1]",italic:false}],enchantment_glint_override=true]
+item replace entity @s[tag=GB_ground_slam] inventory.24 with dirt[custom_name=[{text:"Ground Slam [1]",italic:false}],enchantment_glint_override=true]
 
 
 

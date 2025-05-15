@@ -4,20 +4,20 @@
     "entity": "this",
     "name": [
       {
-        "text": "Add Trade (",
+        text: "Add Trade (",
         "color": "green",
-        "italic": false
+        italic: false
       },
       {
         "nbt": "data.Trades",
         "entity": "@s",
         "color": "green",
-        "italic": false
+        italic: false
       },
       {
-        "text": ")",
+        text: ")",
         "color": "green",
-        "italic": false
+        italic: false
       }
     ]
   }

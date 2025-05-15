@@ -1,3 +1,3 @@
 item replace block ~ ~ ~ container.16 with minecraft:emerald[custom_name={text:"Click to add trade",color: "green",italic: false},custom_data={ve_ui:1b}] 1
-tellraw @p ["",{"text":"[","color":"dark_green"},{"text":"VE","color":"aqua"},{"text":"]","color":"dark_green"},{"text":" Make sure that both sides of the arrow have at least one item.","color":"red"}]
+tellraw @p [{text:"[","color":"dark_green"},{text:"VE","color":"aqua"},{text:"]","color":"dark_green"},{text:" Make sure that both sides of the arrow have at least one item.","color":"red"}]
 scoreboard players set .validated ve.temp 0
