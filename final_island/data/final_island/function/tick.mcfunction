@@ -153,3 +153,4 @@ execute as @e[type=zombie,tag=FI_Armor_Coal] run loot replace entity @s armor.he
 execute as @e[type=zombie,tag=FI_Armor_Coal] run loot replace entity @s armor.chest loot final_island:coal_chestplate
 execute as @e[type=zombie,tag=FI_Armor_Coal] run loot replace entity @s armor.legs loot final_island:coal_leggings
 execute as @e[type=zombie,tag=FI_Armor_Coal] run loot replace entity @s armor.feet loot final_island:coal_boots
+tag @e[type=zombie] remove FI_Armor_Coal
