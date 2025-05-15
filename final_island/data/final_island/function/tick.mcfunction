@@ -146,3 +146,10 @@ execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Copper=0},tag=
 execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Copper=0},tag=FI_Armor_Set_Copper] run tellraw @s [{text:"Fast Ralph Activated",color:"gray"}]
 scoreboard players set @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Copper=0},tag=FI_Armor_Set_Copper] FI_Armor_Set_Copper 101
 scoreboard players remove @a[scores={FI_Sneak_Time=1..,FI_Mana=60..,FI_Armor_Set_Copper=101},tag=FI_Armor_Set_Copper] FI_Mana 60
+
+
+#Zombie coal armor test
+execute as @e[type=zombie,tag=FI_Armor_Coal] run loot replace entity @s armor.head loot final_island:coal_helmet
+execute as @e[type=zombie,tag=FI_Armor_Coal] run loot replace entity @s armor.chest loot final_island:coal_chestplate
+execute as @e[type=zombie,tag=FI_Armor_Coal] run loot replace entity @s armor.legs loot final_island:coal_leggings
+execute as @e[type=zombie,tag=FI_Armor_Coal] run loot replace entity @s armor.feet loot final_island:coal_boots

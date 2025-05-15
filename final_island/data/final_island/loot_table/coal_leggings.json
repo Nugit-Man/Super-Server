@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 4,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "weight": 40,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "weight": 25,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 1,
+              "options": "minecraft:protection"
+            }
+          ],
+          "conditions": []
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 25,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "weight": 10,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 2,
+              "options": "protection"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": []
+}
