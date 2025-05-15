@@ -1,2 +1,1 @@
 summon tnt ~ ~ ~ {Invulnerable:1b,Silent:1b,fuse:600,Tags:[Timer,Boom]}
-give
