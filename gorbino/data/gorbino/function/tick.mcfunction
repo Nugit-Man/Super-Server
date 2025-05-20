@@ -6,10 +6,10 @@ tag @a add GB_Welcome
 
 
 #Main GB_Menu
-execute as @a[scores={GB_Menu=0,GB_Mode=0}] run function gorbino:menu/menu0
-execute as @a[scores={GB_Menu=1,GB_Mode=0}] run function gorbino:menu/menu1
-execute as @a[scores={GB_Menu=2,GB_Mode=0}] run function gorbino:menu/menu2
-execute as @a[scores={GB_Menu=3,GB_Mode=0}] run function gorbino:menu/menu3
+execute as @a[scores={GB_Menu=0,GB_Mode=0,MAIN_Game=3}] run function gorbino:menu/menu0
+execute as @a[scores={GB_Menu=1,GB_Mode=0,MAIN_Game=3}] run function gorbino:menu/menu1
+execute as @a[scores={GB_Menu=2,GB_Mode=0,MAIN_Game=3}] run function gorbino:menu/menu2
+execute as @a[scores={GB_Menu=3,GB_Mode=0,MAIN_Game=3}] run function gorbino:menu/menu3
 
 kill @e[type=item]
 
