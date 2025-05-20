@@ -13,6 +13,9 @@ function final_island:spawn_items/farm
 function final_island:spawn_items/farm2
 function final_island:spawn_items/animals
 
+#spawn the zombies
+function final_island:spawn_items/zombies/coal
+
 #Scoreboards for the spawners
 scoreboard objectives add FI_Random dummy
 scoreboard objectives add FI_Item_Cap dummy
