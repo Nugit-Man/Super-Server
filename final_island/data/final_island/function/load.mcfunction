@@ -15,6 +15,11 @@ function final_island:spawn_items/animals
 
 #spawn the zombies
 function final_island:spawn_items/zombies/coal
+function final_island:spawn_items/zombies/copper
+function final_island:spawn_items/zombies/gold
+function final_island:spawn_items/zombies/iron
+function final_island:spawn_items/zombies/deepslate
+function final_island:spawn_items/zombies/bedrock
 
 #Scoreboards for the spawners
 scoreboard objectives add FI_Random dummy
