@@ -10,7 +10,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "ascendance:ascendance/root",
+    "parent": "ascendance:ascendance/you_cant_be_here",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"

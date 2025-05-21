@@ -10,7 +10,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ascendance:ascendance/first_blood",
+  "parent": "ascendance:ascendance/nice_job_team",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

@@ -10,7 +10,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "ascendance:ascendance/first_blood",
+    "parent": "ascendance:ascendance/not_that_kind_of_deathmatch",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
