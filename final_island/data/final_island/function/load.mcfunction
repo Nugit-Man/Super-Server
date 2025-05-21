@@ -55,3 +55,6 @@ scoreboard objectives add FI_Armor_Set_Copper dummy
 
 #Scoreboards that are copies of MAIN_------
 scoreboard objectives add FI_Sneak_Time dummy
+
+#boss scoreboard
+scoreboard objectives add FI_Boss_Check dummy
