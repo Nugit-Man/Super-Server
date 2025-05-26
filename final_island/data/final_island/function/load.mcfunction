@@ -55,6 +55,12 @@ scoreboard objectives add FI_Armor_Set_Copper dummy
 
 #Scoreboards that are copies of MAIN_------
 scoreboard objectives add FI_Sneak_Time dummy
+scoreboard objectives add FI_Health dummy
 
 #boss scoreboard
 scoreboard objectives add FI_Boss_Check dummy
+
+
+#This scoreboard is used for misc stuff current things include:
+scoreboard objectives add FI_Misc dummy
+#FI_Zombie_Armor_Check: Used to see if a player is in the mines to armor up zombies

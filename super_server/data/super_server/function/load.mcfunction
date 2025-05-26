@@ -1,4 +1,4 @@
-say "Reloaded!"
+#say "Reloaded!"
 
 
 #Key Functions!!! (These are the only non-dummy functions and depending on what game you are playing it will att these scores to those trackers which are dummies in disciue)

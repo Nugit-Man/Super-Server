@@ -19,6 +19,7 @@ execute as @a[nbt={Dimension:"parkor:game"}] run scoreboard players set @s MAIN_
 
 #Pass the MAIN_------ scoreboards into the game specific ones
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sneak_Time = @s MAIN_Sneak_Time
+execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Health = @s MAIN_Health
 
 
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Deaths = @s MAIN_Deaths

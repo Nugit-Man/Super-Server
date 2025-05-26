@@ -25,7 +25,7 @@ execute at @a[tag=FI_Iron_Curtain,scores={FI_Mana_Cooldown=114}] run summon bloc
 
 #Sonic Blast
 tag @a[scores={FI_Mana_Cooldown=250}] remove FI_Sonic_Blast
-execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown=275}] run execute at @s anchored eyes run summon marker ^ ^ ^2 {Tags:[FI_Sonic_Blast_Marker]}
+execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown=275}] run execute at @s anchored eyes run summon marker ^ ^ ^16 {Tags:[FI_Sonic_Blast_Marker]}
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown=275}] run execute at @s anchored eyes run summon marker ^ ^ ^3 {Tags:[FI_Sonic_Blast_Marker]}
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown=275}] run execute at @s anchored eyes run summon marker ^ ^ ^4 {Tags:[FI_Sonic_Blast_Marker]}
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown=275}] run execute at @s anchored eyes run summon marker ^ ^ ^5 {Tags:[FI_Sonic_Blast_Marker]}
