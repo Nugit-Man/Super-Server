@@ -3,8 +3,8 @@
     "icon": {
       "id": "minecraft:bow"
     },
-    "title": "Achievements",
-    "description": "Things to do while playing",
+    "title": "Ascendance",
+    "description": "The achivements of Ascendance",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "show_toast": false,
     "announce_to_chat": false,

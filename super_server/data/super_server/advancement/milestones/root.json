@@ -4,7 +4,7 @@
       "id": "minecraft:beacon"
     },
     "title": "Milestones",
-    "description": "To see how much of your life you've wasted on this game",
+    "description": "To see how much of each game you've played",
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "show_toast": false,
     "announce_to_chat": false,
