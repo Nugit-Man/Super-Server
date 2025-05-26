@@ -1,22 +1,22 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:diamond_sword"
+        "id": "minecraft:netherite_sword"
       },
       "title": "Mass Murder",
-      "description": "Get 500 total kills",
+      "description": "Get 1000 total kills",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "super_server:milestones/killing_spree",
+    "parent": "super_server:milestones/mass_murder",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
       }
     },
     "rewards": {
-      "function": "super_server:advancements/mass_murder"
+      "function": "super_server:advancements/big_kill"
     }
   }
   
