@@ -10,7 +10,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ascendance:ascendance/root",
+  "parent": "ascendance:ascendance/sequence_break",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

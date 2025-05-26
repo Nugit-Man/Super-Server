@@ -5,8 +5,8 @@
       },
       "title": "Final Island",
       "description": "Milestones of Final Island",
-      "show_toast": true,
-      "announce_to_chat": true,
+      "show_toast": false,
+      "announce_to_chat": false,
       "hidden": false
     },
     "parent": "super_server:milestones/root",
