@@ -9,14 +9,14 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "ascendance:milestones/killing_spree",
+    "parent": "super_server:milestones/killing_spree",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
       }
     },
     "rewards": {
-      "function": "ascendance:advancements/mass_murder"
+      "function": "super_server:advancements/mass_murder"
     }
   }
   

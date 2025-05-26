@@ -9,13 +9,13 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ascendance:milestones/root",
+  "parent": "super_server:milestones/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"
     }
   },
   "rewards": {
-    "function": "ascendance:advancements/killing_spree"
+    "function": "super_server:advancements/killing_spree"
   }
 }
