@@ -9,7 +9,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "super_server:milestones/ascendance/ascendnace",
+  "parent": "super_server:milestones/ascendnace",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"
