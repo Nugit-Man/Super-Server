@@ -10,7 +10,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "super_server:milestones/amazing_at_this_game",
+  "parent": "super_server:milestones/ascendance/amazing_at_this_game",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"
