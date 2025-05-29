@@ -64,3 +64,12 @@ scoreboard objectives add FI_Boss_Check dummy
 #This scoreboard is used for misc stuff current things include:
 scoreboard objectives add FI_Misc dummy
 #FI_Zombie_Armor_Check: Used to see if a player is in the mines to armor up zombies
+
+
+
+
+
+
+#Boss system
+function final_island:boss
+scoreboard objectives add FI_Boss_Music dummy
