@@ -1,0 +1,1 @@
+effect give @s night_vision 60 0 true
