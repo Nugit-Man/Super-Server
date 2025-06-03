@@ -135,7 +135,7 @@ execute as @a[scores={GB_Mode=2}] run attribute @s max_health base reset
 execute as @a[scores={GB_Mode=2}] run attribute @s step_height base reset
 
 #Tell people that they are in the fight
-title @a[scores={GB_Mode=2}] actionbar "You Are Joining The Fight"
+title @a[scores={GB_Mode=2,MAIN_Game=3}] actionbar "You Are Joining The Fight"
 
 #Cleanup
 execute at @a[scores={GB_Mode=2..}] run fill ~20 ~9 ~20 ~-20 ~-9 ~-20 minecraft:stone replace minecraft:slime_block
