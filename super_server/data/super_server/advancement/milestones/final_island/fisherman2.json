@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:cod"
+      },
+      "title": "Fisherman",
+      "description": "Catch 250 fish",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "super_server:milestones/final_island/fisherman",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "ascendance:advancements/fishing_rod"
+    }
+  }
+  
