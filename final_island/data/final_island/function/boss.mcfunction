@@ -7,7 +7,7 @@ execute at @e[type=marker,tag=FI_Zombie_Boss_Check] run execute as @e[type=zombi
 execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run execute at @e[type=marker,tag=FI_Zombie_Boss_Door] run clone 68968 81 28 68976 86 28 68981 91 18
 execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 0 run execute at @e[type=marker,tag=FI_Zombie_Boss_Door] run fill 68981 91 18 68989 96 18 air
 
-execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run execute at @e[type=marker,tag=FI_Zombie_Boss_Door] run effect give @e[type=zombie,distance=..18] speed infinite 1
+execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run execute at @e[type=marker,tag=FI_Zombie_Boss_Door] run effect give @e[type=zombie,distance=..18] speed infinite 4 true
 
 execute if score FI_Boss_Zombie_Player FI_Boss_Check matches 0 run execute at @e[type=marker,tag=FI_Zombie_Boss_Check] run kill @e[type=zombie,distance=..18]
 execute if score FI_Boss_Zombie_Player FI_Boss_Check matches 0 run execute at @e[type=marker,tag=FI_Zombie_Boss_Check] run kill @e[type=item,distance=..18]
