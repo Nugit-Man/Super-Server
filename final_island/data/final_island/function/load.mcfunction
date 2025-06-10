@@ -13,6 +13,9 @@ function final_island:spawn_items/farm
 function final_island:spawn_items/farm2
 function final_island:spawn_items/animals
 
+#spawn cave gens
+function final_island:spawn_items/caves/coal
+
 #spawn the zombies
 function final_island:spawn_items/zombies/coal
 function final_island:spawn_items/zombies/copper
