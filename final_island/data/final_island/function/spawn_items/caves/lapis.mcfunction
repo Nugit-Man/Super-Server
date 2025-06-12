@@ -9,4 +9,4 @@ execute if score FI_lapis FI_Item_Cap matches 0 in final_island:game if score FI
 execute if score FI_lapis FI_Item_Cap matches 0 in final_island:game if score FI_lapis FI_Random matches 30..40 run summon item 68976 157 32 {Item:{id:"minecraft:lapis_lazuli",count:5b}}
 execute if score FI_lapis FI_Item_Cap matches 0 in final_island:game if score FI_lapis FI_Random matches 40..50 run summon item 68979 158 54 {Item:{id:"minecraft:lapis_lazuli",count:5b}}
 execute if score FI_lapis FI_Item_Cap matches 0 in final_island:game if score FI_lapis FI_Random matches 50..60 run summon item 69003 161 54 {Item:{id:"minecraft:lapis_lazuli",count:5b}}
-schedule function final_island:spawn_items/acacia_planks 32t
+schedule function final_island:spawn_items/acacia_planks 132t

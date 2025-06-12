@@ -3,4 +3,4 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:obsidian",count:64}}] run score
 
 execute store result score FI_obsidian FI_Random run random value 1..100
 execute if score FI_obsidian FI_Item_Cap matches 0 in final_island:game if score FI_obsidian FI_Random matches 1..20 run summon item 69009 179 37 {Item:{id:"minecraft:obsidian",count:1b}}
-schedule function final_island:spawn_items/caves/obsidian 134t
+schedule function final_island:spawn_items/caves/obsidian 1134t

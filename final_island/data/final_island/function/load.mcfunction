@@ -15,6 +15,16 @@ function final_island:spawn_items/animals
 
 #spawn cave gens
 function final_island:spawn_items/caves/coal
+function final_island:spawn_items/caves/copper
+function final_island:spawn_items/caves/crystal
+function final_island:spawn_items/caves/diamond
+function final_island:spawn_items/caves/emerald
+function final_island:spawn_items/caves/gold
+function final_island:spawn_items/caves/iron
+function final_island:spawn_items/caves/lapis
+function final_island:spawn_items/caves/obsidian
+function final_island:spawn_items/caves/redstone
+function final_island:spawn_items/caves/sculk
 
 #spawn the zombies
 function final_island:spawn_items/zombies/coal
@@ -67,7 +77,7 @@ scoreboard objectives add FI_Boss_Check dummy
 #This scoreboard is used for misc stuff current things include:
 scoreboard objectives add FI_Misc dummy
 #FI_Zombie_Armor_Check: Used to see if a player is in the mines to armor up zombies
-#
+#FI_Zombie_Boss_Windcharge: Used to randomly teleport the thing to make windcharges happen
 #
 #
 #
