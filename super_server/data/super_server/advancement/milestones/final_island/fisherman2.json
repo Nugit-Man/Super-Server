@@ -3,7 +3,7 @@
       "icon": {
         "id": "minecraft:cod"
       },
-      "title": "Fisherman",
+      "title": "A dip in the pond",
       "description": "Catch 250 fish",
       "frame": "task",
       "show_toast": true,

@@ -3,7 +3,7 @@
       "icon": {
         "id": "minecraft:netherite_sword"
       },
-      "title": "Mass Murder",
+      "title": "Just target practice",
       "description": "Get 1000 total kills",
       "show_toast": true,
       "announce_to_chat": true,
