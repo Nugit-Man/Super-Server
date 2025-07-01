@@ -147,6 +147,14 @@ tag @a[scores={MAIN_Game=2,FI_Armor_Set_Check=..3}] remove FI_Armor_Set_Copper
 effect give @a[tag=FI_Armor_Set_Copper,scores={MAIN_Game=2,FI_Health=..4}] speed 1 6 true
 
 
+#Check for frog boots
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~{FI_Frog_1:1b}] run effect give @s jump_boost 1 0 true
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~{FI_Frog_2:1b}] run effect give @s jump_boost 1 1 true
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~{FI_Frog_3:1b}] run effect give @s jump_boost 1 2 true
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~{FI_Frog_4:1b}] run effect give @s jump_boost 1 3 true
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~{FI_Frog_5:1b}] run effect give @s jump_boost 1 4 true
+
+
 
 #Get the updated max Mana from the mana bonus
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Mana_Max = @s FI_Mana_Bonus
