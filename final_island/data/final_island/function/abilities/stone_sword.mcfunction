@@ -1,5 +1,5 @@
 scoreboard players remove @s FI_Mana 60
-scoreboard players set @s FI_Mana_Cooldown 90
+scoreboard players set @s FI_Mana_Cooldown_stone_sword 90
 
 execute anchored eyes run particle minecraft:snowflake ^ ^ ^3 1 1 1 0 100 normal
 execute anchored eyes run particle minecraft:snowflake ^ ^ ^3 1 1 1 0 10 force

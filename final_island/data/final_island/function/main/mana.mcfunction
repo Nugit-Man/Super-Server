@@ -9,6 +9,20 @@ execute as @a[scores={MAIN_Game=2}] run title @s actionbar ["Mana: ",{score:{obj
 
 
 #Mana Cooldown
-scoreboard players remove @a[scores={FI_Mana_Cooldown=1..,MAIN_Game=2}] FI_Mana_Cooldown 1
-scoreboard players remove @a[scores={FI_Mana_Cooldown=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_deep_sword=1..,MAIN_Game=2}] FI_Mana_Cooldown 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_deep_sword=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown 1
 
+scoreboard players remove @a[scores={FI_Mana_Cooldown_diamond_axe=1..,MAIN_Game=2}] FI_Mana_Cooldown 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_diamond_axe=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown 1
+
+scoreboard players remove @a[scores={FI_Mana_Cooldown_flint_sword=1..,MAIN_Game=2}] FI_Mana_Cooldown 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_flint_sword=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown 1
+
+scoreboard players remove @a[scores={FI_Mana_Cooldown_iron_sword=1..,MAIN_Game=2}] FI_Mana_Cooldown 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_iron_sword=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown 1
+
+scoreboard players remove @a[scores={FI_Mana_Cooldown_stone_axe=1..,MAIN_Game=2}] FI_Mana_Cooldown 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_stone_axe=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown 1
+
+scoreboard players remove @a[scores={FI_Mana_Cooldown_stone_sword=1..,MAIN_Game=2}] FI_Mana_Cooldown 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_stone_sword=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown 1

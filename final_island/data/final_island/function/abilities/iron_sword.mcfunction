@@ -1,5 +1,5 @@
 scoreboard players remove @s FI_Mana 20
-scoreboard players set @s FI_Mana_Cooldown 120
+scoreboard players set @s FI_Mana_Cooldown_iron_sword 120
 tag @s add FI_Iron_Curtain
 
 

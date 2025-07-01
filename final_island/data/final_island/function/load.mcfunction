@@ -47,6 +47,12 @@ function final_island:check_armor
 function final_island:mana_restore
 scoreboard objectives add FI_Mana dummy
 scoreboard objectives add FI_Mana_Cooldown dummy
+scoreboard objectives add FI_Mana_Cooldown_deep_sword dummy
+scoreboard objectives add FI_Mana_Cooldown_diamond_axe dummy
+scoreboard objectives add FI_Mana_Cooldown_flint_sword dummy
+scoreboard objectives add FI_Mana_Cooldown_iron_sword dummy
+scoreboard objectives add FI_Mana_Cooldown_stone_axe dummy
+scoreboard objectives add FI_Mana_Cooldown_stone_sword dummy
 scoreboard objectives add FI_Mana_Max dummy
 scoreboard objectives add FI_Mana_Regen dummy
 #Mana Bonus is used to calculate how much extra mana a player gets for the wizzard armor sets

@@ -8,4 +8,4 @@ effect give @e[distance=..5,type=spider] levitation 3 4
 tag @s remove FI_Ability_Diamond_Axe
 
 scoreboard players remove @s FI_Mana 75
-scoreboard players set @s FI_Mana_Cooldown 80
+scoreboard players set @s FI_Mana_Cooldown_diamond_axe 80
