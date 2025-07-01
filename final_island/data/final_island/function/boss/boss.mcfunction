@@ -13,7 +13,7 @@ execute if score FI_Boss_Zombie_Player FI_Boss_Check matches 0 run execute at @e
 execute if score FI_Boss_Zombie_Player FI_Boss_Check matches 0 run execute at @e[type=marker,tag=FI_Zombie_Boss_Check] run kill @e[type=item,distance=..18]
 
 #WIND CHARGE!!!!!!!!!!!!!!!!!!!!!!!
-execute if score FI_Boss_Zombie_Player FI_Boss_Check matches 0 run schedule clear final_island:boss_windcharge
+execute if score FI_Boss_Zombie_Player FI_Boss_Check matches 0 run schedule clear final_island:boss/boss_windcharge
 #make it so when I add the code the spawns the boss it also calls the function of windcharge
 
 
@@ -48,4 +48,4 @@ execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 0 run execute at @e
 
 
 
-schedule function final_island:boss 10t
+schedule function final_island:boss/boss 10t

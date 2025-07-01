@@ -101,5 +101,5 @@ scoreboard objectives add FI_Milestone_Fishing dummy
 
 
 #Boss system
-function final_island:boss
+function final_island:boss/boss
 scoreboard objectives add FI_Boss_Music dummy
