@@ -157,6 +157,12 @@ execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~
 #check for Green Mana Crystal
 execute as @a[scores={MAIN_Game=2}] if items entity @s weapon.offhand *[custom_data~{FI_Mana_Crystal_Green:1b}] run scoreboard players add @s FI_Mana_Bonus 50
 
+
+#Check for Zombie Crown
+scoreboard players set @a[scores={MAIN_Game=2}] FI_Armor_Set_Check 0
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.head *[custom_data~{FI_Zombie_Crown:1b}] run scoreboard players set @s FI_Mana_Bonus 10
+
+
 #Get the updated max Mana from the mana bonus
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Mana_Max = @s FI_Mana_Bonus
 
