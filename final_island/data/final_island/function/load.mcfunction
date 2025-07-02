@@ -53,6 +53,8 @@ scoreboard objectives add FI_Mana_Cooldown_flint_sword dummy
 scoreboard objectives add FI_Mana_Cooldown_iron_sword dummy
 scoreboard objectives add FI_Mana_Cooldown_stone_axe dummy
 scoreboard objectives add FI_Mana_Cooldown_stone_sword dummy
+scoreboard objectives add FI_Mana_Cooldown_Crystal_Gray dummy
+scoreboard objectives add FI_Mana_Cooldown_Crystal_Red dummy
 scoreboard objectives add FI_Mana_Max dummy
 scoreboard objectives add FI_Mana_Regen dummy
 #Mana Bonus is used to calculate how much extra mana a player gets for the wizzard armor sets

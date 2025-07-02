@@ -154,7 +154,8 @@ execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~{FI_Frog_4:1b}] run effect give @s jump_boost 1 3 true
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~{FI_Frog_5:1b}] run effect give @s jump_boost 1 4 true
 
-
+#check for Green Mana Crystal
+execute as @a[scores={MAIN_Game=2}] if items entity @s weapon.offhand *[custom_data~{FI_Mana_Crystal_Green:1b}] run scoreboard players add @s FI_Mana_Bonus 50
 
 #Get the updated max Mana from the mana bonus
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Mana_Max = @s FI_Mana_Bonus
