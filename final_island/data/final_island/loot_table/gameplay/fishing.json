@@ -6,13 +6,13 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "quality": 5,
+          "quality": 2,
           "value": "minecraft:gameplay/fishing/treasure",
           "weight": 10
         },
         {
           "type": "minecraft:loot_table",
-          "quality": -5,
+          "quality": -2,
           "value": "minecraft:gameplay/fishing/fish",
           "weight": 90
         }
