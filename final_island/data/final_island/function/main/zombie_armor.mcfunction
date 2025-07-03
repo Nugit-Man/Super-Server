@@ -45,3 +45,5 @@ loot replace entity @e[type=zombie,tag=FI_Zombie_Armor_Bedrock] armor.feet loot 
 loot replace entity @e[type=zombie,tag=FI_Zombie_Armor_Bedrock] weapon.mainhand loot final_island:bedrock_sword
 
 tag @e[type=zombie,tag=FI_Zombie_Armor_Bedrock] remove FI_Zombie_Armor_Bedrock
+
+execute at @e[type=armor_stand,tag=FI_Zombie_Armor_Checker] run execute as @e[type=zombie,tag=!FI_Zombie_Boss] run data modify entity @s ArmorDropChances set value [-327.67f, -327.67f, -327.67f, -327.67f]

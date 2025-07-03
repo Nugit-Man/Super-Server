@@ -42,6 +42,10 @@ execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 0 run execute at @e
 
 
 
+#spawn the boss
+execute at @e[type=marker,tag=FI_Zombie_Boss_Spawner] as @e[distance=..1,type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:zombie_head"}}] run function final_island:boss/boss_spawn
+execute at @e[type=marker,tag=FI_Zombie_Boss_Spawner] as @e[distance=..1,type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:zombie_head"}}] run tp @s ~ ~-10 ~
+execute at @e[type=marker,tag=FI_Zombie_Boss_Spawner] as @e[distance=..1,type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:zombie_head"}}] run kill @s
 
 
 

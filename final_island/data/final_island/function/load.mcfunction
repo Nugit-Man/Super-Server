@@ -96,7 +96,6 @@ scoreboard objectives add FI_Misc dummy
 
 #These are the scoreboards used for the milestones that will be always adding
 scoreboard objectives add FI_Milestone_Deaths dummy
-scoreboard objectives add FI_Milestone_Kills_Player dummy
 scoreboard objectives add FI_Milestone_Kills_Mobs dummy
 scoreboard objectives add FI_Milestone_Fishing dummy
 
