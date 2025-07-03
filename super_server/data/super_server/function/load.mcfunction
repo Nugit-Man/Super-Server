@@ -13,6 +13,7 @@ scoreboard objectives add MAIN_Crossbow_Used minecraft.used:minecraft.crossbow
 scoreboard objectives add MAIN_Fish_Caught minecraft.custom:minecraft.fish_caught
 scoreboard objectives add MAIN_Bow_Used minecraft.used:minecraft.bow
 scoreboard objectives add MAIN_Kills_Zombies minecraft.killed:minecraft.zombie
+scoreboard objectives add MAIN_Jumps minecraft.custom:minecraft.jump
 
 #Check what game you are in
 #0 - lobby

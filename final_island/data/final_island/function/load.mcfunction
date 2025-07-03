@@ -98,7 +98,7 @@ scoreboard objectives add FI_Misc dummy
 scoreboard objectives add FI_Milestone_Deaths dummy
 scoreboard objectives add FI_Milestone_Kills_Mobs dummy
 scoreboard objectives add FI_Milestone_Fishing dummy
-
+scoreboard objectives add FI_Milestone_Jumps dummy
 
 
 #Boss system

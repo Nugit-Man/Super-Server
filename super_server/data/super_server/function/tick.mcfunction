@@ -21,10 +21,10 @@ execute as @a[nbt={Dimension:"parkor:game"}] run scoreboard players set @s MAIN_
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sneak_Time = @s MAIN_Sneak_Time
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Health = @s MAIN_Health
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Milestone_Deaths += @s MAIN_Deaths
-execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Milestone_Kills_Player += @s MAIN_Player_Kills
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Milestone_Kills_Mobs += @s MAIN_Total_Kills
 execute as @a[scores={MAIN_Game=2,MAIN_Total_Kills=1..}] run scoreboard players operation @s FI_Milestone_Kills_Mobs -= @s MAIN_Player_Kills
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Milestone_Fishing += @s MAIN_Fish_Caught
+execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Milestone_Jumps += @s MAIN_Jumps
 
 
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Deaths = @s MAIN_Deaths
@@ -42,3 +42,6 @@ execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Shotg
 scoreboard players set @a MAIN_Sneak_Time 0
 scoreboard players set @a MAIN_Deaths 0
 scoreboard players set @a MAIN_Crossbow_Used 0
+scoreboard players set @a MAIN_Total_Kills 0
+scoreboard players set @a MAIN_Jumps 0
+scoreboard players set @a MAIN_Fish_Caught 0
