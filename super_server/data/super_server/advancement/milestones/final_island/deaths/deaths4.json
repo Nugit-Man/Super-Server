@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "id": "kelp"
+      },
+      "title": "I’ve been doing this for ten years and I’ve never become a pro.",
+      "description": "Parkour was never invented by anyone, it's always been here.",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "super_server:milestones/final_island/deaths/deaths3",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "ascendance:advancements/fishing_rod"
+    }
+  }
+  

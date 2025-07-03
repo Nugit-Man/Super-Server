@@ -5,7 +5,7 @@
     },
     "title": "Milestones",
     "description": "To see how much of each game you've played",
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "background": "block/spruce_planks",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false

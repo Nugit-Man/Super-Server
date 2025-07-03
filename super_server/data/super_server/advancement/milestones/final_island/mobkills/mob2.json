@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:rotten_flesh"
+      },
+      "title": "Slayer",
+      "description": "Killer 250 Mobs",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "super_server:milestones/final_island/mobkills/mob1",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "ascendance:advancements/fishing_rod"
+    }
+  }
+  

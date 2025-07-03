@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:spider_eye"
+      },
+      "title": "Mercenary",
+      "description": "Killer 500 Mobs",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "super_server:milestones/final_island/mobkills/mob2",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "ascendance:advancements/fishing_rod"
+    }
+  }
+  
