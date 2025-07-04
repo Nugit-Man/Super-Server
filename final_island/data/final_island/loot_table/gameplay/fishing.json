@@ -2,22 +2,31 @@
   "type": "minecraft:fishing",
   "pools": [
     {
-      "bonus_rolls": 1.0,
+      "bonus_rolls": 0,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "quality": 2,
-          "value": "minecraft:gameplay/fishing/treasure",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:loot_table",
-          "quality": -2,
-          "value": "minecraft:gameplay/fishing/fish",
-          "weight": 95
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "value": "final_island:gameplay/fishing/fi_default",
+              "conditions": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "final_island:game"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "final_island:gameplay/fishing/fishing_vanilla"
+            }
+          ]
         }
       ],
-      "rolls": 1.0
+      "rolls": 1
     }
   ],
   "random_sequence": "minecraft:gameplay/fishing"
