@@ -1,1 +1,1 @@
-tellraw @s "Rewards: "
+tellraw @s "Rewards: +2 XP"

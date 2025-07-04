@@ -42,3 +42,7 @@ execute at @e[type=marker,tag=FI_Stylish1,limit=1] run scoreboard players set @a
 execute at @e[type=marker,tag=FI_Stylish2,limit=1] run advancement grant @a[distance=..1,scores={FI_Stylish=1..}] only final_island:stylish
 execute at @e[type=marker,tag=FI_Stylish2,limit=1] run playsound final_island.stylish master @a[distance=..1,scores={FI_Stylish=1..}]
 execute at @e[type=marker,tag=FI_Stylish2,limit=1] run scoreboard players set @a[distance=..1,scores={FI_Stylish=1..}] FI_Stylish 0
+
+
+execute as @a[scores={MAIN_Game=2}] run execute store result score @s FI_gray_crystal_check run clear @s player_head[minecraft:custom_data~{FI_Mana_Crystal_Gray:1b}] 0
+advancement grant @a[scores={MAIN_Game=2,FI_gray_crystal_check=2..}] only final_island:disapointment

@@ -1,0 +1,1 @@
+tellraw @s "Rewards: +8 XP"
