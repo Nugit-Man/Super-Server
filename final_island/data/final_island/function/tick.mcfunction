@@ -6,9 +6,3 @@ function final_island:main/advnacements
 scoreboard players set FI_Zombie_Armor_Checker FI_Misc 0
 execute at @e[type=armor_stand,tag=FI_Zombie_Armor_Checker] run execute as @a[distance=..300] run scoreboard players add FI_Zombie_Armor_Checker FI_Misc 1
 execute if score FI_Zombie_Armor_Checker FI_Misc matches 1.. run function final_island:main/zombie_armor
-
-
-execute as @e[type=zombie,tag=!FI_Zombie_Boss] run data modify entity @s ArmorItems[3].tag.ench set value [{id:"minecraft:vanishing_curse",lvl:1s}]
-execute as @e[type=zombie,tag=!FI_Zombie_Boss] run data modify entity @s ArmorItems[2].tag.ench set value [{id:"minecraft:vanishing_curse",lvl:1s}]
-execute as @e[type=zombie,tag=!FI_Zombie_Boss] run data modify entity @s ArmorItems[1].tag.ench set value [{id:"minecraft:vanishing_curse",lvl:1s}]
-execute as @e[type=zombie,tag=!FI_Zombie_Boss] run data modify entity @s ArmorItems[0].tag.ench set value [{id:"minecraft:vanishing_curse",lvl:1s}]
