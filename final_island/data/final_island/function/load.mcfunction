@@ -104,3 +104,6 @@ scoreboard objectives add FI_Milestone_Jumps dummy
 #Boss system
 function final_island:boss/boss
 scoreboard objectives add FI_Boss_Music dummy
+
+#achivement scoreboards (Not milestones)
+scoreboard objectives add FI_Stylish dummy

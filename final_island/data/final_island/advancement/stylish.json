@@ -5,8 +5,8 @@
     },
     "title": "Stylish",
     "description": "Nice Jump!",
-    "show_toast": false,
-    "announce_to_chat": false,
+    "show_toast": true,
+    "announce_to_chat": true,
     "hidden": false
   },
   "parent": "final_island:root",

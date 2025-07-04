@@ -38,7 +38,9 @@ stopsound @a[tag=FI_Boss_Music] master minecraft:final_island.1st_movement
 scoreboard players set @a[tag=FI_Boss_Music] FI_Boss_Music 3
 tag @a[scores={FI_Boss_Music=3}] remove FI_Boss_Music
 execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 0 run execute at @e[type=marker,tag=FI_Zombie_Boss_Door] run stopsound @a[scores={FI_Boss_Music=3}] master minecraft:final_island.3rd_movement
-
+execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 0 run execute at @e[type=marker,tag=FI_Zombie_Boss_Door] run advancement grant @a[scores={FI_Boss_Music=3}] only final_island:dethroner
+execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 0 run execute at @e[type=marker,tag=FI_Zombie_Boss_Door] run advancement grant @a[scores={FI_Boss_Music=3,FI_Mana_Max=..99}] only final_island:show_off
+#SICEN THE ONL:T WAY TO LOWER MAX MANA FOR NOW IS WITH THE CROWN, THIS METHOD WORKS BUIT IF AI ADD THINGS AFTER THAT CAN LOWER IT I WILL HAVE TO CHANGE THIS!!!!!!!!!!!!!!!!!!!!!!
 
 
 
