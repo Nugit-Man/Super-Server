@@ -7,13 +7,13 @@
           {
             "type": "minecraft:loot_table",
             "quality": 2,
-            "value": "minecraft:gameplay/fishing/treasure",
+            "value": "final_island:gameplay/fishing/fi_treasure",
             "weight": 5
           },
           {
             "type": "minecraft:loot_table",
             "quality": -2,
-            "value": "minecraft:gameplay/fishing/fish",
+            "value": "final_island:gameplay/fishing/fi_fish",
             "weight": 95
           }
         ],
