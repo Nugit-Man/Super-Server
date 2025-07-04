@@ -17,7 +17,7 @@
       }
     },
     "rewards": {
-      "function": "ascendance:advancements/fishing_rod"
+      "function": "final_island:advancement/milestones/fish/4"
     }
   }
   
