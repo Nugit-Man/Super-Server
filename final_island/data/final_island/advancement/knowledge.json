@@ -10,6 +10,9 @@
     "hidden": false
   },
   "parent": "final_island:manaflux",
+  "rewards":{
+    "function": "final_island:advancement/advancement/knowledgeable"
+  },
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

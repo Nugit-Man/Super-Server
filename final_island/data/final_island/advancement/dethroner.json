@@ -10,6 +10,9 @@
     "hidden": false
   },
   "parent": "final_island:root",
+  "rewards":{
+    "function": "final_island:advancement/advancement/dethroner"
+  },
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"
