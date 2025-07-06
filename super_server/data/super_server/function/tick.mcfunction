@@ -45,3 +45,25 @@ scoreboard players set @a MAIN_Crossbow_Used 0
 scoreboard players set @a MAIN_Total_Kills 0
 scoreboard players set @a MAIN_Jumps 0
 scoreboard players set @a MAIN_Fish_Caught 0
+
+
+
+
+
+
+
+
+
+#interaction warps
+execute as @e[type=interaction,limit=1,tag=Main_Final_Island] on target run execute in final_island:game run tp @s 0 1 0 90 0
+execute as @e[type=interaction,limit=1,tag=Main_Final_Island] run data remove entity @s interaction
+
+
+#Awarding Xp
+scoreboard players set @a[scores={MAIN_Game=1..}] MAIN_XP_Timer 0
+scoreboard players add @a[scores={MAIN_Game=0}] MAIN_XP_Timer 1
+execute as @a[scores={MAIN_XP_Timer=10,MAIN_Achivement_XP=1..}] run tellraw @s [{"text":"XP Gained: ","color":"gray"},{"color":"gray","score":{"objective":"MAIN_Achivement_XP","name":"@s"}}]
+experience add @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] 1 points
+execute at @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] run playsound minecraft:entity.experience_orb.pickup master @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}]
+scoreboard players remove @a[scores={MAIN_XP_Timer=16,MAIN_Achivement_XP=1..}] MAIN_Achivement_XP 1
+scoreboard players set @a[scores={MAIN_XP_Timer=19,MAIN_Achivement_XP=1..}] MAIN_XP_Timer 14
