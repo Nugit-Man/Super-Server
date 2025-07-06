@@ -1,8 +1,8 @@
 
 #Display mana and restore it at spawn
 execute in final_island:game at @e[tag=FI_Mana_Restore] run execute as @a[distance=..3] run scoreboard players operation @s FI_Mana = @s FI_Mana_Max
-execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3,scores={FI_Mana_Max=0}] FI_Mana_Regen 1
-#execute in final_island:game at @e[tag=FI_Mana_Restore] run tag @a[distance=..3] remove FI_Armor_Set_Emerald #Why was I removing this?
+execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Regen 1
+execute in final_island:game at @e[tag=FI_Mana_Restore] run tag @a[distance=..3] remove FI_Armor_Set_Emerald
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3,scores={FI_Mana_Max=0}] FI_Mana_Max 100
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_deep_sword 0
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_diamond_axe 0
