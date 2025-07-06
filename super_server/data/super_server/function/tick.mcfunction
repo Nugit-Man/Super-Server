@@ -52,11 +52,29 @@ scoreboard players set @a MAIN_Fish_Caught 0
 
 
 
+###
+###
+###interaction warps
 
-
-#interaction warps
+#Lobby --> Final Island
+execute as @e[type=interaction,limit=1,tag=Main_Final_Island] on target run execute in final_island:game run spawnpoint @s 0 1 0 90
 execute as @e[type=interaction,limit=1,tag=Main_Final_Island] on target run execute in final_island:game run tp @s 0 1 0 90 0
 execute as @e[type=interaction,limit=1,tag=Main_Final_Island] run data remove entity @s interaction
+
+
+#Final Island --> Lobby
+execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run spawnpoint @s 0 0 0 0
+execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run tp @s 0 0 0 0 0
+execute as @e[type=interaction,limit=1,tag=FI_Lobby] run data remove entity @s interaction
+
+
+
+
+
+
+
+
+
 
 
 #Awarding Xp
@@ -66,4 +84,4 @@ execute as @a[scores={MAIN_XP_Timer=10,MAIN_Achivement_XP=1..}] run tellraw @s [
 experience add @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] 1 points
 execute at @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] run playsound minecraft:entity.experience_orb.pickup master @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}]
 scoreboard players remove @a[scores={MAIN_XP_Timer=16,MAIN_Achivement_XP=1..}] MAIN_Achivement_XP 1
-scoreboard players set @a[scores={MAIN_XP_Timer=19,MAIN_Achivement_XP=1..}] MAIN_XP_Timer 14
+scoreboard players set @a[scores={MAIN_XP_Timer=21,MAIN_Achivement_XP=1..}] MAIN_XP_Timer 14
