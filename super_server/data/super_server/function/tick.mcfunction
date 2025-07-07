@@ -10,14 +10,6 @@ execute as @a at @s if block ~ ~-0.5 ~ farmland run effect give @s slow_falling 
 #5 - Skyblock
 
 
-execute in super_server:lobby run tp @a[scores={DEBUG_warp=0}] 0 1 0
-execute in ascendance:game run tp @a[scores={DEBUG_warp=1}] 0 1 0
-execute in final_island:game run tp @a[scores={DEBUG_warp=2}] 0 1 0
-execute in gorbino:lobby run tp @a[scores={DEBUG_warp=3}] 0 1 0
-execute in parkor:game run tp @a[scores={DEBUG_warp=4}] 0 1 0
-execute in minecraft:overworld run tp @a[scores={DEBUG_warp=5}] 0 1 0
-scoreboard players set @a DEBUG_warp -1
-
 execute as @a[nbt={Dimension:"super_server:lobby"}] run scoreboard players set @s MAIN_Game 0
 execute as @a[nbt={Dimension:"ascendance:game"}] run scoreboard players set @s MAIN_Game 1
 execute as @a[nbt={Dimension:"final_island:game"}] run scoreboard players set @s MAIN_Game 2
