@@ -92,6 +92,7 @@ scoreboard objectives add FI_Misc dummy
 #
 #
 
+scoreboard objectives add FI_Check_Deaths dummy
 
 
 #These are the scoreboards used for the milestones that will be always adding
