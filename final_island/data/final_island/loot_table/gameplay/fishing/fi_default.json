@@ -2,7 +2,7 @@
     "type": "minecraft:fishing",
     "pools": [
       {
-        "bonus_rolls": 1.0,
+        "bonus_rolls": 0,
         "entries": [
           {
             "type": "minecraft:loot_table",
