@@ -122,8 +122,11 @@ execute if score $Players MAIN_Skyblock_Players matches ..9 run execute as @r[ta
 execute if score $Players MAIN_Skyblock_Players matches ..9 run execute as @r[tag=Main_Join_Skyblock] run scoreboard players add $Players MAIN_Skyblock_Players 1
 
 
-
-
+#Anywhere -->
+scoreboard players enable @a Lobby
+execute in super_server:lobby run spawnpoint @a[scores={Lobby=1..}] 0 0 0 0
+execute in super_server:lobby run tp @a[scores={Lobby=1..}] 0 0 0 0 0
+scoreboard players set @a Lobby 0
 
 #Awarding Xp
 scoreboard players set @a[scores={MAIN_Game=1..}] MAIN_XP_Timer 0

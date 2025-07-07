@@ -57,4 +57,7 @@ scoreboard objectives add MAIN_XP_Timer dummy
 #scoreboard to bring skyblock players to their islands
 scoreboard objectives add MAIN_Skyblock_Players dummy
 
-scoreboard objectives add DEBUG_warp dummy
+
+
+#Go to lobby from anywhere
+scoreboard objectives add Lobby trigger Lobby
