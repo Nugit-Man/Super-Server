@@ -56,7 +56,8 @@ scoreboard objectives add MAIN_XP_Timer dummy
 
 #scoreboard to bring skyblock players to their islands
 scoreboard objectives add MAIN_Skyblock_Players dummy
-
+#A check to see if the player has certian items in their inventory to grant the advancements
+scoreboard objectives add SKY_Advancement dummy
 
 
 #Go to lobby from anywhere
