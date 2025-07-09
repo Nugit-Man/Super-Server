@@ -52,7 +52,7 @@ scoreboard players set @a MAIN_Fish_Caught 0
 
 
 
-
+function super_server:skyblock/advancement
 
 
 

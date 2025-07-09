@@ -9,7 +9,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "super_server:skyblock/pigs",
+    "parent": "super_server:skyblock/bamboo",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
