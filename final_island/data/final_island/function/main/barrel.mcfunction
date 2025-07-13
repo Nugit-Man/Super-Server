@@ -1,0 +1,12 @@
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Waterfall] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 1
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Gravyard_Tree] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 2
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Gravyard] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 3
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Deep_Under_Island] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 4
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Under_Island] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 5
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Jungle_Bridge] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 6
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Jungle_Tree] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 7
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_OOB] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 8
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Horse] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 9
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Lava] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 10
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Shop] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 11
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Balloon] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 12

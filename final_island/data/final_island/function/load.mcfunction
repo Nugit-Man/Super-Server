@@ -109,3 +109,7 @@ scoreboard objectives add FI_Boss_Music dummy
 #achivement scoreboards (Not milestones)
 scoreboard objectives add FI_Stylish dummy
 scoreboard objectives add FI_gray_crystal_check dummy
+
+#Barrel
+scoreboard objectives add FI_Barrel_Pos dummy
+scoreboard objectives add FI_Barrel_Check dummy
