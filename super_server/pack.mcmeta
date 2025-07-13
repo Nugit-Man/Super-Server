@@ -7,10 +7,6 @@
     "block": [
       {
         "namespace": "minecraft",
-        "path": "recipes?"
-      },
-      {
-        "namespace": "minecraft",
         "path": "advancements?"
       }
     ]
