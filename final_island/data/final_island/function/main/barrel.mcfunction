@@ -10,3 +10,17 @@ execute in final_island:game at @e[type=marker,tag=FI_Barrel_Horse] run scoreboa
 execute in final_island:game at @e[type=marker,tag=FI_Barrel_Lava] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 10
 execute in final_island:game at @e[type=marker,tag=FI_Barrel_Shop] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 11
 execute in final_island:game at @e[type=marker,tag=FI_Barrel_Balloon] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 12
+
+execute as @a[scores={MAIN_Game=2}] run execute store result score @s FI_Barrel_Check run clear @s sunflower
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=1}] only final_island:barrel/waterfall
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=2}] only final_island:barrel/graveyard_tree
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=3}] only final_island:barrel/graveyard
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=4}] only final_island:barrel/deep
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=5}] only final_island:barrel/under
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=6}] only final_island:barrel/bridge
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=7}] only final_island:barrel/jungle_tree
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=8}] only final_island:barrel/oob
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=9}] only final_island:barrel/horse
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=10}] only final_island:barrel/lava
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=11}] only final_island:barrel/shop
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=12}] only final_island:barrel/balloon
