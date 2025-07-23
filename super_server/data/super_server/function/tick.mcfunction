@@ -35,7 +35,11 @@ execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Death
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Shotgun = @s MAIN_Crossbow_Used
 
 
-
+#Deal with players logging on
+tag @a[scores={MAIN_Leave=1..}] remove MAIN_log
+execute as @a[tag=!MAIN_log] run execute in super_server:lobby run tp @s 0 0 0 0 0
+tag @a[tag=!MAIN_log] add MAIN_log
+scoreboard players set @a[scores={MAIN_Leave=1..}] MAIN_Leave 0
 
 
 

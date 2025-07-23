@@ -62,3 +62,7 @@ scoreboard objectives add SKY_Advancement dummy
 
 #Go to lobby from anywhere
 scoreboard objectives add Lobby trigger Lobby
+
+
+#Joining and leaveing the game
+scoreboard objectives add MAIN_Leave custom:minecraft.leave_game
