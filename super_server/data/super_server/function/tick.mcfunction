@@ -1,5 +1,6 @@
 #Make it so they can not trample farmland
 execute as @a at @s if block ~ ~-0.5 ~ farmland run effect give @s slow_falling 1 1 true
+execute as @a at @s if block ~ ~-1 ~ farmland run effect give @s slow_falling 1 1 true
 
 #change the score of MAIN_Game depending on what world they are in
 #0 - lobby
