@@ -5,15 +5,18 @@
       },
       "title": "Final Island Barrel 8",
       "description": "Such a sad tree",
-      "show_toast": false,
-      "announce_to_chat": false,
+      "show_toast": true,
+      "announce_to_chat": true,
       "hidden": false
     },
     "parent": "final_island:barrel/under",
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:tick"
+        "trigger": "minecraft:impossible"
       }
+    },
+    "rewards": {
+      "function": "final_island:advancement/barrel/graveyard_tree"
     }
   }
   

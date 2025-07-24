@@ -5,15 +5,18 @@
       },
       "title": "Final Island Barrel 1",
       "description": "So close, but so far",
-      "show_toast": false,
-      "announce_to_chat": false,
+      "show_toast": true,
+      "announce_to_chat": true,
       "hidden": false
     },
     "parent": "super_server:barrel/final_island",
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:tick"
+        "trigger": "minecraft:impossible"
       }
+    },
+    "rewards": {
+      "function": "final_island:advancement/barrel/balloon"
     }
   }
   

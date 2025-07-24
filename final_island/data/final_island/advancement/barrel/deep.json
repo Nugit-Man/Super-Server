@@ -5,15 +5,18 @@
       },
       "title": "Final Island Barrel 10",
       "description": "All the way at the bottom",
-      "show_toast": false,
-      "announce_to_chat": false,
+      "show_toast": true,
+      "announce_to_chat": true,
       "hidden": false
     },
     "parent": "final_island:barrel/jungle_tree",
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:tick"
+        "trigger": "minecraft:impossible"
       }
+    },
+    "rewards": {
+      "function": "final_island:advancement/barrel/deep"
     }
   }
   

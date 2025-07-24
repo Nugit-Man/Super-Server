@@ -38,7 +38,8 @@ execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Shotg
 
 #Deal with players logging on
 tag @a[scores={MAIN_Leave=1..}] remove MAIN_log
-execute as @a[tag=!MAIN_log] run execute in super_server:lobby run tp @s 0 0 0 0 0
+execute as @a[tag=!MAIN_log] run execute in super_server:lobby run tp @s 8 -59 -10 0 0
+execute as @a[tag=!MAIN_log] run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
 tag @a[tag=!MAIN_log] add MAIN_log
 scoreboard players set @a[scores={MAIN_Leave=1..}] MAIN_Leave 0
 
@@ -72,8 +73,8 @@ execute as @e[type=interaction,limit=1,tag=Main_Final_Island] run data remove en
 
 
 #Final Island --> Lobby
-execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run spawnpoint @s 0 0 0 0
-execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run tp @s 0 0 0 0 0
+execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
+execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run tp @s 8 -59 -10 0 0
 execute as @e[type=interaction,limit=1,tag=FI_Lobby] run data remove entity @s interaction
 
 #Lobby --> Skyblock
@@ -84,8 +85,8 @@ function super_server:skyblock/join
 
 #Anywhere --> Lobby
 scoreboard players enable @a Lobby
-execute in super_server:lobby run spawnpoint @a[scores={Lobby=1..}] 0 0 0 0
-execute in super_server:lobby run tp @a[scores={Lobby=1..}] 0 0 0 0 0
+execute in super_server:lobby run spawnpoint @a[scores={Lobby=1..}] 8 -59 -10 0
+execute in super_server:lobby run tp @a[scores={Lobby=1..}] 8 -59 -10 0 0
 scoreboard players set @a Lobby 0
 
 #Awarding Xp

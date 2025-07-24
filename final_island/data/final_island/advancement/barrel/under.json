@@ -5,15 +5,18 @@
       },
       "title": "Final Island Barrel 7",
       "description": "Under the sea (There is no sea)",
-      "show_toast": false,
-      "announce_to_chat": false,
+      "show_toast": true,
+      "announce_to_chat": true,
       "hidden": false
     },
     "parent": "final_island:barrel/lava",
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:tick"
+        "trigger": "minecraft:impossible"
       }
+    },
+    "rewards": {
+      "function": "final_island:advancement/barrel/under"
     }
   }
   
