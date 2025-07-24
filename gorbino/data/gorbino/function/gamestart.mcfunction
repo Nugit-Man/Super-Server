@@ -1,4 +1,4 @@
-scoreboard players set @a[scores={GB_Mode=2}] GB_Mode 1
+scoreboard players set @a[scores={GB_Mode=2,MAIN_Game=3}] GB_Mode 1
 execute store result score GB_Map GB_Select run random value 0..16
 scoreboard players set GB_2 GB_Select 0
 
@@ -22,23 +22,23 @@ execute in gorbino:game run execute if score GB_Map GB_Select matches 15 run wor
 execute in gorbino:game run execute if score GB_Map GB_Select matches 16 run worldborder center 16000.5 0.5
 
 #teleport players
-execute in gorbino:game run execute if score GB_Map GB_Select matches 0 run tp @a[scores={GB_Mode=1..}] 0 1 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 1 run tp @a[scores={GB_Mode=1..}] 1000 6 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 2 run tp @a[scores={GB_Mode=1..}] 2000 1 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 3 run tp @a[scores={GB_Mode=1..}] 3000 9 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 4 run tp @a[scores={GB_Mode=1..}] 4000 1 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 5 run tp @a[scores={GB_Mode=1..}] 5000 2 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 6 run tp @a[scores={GB_Mode=1..}] 6000 2 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 7 run tp @a[scores={GB_Mode=1..}] 7000 5 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 8 run tp @a[scores={GB_Mode=1..}] 8000 4 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 9 run tp @a[scores={GB_Mode=1..}] 9000 1 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 10 run tp @a[scores={GB_Mode=1..}] 10000 5 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 11 run tp @a[scores={GB_Mode=1..}] 11000 4 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 12 run tp @a[scores={GB_Mode=1..}] 12000 1 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 13 run tp @a[scores={GB_Mode=1..}] 13000 5 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 14 run tp @a[scores={GB_Mode=1..}] 14000 4 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 15 run tp @a[scores={GB_Mode=1..}] 15000 1 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 16 run tp @a[scores={GB_Mode=1..}] 16000 3 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 0 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 0 1 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 1 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 1000 6 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 2 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 2000 1 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 3 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 3000 9 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 4 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 4000 1 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 5 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 5000 2 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 6 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 6000 2 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 7 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 7000 5 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 8 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 8000 4 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 9 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 9000 1 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 10 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 10000 5 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 11 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 11000 4 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 12 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 12000 1 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 13 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 13000 5 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 14 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 14000 4 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 15 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 15000 1 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 16 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 16000 3 0
 
 #more border
 execute in gorbino:game run worldborder set 100
@@ -48,21 +48,34 @@ schedule clear gorbino:border/border2
 schedule function gorbino:border/border2 180s
 
 #clear everything
+#MOVE ARROW TO CLEANUP!!!!!!!!!!!!!!!!
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 kill @e[type=arrow]
-kill @e[type=ravager]
-kill @e[type=frog]
-effect clear @a
-effect give @a instant_health 1 255
-effect give @a saturation 3 255
-effect give @a resistance 3 255
-effect give @a regeneration 3 255
-clear @a[scores={GB_Mode=1}]
-scoreboard players set @a[scores={GB_Mode=1}] GB_velocity 0
-tag @a remove GB_cancerkill
-kill @e[tag=GB_spinner]
-kill @e[tag=GB_Spin1]
-kill @e[tag=GB_Spin2]
-schedule clear gorbino:abilities/cancer2
+#kill @e[type=ravager]
+#kill @e[type=frog]
+effect clear @a[scores={MAIN_Game=3}]
+effect give @a[scores={MAIN_Game=3}] instant_health 1 255
+effect give @a[scores={MAIN_Game=3}] saturation 3 255
+effect give @a[scores={MAIN_Game=3}] resistance 3 255
+effect give @a[scores={MAIN_Game=3}] regeneration 3 255
+clear @a[scores={GB_Mode=1,MAIN_Game=3}]
+scoreboard players set @a[scores={GB_Mode=1,MAIN_Game=3}] GB_velocity 0
+#tag @a remove GB_cancerkill
+#kill @e[tag=GB_spinner]
+#kill @e[tag=GB_Spin1]
+#kill @e[tag=GB_Spin2]
+#schedule clear gorbino:abilities/cancer2
 schedule function gorbino:border/clear 3s
 scoreboard players set @a GB_Shotgun 0
 scoreboard players set @a GB_Dash_Check 0
