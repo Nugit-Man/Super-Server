@@ -2,6 +2,8 @@
 execute as @a at @s if block ~ ~-0.5 ~ farmland run effect give @s slow_falling 1 1 true
 execute as @a at @s if block ~ ~-1 ~ farmland run effect give @s slow_falling 1 1 true
 
+effect give @a[scores={MAIN_Game=0}] saturation 1 0 true
+
 #change the score of MAIN_Game depending on what world they are in
 #0 - lobby
 #1 - Ascendance
@@ -67,9 +69,9 @@ function super_server:skyblock/advancement
 ###interaction warps
 
 #Lobby --> Final Island
-execute as @e[type=interaction,limit=1,tag=Main_Final_Island] on target run execute in final_island:game run spawnpoint @s 0 1 0 90
-execute as @e[type=interaction,limit=1,tag=Main_Final_Island] on target run execute in final_island:game run tp @s 0 1 0 90 0
-execute as @e[type=interaction,limit=1,tag=Main_Final_Island] run data remove entity @s interaction
+execute in final_island:game run spawnpoint @s[tag=GoTo_Final_Island] 0 1 0 90
+execute in final_island:game run tp @a[tag=GoTo_Final_Island] 0 1 0 90 0
+tag @a remove GoTo_Final_Island
 
 
 #Final Island --> Lobby
