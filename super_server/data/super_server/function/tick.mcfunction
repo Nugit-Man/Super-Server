@@ -84,6 +84,11 @@ execute as @e[type=interaction,limit=1,tag=Main_Skyblock] on target run tag @s a
 execute as @e[type=interaction,limit=1,tag=Main_Skyblock] run data remove entity @s interaction
 function super_server:skyblock/join
 
+#Lobby --> Gorbino
+execute in gorbino:lobby run spawnpoint @s[tag=GoTo_Gorbino] 56 5 26 0
+execute in gorbino:lobby run tp @a[tag=GoTo_Gorbino] 56 5 26 0 0
+tag @a remove GoTo_Gorbino
+
 
 #Anywhere --> Lobby
 scoreboard players enable @a Lobby
