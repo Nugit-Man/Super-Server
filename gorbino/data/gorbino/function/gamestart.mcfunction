@@ -105,23 +105,23 @@ give @a[scores={GB_Mode=1},tag=GB_burst_charm] minecraft:nether_star[custom_name
 give @a[scores={GB_Mode=1},tag=GB_freeze_bolt] minecraft:breeze_rod[custom_name=[{text:"Freeze Bolt",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:.2,animation:spear,sound:"entity.player.hurt_freeze",has_consume_particles:0b},use_cooldown={seconds:7.5}]
 give @a[scores={GB_Mode=1},tag=GB_builder] minecraft:oak_planks[custom_name=[{text:"Builder",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0.5,animation:block,sound:"entity.horse.step_wood",has_consume_particles:0b},use_cooldown={seconds:7.5}]
 give @a[scores={GB_Mode=1},tag=GB_fireball] fire_charge[custom_name=[{text:"Fireball",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:.2,animation:spear,sound:"entity.ghast.shoot",has_consume_particles:0b},use_cooldown={seconds:3}]
-give @a[tag=GB_frog,scores={GB_Mode=1}] minecraft:ochre_froglight[custom_name=[{text:"Frog",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.frog.ambient",has_consume_particles:0b},use_cooldown={seconds:10}]
+#give @a[tag=GB_frog,scores={GB_Mode=1}] minecraft:ochre_froglight[custom_name=[{text:"Frog",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.frog.ambient",has_consume_particles:0b},use_cooldown={seconds:10}]
 give @a[tag=GB_dripstone,scores={GB_Mode=1}] minecraft:dripstone_block[custom_name=[{text:"Dripstone",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:.2,animation:spear,sound:"block.pointed_dripstone.place",has_consume_particles:0b},use_cooldown={seconds:6}]
 give @a[tag=GB_ground_slam,scores={GB_Mode=1}] dirt[custom_name=[{text:"Ground Slam",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.generic.explode",has_consume_particles:0b},use_cooldown={seconds:5}]
-give @a[scores={GB_Mode=1},tag=GB_mace_master] mace[unbreakable={show_in_tooltip:false}]
-give @a[scores={GB_Mode=1},tag=GB_wind_waker] wind_charge 64
+#give @a[scores={GB_Mode=1},tag=GB_mace_master] mace[unbreakable={show_in_tooltip:false}]
+#give @a[scores={GB_Mode=1},tag=GB_wind_waker] wind_charge 64
 give @a[scores={GB_Mode=1},tag=GB_cancer] minecraft:prismarine_crystals[custom_name=[{text:"Cancer",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,animation:block,sound:"entity.generic.extinguish_fire",has_consume_particles:0b}]
 give @a[scores={GB_Mode=1},tag=GB_lava] minecraft:magma_block[custom_name=[{text:"Lava",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0.5,animation:block,sound:"entity.generic.burn",has_consume_particles:0b},use_cooldown={seconds:10}]
-give @a[scores={GB_Mode=1},tag=GB_chad] minecraft:diamond[custom_name=[{text:"Chad",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:10,animation:block,sound:"entity.experience_orb.pickup",has_consume_particles:0b},use_cooldown={seconds:24}]
-give @a[scores={GB_Mode=1},tag=GB_lightning_bolt] minecraft:lightning_rod[custom_name=[{text:"Lightning Bolt",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:.2,animation:spyglass,sound:"entity.lightning_bolt.thunder",has_consume_particles:0b},use_cooldown={seconds:6}]
+#give @a[scores={GB_Mode=1},tag=GB_chad] minecraft:diamond[custom_name=[{text:"Chad",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:10,animation:block,sound:"entity.experience_orb.pickup",has_consume_particles:0b},use_cooldown={seconds:24}]
+#give @a[scores={GB_Mode=1},tag=GB_lightning_bolt] minecraft:lightning_rod[custom_name=[{text:"Lightning Bolt",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:.2,animation:spyglass,sound:"entity.lightning_bolt.thunder",has_consume_particles:0b},use_cooldown={seconds:6}]
 item replace entity @a[scores={GB_Mode=1},tag=GB_elytra] armor.head with end_rod[glider={},equippable={slot:head}]
-effect give @a[tag=GB_lightweight,scores={GB_Mode=1}] slow_falling infinite 0 true
-effect give @a[tag=GB_lightweight,scores={GB_Mode=1}] jump_boost infinite 2 true
-give @a[scores={GB_Mode=1},tag=GB_leap_pearl] snowball 16
-execute as @a[tag=GB_spin] run summon marker ~ ~ ~ {Tags:[GB_spinner]}
-execute as @a[tag=GB_spin] run summon marker ~ ~ ~ {Tags:[GB_Spin1]}
-execute as @a[tag=GB_spin] run summon marker ~ ~ ~ {Tags:[GB_Spin2]}
-give @a[scores={GB_Mode=1},tag=GB_bomber] minecraft:tnt[custom_name=[{text:"Bomber",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,animation:block,sound:"entity.generic.explode",has_consume_particles:0b},use_cooldown={seconds:10}]
+#effect give @a[tag=GB_lightweight,scores={GB_Mode=1}] slow_falling infinite 0 true
+#effect give @a[tag=GB_lightweight,scores={GB_Mode=1}] jump_boost infinite 2 true
+#give @a[scores={GB_Mode=1},tag=GB_leap_pearl] snowball 16
+#execute as @a[tag=GB_spin] run summon marker ~ ~ ~ {Tags:[GB_spinner]}
+#execute as @a[tag=GB_spin] run summon marker ~ ~ ~ {Tags:[GB_Spin1]}
+#execute as @a[tag=GB_spin] run summon marker ~ ~ ~ {Tags:[GB_Spin2]}
+#give @a[scores={GB_Mode=1},tag=GB_bomber] minecraft:tnt[custom_name=[{text:"Bomber",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,animation:block,sound:"entity.generic.explode",has_consume_particles:0b},use_cooldown={seconds:10}]
 execute as @a[scores={GB_Mode=1},tag=GB_grow] run attribute @s scale base set 3
 execute as @a[scores={GB_Mode=1},tag=GB_grow] run attribute @s jump_strength base set 1
 execute as @a[scores={GB_Mode=1},tag=GB_grow] run attribute @s entity_interaction_range base set 10
