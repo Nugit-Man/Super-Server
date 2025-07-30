@@ -7,6 +7,7 @@ scoreboard objectives add GB_Shotgun dummy
 scoreboard objectives add GB_Deaths dummy
 scoreboard objectives add GB_Dash_Check dummy
 scoreboard objectives add GB_Arrow dummy
+scoreboard objectives add GB_Milestones_Wins dummy
 
 scoreboard players set @a GB_Mode 0
 scoreboard players set @a GB_Menu 0

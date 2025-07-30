@@ -8,6 +8,7 @@ execute if score 2 GB_Select matches 0.. run execute as @a[scores={GB_Mode=2,MAI
 
 
 execute if score 1 GB_Select matches 1 run title @a[scores={GB_Mode=1,MAIN_Game=3}] subtitle "Victory!"
+execute if score 1 GB_Select matches 1 run scoreboard players add @a[scores={MAIN_Game=3,GB_Mode=1}] GB_Milestones_Wins 1
 
 #Give advancements
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,MAIN_Game=3}] only gorbino:first_fight
@@ -26,6 +27,17 @@ execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=fireball] run execute as @s[tag=lava] run advancement grant @s[tag=flame_runner,scores={GB_Points=5}] only gorbino:pyro
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=2,MAIN_Game=3},tag=grow] run advancement grant @a[scores={GB_Mode=1},tag=shrink] only gorbino:aot
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=dash] run execute as @s[tag=shrink] run execute as @s[tag=crack] run advancement grant @s[tag=flame_runner,scores={GB_Points=4}] only gorbino:iamspeed
+#Milestones
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=25}] only super_server:milestones/gorbino/gorbino_guy
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=100}] only super_server:milestones/gorbino/gorbino_great
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=250}] only super_server:milestones/gorbino/gorbino_grand
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=500}] only super_server:milestones/gorbino/gorbino_genius
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=1000}] only super_server:milestones/gorbino/gorbino_goliath
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=1500}] only super_server:milestones/gorbino/gorbino_glory
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=2000}] only super_server:milestones/gorbino/gorbino_gladiator
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=2500}] only super_server:milestones/gorbino/gorbino_gear
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=5000}] only super_server:milestones/gorbino/gorbino_gamer
+
 
 
 execute if score 1 GB_Select matches 1 run scoreboard players set @a[scores={GB_Mode=1,MAIN_Game=3}] GB_Mode 2

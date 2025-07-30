@@ -2,6 +2,7 @@ scoreboard players set @a[tag=!GB_Welcome,scores={MAIN_Game=3}] GB_Menu 0
 scoreboard players set @a[tag=!GB_Welcome,scores={MAIN_Game=3}] GB_Mode 0
 scoreboard players set @a[tag=!GB_Welcome,scores={MAIN_Game=3}] GB_Select 0
 scoreboard players set @a[tag=!GB_Welcome,scores={MAIN_Game=3}] GB_Points 0
+scoreboard players set @a[tag=!GB_Welcome,scores={MAIN_Game=3}] GB_Milestones_Wins 0
 tag @a[tag=!GB_Welcome,scores={MAIN_Game=3}] add GB_Welcome
 
 
