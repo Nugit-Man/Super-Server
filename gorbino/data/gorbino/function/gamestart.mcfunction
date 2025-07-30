@@ -61,6 +61,7 @@ schedule function gorbino:border/border2 180s
 #
 #
 #
+execute at @a[scores={MAIN_Game=3}] run kill @e[type=arrow,distance=..50]
 kill @e[type=arrow]
 #kill @e[type=ravager]
 #kill @e[type=frog]

@@ -56,6 +56,13 @@ execute as @e[type=interaction,limit=1,tag=GB_Lobby] run data remove entity @s i
 
 
 
+#Deal with players logging on
+tag @a[scores={MAIN_Leave=1..}] remove MAIN_log
+execute as @a[tag=!MAIN_log] run execute in super_server:lobby run tp @s 8 -59 -10 0 0
+execute as @a[tag=!MAIN_log] run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
+tag @a[tag=!MAIN_log] add MAIN_log
+scoreboard players set @a[scores={MAIN_Leave=1..}] MAIN_Leave 0
+
 
 
 
@@ -107,16 +114,6 @@ scoreboard players set @a MAIN_Total_Kills 0
 scoreboard players set @a MAIN_Jumps 0
 scoreboard players set @a MAIN_Fish_Caught 0
 
-
-
-
-
-#Deal with players logging on
-tag @a[scores={MAIN_Leave=1..}] remove MAIN_log
-execute as @a[tag=!MAIN_log] run execute in super_server:lobby run tp @s 8 -59 -10 0 0
-execute as @a[tag=!MAIN_log] run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
-tag @a[tag=!MAIN_log] add MAIN_log
-scoreboard players set @a[scores={MAIN_Leave=1..}] MAIN_Leave 0
 
 
 
