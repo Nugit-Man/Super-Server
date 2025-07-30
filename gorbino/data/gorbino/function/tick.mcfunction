@@ -54,8 +54,16 @@ scoreboard players set @s[scores={GB_Mode=1..,MAIN_Game=3}] GB_Select 1
 
 
 
-
+#Kill dropped items
 execute at @a[scores={MAIN_Game=3}] run kill @e[type=item,distance=..10]
+
+#Check Deaths
+clear @a[scores={GB_Deaths=1..,GB_Mode=1,MAIN_Game=3}]
+scoreboard players set @a[scores={GB_Deaths=1..,GB_Mode=1,MAIN_Game=3}] GB_velocity 0
+scoreboard players set @a[scores={GB_Deaths=1..,GB_Mode=1,MAIN_Game=3}] GB_Mode 2
+scoreboard players set @a[scores={MAIN_Game=3}] GB_Deaths 0
+
+
 
 #kill extra spinner
 #execute at @a[scores={GB_Mode=0}] run kill @e[distance=..100,tag=GB_spinner]
@@ -138,14 +146,6 @@ execute at @a[scores={MAIN_Game=3}] run kill @e[type=item,distance=..10]
 #execute at @e[tag=GB_Spin2] run damage @a[distance=..1.5,tag=!GB_spin,limit=1,sort=random] 2
 #execute at @e[tag=GB_Spin1] run particle minecraft:crit ~ ~ ~
 #execute at @e[tag=GB_Spin2] run particle minecraft:crit ~ ~ ~
-
-
-#Check Deaths
-#clear @a[scores={GB_Deaths=1..,GB_Mode=1}]
-#scoreboard players set @a[scores={GB_Deaths=1..,GB_Mode=1}] GB_velocity 0
-#scoreboard players set @a[scores={GB_Deaths=1..,GB_Mode=1}] GB_Mode 2
-#scoreboard players set @a GB_Deaths 0
-
 
 
 #sclae

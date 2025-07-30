@@ -7,7 +7,7 @@
       "description": "Win A Fight With Fireball, Flamrunner, and Lava",
       "show_toast": true,
       "announce_to_chat": true,
-      "hidden": false
+      "hidden": true
     },
     "parent": "gorbino:professionals",
     "criteria": {

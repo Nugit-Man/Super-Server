@@ -7,7 +7,7 @@
       "description": "Win A Fight With Mace Master, Ground Slamd, and dripstone",
       "show_toast": true,
       "announce_to_chat": true,
-      "hidden": false
+      "hidden": true
     },
     "parent": "gorbino:arsenal",
     "criteria": {

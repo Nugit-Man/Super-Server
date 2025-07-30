@@ -9,7 +9,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "gorbino:first_fight",
+    "parent": "gorbino:old",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"

@@ -7,7 +7,7 @@
       "description": "Win A Fight With Only Chad, Frog, And Cancer",
       "show_toast": true,
       "announce_to_chat": true,
-      "hidden": false
+      "hidden": true
     },
     "parent": "gorbino:3points",
     "criteria": {

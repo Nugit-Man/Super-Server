@@ -7,7 +7,7 @@
       "description": "Win A Fight With Dash, Cocaine, Shirnk, and Flame Runner",
       "show_toast": true,
       "announce_to_chat": true,
-      "hidden": false
+      "hidden": true
     },
     "parent": "gorbino:crush",
     "criteria": {
