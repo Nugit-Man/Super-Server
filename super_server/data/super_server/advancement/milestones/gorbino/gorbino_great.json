@@ -3,7 +3,7 @@
     "icon": {
       "id": "minecraft:diamond"
     },
-    "title": "Great Gorbino",
+    "title": "Gorbino Great",
     "description": "Win a total of 100 games",
     "frame": "task",
     "show_toast": true,

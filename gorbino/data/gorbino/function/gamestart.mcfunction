@@ -1,6 +1,6 @@
 scoreboard players set @a[scores={GB_Mode=2,MAIN_Game=3}] GB_Mode 1
 execute store result score GB_Map GB_Select run random value 0..16
-scoreboard players set GB_2 GB_Select 0
+scoreboard players set 2 GB_Select 0
 
 #move border
 execute in gorbino:game run execute if score GB_Map GB_Select matches 0 run worldborder center 0.5 0.5

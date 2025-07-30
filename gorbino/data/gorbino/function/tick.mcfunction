@@ -55,7 +55,7 @@ scoreboard players set @s[scores={GB_Mode=1..,MAIN_Game=3}] GB_Select 1
 
 
 
-#kill @e[type=item]
+execute at @a[scores={MAIN_Game=3}] run kill @e[type=item,distance=..10]
 
 #kill extra spinner
 #execute at @a[scores={GB_Mode=0}] run kill @e[distance=..100,tag=GB_spinner]

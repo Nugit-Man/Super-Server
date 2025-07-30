@@ -346,3 +346,29 @@ execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s add GB_elytra
 tag @s remove GB_check
 execute if score @s GB_Select matches 2 run clear @s
 scoreboard players set @s GB_Select 1
+
+
+execute store result score @s GB_Select run clear @s barrier 0
+tag @s[scores={GB_Select=2..}] remove GB_lava
+tag @s[scores={GB_Select=2..}] remove GB_grow
+tag @s[scores={GB_Select=2..}] remove GB_dripstone
+tag @s[scores={GB_Select=2..}] remove GB_dash
+tag @s[scores={GB_Select=2..}] remove GB_knight
+tag @s[scores={GB_Select=2..}] remove GB_simple_armor
+tag @s[scores={GB_Select=2..}] remove GB_shotgun
+tag @s[scores={GB_Select=2..}] remove GB_knockback
+tag @s[scores={GB_Select=2..}] remove GB_chain_armor
+tag @s[scores={GB_Select=2..}] remove GB_lumberjack
+tag @s[scores={GB_Select=2..}] remove GB_burst_charm
+tag @s[scores={GB_Select=2..}] remove GB_fireball
+tag @s[scores={GB_Select=2..}] remove GB_shrink
+tag @s[scores={GB_Select=2..}] remove GB_elytra
+tag @s[scores={GB_Select=2..}] remove GB_cancer
+tag @s[scores={GB_Select=2..}] remove GB_curry
+tag @s[scores={GB_Select=2..}] remove GB_ground_slam
+tag @s[scores={GB_Select=2..}] remove GB_freeze_bolt
+tag @s[scores={GB_Select=2..}] remove GB_archer
+tag @s[scores={GB_Select=2..}] remove GB_heavy_armor
+tag @s[scores={GB_Select=2..}] remove GB_invis
+scoreboard players set @s[scores={GB_Select=2..}] GB_Points 0
+execute if score @s GB_Select matches 2 run clear @s

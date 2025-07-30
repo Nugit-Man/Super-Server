@@ -206,3 +206,6 @@ execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s add GB_lava
 tag @s remove GB_check
 execute if score @s GB_Select matches 2 run clear @s
 scoreboard players set @s GB_Select 1
+
+execute store result score @s GB_Select run clear @s barrier 0
+tag @s[scores={GB_Select=2..}] remove GB_lava

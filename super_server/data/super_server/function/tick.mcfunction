@@ -4,6 +4,65 @@ execute as @a at @s if block ~ ~-1 ~ farmland run effect give @s slow_falling 1 
 
 effect give @a[scores={MAIN_Game=0}] saturation 1 0 true
 
+
+
+
+
+
+
+
+
+###
+###
+###interaction warps
+
+#Lobby --> Final Island
+execute in final_island:game run spawnpoint @s[tag=GoTo_Final_Island] 0 1 0 90
+execute in final_island:game run tp @a[tag=GoTo_Final_Island] 0 1 0 90 0
+tag @a remove GoTo_Final_Island
+
+
+#Final Island --> Lobby
+execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
+execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run tp @s 8 -59 -10 0 0
+execute as @e[type=interaction,limit=1,tag=FI_Lobby] run data remove entity @s interaction
+
+#Lobby --> Skyblock
+execute as @e[type=interaction,limit=1,tag=Main_Skyblock] on target run tag @s add Main_Join_Skyblock
+execute as @e[type=interaction,limit=1,tag=Main_Skyblock] run data remove entity @s interaction
+function super_server:skyblock/join
+
+#Lobby --> Gorbino
+execute in gorbino:lobby run spawnpoint @a[tag=GoTo_Gorbino] 56 5 26 0
+execute in gorbino:lobby run tp @a[tag=GoTo_Gorbino] 56 5 26 0 0
+tag @a remove GoTo_Gorbino
+
+#Anywhere --> Lobby
+scoreboard players enable @a Lobby
+execute in super_server:lobby run spawnpoint @a[scores={Lobby=1..}] 8 -59 -10 0
+execute in super_server:lobby run tp @a[scores={Lobby=1..}] 8 -59 -10 0 0
+scoreboard players set @a Lobby 0
+
+#Gorbino --> Lobby
+execute as @e[type=interaction,limit=1,tag=GB_Lobby] on target run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
+execute as @e[type=interaction,limit=1,tag=GB_Lobby] on target run execute in super_server:lobby run tp @s 8 -59 -10 0 0
+execute as @e[type=interaction,limit=1,tag=GB_Lobby] run data remove entity @s interaction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #change the score of MAIN_Game depending on what world they are in
 #0 - lobby
 #1 - Ascendance
@@ -38,16 +97,6 @@ execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Death
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Shotgun = @s MAIN_Crossbow_Used
 
 
-#Deal with players logging on
-tag @a[scores={MAIN_Leave=1..}] remove MAIN_log
-execute as @a[tag=!MAIN_log] run execute in super_server:lobby run tp @s 8 -59 -10 0 0
-execute as @a[tag=!MAIN_log] run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
-tag @a[tag=!MAIN_log] add MAIN_log
-scoreboard players set @a[scores={MAIN_Leave=1..}] MAIN_Leave 0
-
-
-
-
 
 
 #Reset things like sneak time
@@ -60,41 +109,20 @@ scoreboard players set @a MAIN_Fish_Caught 0
 
 
 
+
+
+#Deal with players logging on
+tag @a[scores={MAIN_Leave=1..}] remove MAIN_log
+execute as @a[tag=!MAIN_log] run execute in super_server:lobby run tp @s 8 -59 -10 0 0
+execute as @a[tag=!MAIN_log] run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
+tag @a[tag=!MAIN_log] add MAIN_log
+scoreboard players set @a[scores={MAIN_Leave=1..}] MAIN_Leave 0
+
+
+
 function super_server:skyblock/advancement
 
 
-
-###
-###
-###interaction warps
-
-#Lobby --> Final Island
-execute in final_island:game run spawnpoint @s[tag=GoTo_Final_Island] 0 1 0 90
-execute in final_island:game run tp @a[tag=GoTo_Final_Island] 0 1 0 90 0
-tag @a remove GoTo_Final_Island
-
-
-#Final Island --> Lobby
-execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
-execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run tp @s 8 -59 -10 0 0
-execute as @e[type=interaction,limit=1,tag=FI_Lobby] run data remove entity @s interaction
-
-#Lobby --> Skyblock
-execute as @e[type=interaction,limit=1,tag=Main_Skyblock] on target run tag @s add Main_Join_Skyblock
-execute as @e[type=interaction,limit=1,tag=Main_Skyblock] run data remove entity @s interaction
-function super_server:skyblock/join
-
-#Lobby --> Gorbino
-execute in gorbino:lobby run spawnpoint @s[tag=GoTo_Gorbino] 56 5 26 0
-execute in gorbino:lobby run tp @a[tag=GoTo_Gorbino] 56 5 26 0 0
-tag @a remove GoTo_Gorbino
-
-
-#Anywhere --> Lobby
-scoreboard players enable @a Lobby
-execute in super_server:lobby run spawnpoint @a[scores={Lobby=1..}] 8 -59 -10 0
-execute in super_server:lobby run tp @a[scores={Lobby=1..}] 8 -59 -10 0 0
-scoreboard players set @a Lobby 0
 
 #Awarding Xp
 scoreboard players set @a[scores={MAIN_Game=1..}] MAIN_XP_Timer 0
