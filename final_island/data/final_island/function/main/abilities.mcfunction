@@ -47,8 +47,8 @@ execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=260}] run k
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=274}] run execute at @s run playsound entity.warden.sonic_boom player
 
 #dripstone sword extra reach
-execute as @a if items entity @s weapon.mainhand *[custom_data~{FI_Dripstone_Sword:1b}] run attribute @s entity_interaction_range base set 4
-execute as @a unless items entity @s weapon.mainhand *[custom_data~{FI_Dripstone_Sword:1b}] run attribute @s entity_interaction_range base set 3
+execute as @a if items entity @s weapon.mainhand *[custom_data~{FI_Dripstone_Sword:1b}] run attribute @s[scores={MAIN_Game=2}] entity_interaction_range base set 4
+execute as @a unless items entity @s weapon.mainhand *[custom_data~{FI_Dripstone_Sword:1b}] run attribute @s[scores={MAIN_Game=2}] entity_interaction_range base set 3
 
 #flint sword explosive hit
 execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] at @s on attacker if entity @s[tag=FI_Explosive_Hit] run summon marker ~ ~ ~ {Tags:["FI_Ability_Flint_Sword"]}

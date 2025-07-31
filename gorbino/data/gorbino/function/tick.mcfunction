@@ -59,7 +59,7 @@ scoreboard players set @s[scores={GB_Mode=1..,MAIN_Game=3}] GB_Select 1
 execute at @a[scores={MAIN_Game=3}] run kill @e[type=item,distance=..10]
 
 #Check Deaths
-clear @a[scores={GB_Deaths=1..,GB_Mode=1,MAIN_Game=3}]
+clear @a[scores={GB_Deaths=1..,MAIN_Game=3}]
 scoreboard players set @a[scores={GB_Deaths=1..,GB_Mode=1,MAIN_Game=3}] GB_velocity 0
 scoreboard players set @a[scores={GB_Deaths=1..,GB_Mode=1,MAIN_Game=3}] GB_Mode 2
 scoreboard players set @a[scores={MAIN_Game=3}] GB_Deaths 0
@@ -150,11 +150,11 @@ scoreboard players set @a[scores={MAIN_Game=3}] GB_Deaths 0
 
 
 #sclae
-#execute as @a[scores={GB_Mode=2}] run attribute @s scale base reset
-#execute as @a[scores={GB_Mode=2}] run attribute @s jump_strength base reset
-#execute as @a[scores={GB_Mode=2}] run attribute @s entity_interaction_range base reset
-#execute as @a[scores={GB_Mode=2}] run attribute @s max_health base reset
-#execute as @a[scores={GB_Mode=2}] run attribute @s step_height base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s scale base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s jump_strength base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s entity_interaction_range base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s max_health base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s step_height base reset
 
 
 #Archer Arrow Regen

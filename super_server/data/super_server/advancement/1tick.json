@@ -17,6 +17,6 @@
       }
     },
     "rewards": {
-      "function": "super_server:0tick"
+      "function": "super_server:1tick"
     }
   }
