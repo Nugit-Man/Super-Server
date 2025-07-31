@@ -1,4 +1,4 @@
-advancement revoke @s only super_server:0tick
+advancement revoke @s only super_server:1tick
 
 #Final Island
 execute as @s[scores={MAIN_Game=2}] if items entity @s weapon.mainhand *[custom_data~{FI_Torch:1b}] run function final_island:items/torch
