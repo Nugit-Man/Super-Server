@@ -67,14 +67,14 @@ scoreboard players set @a[scores={MAIN_Game=3}] GB_Deaths 0
 
 #Barrels
 execute in gorbino:lobby run item replace block 85 8 51 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-execute in gorbino:lobby run item replace block 55 22 77 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-execute in gorbino:lobby run item replace block 74 -23 42 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-execute in gorbino:lobby run item replace block 103 -35 21 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in gorbino:lobby run item replace block 54 22 77 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in gorbino:lobby run item replace block 74 -18 42 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in gorbino:lobby run item replace block 100 -37 21 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Wall] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 1
-execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Top] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 1
-execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Stewie] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 1
-execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Ice] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 1
+execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Top] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 2
+execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Stewie] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 3
+execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Ice] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 4
 
 execute as @a[scores={MAIN_Game=3}] run execute store result score @s GB_Barrel_Check run clear @s sunflower
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=1}] only gorbino:barrel/wall
