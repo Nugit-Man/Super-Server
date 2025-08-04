@@ -14,6 +14,9 @@
       "requirement": {
         "trigger": "minecraft:impossible"
       }
+    },
+    "rewards": {
+      "function": "gorbino:advancement/advancement/speed"
     }
   }
   
