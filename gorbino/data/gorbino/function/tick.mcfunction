@@ -97,24 +97,24 @@ effect give @a[scores={MAIN_Game=3,GB_Mode=0}] saturation 1 0
 #execute at @e[type=frog] run damage @r[distance=..1.5] 1 gorbino:cringe
 
 #Ground Slam
-#execute as @a[tag=GB_GS] run execute store result score @s GB_velocity run data get entity @s Motion[1] 100
-#tag @a[tag=GB_GS,scores={GB_velocity=..-150}] add GB_GSS
-#execute at @a[tag=GB_GSS,scores={GB_velocity=-99}] run particle minecraft:gust_emitter_large ~ ~-2 ~ 0 0 0 1 100
-#execute at @a[tag=GB_GSS,scores={GB_velocity=-99}] as @a[tag=GB_GSS,scores={GB_velocity=-99}] run damage @a[distance=..3,limit=1,sort=nearest,tag=!GB_GSS] 12 mace_smash by @s
-#attribute @r[tag=GB_GS,scores={GB_velocity=-99}] gravity base set 0.08
-#execute as @a[tag=GB_GS,scores={GB_velocity=-99}] run tag @s remove GB_GS
-#execute as @a[tag=GB_GSS,scores={GB_velocity=-99}] run tag @s remove GB_GSS
+execute as @a[tag=GB_GS] run execute store result score @s GB_velocity run data get entity @s Motion[1] 100
+tag @a[tag=GB_GS,scores={GB_velocity=..-150}] add GB_GSS
+execute at @a[tag=GB_GSS,scores={GB_velocity=-99}] run particle minecraft:gust_emitter_large ~ ~-2 ~ 0 0 0 1 100
+execute at @a[tag=GB_GSS,scores={GB_velocity=-99}] as @a[tag=GB_GSS,scores={GB_velocity=-99}] run damage @a[distance=..3,limit=1,sort=nearest,tag=!GB_GSS] 12 mace_smash by @s
+attribute @r[tag=GB_GS,scores={GB_velocity=-99}] gravity base set 0.08
+execute as @a[tag=GB_GS,scores={GB_velocity=-99}] run tag @s remove GB_GS
+execute as @a[tag=GB_GSS,scores={GB_velocity=-99}] run tag @s remove GB_GSS
 
 #freeze bolt
-#execute as @e[tag=GB_Freeze] run execute at @s run tp @s ^ ^ ^0.8
-#execute at @e[tag=GB_Freeze] run particle snowflake ~ ~ ~ 0.4 0.4 0.4 0.01 10
-#scoreboard players add @e[tag=GB_Freeze] GB_velocity 1
-#execute at @e[tag=GB_Freeze] run damage @r[distance=..2.5] 2 freeze
-#execute at @e[tag=GB_Freeze] run effect give @a[distance=..2.5] slowness 5 2
-#kill @e[tag=GB_Freeze,scores={GB_velocity=20}]
+execute as @e[tag=GB_Freeze] run execute at @s run tp @s ^ ^ ^0.8
+execute at @e[tag=GB_Freeze] run particle snowflake ~ ~ ~ 0.4 0.4 0.4 0.01 10
+scoreboard players add @e[tag=GB_Freeze] GB_velocity 1
+execute at @e[tag=GB_Freeze] run damage @r[distance=..2.5] 2 freeze
+execute at @e[tag=GB_Freeze] run effect give @a[distance=..2.5] slowness 5 2
+kill @e[tag=GB_Freeze,scores={GB_velocity=20}]
 
 #Dripstone
-#execute at @e[tag=GB_Dripstone] run damage @r[distance=..2] 50 gorbino:crush
+execute at @e[tag=GB_Dripstone] run damage @r[distance=..2] 50 gorbino:crush
 
 #builder y
 #execute at @e[tag=GB_Builder_y,scores={GB_velocity=0}] run fill ~-1 ~ ~-1 ~1 ~ ~1 oak_planks replace air
@@ -135,12 +135,12 @@ effect give @a[scores={MAIN_Game=3,GB_Mode=0}] saturation 1 0
 #kill @e[tag=GB_Builder_z,scores={GB_velocity=100}]
 
 #Lava
-#execute at @e[tag=GB_Lava,scores={GB_velocity=0}] run fill ~-2 ~-3 ~-2 ~2 ~0 ~2 lava replace stone
-#execute at @e[tag=GB_Lava,scores={GB_velocity=0}] run fill ~-2 ~0 ~-2 ~2 ~3 ~2 lava replace stone
-#scoreboard players add @e[tag=GB_Lava] GB_velocity 1
-#execute at @e[tag=GB_Lava,scores={GB_velocity=300}] run fill ~-2 ~-3 ~-2 ~2 ~0 ~2 stone replace lava[level=0]
-#execute at @e[tag=GB_Lava,scores={GB_velocity=300}] run fill ~-2 ~0 ~-2 ~2 ~3 ~2 stone replace lava[level=0]
-#kill @e[tag=GB_Lava,scores={GB_velocity=300}]
+execute at @e[tag=GB_Lava,scores={GB_velocity=0}] run fill ~-2 ~-3 ~-2 ~2 ~0 ~2 lava replace stone
+execute at @e[tag=GB_Lava,scores={GB_velocity=0}] run fill ~-2 ~0 ~-2 ~2 ~3 ~2 lava replace stone
+scoreboard players add @e[tag=GB_Lava] GB_velocity 1
+execute at @e[tag=GB_Lava,scores={GB_velocity=300}] run fill ~-2 ~-3 ~-2 ~2 ~0 ~2 stone replace lava[level=0]
+execute at @e[tag=GB_Lava,scores={GB_velocity=300}] run fill ~-2 ~0 ~-2 ~2 ~3 ~2 stone replace lava[level=0]
+kill @e[tag=GB_Lava,scores={GB_velocity=300}]
 
 #Shotgun
 #execute as @a[scores={GB_Shotgun=1..}] run scoreboard players add @s GB_Shotgun 1
