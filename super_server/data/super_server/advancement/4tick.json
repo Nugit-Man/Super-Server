@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:food": {
+                "nutrition": 0,
+                "saturation": 0,
+                "can_always_eat": true,
+                "eat_seconds": 0.02
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "super_server:4tick"
+    }
+  }
