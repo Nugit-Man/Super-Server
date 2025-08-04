@@ -129,3 +129,9 @@ experience add @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] 1 points
 execute at @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] run playsound minecraft:entity.experience_orb.pickup master @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}]
 scoreboard players remove @a[scores={MAIN_XP_Timer=16,MAIN_Achivement_XP=1..}] MAIN_Achivement_XP 1
 scoreboard players set @a[scores={MAIN_XP_Timer=21,MAIN_Achivement_XP=1..}] MAIN_XP_Timer 14
+
+#Update advancemetn
+xp set @a[scores={MAIN_Game=0},tag=!MAIN_XP_Reset] 0 levels
+xp set @a[scores={MAIN_Game=0},tag=!MAIN_XP_Reset] 0 points
+advancement revoke @a[scores={MAIN_Game=0},tag=!MAIN_XP_Reset] everything
+tag @a add MAIN_XP_Reset

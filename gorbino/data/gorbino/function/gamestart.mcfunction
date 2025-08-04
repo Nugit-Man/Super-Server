@@ -1,5 +1,5 @@
 scoreboard players set @a[scores={GB_Mode=2,MAIN_Game=3}] GB_Mode 1
-execute store result score GB_Map GB_Select run random value 0..16
+execute store result score GB_Map GB_Select run random value 0..18
 scoreboard players set 2 GB_Select 0
 
 #move border
@@ -20,6 +20,8 @@ execute in gorbino:game run execute if score GB_Map GB_Select matches 13 run wor
 execute in gorbino:game run execute if score GB_Map GB_Select matches 14 run worldborder center 14000.5 0.5
 execute in gorbino:game run execute if score GB_Map GB_Select matches 15 run worldborder center 15000.5 0.5
 execute in gorbino:game run execute if score GB_Map GB_Select matches 16 run worldborder center 16000.5 0.5
+execute in gorbino:game run execute if score GB_Map GB_Select matches 17 run worldborder center 17000.5 0.5
+execute in gorbino:game run execute if score GB_Map GB_Select matches 18 run worldborder center 18000.5 0.5
 
 #teleport players
 execute in gorbino:game run execute if score GB_Map GB_Select matches 0 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 0 1 0
@@ -39,6 +41,8 @@ execute in gorbino:game run execute if score GB_Map GB_Select matches 13 run tp 
 execute in gorbino:game run execute if score GB_Map GB_Select matches 14 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 14000 4 0
 execute in gorbino:game run execute if score GB_Map GB_Select matches 15 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 15000 1 0
 execute in gorbino:game run execute if score GB_Map GB_Select matches 16 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 16000 3 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 17 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 17000 5 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 18 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 18000 9 0
 
 #more border
 execute in gorbino:game run worldborder set 100
