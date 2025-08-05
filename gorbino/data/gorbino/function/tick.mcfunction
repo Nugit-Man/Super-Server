@@ -40,7 +40,10 @@ execute at @a[scores={GB_Mode=2..,MAIN_Game=3}] run fill ~20 ~-9 ~20 ~-20 ~-19 ~
 execute at @a[scores={GB_Mode=2..,MAIN_Game=3}] run fill ~20 ~-19 ~20 ~-20 ~-39 ~-20 minecraft:air replace minecraft:lava
 execute at @a[scores={GB_Mode=2..,MAIN_Game=3}] run fill ~20 ~-39 ~20 ~-20 ~-59 ~-20 minecraft:air replace minecraft:lava
 execute at @a[scores={GB_Mode=2..,MAIN_Game=3}] run fill ~20 ~9 ~20 ~-20 ~-9 ~-20 minecraft:air replace minecraft:fire
-
+execute at @a[scores={GB_Mode=2..,MAIN_Game=3}] run fill ~20 ~9 ~20 ~-20 ~-9 ~-20 minecraft:air replace minecraft:cobblestone
+execute at @a[scores={GB_Mode=2..,MAIN_Game=3}] run fill ~20 ~-9 ~20 ~-20 ~-19 ~-20 minecraft:air replace minecraft:cobblestone
+execute at @a[scores={GB_Mode=2..,MAIN_Game=3}] run fill ~20 ~9 ~20 ~-20 ~-9 ~-20 minecraft:stone replace minecraft:obsidian
+execute at @a[scores={GB_Mode=2..,MAIN_Game=3}] run fill ~20 ~-9 ~20 ~-20 ~-19 ~-20 minecraft:stone replace minecraft:obsidian
 
 #leave game
 item replace entity @a[scores={GB_Mode=1..,MAIN_Game=3}] inventory.13 with barrier[custom_name=[{text:"Leave The Fight",italic:false}]]
@@ -58,11 +61,26 @@ scoreboard players set @s[scores={GB_Mode=1..,MAIN_Game=3}] GB_Select 1
 #Kill dropped items
 execute at @a[scores={MAIN_Game=3}] run kill @e[type=item,distance=..10]
 
+#sclae
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s scale base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s jump_strength base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s entity_interaction_range base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s max_health base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s step_height base reset
+
+#sclae
+execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s scale base reset
+execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s jump_strength base reset
+execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s entity_interaction_range base reset
+execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s max_health base reset
+execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s step_height base reset
+
 #Check Deaths
 clear @a[scores={GB_Deaths=1..,MAIN_Game=3}]
 scoreboard players set @a[scores={GB_Deaths=1..,GB_Mode=1,MAIN_Game=3}] GB_velocity 0
+scoreboard players set @a[scores={MAIN_Game=3,GB_Mode=2}] GB_Deaths 0
 scoreboard players set @a[scores={GB_Deaths=1..,GB_Mode=1,MAIN_Game=3}] GB_Mode 2
-scoreboard players set @a[scores={MAIN_Game=3}] GB_Deaths 0
+scoreboard players set @a[scores={MAIN_Game=3,GB_Mode=0}] GB_Deaths 0
 
 
 #Barrels
@@ -169,14 +187,6 @@ kill @e[tag=GB_Lava,scores={GB_velocity=300}]
 #execute at @e[tag=GB_Spin2] run damage @a[distance=..1.5,tag=!GB_spin,limit=1,sort=random] 2
 #execute at @e[tag=GB_Spin1] run particle minecraft:crit ~ ~ ~
 #execute at @e[tag=GB_Spin2] run particle minecraft:crit ~ ~ ~
-
-
-#sclae
-execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s scale base reset
-execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s jump_strength base reset
-execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s entity_interaction_range base reset
-execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s max_health base reset
-execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s step_height base reset
 
 
 #Archer Arrow Regen

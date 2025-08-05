@@ -16,4 +16,4 @@ scoreboard players set @a[scores={MAIN_Game=2}] FI_Check_Deaths 0
 execute at @a[scores={MAIN_Game=2}] run effect give @e[type=villager,distance=..100] resistance infinite 255 true
 execute at @a[scores={MAIN_Game=2}] run effect give @e[type=villager,distance=..100] regeneration infinite 255 true
 
-gamerule doLimitedCrafting true final_island:game
+#gamerule doLimitedCrafting true final_island:game

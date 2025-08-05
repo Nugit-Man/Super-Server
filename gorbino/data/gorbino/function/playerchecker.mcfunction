@@ -17,26 +17,26 @@ execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,GB_Points=2,MAIN_Game=3}] only gorbino:2points
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,GB_Points=1,MAIN_Game=3}] only gorbino:1point
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,GB_Points=0,MAIN_Game=3}] only gorbino:0points
-execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,GB_Points=5,MAIN_Game=3},tag=knight] run execute as @s[tag=lumberjack] run advancement grant @s[tag=archer] only gorbino:arsenal
-execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,GB_Points=3,MAIN_Game=3},tag=cancer] run execute as @s[tag=frog] run advancement grant @s[tag=chad] only gorbino:kk
+execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,GB_Points=5,MAIN_Game=3},tag=GB_knight] run execute as @s[tag=GB_lumberjack] run advancement grant @s[tag=GB_archer] only gorbino:arsenal
+#execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,GB_Points=3,MAIN_Game=3},tag=cancer] run execute as @s[tag=frog] run advancement grant @s[tag=chad] only gorbino:kk
 execute if score 1 GB_Select matches 1 run execute as @a run execute at @s run advancement grant @s[y=-54,dy=-10,scores={GB_Mode=1,MAIN_Game=3}] only gorbino:falling
-execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=!archer] run execute as @s[tag=!knight] run execute as @s[tag=!lumberjack] run execute as @s[tag=!mace_master] run execute as @s[tag=!burst_charm] run execute as @s[tag=!freeze_bolt] run execute as @s[tag=!fireball] run execute as @s[tag=!ground_slam] run execute as @s[tag=!dripstone] run execute as @s[tag=!bomber] run execute as @s[tag=!shotgun] run execute as @s[tag=!lightning_bolt] run execute as @s[tag=!curry] run execute as @s[tag=!super_shotgun] run advancement grant @s[tag=!laser] only gorbino:peace
-execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=mace_master] run execute as @s[tag=ground_slam] run advancement grant @s[tag=dripstone,scores={GB_Points=4}] only gorbino:crush
-execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=heavy_armor] run execute as @s[tag=grow] run advancement grant @s[tag=lumberjack,scores={GB_Points=5}] only gorbino:little_baby_man
-execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=archer] run advancement grant @s[tag=laser,scores={GB_Points=4}] only gorbino:professionals
-execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=fireball] run execute as @s[tag=lava] run advancement grant @s[tag=flame_runner,scores={GB_Points=5}] only gorbino:pyro
-execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=2,MAIN_Game=3},tag=grow] run advancement grant @a[scores={GB_Mode=1},tag=shrink] only gorbino:aot
-execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=dash] run execute as @s[tag=shrink] run execute as @s[tag=crack] run advancement grant @s[tag=flame_runner,scores={GB_Points=4}] only gorbino:iamspeed
+execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=!GB_archer] run execute as @s[tag=!GB_knight] run execute as @s[tag=!GB_lumberjack] run execute as @s[tag=!GB_mace_master] run execute as @s[tag=!GB_burst_charm] run execute as @s[tag=!GB_freeze_bolt] run execute as @s[tag=!GB_fireball] run execute as @s[tag=!GB_ground_slam] run execute as @s[tag=!GB_dripstone] run execute as @s[tag=!GB_bomber] run execute as @s[tag=!GB_shotgun] run execute as @s[tag=!GB_lightning_bolt] run execute as @s[tag=!GB_curry] run execute as @s[tag=!GB_super_shotgun] run advancement grant @s[tag=!GB_laser] only gorbino:peace
+#execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=mace_master] run execute as @s[tag=ground_slam] run advancement grant @s[tag=dripstone,scores={GB_Points=4}] only gorbino:crush
+execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_heavy_armor] run execute as @s[tag=GB_grow] run advancement grant @s[tag=GB_lumberjack,scores={GB_Points=5}] only gorbino:little_baby_man
+#execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=archer] run advancement grant @s[tag=laser,scores={GB_Points=4}] only gorbino:professionals
+#execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=fireball] run execute as @s[tag=lava] run advancement grant @s[tag=flame_runner,scores={GB_Points=5}] only gorbino:pyro
+execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=2,MAIN_Game=3},tag=GB_grow] run advancement grant @a[scores={GB_Mode=1},tag=GB_shrink] only gorbino:aot
+#execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=dash] run execute as @s[tag=shrink] run execute as @s[tag=crack] run advancement grant @s[tag=flame_runner,scores={GB_Points=4}] only gorbino:iamspeed
 #Milestones
-advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=25}] only super_server:milestones/gorbino/gorbino_guy
-advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=100}] only super_server:milestones/gorbino/gorbino_great
-advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=250}] only super_server:milestones/gorbino/gorbino_grand
-advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=500}] only super_server:milestones/gorbino/gorbino_genius
-advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=1000}] only super_server:milestones/gorbino/gorbino_goliath
-advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=1500}] only super_server:milestones/gorbino/gorbino_glory
-advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=2000}] only super_server:milestones/gorbino/gorbino_gladiator
-advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=2500}] only super_server:milestones/gorbino/gorbino_gear
-advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=5000}] only super_server:milestones/gorbino/gorbino_gamer
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=25..}] only super_server:milestones/gorbino/gorbino_guy
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=100..}] only super_server:milestones/gorbino/gorbino_great
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=250..}] only super_server:milestones/gorbino/gorbino_grand
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=500..}] only super_server:milestones/gorbino/gorbino_genius
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=1000..}] only super_server:milestones/gorbino/gorbino_goliath
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=1500..}] only super_server:milestones/gorbino/gorbino_glory
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=2000..}] only super_server:milestones/gorbino/gorbino_gladiator
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=2500..}] only super_server:milestones/gorbino/gorbino_gear
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=5000..}] only super_server:milestones/gorbino/gorbino_gamer
 
 
 

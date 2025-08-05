@@ -76,11 +76,11 @@ effect give @a[scores={MAIN_Game=3}] resistance 3 255
 effect give @a[scores={MAIN_Game=3}] regeneration 3 255
 clear @a[scores={GB_Mode=1,MAIN_Game=3}]
 scoreboard players set @a[scores={GB_Mode=1,MAIN_Game=3}] GB_velocity 0
-#tag @a remove GB_cancerkill
+tag @a remove GB_cancerkill
 #kill @e[tag=GB_spinner]
 #kill @e[tag=GB_Spin1]
 #kill @e[tag=GB_Spin2]
-#schedule clear gorbino:abilities/cancer2
+schedule clear gorbino:abilities/cancer2
 schedule function gorbino:border/clear 3s
 scoreboard players set @a GB_Shotgun 0
 scoreboard players set @a GB_Dash_Check 0
@@ -104,7 +104,7 @@ give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] arrow 8
 scoreboard players set @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] GB_Arrow 0
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knight] iron_sword[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knight] weapon.offhand with minecraft:shield[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
-give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knockback] stick[custom_name=[{text:"Knockback Stick",italic: false}],enchantments={knockback:5}]
+give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knockback] stick[custom_name=[{text:"Knockback Stick",italic: false}],enchantments={knockback:3}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_dash] sugar[custom_name=[{text:"Dash",italic:false,color:"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.05,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:2}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_burst_charm] nether_star[custom_name=[{"text":"Burst Charm","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:1,animation:brush,sound:"block.amethyst_block.resonate",has_consume_particles:0b},use_cooldown={seconds:10}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_freeze_bolt] breeze_rod[custom_name=[{"text":"Freeze Bolt","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.2,animation:spear,sound:"entity.player.hurt_freeze",has_consume_particles:0b},use_cooldown={seconds:7.5}]

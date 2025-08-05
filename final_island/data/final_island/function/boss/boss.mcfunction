@@ -52,6 +52,12 @@ execute at @e[type=marker,tag=FI_Zombie_Boss_Spawner] as @e[distance=..1,type=it
 
 
 
-
-
+#Zombie king bossbar
+execute store result score FI_Zombie_Bossbar FI_Misc run data get entity @e[tag=FI_Zombie_Boss,limit=1,type=zombie] Health 1
+execute store result bossbar fi_zombie_king value run scoreboard players get FI_Zombie_Bossbar FI_Misc
 schedule function final_island:boss/boss 10t
+
+execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run execute at @e[type=zombie,tag=FI_Zombie_Boss] run bossbar set fi_zombie_king players @a[distance=..25]
+
+
+execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 0 run bossbar set fi_zombie_king players

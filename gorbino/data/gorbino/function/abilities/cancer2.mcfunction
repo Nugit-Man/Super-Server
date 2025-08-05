@@ -1,3 +1,3 @@
-execute as @a[tag=!cancerkill,scores={MAIN_Game=3}] run damage @s 100 gorbino:cringe by @r[tag=cancerkill]
-advancement grant @a[tag=cancerkill] only gorbino:cancer
-tag @a remove cancerkill
+execute as @a[tag=!GB_cancerkill,scores={MAIN_Game=3}] run damage @s 100 gorbino:cringe by @r[tag=GB_cancerkill]
+advancement grant @a[tag=GB_cancerkill] only gorbino:cancer
+tag @a remove GB_cancerkill

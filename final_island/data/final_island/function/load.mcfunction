@@ -80,13 +80,14 @@ scoreboard objectives add FI_Health dummy
 
 #boss scoreboard
 scoreboard objectives add FI_Boss_Check dummy
+bossbar add fi_zombie_king "Zombie King"
 
 
 #This scoreboard is used for misc stuff current things include:
 scoreboard objectives add FI_Misc dummy
 #FI_Zombie_Armor_Check: Used to see if a player is in the mines to armor up zombies
 #FI_Zombie_Boss_Windcharge: Used to randomly teleport the thing to make windcharges happen
-#
+#FI_Zombie_Bossbar: used for the bossbar regarding the zombie king
 #
 #
 #

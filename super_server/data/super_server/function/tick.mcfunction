@@ -17,7 +17,7 @@ effect give @a[scores={MAIN_Game=0}] saturation 1 0 true
 ###interaction warps
 
 #Lobby --> Final Island
-execute in final_island:game run spawnpoint @s[tag=GoTo_Final_Island] 0 1 0 90
+execute in final_island:game run spawnpoint @a[tag=GoTo_Final_Island] 0 1 0 90
 execute in final_island:game run tp @a[tag=GoTo_Final_Island] 0 1 0 90 0
 tag @a remove GoTo_Final_Island
 
@@ -35,6 +35,7 @@ function super_server:skyblock/join
 #Lobby --> Gorbino
 execute in gorbino:lobby run spawnpoint @a[tag=GoTo_Gorbino] 56 5 26 0
 execute in gorbino:lobby run tp @a[tag=GoTo_Gorbino] 56 5 26 0 0
+scoreboard players set @a[tag=GoTo_Gorbino] GB_Menu 0
 tag @a remove GoTo_Gorbino
 
 #Anywhere --> Lobby
