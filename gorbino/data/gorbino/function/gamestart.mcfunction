@@ -73,7 +73,7 @@ effect clear @a[scores={MAIN_Game=3}]
 effect give @a[scores={MAIN_Game=3}] instant_health 1 255
 effect give @a[scores={MAIN_Game=3}] saturation 3 255
 effect give @a[scores={MAIN_Game=3}] resistance 3 255
-effect give @a[scores={MAIN_Game=3}] regeneration 3 255
+effect give @a[scores={MAIN_Game=3}] regeneration 3 7
 clear @a[scores={GB_Mode=1,MAIN_Game=3}]
 scoreboard players set @a[scores={GB_Mode=1,MAIN_Game=3}] GB_velocity 0
 tag @a remove GB_cancerkill
