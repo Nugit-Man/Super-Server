@@ -244,8 +244,8 @@ item replace entity @s[tag=GB_knockback] inventory.10 with stick[custom_name=[{t
 item replace entity @s[tag=!GB_invis] inventory.19 with glass_pane[custom_name=[{text:"Invisabilty [1]",italic:false}]]
 item replace entity @s[tag=GB_invis] inventory.19 with glass_pane[custom_name=[{text:"Invisabilty [1]",italic:false}],enchantment_glint_override=true]
 
-item replace entity @s[tag=!GB_elytra] inventory.16 with elytra[custom_name=[{text:"Elytra [2]",italic:false}]]
-item replace entity @s[tag=GB_elytra] inventory.16 with elytra[custom_name=[{text:"Elytra [2]",italic:false}],enchantment_glint_override=true]
+item replace entity @s[tag=!GB_elytra] inventory.16 with elytra[custom_name=[{text:"Elytra [1]",italic:false}]]
+item replace entity @s[tag=GB_elytra] inventory.16 with elytra[custom_name=[{text:"Elytra [1]",italic:false}],enchantment_glint_override=true]
 
 
 execute store result score @s GB_Select run clear @s oak_sapling 0
@@ -339,9 +339,9 @@ scoreboard players set @s GB_Select 1
 execute store result score @s GB_Select run clear @s elytra 0
 execute if score @s[tag=GB_elytra] GB_Select matches 2 run tag @s add GB_check
 execute if score @s[tag=GB_check] GB_Select matches 2 run tag @s remove GB_elytra
-execute if score @s[tag=GB_check] GB_Select matches 2 run scoreboard players remove @s GB_Points 2
-execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s[scores={GB_Points=4..}] add GB_check
-execute if score @s[tag=!GB_check] GB_Select matches 2 run scoreboard players add @s GB_Points 2
+execute if score @s[tag=GB_check] GB_Select matches 2 run scoreboard players remove @s GB_Points 1
+execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s[scores={GB_Points=5..}] add GB_check
+execute if score @s[tag=!GB_check] GB_Select matches 2 run scoreboard players add @s GB_Points 1
 execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s add GB_elytra
 tag @s remove GB_check
 execute if score @s GB_Select matches 2 run clear @s

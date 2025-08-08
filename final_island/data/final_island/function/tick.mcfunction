@@ -19,3 +19,6 @@ execute at @a[scores={MAIN_Game=2}] run effect give @e[type=villager,distance=..
 execute at @a[scores={MAIN_Game=2}] run effect give @e[type=villager,distance=..100] regeneration infinite 255 true
 
 #gamerule doLimitedCrafting true final_island:game
+
+execute store result score FI_Emerald FI_Misc run random value 1..1000
+execute if score FI_Emerald FI_Misc matches 1 run function final_island:spawn_items/caves/emerald

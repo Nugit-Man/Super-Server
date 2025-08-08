@@ -88,7 +88,7 @@ scoreboard objectives add FI_Misc dummy
 #FI_Zombie_Armor_Check: Used to see if a player is in the mines to armor up zombies
 #FI_Zombie_Boss_Windcharge: Used to randomly teleport the thing to make windcharges happen
 #FI_Zombie_Bossbar: used for the bossbar regarding the zombie king
-#
+#FI_Emerald: Used as a failsafe to emeralds not working
 #
 #
 #
