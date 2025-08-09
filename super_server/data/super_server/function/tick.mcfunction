@@ -49,7 +49,10 @@ execute as @e[type=interaction,limit=1,tag=GB_Lobby] on target run execute in su
 execute as @e[type=interaction,limit=1,tag=GB_Lobby] on target run execute in super_server:lobby run tp @s 8 -59 -10 0 0
 execute as @e[type=interaction,limit=1,tag=GB_Lobby] run data remove entity @s interaction
 
-
+#Lobby --> Mace
+execute in super_server:mace_master run spawnpoint @a[tag=GoTo_Mace_Masters] 0 301 0 0
+execute in super_server:mace_master run tp @a[tag=GoTo_Mace_Masters] 0 301 0 0 0
+tag @a remove GoTo_Mace_Masters
 
 
 
@@ -96,6 +99,7 @@ scoreboard players set @a[scores={MAIN_Leave=1..}] MAIN_Leave 0
 #3 - Gorbino
 #4 - Parkor
 #5 - Skyblock
+#6 - Mace master
 
 
 execute as @a[nbt={Dimension:"super_server:lobby"}] run scoreboard players set @s MAIN_Game 0
@@ -106,6 +110,7 @@ execute as @a[nbt={Dimension:"gorbino:lobby"}] run scoreboard players set @s MAI
 execute as @a[nbt={Dimension:"parkor:game"}] run scoreboard players set @s MAIN_Game 4
 execute as @a[nbt={Dimension:"minecraft:overworld"}] run scoreboard players set @s MAIN_Game 5
 execute as @a[nbt={Dimension:"minecraft:the_nether"}] run scoreboard players set @s MAIN_Game 5
+execute as @a[nbt={Dimension:"super_server:mace_master"}] run scoreboard players set @s MAIN_Game 6
 
 
 

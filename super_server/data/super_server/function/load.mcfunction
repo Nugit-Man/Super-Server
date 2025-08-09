@@ -66,3 +66,7 @@ scoreboard objectives add Lobby trigger Lobby
 
 #Joining and leaveing the game
 scoreboard objectives add MAIN_Leave custom:minecraft.leave_game
+
+
+#check Mace
+scoreboard objectives add MACE_Check dummy
