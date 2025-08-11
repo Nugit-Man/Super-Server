@@ -134,6 +134,7 @@ scoreboard players set @a MAIN_Sneak_Time 0
 scoreboard players set @a MAIN_Deaths 0
 scoreboard players set @a MAIN_Crossbow_Used 0
 scoreboard players set @a MAIN_Total_Kills 0
+scoreboard players set @a MAIN_Player_Kills 0
 scoreboard players set @a MAIN_Jumps 0
 scoreboard players set @a MAIN_Fish_Caught 0
 
@@ -152,3 +153,6 @@ experience add @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] 1 points
 execute at @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] run playsound minecraft:entity.experience_orb.pickup master @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}]
 scoreboard players remove @a[scores={MAIN_XP_Timer=16,MAIN_Achivement_XP=1..}] MAIN_Achivement_XP 1
 scoreboard players set @a[scores={MAIN_XP_Timer=21,MAIN_Achivement_XP=1..}] MAIN_XP_Timer 14
+
+#Mace Masters
+function super_server:mace/tick
