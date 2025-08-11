@@ -71,8 +71,8 @@ tag @a[scores={FI_Mana_Cooldown_flint_sword=100}] remove FI_Explosive_Hit
 
 #Axes
 #Emerald axe heal
-effect give @a[tag=FI_Ability_Health_Of_Wealth] regeneration 1 255 true
-effect clear @a[tag=!FI_Ability_Health_Of_Wealth] regeneration
+effect give @a[tag=FI_Ability_Health_Of_Wealth,scores={MAIN_Game=2}] regeneration 1 255 true
+effect clear @a[tag=!FI_Ability_Health_Of_Wealth,scores={MAIN_Game=2}] regeneration
 tag @a remove FI_Ability_Health_Of_Wealth
 
 #Stone Axe Attack Speed
