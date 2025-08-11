@@ -135,6 +135,7 @@ scoreboard players set @a MAIN_Sneak_Time 0
 scoreboard players set @a MAIN_Deaths 0
 scoreboard players set @a MAIN_Crossbow_Used 0
 scoreboard players set @a MAIN_Total_Kills 0
+scoreboard players set @a MAIN_Player_Kills 0
 scoreboard players set @a MAIN_Jumps 0
 scoreboard players set @a MAIN_Fish_Caught 0
 
@@ -159,3 +160,6 @@ xp set @a[scores={MAIN_Game=0},tag=!MAIN_XP_Reset] 0 levels
 xp set @a[scores={MAIN_Game=0},tag=!MAIN_XP_Reset] 0 points
 advancement revoke @a[scores={MAIN_Game=0},tag=!MAIN_XP_Reset] everything
 tag @a add MAIN_XP_Reset
+
+#Mace Masters
+function super_server:mace/tick
