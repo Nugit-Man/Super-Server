@@ -80,8 +80,7 @@ execute as @a[tag=!MAIN_log] run attribute @s knockback_resistance base reset
 execute as @a[tag=!MAIN_log] run attribute @s luck base reset
 execute as @a[tag=!MAIN_log] run attribute @s max_health base reset
 execute as @a[tag=!MAIN_log] run attribute @s step_height base reset
-
-
+#Finish login
 tag @a[tag=!MAIN_log] add MAIN_log
 scoreboard players set @a[scores={MAIN_Leave=1..}] MAIN_Leave 0
 
@@ -153,9 +152,3 @@ experience add @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] 1 points
 execute at @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] run playsound minecraft:entity.experience_orb.pickup master @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}]
 scoreboard players remove @a[scores={MAIN_XP_Timer=16,MAIN_Achivement_XP=1..}] MAIN_Achivement_XP 1
 scoreboard players set @a[scores={MAIN_XP_Timer=21,MAIN_Achivement_XP=1..}] MAIN_XP_Timer 14
-
-#Update advancemetn
-xp set @a[scores={MAIN_Game=0},tag=!MAIN_XP_Reset] 0 levels
-xp set @a[scores={MAIN_Game=0},tag=!MAIN_XP_Reset] 0 points
-advancement revoke @a[scores={MAIN_Game=0},tag=!MAIN_XP_Reset] everything
-tag @a add MAIN_XP_Reset
