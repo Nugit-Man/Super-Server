@@ -54,6 +54,11 @@ execute in super_server:mace_master run spawnpoint @a[tag=GoTo_Mace_Masters] 0 3
 execute in super_server:mace_master run tp @a[tag=GoTo_Mace_Masters] 0 301 0 0 0
 tag @a remove GoTo_Mace_Masters
 
+#Lobby --> Mace
+execute in ascendance:game run spawnpoint @a[tag=GoTo_Ascendance] 38 25 37 0
+execute in ascendance:game run tp @a[tag=GoTo_Ascendance] 38 25 37 0 0
+tag @a remove GoTo_Ascendance
+
 
 
 
@@ -111,6 +116,13 @@ execute as @a[nbt={Dimension:"minecraft:overworld"}] run scoreboard players set 
 execute as @a[nbt={Dimension:"minecraft:the_nether"}] run scoreboard players set @s MAIN_Game 5
 execute as @a[nbt={Dimension:"super_server:mace_master"}] run scoreboard players set @s MAIN_Game 6
 
+
+team join Final_Island @a[scores={MAIN_Game=2}]
+team join Gorbino @a[scores={MAIN_Game=3}]
+team join Skyblock @a[scores={MAIN_Game=5}]
+team join Mace_Master @a[scores={MAIN_Game=6}]
+team join Lobby @a[scores={MAIN_Game=0}]
+team join Ascendance @a[scores={MAIN_Game=1}]
 
 
 #Pass the MAIN_------ scoreboards into the game specific ones
