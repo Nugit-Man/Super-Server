@@ -45,3 +45,10 @@ loot replace entity @e[type=zombie,tag=FI_Zombie_Armor_Bedrock] armor.feet loot 
 loot replace entity @e[type=zombie,tag=FI_Zombie_Armor_Bedrock] weapon.mainhand loot final_island:bedrock_sword
 
 tag @e[type=zombie,tag=FI_Zombie_Armor_Bedrock] remove FI_Zombie_Armor_Bedrock
+
+loot replace entity @e[type=skeleton,tag=FI_Skeleton_Armor] armor.head loot final_island:skeleton_helmet
+loot replace entity @e[type=skeleton,tag=FI_Skeleton_Armor] armor.chest loot final_island:skeleton_chestplate
+loot replace entity @e[type=skeleton,tag=FI_Skeleton_Armor] armor.legs loot final_island:skeleton_leggings
+loot replace entity @e[type=skeleton,tag=FI_Skeleton_Armor] armor.feet loot final_island:skeleton_boots
+
+tag @e[type=skeleton,tag=FI_Skeleton_Armor] remove FI_Skeleton_Armor
