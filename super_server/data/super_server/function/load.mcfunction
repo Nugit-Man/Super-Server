@@ -71,11 +71,9 @@ scoreboard objectives add MAIN_Leave custom:minecraft.leave_game
 #check Mace
 scoreboard objectives add MACE_Check dummy
 
-<<<<<<< HEAD
 
 
 #Add Teams for each game a player is in
-=======
 #Add teams for games
 team add Final_Island
 team add Gorbino
@@ -90,4 +88,3 @@ team modify Skyblock prefix "[SKY] "
 team modify Lobby prefix "[Lobby] "
 team modify Mace_Master prefix "[Mace] "
 team modify Ascendance prefix "[Asc] "
->>>>>>> eba877fe30eb2e25c701ab2b2ff007f7fa1e17f7
