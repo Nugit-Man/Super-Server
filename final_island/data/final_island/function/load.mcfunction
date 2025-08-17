@@ -34,6 +34,14 @@ function final_island:spawn_items/zombies/iron
 function final_island:spawn_items/zombies/deepslate
 function final_island:spawn_items/zombies/bedrock
 
+#Spawn stuff for spider caves
+function final_island:spawn_items/spider_caves/spider
+function final_island:spawn_items/spider_caves/skeletons
+function final_island:spawn_items/spider_caves/moss
+function final_island:spawn_items/spider_caves/tuff
+function final_island:spawn_items/spider_caves/gravel
+function final_island:spawn_items/spider_caves/dripstone
+
 #Scoreboards for the spawners
 scoreboard objectives add FI_Random dummy
 scoreboard objectives add FI_Item_Cap dummy
@@ -73,6 +81,7 @@ scoreboard objectives add FI_Armor_Set_Iron dummy
 scoreboard objectives add FI_Armor_Set_Stone dummy
 scoreboard objectives add FI_Armor_Set_Gold dummy
 scoreboard objectives add FI_Armor_Set_Copper dummy
+scoreboard objectives add FI_Armor_Set_Tuff dummy
 
 #Scoreboards that are copies of MAIN_------
 scoreboard objectives add FI_Sneak_Time dummy

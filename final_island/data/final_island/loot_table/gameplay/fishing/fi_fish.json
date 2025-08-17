@@ -7,22 +7,26 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:cod",
-          "weight": 60
+          "weight": 60,
+          "quality": -5
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:salmon",
-          "weight": 25
+          "weight": 25,
+          "quality": -2
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:tropical_fish",
-          "weight": 5
+          "weight": 5,
+          "quality": 4
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:pufferfish",
-          "weight": 10
+          "weight": 10,
+          "quality": 3
         }
       ],
       "rolls": 1.0

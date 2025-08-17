@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet",
+          "weight": 50,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet",
+          "weight": 35,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 1,
+              "options": "minecraft:protection"
+            }
+          ],
+          "quality": 1,
+
+          "conditions": []
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet",
+          "weight": 10,
+          "quality": 1,
+          "conditions": []
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet",
+          "weight": 5,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 1,
+              "options": "minecraft:protection"
+            }
+          ],
+          "conditions": []
+        }
+      ]
+    }
+  ],
+  "functions": []
+}
