@@ -71,6 +71,9 @@ scoreboard objectives add MAIN_Leave custom:minecraft.leave_game
 #check Mace
 scoreboard objectives add MACE_Check dummy
 
+
+
+#Add Teams for each game a player is in
 #Add teams for games
 team add Final_Island
 team add Gorbino
