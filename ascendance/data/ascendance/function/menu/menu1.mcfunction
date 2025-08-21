@@ -8,7 +8,7 @@ item replace entity @s inventory.6 with minecraft:air
 item replace entity @s inventory.7 with minecraft:air
 item replace entity @s inventory.8 with minecraft:air
 item replace entity @s inventory.9 with minecraft:air
-item replace entity @s inventory.10 with minecraft:grass_block[custom_name={text:"Select Map"}]
+item replace entity @s inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false}]
 item replace entity @s inventory.11 with minecraft:air
 item replace entity @s inventory.12 with minecraft:air
 #Gaming
@@ -18,13 +18,13 @@ execute if score checkfor starting matches 1 run item replace entity @s[scores={
 
 item replace entity @s inventory.14 with minecraft:air
 item replace entity @s inventory.15 with minecraft:air
-item replace entity @s inventory.16 with minecraft:paper[custom_name={text:"Change Rules"}]
+item replace entity @s inventory.16 with minecraft:paper[custom_name={text:"Change Rules",italic:false}]
 item replace entity @s inventory.17 with minecraft:air
 item replace entity @s inventory.18 with minecraft:air
 item replace entity @s inventory.19 with minecraft:air
 item replace entity @s inventory.20 with minecraft:air
 item replace entity @s inventory.21 with minecraft:air
-item replace entity @s inventory.22 with minecraft:barrier[custom_name={text:"Go Back"}]
+item replace entity @s inventory.22 with minecraft:barrier[custom_name={text:"Go Back",italic:false}]
 item replace entity @s inventory.23 with minecraft:air
 item replace entity @s inventory.24 with minecraft:air
 item replace entity @s inventory.25 with minecraft:air
