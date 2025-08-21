@@ -8,7 +8,7 @@ item replace entity @s inventory.6 with minecraft:air
 item replace entity @s inventory.7 with minecraft:air
 item replace entity @s inventory.8 with minecraft:air
 item replace entity @s inventory.9 with minecraft:air
-item replace entity @s inventory.10 with minecraft:grass_block[custom_name={text:"Select Map"}]
+item replace entity @s inventory.10 with minecraft:dirt[custom_name={text:"Select Map"}]
 item replace entity @s inventory.11 with minecraft:air
 item replace entity @s inventory.12 with minecraft:air
 #Gaming
@@ -24,7 +24,7 @@ item replace entity @s inventory.18 with minecraft:air
 item replace entity @s inventory.19 with minecraft:air
 item replace entity @s inventory.20 with minecraft:air
 item replace entity @s inventory.21 with minecraft:air
-item replace entity @s inventory.22 with minecraft:barrier[custom_name={text:"Go Back"}]
+item replace entity @s inventory.22 with minecraft:barrier[custom_name={text:"Go Back",italic:false}]
 item replace entity @s inventory.23 with minecraft:air
 item replace entity @s inventory.24 with minecraft:air
 item replace entity @s inventory.25 with minecraft:air
