@@ -2,7 +2,7 @@ item replace entity @s inventory.0 with minecraft:air
 item replace entity @s inventory.1 with minecraft:air
 item replace entity @s inventory.2 with minecraft:air
 item replace entity @s inventory.3 with minecraft:air
-item replace entity @s inventory.4 with minecraft:chorus_fruit[custom_name={text:"Random",italic:false},item_model="ascendance:random"]
+item replace entity @s inventory.4 with minecraft:chorus_fruit[custom_name={text:"Random",italic:false},custom_model_data={strings:['Random']}]
 item replace entity @s inventory.5 with minecraft:air
 item replace entity @s inventory.6 with minecraft:air
 item replace entity @s inventory.7 with minecraft:air
@@ -59,6 +59,6 @@ clear @a[scores={MAIN_Game=1,AS_Select=2}]
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
 execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s chorus_fruit 0
 scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 1
-execute as @a[scores={MAIN_Game=1,AS_Select=2}] store result score @s AS_Map run random roll 1..4
+execute as @a[scores={MAIN_Game=1,AS_Select=2}] store result score @s AS_Map run random value 1..4
 scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2,AS_Map=4}] AS_Map 12
 clear @a[scores={MAIN_Game=1,AS_Select=2}]
