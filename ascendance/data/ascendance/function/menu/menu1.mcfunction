@@ -8,7 +8,11 @@ item replace entity @s inventory.6 with minecraft:air
 item replace entity @s inventory.7 with minecraft:air
 item replace entity @s inventory.8 with minecraft:air
 item replace entity @s inventory.9 with minecraft:air
-item replace entity @s inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false}]
+item replace entity @s[scores={AS_Map=0}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false}]
+item replace entity @s[scores={AS_Map=1}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"Desert Tomb","italic":false,"color":"white"}]]]
+item replace entity @s[scores={AS_Map=2}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"Tabletop","italic":false,"color":"white"}]]]
+item replace entity @s[scores={AS_Map=3}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"Brutalism","italic":false,"color":"white"}]]]
+item replace entity @s[scores={AS_Map=12}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"Jungle Pikes","italic":false,"color":"white"}]]]
 item replace entity @s inventory.11 with minecraft:air
 item replace entity @s inventory.12 with minecraft:air
 #Gaming
@@ -41,7 +45,7 @@ execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s
 scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 2
 clear @a[scores={MAIN_Game=1,AS_Select=2}]
 
-scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
-execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s paper 0
-scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 3
-clear @a[scores={MAIN_Game=1,AS_Select=2}]
+#scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
+#execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s paper 0
+#scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 3
+#clear @a[scores={MAIN_Game=1,AS_Select=2}]
