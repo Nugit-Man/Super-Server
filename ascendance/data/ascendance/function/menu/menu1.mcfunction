@@ -18,7 +18,7 @@ item replace entity @s inventory.12 with minecraft:air
 #Gaming
 item replace entity @s[scores={AS_Map=0}] inventory.13 with minecraft:black_concrete[custom_name={text:"Select a map",italic:false}]
 item replace entity @s[scores={AS_Map=1..}] inventory.13 with minecraft:green_concrete[custom_name={text:"Click to start",italic:false}]
-execute if entity @r[scores={MAIN_Game=1,AS_Countdown=1..}] run item replace entity @s inventory.13 with minecraft:barrier[custom_name={text:"A match is already starting",italic:false}]
+execute if entity @r[scores={MAIN_Game=1,AS_Countdown=1..11}] run item replace entity @s inventory.13 with minecraft:barrier[custom_name={text:"A match is already starting",italic:false}]
 execute if score @s AS_Countdown matches 1.. run item replace entity @s[scores={AS_Map=1..}] inventory.13 with minecraft:red_concrete[custom_name={text:"Cancel",italic:false}]
 
 

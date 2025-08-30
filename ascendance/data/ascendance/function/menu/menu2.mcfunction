@@ -8,13 +8,13 @@ item replace entity @s inventory.6 with minecraft:air
 item replace entity @s inventory.7 with minecraft:air
 item replace entity @s inventory.8 with minecraft:air
 item replace entity @s inventory.9 with minecraft:air
-item replace entity @s inventory.10 with minecraft:sandstone[custom_name={text:"Desert Tomb:",italic:false}]
+item replace entity @s inventory.10 with minecraft:sandstone[custom_name={text:"Desert Tomb",italic:false}]
 item replace entity @s inventory.11 with minecraft:air
-item replace entity @s inventory.12 with minecraft:black_concrete[custom_name={text:"Tabletop:",italic:false}]
+item replace entity @s inventory.12 with minecraft:black_concrete[custom_name={text:"Tabletop",italic:false}]
 item replace entity @s inventory.13 with minecraft:air
-item replace entity @s inventory.14 with minecraft:polished_andesite[custom_name={text:"Brutalism:",italic:false}]
+item replace entity @s inventory.14 with minecraft:polished_andesite[custom_name={text:"Brutalism",italic:false}]
 item replace entity @s inventory.15 with minecraft:air
-item replace entity @s inventory.16 with minecraft:grass_block[custom_name={text:"Jungle Pikes:",italic:false}]
+item replace entity @s inventory.16 with minecraft:grass_block[custom_name={text:"Jungle Pikes",italic:false}]
 item replace entity @s inventory.17 with minecraft:air
 item replace entity @s inventory.18 with minecraft:air
 item replace entity @s inventory.19 with minecraft:air
@@ -25,6 +25,16 @@ item replace entity @s inventory.23 with minecraft:air
 item replace entity @s inventory.24 with minecraft:air
 item replace entity @s inventory.25 with minecraft:air
 item replace entity @s inventory.26 with minecraft:air
+
+
+#In use bc a multipler match is taking place
+execute if score $ AS_Map_DesertTomb matches 100 run item replace entity @s inventory.10 with minecraft:bedrock[custom_name={text:"In Use",italic:false}]
+execute if score $ AS_Map_Tabletop matches 100 run item replace entity @s inventory.12 with minecraft:bedrock[custom_name={text:"In Use",italic:false}]
+execute if score $ AS_Map_Brutalism matches 100 run item replace entity @s inventory.14 with minecraft:bedrock[custom_name={text:"In Use",italic:false}]
+execute if score $ AS_Map_JunglePikes matches 100 run item replace entity @s inventory.16 with minecraft:bedrock[custom_name={text:"In Use",italic:false}]
+
+
+
 
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
 execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s barrier 0
