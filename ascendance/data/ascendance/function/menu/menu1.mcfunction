@@ -18,7 +18,9 @@ item replace entity @s inventory.12 with minecraft:air
 #Gaming
 item replace entity @s[scores={AS_Map=0}] inventory.13 with minecraft:black_concrete[custom_name={text:"Select a map",italic:false}]
 item replace entity @s[scores={AS_Map=1..}] inventory.13 with minecraft:green_concrete[custom_name={text:"Click to start",italic:false}]
-execute if score checkfor starting matches 1 run item replace entity @s[scores={AS_Map=1..}] inventory.13 with minecraft:red_concrete[custom_name={text:"Cancel",italic:false}]
+execute if entity @r[scores={MAIN_Game=1,AS_Countdown=1..}] run item replace entity @s inventory.13 with minecraft:barrier[custom_name={text:"A match is already starting",italic:false}]
+execute if score @s AS_Countdown matches 1.. run item replace entity @s[scores={AS_Map=1..}] inventory.13 with minecraft:red_concrete[custom_name={text:"Cancel",italic:false}]
+
 
 item replace entity @s inventory.14 with minecraft:air
 item replace entity @s inventory.15 with minecraft:air
@@ -42,10 +44,16 @@ clear @a[scores={MAIN_Game=1,AS_Select=2}]
 
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
 execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s grass_block 0
-scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 2
+scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2,AS_Countdown=0}] AS_Menu 2
+tellraw @a[scores={MAIN_Game=1,AS_Select=2,AS_Countdown=1..}] {text:"You cannot change the map while starting a match",color:red}
 clear @a[scores={MAIN_Game=1,AS_Select=2}]
 
-#scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
-#execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s paper 0
+scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
+execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s paper 0
 #scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 3
-#clear @a[scores={MAIN_Game=1,AS_Select=2}]
+clear @a[scores={MAIN_Game=1,AS_Select=2}]
+
+scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
+execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s green_concrete 0
+execute as @r[scores={MAIN_Game=1,AS_Select=2}] run function ascendance:menu/gamestart
+clear @a[scores={MAIN_Game=1,AS_Select=2}]

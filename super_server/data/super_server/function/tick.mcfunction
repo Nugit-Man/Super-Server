@@ -54,9 +54,10 @@ execute in super_server:mace_master run spawnpoint @a[tag=GoTo_Mace_Masters] 0 3
 execute in super_server:mace_master run tp @a[tag=GoTo_Mace_Masters] 0 301 0 0 0
 tag @a remove GoTo_Mace_Masters
 
-#Lobby --> Mace
+#Lobby --> Ascendance
 execute in ascendance:game run spawnpoint @a[tag=GoTo_Ascendance] 38 25 37 0
 execute in ascendance:game run tp @a[tag=GoTo_Ascendance] 38 25 37 0 0
+tag @a[tag=GoTo_Ascendance] remove AS_Welcome
 tag @a remove GoTo_Ascendance
 
 
