@@ -2,6 +2,12 @@ scoreboard players add @a[scores={MAIN_Game=1,AS_Countdown=1..}] AS_Countdown 1
 
 
 #starting the game code, the person who started it will have a score of 11 and the ones who joined a score of -1
+
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] run scoreboard objectives add AS_Map_DesertTomb dummy "Map: Desert Tomb"
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] run scoreboard players set $ AS_Map_DesertTomb 100
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] run scoreboard players display name $ AS_Map_DesertTomb "First to"
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] run scoreboard players display numberformat $ AS_Map_DesertTomb fixed {text:"25 kills"}
+
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11}] run scoreboard players operation @a[scores={MAIN_Game=1,AS_Countdown=-1}] AS_Map = @s AS_Map
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11}] run scoreboard players set @a[scores={MAIN_Game=1,AS_Countdown=-1}] AS_Countdown 11
 tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] 1020 3 34 180 0
