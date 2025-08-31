@@ -28,6 +28,9 @@ execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=12}] run scoreb
 
 #Run the thing if the map is in use
 execute if score $ AS_Map_DesertTomb matches 100 run function ascendance:gaming/maps/desert_tomb/tick
+execute if score $ AS_Map_Tabletop matches 100 run function ascendance:gaming/maps/tabletop/tick
+execute if score $ AS_Map_Brutalism matches 100 run function ascendance:gaming/maps/brutalism/tick
+execute if score $ AS_Map_JunglePikes matches 100 run function ascendance:gaming/maps/jungle_pikes/tick
 
 
 
