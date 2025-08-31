@@ -1,8 +1,5 @@
-execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] run scoreboard objectives add AS_Map_DesertTomb dummy "Map: Desert Tomb"
-execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] run scoreboard players set $ AS_Map_DesertTomb 100
-execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] run scoreboard players display name $ AS_Map_DesertTomb "First to"
-execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] run scoreboard players display numberformat $ AS_Map_DesertTomb fixed {text:"25 kills"}
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] run function ascendance:gaming/maps/desert_tomb/load
+
 
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=2}] run scoreboard objectives add AS_Map_Tabletop dummy "Map: Tabletop"
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=2}] run scoreboard players set $ AS_Map_Tabletop 100

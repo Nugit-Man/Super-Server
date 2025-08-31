@@ -1,5 +1,5 @@
-tp @a[tag=AS_Winner] 38 25 37 0 0
-tp @a[tag=AS_Loser] 38 25 37 0 0
+execute in ascendance:game run tp @a[tag=AS_GoHome] 38 25 37 0 0
 
-spawnpoint @a[tag=AS_Winner] 38 25 37 0
-spawnpoint @a[tag=AS_Loser] 38 25 37 0
+execute in ascendance:game run spawnpoint @a[tag=AS_GoHome] 38 25 37 0
+
+tag @a[tag=AS_GoHome] remove AS_Welcome
