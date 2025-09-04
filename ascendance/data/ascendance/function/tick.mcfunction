@@ -9,8 +9,8 @@ tag @a[scores={MAIN_Game=1},tag=!AS_Welcome] add AS_Welcome
 effect give @a[scores={MAIN_Game=1}] saturation infinite 0 true
 
 
-
-
+#Arrow Cleanup
+execute at @a[scores={MAIN_Game=1}] run kill @e[type=arrow,distance=..50,nbt={Motion:[0d,0d,0d]}]
 
 
 #Give the players menus
