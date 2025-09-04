@@ -38,6 +38,12 @@ execute if score $ AS_Map_JunglePikes matches 100 run function ascendance:gaming
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Kills 0
 
 
-
+#kill on hit and remove hitting
 kill @a[nbt={HurtTime:9s, Dimension:"ascendance:game"},scores={MAIN_Game=1}]
 execute as @a[scores={MAIN_Game=1}] run attribute @s attack_damage base set -10
+
+
+#Set up join game
+scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_JoinGame 0
+scoreboard players enable @a[scores={MAIN_Game=1,AS_Mode=0}] AS_JoinGame
+scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0,AS_JoinGame=1..}] AS_Countdown -1

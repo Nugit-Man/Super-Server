@@ -8,6 +8,7 @@ scoreboard objectives add AS_Menu dummy
 scoreboard objectives add AS_Select dummy
 scoreboard objectives add AS_Countdown dummy
 scoreboard objectives add AS_Spread dummy
+scoreboard objectives add AS_JoinGame trigger
 
 #start the countdown timer
 function ascendance:menu/countdown
