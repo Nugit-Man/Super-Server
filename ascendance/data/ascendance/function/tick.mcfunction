@@ -47,3 +47,4 @@ execute as @a[scores={MAIN_Game=1}] run attribute @s attack_damage base set -10
 scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_JoinGame 0
 scoreboard players enable @a[scores={MAIN_Game=1,AS_Mode=0}] AS_JoinGame
 scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0,AS_JoinGame=1..}] AS_Countdown -1
+tellraw @a[scores={MAIN_Game=1,AS_Mode=0,AS_JoinGame=1..}] "You have joined the game"
