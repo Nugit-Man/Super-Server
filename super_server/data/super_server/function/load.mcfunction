@@ -88,3 +88,14 @@ team modify Skyblock prefix "[SKY] "
 team modify Lobby prefix "[Lobby] "
 team modify Mace_Master prefix "[Mace] "
 team modify Ascendance prefix "[Asc] "
+
+team modify Final_Island seeFriendlyInvisibles false
+team modify Gorbino seeFriendlyInvisibles false
+team modify Skyblock seeFriendlyInvisibles false
+team modify Lobby seeFriendlyInvisibles false
+team modify Mace_Master seeFriendlyInvisibles false
+team modify Ascendance seeFriendlyInvisibles false
+
+
+#Adding Timers
+scoreboard objectives add MAIN_Time dummy

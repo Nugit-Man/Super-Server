@@ -171,3 +171,8 @@ scoreboard players set @a[scores={MAIN_XP_Timer=21,MAIN_Achivement_XP=1..}] MAIN
 
 #Mace Masters
 function super_server:mace/tick
+
+
+#Timers
+execute if score MAIN_5s MAIN_Time matches 100 run scoreboard players set MAIN_5s MAIN_Time 0
+scoreboard players add MAIN_5s MAIN_Time 1
