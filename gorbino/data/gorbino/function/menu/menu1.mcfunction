@@ -241,8 +241,8 @@ item replace entity @s[tag=GB_curry] inventory.24 with rabbit_stew[custom_name=[
 item replace entity @s[tag=!GB_knockback] inventory.10 with stick[custom_name=[{text:"Knockback Stick [1]",italic:false}]]
 item replace entity @s[tag=GB_knockback] inventory.10 with stick[custom_name=[{text:"Knockback Stick [1]",italic:false}],enchantment_glint_override=true]
 
-item replace entity @s[tag=!GB_invis] inventory.19 with glass_pane[custom_name=[{text:"Invisabilty [1]",italic:false}]]
-item replace entity @s[tag=GB_invis] inventory.19 with glass_pane[custom_name=[{text:"Invisabilty [1]",italic:false}],enchantment_glint_override=true]
+item replace entity @s[tag=!GB_invis] inventory.19 with glass_pane[custom_name=[{text:"InvisIbilty [1]",italic:false}]]
+item replace entity @s[tag=GB_invis] inventory.19 with glass_pane[custom_name=[{text:"InvisIbilty [1]",italic:false}],enchantment_glint_override=true]
 
 item replace entity @s[tag=!GB_elytra] inventory.16 with elytra[custom_name=[{text:"Elytra [1]",italic:false}]]
 item replace entity @s[tag=GB_elytra] inventory.16 with elytra[custom_name=[{text:"Elytra [1]",italic:false}],enchantment_glint_override=true]
