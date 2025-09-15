@@ -98,11 +98,11 @@ item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_heavy_armor] armor.
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_heavy_armor] armor.legs with minecraft:iron_leggings[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_heavy_armor] armor.feet with minecraft:iron_boots[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 #execute as @a[tag=GB_heavy_armor] run item replace entity @s[scores={GB_Mode=1,MAIN_Game=3},tag=GB_sneak] armor.legs with minecraft:iron_leggings[unbreakable={show_in_tooltip:false},enchantments={swift_sneak:3}]
+give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knight] iron_sword[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_lumberjack] iron_axe[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] bow[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] arrow 8
 scoreboard players set @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] GB_Arrow 0
-give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knight] iron_sword[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knight] weapon.offhand with minecraft:shield[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knockback] stick[custom_name=[{text:"Knockback Stick",italic: false}],enchantments={knockback:3}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_dash] sugar[custom_name=[{text:"Dash",italic:false,color:"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.05,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:2}]
