@@ -24,7 +24,7 @@ execute if score @s AS_Countdown matches 1.. run item replace entity @s[scores={
 
 item replace entity @s inventory.14 with minecraft:air
 item replace entity @s inventory.15 with minecraft:air
-item replace entity @s inventory.16 with minecraft:paper[custom_name={text:"Change Rules",italic:false}]
+item replace entity @s inventory.16 with minecraft:paper[custom_name={text:"Change Rules",italic:false},lore=[[{text:"Comming Soon, once it's out of beta"}]]]
 item replace entity @s inventory.17 with minecraft:air
 item replace entity @s inventory.18 with minecraft:air
 item replace entity @s inventory.19 with minecraft:air
