@@ -64,7 +64,7 @@ clear @a[scores={MAIN_Game=1,AS_Select=2}]
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
 execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s grass_block 0
 scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 1
-scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Map 3
+scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Map 12
 clear @a[scores={MAIN_Game=1,AS_Select=2}]
 
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
