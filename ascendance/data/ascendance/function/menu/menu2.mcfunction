@@ -51,8 +51,7 @@ clear @a[scores={MAIN_Game=1,AS_Select=2}]
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
 execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s black_concrete 0
 scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 1
-scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Countdown 0
-execute as @a[scores={MAIN_Game=1,AS_Select=2}] run scoreboard players set @a[scores={MAIN_Game=1,AS_Countdown=-1}] AS_Countdown 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Map 2
 clear @a[scores={MAIN_Game=1,AS_Select=2}]
 
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
