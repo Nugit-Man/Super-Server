@@ -6,7 +6,10 @@ execute as @a[scores={MAIN_Game=1},tag=AS_Winner] run function ascendance:gaming
 #Spawn points
 execute at @e[type=marker,limit=1,sort=random,tag=AS_Spawn_Tabletop] run spawnpoint @r[scores={MAIN_Game=1,AS_Map=2,AS_Mode=1}]
 
-
+#reset the $'s
+scoreboard players set $ AS_Spread 0
+scoreboard players set $$ AS_Spread 0
+scoreboard players set $$$ AS_Spread 0
 
 #Get Spread and Winning
 scoreboard players operation $ AS_Spread > @a[scores={MAIN_Game=1,AS_Map=2,AS_Mode=1}] AS_Map_Tabletop
