@@ -86,6 +86,7 @@ execute as @a[scores={MAIN_Game=0}] run attribute @s knockback_resistance base r
 execute as @a[scores={MAIN_Game=0}] run attribute @s luck base reset
 execute as @a[scores={MAIN_Game=0}] run attribute @s max_health base reset
 execute as @a[scores={MAIN_Game=0}] run attribute @s step_height base reset
+execute as @a[scores={MAIN_Game=0}] run attribute @s scale base reset
 #Finish login
 tag @a[tag=!MAIN_log] add MAIN_log
 scoreboard players set @a[scores={MAIN_Leave=1..}] MAIN_Leave 0
