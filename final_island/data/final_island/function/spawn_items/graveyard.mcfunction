@@ -9,4 +9,4 @@ execute if score FI_dark_oak_log FI_Item_Cap matches 0 in final_island:game if s
 execute if score FI_dark_oak_log FI_Item_Cap matches 0 in final_island:game if score FI_dark_oak_log FI_Random matches 2 run summon item 50 11 105 {Item:{id:"minecraft:dark_oak_log",count:1b}}
 execute if score FI_spruce_log FI_Item_Cap matches 0 in final_island:game if score FI_dark_oak_log FI_Random matches 3 run summon item 33 11 115 {Item:{id:"minecraft:spruce_log",count:1b}}
 execute if score FI_spruce_log FI_Item_Cap matches 0 in final_island:game if score FI_dark_oak_log FI_Random matches 4 run summon item 29 11 120 {Item:{id:"minecraft:spruce_log",count:1b}}
-schedule function final_island:spawn_items/graveyard 12t
+schedule function final_island:spawn_items/graveyard 8t
