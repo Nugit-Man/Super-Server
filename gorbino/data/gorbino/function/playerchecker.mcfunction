@@ -15,6 +15,43 @@ execute if score 1 GB_Select matches 1 run execute at @a[scores={MAIN_Game=3,GB_
 execute if score 1 GB_Select matches 1 run execute at @a[scores={MAIN_Game=3,GB_Mode=1}] run summon splash_potion ~ ~ ~ {Motion:[0.0,-1.0,0.0],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:water"}}}}
 execute if score 1 GB_Select matches 1 run execute at @a[scores={MAIN_Game=3,GB_Mode=1}] run summon splash_potion ~ ~10 ~ {Motion:[0.0,-1.0,0.0],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:water"}}}}
 
+#New Cleanup
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~ ~-30 ~30 ~7 ~30 stone replace lava[level=0]
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~8 ~-30 ~30 ~15 ~30 stone replace lava[level=0]
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~16 ~-30 ~30 ~23 ~30 stone replace lava[level=0]
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~24 ~-30 ~30 ~31 ~30 stone replace lava[level=0]
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-8 ~-30 ~30 ~-1 ~30 stone replace lava[level=0]
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-16 ~-30 ~30 ~-7 ~30 stone replace lava[level=0]
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-24 ~-30 ~30 ~-15 ~30 stone replace lava[level=0]
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-32 ~-30 ~30 ~-23 ~30 stone replace lava[level=0]
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-40 ~-30 ~30 ~-39 ~30 stone replace lava[level=0]
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-48 ~-30 ~30 ~-41 ~30 stone replace lava[level=0]
+
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~ ~-30 ~30 ~7 ~30 air replace lava
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~8 ~-30 ~30 ~15 ~30 air replace lava
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~16 ~-30 ~30 ~23 ~30 air replace lava
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~24 ~-30 ~30 ~31 ~30 air replace lava
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-8 ~-30 ~30 ~-1 ~30 air replace lava
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-16 ~-30 ~30 ~-7 ~30 air replace lava
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-24 ~-30 ~30 ~-15 ~30 air replace lava
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-32 ~-30 ~30 ~-23 ~30 air replace lava
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-40 ~-30 ~30 ~-39 ~30 air replace lava
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-48 ~-30 ~30 ~-41 ~30 air replace lava
+
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~ ~-30 ~30 ~7 ~30 air replace fire
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~8 ~-30 ~30 ~15 ~30 air replace fire
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~16 ~-30 ~30 ~23 ~30 air replace fire
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~24 ~-30 ~30 ~31 ~30 air replace fire
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-8 ~-30 ~30 ~-1 ~30 air replace fire
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-16 ~-30 ~30 ~-7 ~30 air replace fire
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-24 ~-30 ~30 ~-15 ~30 air replace fire
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-32 ~-30 ~30 ~-23 ~30 air replace fire
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-40 ~-30 ~30 ~-39 ~30 air replace fire
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-48 ~-30 ~30 ~-41 ~30 air replace fire
+
+
+
+
 #Give advancements
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,MAIN_Game=3}] only gorbino:first_fight
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,GB_Points=4,MAIN_Game=3}] only gorbino:4points
@@ -55,3 +92,4 @@ execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 
 #it works I think?
 #LMAO what is this?
 #I don't man, Imma go out on a date with Brook's ex
+#Man, why wasn't I allowed? It would have been so funny
