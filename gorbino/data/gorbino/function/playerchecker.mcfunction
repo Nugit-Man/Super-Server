@@ -53,6 +53,7 @@ execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_clea
 
 
 #Give advancements
+execute if score 1 GB_Select matches 1 run execute as @a[scores={MAIN_Game=3,GB_Mode=1,GB_Points=5},tag=!GB_knight] run execute as @s[tag=!GB_lava] run execute as @s[tag=!GB_fireball] run execute as @s[tag=!GB_chain_armor] run execute as @s[tag=!GB_heavy_armor] run execute as @s[tag=!GB_lumberjack] run execute as @s[tag=!GB_knockback] run advancement grant @s[tag=!GB_archer] only gorbino:spells
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,MAIN_Game=3}] only gorbino:first_fight
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,GB_Points=4,MAIN_Game=3}] only gorbino:4points
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,GB_Points=3,MAIN_Game=3}] only gorbino:3points
