@@ -9,7 +9,7 @@
                 "nutrition": 0,
                 "saturation": 0,
                 "can_always_eat": true,
-                "eat_seconds": 0.5
+                "eat_seconds": 0.75
               }
             }
           }
@@ -17,6 +17,6 @@
       }
     },
     "rewards": {
-      "function": "super_server:10tick"
+      "function": "super_server:15tick"
     }
   }
