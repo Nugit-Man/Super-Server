@@ -10,6 +10,11 @@ execute if score 2 GB_Select matches 0.. run execute as @a[scores={GB_Mode=2,MAI
 execute if score 1 GB_Select matches 1 run title @a[scores={GB_Mode=1,MAIN_Game=3}] subtitle "Victory!"
 execute if score 1 GB_Select matches 1 run scoreboard players add @a[scores={MAIN_Game=3,GB_Mode=1}] GB_Milestones_Wins 1
 
+#extinguish
+execute if score 1 GB_Select matches 1 run execute at @a[scores={MAIN_Game=3,GB_Mode=1}] run summon splash_potion ~ ~1 ~ {Motion:[0.0,-1.0,0.0],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:water"}}}}
+execute if score 1 GB_Select matches 1 run execute at @a[scores={MAIN_Game=3,GB_Mode=1}] run summon splash_potion ~ ~ ~ {Motion:[0.0,-1.0,0.0],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:water"}}}}
+execute if score 1 GB_Select matches 1 run execute at @a[scores={MAIN_Game=3,GB_Mode=1}] run summon splash_potion ~ ~10 ~ {Motion:[0.0,-1.0,0.0],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:water"}}}}
+
 #Give advancements
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,MAIN_Game=3}] only gorbino:first_fight
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,GB_Points=4,MAIN_Game=3}] only gorbino:4points
