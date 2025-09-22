@@ -75,4 +75,4 @@ give @s sugar[custom_name=[{"text":"Dash","italic":false,"color":"white"}],food=
 
 #Acdancement
 scoreboard players add @s GB_Dash_Check 1
-advancement grant @s[scores={GB_Dash_Check=100}] only gorbino:speed
+advancement grant @s[scores={GB_Dash_Check=50}] only gorbino:speed
