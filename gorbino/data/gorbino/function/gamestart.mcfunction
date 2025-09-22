@@ -139,7 +139,8 @@ execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s min
 effect give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] speed infinite 4 true
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run advancement grant @s[tag=GB_shrink] only gorbino:size
 #shotgun and super shotgun code need fixing
-give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shotgun] crossbow[charged_projectiles=[{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:2,explosions:[{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"}]}}}],unbreakable={},tooltip_display={hide_tooltip:true}]
+#give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shotgun] crossbow[charged_projectiles=[{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:2,explosions:[{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"}]}}}],unbreakable={},tooltip_display={hide_tooltip:true}]
+give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_heal] red_dye[custom_name={text:"Heal",italic:false},food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:3,sound:"entity.generic.eat",has_consume_particles:0b},use_cooldown={seconds:30}]
 #execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_super_shotgun] run attribute @s max_health base set 2
 #give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_super_shotgun] crossbow[custom_name=[{text: "Shotgun","bold": true,italic:false,"color":"red"}],enchantments={levels:{"minecraft:multishot":1}},unbreakable={show_in_tooltip:false}] 1
 #give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_super_shotgun] firework_rocket[fireworks={flight_duration:1,explosions:[ ... truncated for brevity ... ]}]

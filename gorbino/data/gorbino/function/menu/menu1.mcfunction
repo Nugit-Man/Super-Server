@@ -229,8 +229,8 @@ item replace entity @s[tag=GB_shrink] inventory.15 with pufferfish[custom_name=[
 item replace entity @s[tag=!GB_lava] inventory.7 with lava_bucket[custom_name=[{text:"Lava [2]",italic:false}]]
 item replace entity @s[tag=GB_lava] inventory.7 with lava_bucket[custom_name=[{text:"Lava [2]",italic:false}],enchantment_glint_override=true]
 
-item replace entity @s[tag=!GB_shotgun] inventory.1 with crossbow[custom_name=[{text:"Shotgun [3]",italic:false}]]
-item replace entity @s[tag=GB_shotgun] inventory.1 with crossbow[custom_name=[{text:"Shotgun [3]",italic:false}],enchantment_glint_override=true]
+item replace entity @s[tag=!GB_heal] inventory.1 with red_dye[custom_name=[{text:"Heal [1]",italic:false}]]
+item replace entity @s[tag=GB_heal] inventory.1 with red_dye[custom_name=[{text:"Heal [1]",italic:false}],enchantment_glint_override=true]
 
 item replace entity @s[tag=!GB_cancer] inventory.25 with prismarine_crystals[custom_name=[{text:"Cancer [1]",italic:false}]]
 item replace entity @s[tag=GB_cancer] inventory.25 with prismarine_crystals[custom_name=[{text:"Cancer [1]",italic:false}],enchantment_glint_override=true]
@@ -281,13 +281,13 @@ tag @s remove GB_check
 execute if score @s GB_Select matches 2 run clear @s
 scoreboard players set @s GB_Select 1
 
-execute store result score @s GB_Select run clear @s crossbow 0
-execute if score @s[tag=GB_shotgun] GB_Select matches 2 run tag @s add GB_check
-execute if score @s[tag=GB_check] GB_Select matches 2 run tag @s remove GB_shotgun
-execute if score @s[tag=GB_check] GB_Select matches 2 run scoreboard players remove @s GB_Points 3
-execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s[scores={GB_Points=3..}] add GB_check
-execute if score @s[tag=!GB_check] GB_Select matches 2 run scoreboard players add @s GB_Points 3
-execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s add GB_shotgun
+execute store result score @s GB_Select run clear @s red_dye 0
+execute if score @s[tag=GB_heal] GB_Select matches 2 run tag @s add GB_check
+execute if score @s[tag=GB_check] GB_Select matches 2 run tag @s remove GB_heal
+execute if score @s[tag=GB_check] GB_Select matches 2 run scoreboard players remove @s GB_Points 1
+execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s[scores={GB_Points=5..}] add GB_check
+execute if score @s[tag=!GB_check] GB_Select matches 2 run scoreboard players add @s GB_Points 1
+execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s add GB_heal
 tag @s remove GB_check
 execute if score @s GB_Select matches 2 run clear @s
 scoreboard players set @s GB_Select 1

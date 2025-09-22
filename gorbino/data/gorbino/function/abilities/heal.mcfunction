@@ -1,0 +1,2 @@
+give @s red_dye[custom_name={text:"Heal",italic:false},food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:3,sound:"entity.generic.eat",has_consume_particles:0b},use_cooldown={seconds:30}]
+effect give @s regeneration 5 0 true
