@@ -204,4 +204,4 @@ execute if score MAIN_5s MAIN_Time matches 100 run give @a[scores={MAIN_Game=2,G
 #execute at @e[type=tnt,tag=GB_GB_Boom,scores={GB_velocity=599..}] run kill @s
 
 #advancements
-#execute as @a run execute at @s run advancement grant @s[y=-44,dy=-20,scores={MAIN_Game=3}] only gorbino:fall
+execute as @a run execute at @s run advancement grant @s[y=-44,dy=-20,scores={MAIN_Game=3}] only gorbino:fall
