@@ -4,12 +4,12 @@
         "id": "minecraft:flint_and_steel"
       },
       "title": "Pyromaniac",
-      "description": "Win A Fight With Fireball, Flamrunner, and Lava",
+      "description": "Win A Fight With Fireball, Curry, and Lava",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": true
     },
-    "parent": "gorbino:professionals",
+    "parent": "gorbino:little_baby_man",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
