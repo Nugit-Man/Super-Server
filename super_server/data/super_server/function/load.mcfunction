@@ -99,3 +99,7 @@ team modify Ascendance seeFriendlyInvisibles false
 
 #Adding Timers
 scoreboard objectives add MAIN_Time dummy
+
+
+scoreboard objectives add MAIN_Barrel_Check dummy
+scoreboard objectives add MAIN_Barrel_Pos dummy

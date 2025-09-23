@@ -177,3 +177,16 @@ function super_server:mace/tick
 #Timers
 execute if score MAIN_5s MAIN_Time matches 100 run scoreboard players set MAIN_5s MAIN_Time 0
 scoreboard players add MAIN_5s MAIN_Time 1
+
+
+
+#Barrels
+execute in super_server:lobby run item replace block -44 -59 -20 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in super_server:lobby run item replace block 8 -59 8 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+
+execute in gorbino:lobby at @e[type=marker,tag=MAIN_Barrel_Wall] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 1
+execute in gorbino:lobby at @e[type=marker,tag=MAIN_Barrel_Well] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 2
+
+execute as @a[scores={MAIN_Game=3}] run execute store result score @s GB_Barrel_Check run clear @s sunflower
+advancement grant @a[scores={MAIN_Game=3,MAIN_Barrel_Check=1..,MAIN_Barrel_Pos=1}] only gorbino:barrel/wall
+advancement grant @a[scores={MAIN_Game=3,MAIN_Barrel_Check=1..,MAIN_Barrel_Pos=2}] only gorbino:barrel/top
