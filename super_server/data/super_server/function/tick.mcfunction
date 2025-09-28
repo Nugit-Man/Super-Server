@@ -183,6 +183,7 @@ scoreboard players add MAIN_5s MAIN_Time 1
 #Barrels
 execute in super_server:lobby run item replace block -44 -59 -20 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in super_server:lobby run item replace block 8 -59 8 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in super_server:lobby run item replace block -6 -58 -28 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 
 execute in super_server:lobby at @e[type=marker,tag=MAIN_Barrel_Wall] run scoreboard players set @a[distance=..7] MAIN_Barrel_Pos 1
 execute in super_server:lobby at @e[type=marker,tag=MAIN_Barrel_Well] run scoreboard players set @a[distance=..7] MAIN_Barrel_Pos 2
