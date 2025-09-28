@@ -3,20 +3,20 @@
       "icon": {
         "id": "minecraft:barrel"
       },
-      "title": "Lobby Barrel 1",
-      "description": "Hidden within a crack",
+      "title": "Lobby Barrel 3",
+      "description": "Pixel Peak",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "super_server:barrel/super_server",
+    "parent": "super_server:barrel/hidden/well",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
       }
     },
     "rewards": {
-      "function": "super_server:advancement/wall"
+      "function": "super_server:advancement/wall_2"
     }
   }
   

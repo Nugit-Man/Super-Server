@@ -3,7 +3,7 @@
       "icon": {
         "id": "minecraft:barrel"
       },
-      "title": "Lobby Barrel 1",
+      "title": "Lobby Barrel 2",
       "description": "Visable just out of reach",
       "show_toast": true,
       "announce_to_chat": true,
@@ -16,7 +16,7 @@
       }
     },
     "rewards": {
-      "function": "final_island:advancement/barrel/bridge"
+      "function": "super_server:advancement/well"
     }
   }
   
