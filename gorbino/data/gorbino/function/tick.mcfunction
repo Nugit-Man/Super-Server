@@ -88,17 +88,20 @@ execute in gorbino:lobby run item replace block 85 8 51 container.13 with minecr
 execute in gorbino:lobby run item replace block 54 22 77 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in gorbino:lobby run item replace block 74 -18 42 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in gorbino:lobby run item replace block 100 -37 21 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in gorbino:lobby run item replace block 85 1 66 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Wall] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 1
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Top] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 2
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Stewie] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 3
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Ice] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 4
+execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Trickshot] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 5
 
 execute as @a[scores={MAIN_Game=3}] run execute store result score @s GB_Barrel_Check run clear @s sunflower
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=1}] only gorbino:barrel/wall
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=2}] only gorbino:barrel/top
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=3}] only gorbino:barrel/stewie
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=4}] only gorbino:barrel/ice
+advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=5}] only gorbino:barrel/trickshot
 
 
 #give saturation
