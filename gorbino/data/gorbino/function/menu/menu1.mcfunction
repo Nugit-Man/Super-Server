@@ -355,7 +355,7 @@ tag @s[scores={GB_Select=2..}] remove GB_dripstone
 tag @s[scores={GB_Select=2..}] remove GB_dash
 tag @s[scores={GB_Select=2..}] remove GB_knight
 tag @s[scores={GB_Select=2..}] remove GB_simple_armor
-tag @s[scores={GB_Select=2..}] remove GB_shotgun
+tag @s[scores={GB_Select=2..}] remove GB_heal
 tag @s[scores={GB_Select=2..}] remove GB_knockback
 tag @s[scores={GB_Select=2..}] remove GB_chain_armor
 tag @s[scores={GB_Select=2..}] remove GB_lumberjack
