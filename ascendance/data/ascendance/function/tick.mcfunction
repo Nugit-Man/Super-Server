@@ -78,3 +78,8 @@ advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=5}] o
 advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=6}] only ascendance:berrel/barreltt
 advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=7}] only ascendance:berrel/barrelb
 advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=8}] only ascendance:berrel/barreljp
+
+
+
+#Stop players from dropping items
+execute at @a[scores={MAIN_Game=1}] run kill @e[type=item,distance=..10]
