@@ -117,6 +117,9 @@ effect give @a[scores={MAIN_Game=3,GB_Mode=0}] saturation 1 0
 #FROG
 #execute at @e[type=frog] run damage @r[distance=..1.5] 1 gorbino:cringe
 
+
+#Ground slam rooted dirt removeal
+execute at @a[scores={MAIN_Game=3,GB_Mode=1},tag=GB_GS] run fill ~-1 ~ ~1 ~1 ~-5 ~-1 air replace rooted_dirt
 #Ground Slam
 execute as @a[tag=GB_GS] run execute store result score @s GB_velocity run data get entity @s Motion[1] 100
 tag @a[tag=GB_GS,scores={GB_velocity=..-150}] add GB_GSS

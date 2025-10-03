@@ -49,7 +49,7 @@ execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_clea
 execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-40 ~-30 ~30 ~-39 ~30 air replace fire
 execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_cleanup] run fill ~-30 ~-48 ~-30 ~30 ~-41 ~30 air replace fire
 
-
+execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_Rooted_Dirt] run setblock ~ ~ ~ rooted_dirt
 
 
 #Give advancements
