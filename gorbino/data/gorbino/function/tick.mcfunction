@@ -208,3 +208,8 @@ execute if score MAIN_5s MAIN_Time matches 100 run give @a[scores={MAIN_Game=3,G
 
 #advancements
 execute as @a run execute at @s run advancement grant @s[y=-44,dy=-20,scores={MAIN_Game=3}] only gorbino:fall
+
+
+#prevent offhand bug
+item replace entity @a[scores={MAIN_Game=3,GB_Mode=1},tag=!GB_Knight] weapon.offhand with air
+item replace entity @a[scores={MAIN_Game=3,GB_Mode=1},tag=!GB_Knight] weapon.offhand with shield[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
