@@ -36,6 +36,7 @@ function super_server:skyblock/join
 execute in gorbino:lobby run spawnpoint @a[tag=GoTo_Gorbino] 56 5 26 0
 execute in gorbino:lobby run tp @a[tag=GoTo_Gorbino] 56 5 26 0 0
 scoreboard players set @a[tag=GoTo_Gorbino] GB_Menu 0
+scoreboard players set @a[tag=GoTo_Gorbino] GB_Mode 0
 tag @a remove GoTo_Gorbino
 
 #Anywhere --> Lobby
