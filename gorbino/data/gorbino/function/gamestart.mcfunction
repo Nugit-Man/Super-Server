@@ -44,7 +44,7 @@ execute in gorbino:game run execute if score GB_Map GB_Select matches 15 run tp 
 execute in gorbino:game run execute if score GB_Map GB_Select matches 16 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 16000 3 0
 execute in gorbino:game run execute if score GB_Map GB_Select matches 17 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 17000 5 0
 execute in gorbino:game run execute if score GB_Map GB_Select matches 18 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 18000 9 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 19 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 0 19000 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 19 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 19000 1 0
 
 #more border
 execute in gorbino:game run worldborder set 100
