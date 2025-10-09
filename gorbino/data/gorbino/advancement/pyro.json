@@ -7,7 +7,7 @@
       "description": "Win A Fight With Fireball, Curry, and Lava",
       "show_toast": true,
       "announce_to_chat": true,
-      "hidden": true
+      "hidden": false
     },
     "parent": "gorbino:little_baby_man",
     "criteria": {
