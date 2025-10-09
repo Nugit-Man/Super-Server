@@ -1,22 +1,22 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:flint_and_steel"
+        "id": "minecraft:red_dye"
       },
-      "title": "Pyromaniac",
-      "description": "Win A Fight With Fireball, Curry, and Lava",
+      "title": "Healthy",
+      "description": "This is gonna take a while...",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "gorbino:little_baby_man",
+    "parent": "gorbino:speed",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
       }
     },
     "rewards": {
-      "function": "gorbino:advancement/advancement/pyro"
+      "function": "gorbino:advancement/advancement/health"
     }
   }
   
