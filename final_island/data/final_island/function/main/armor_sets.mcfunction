@@ -4,6 +4,7 @@
 scoreboard players remove @a[scores={FI_Armor_Set_Diamond=1..}] FI_Armor_Set_Diamond 1
 execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=0},tag=FI_Armor_Set_Diamond] run effect give @s resistance 5 4 true
 execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=0},tag=FI_Armor_Set_Diamond] run tellraw @s [{text:"Jimmy Invincable Activated",color:"gray"}]
+execute as @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=0},tag=FI_Armor_Set_Diamond] run advancement grant @s only ascendance:star
 scoreboard players set @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=0},tag=FI_Armor_Set_Diamond] FI_Armor_Set_Diamond 101
 scoreboard players remove @a[scores={FI_Sneak_Time=1..,FI_Mana=30..,FI_Armor_Set_Diamond=101},tag=FI_Armor_Set_Diamond] FI_Mana 30
 
