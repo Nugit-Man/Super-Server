@@ -1,5 +1,7 @@
 item replace entity @s inventory.0 with spectral_arrow[custom_name=[{text:"Page 1",italic:false}]]
-item replace entity @s inventory.1 with minecraft:air
+item replace entity @s[advancements={final_island:star=false}] inventory.1 with minecraft:structure_void[custom_name=[{text:"Locked",color:gray,italic:false}],lore=[{text:"Get an achivement in:",color:"dark_gray",italic:false},{text:"Final Island",color:"dark_gray",italic:false},{text:"to unlock",color:"dark_gray",italic:false}]]
+item replace entity @s[advancements={final_island:star=true},tag=!GB_star] inventory.1 with minecraft:gold_nugget[custom_model_data={strings:['GB_star [2]']},custom_name=[{text:"Star",italic:false}]]
+item replace entity @s[advancements={final_island:star=true},tag=GB_star] inventory.1 with minecraft:gold_nugget[custom_model_data={strings:['GB_star [2]']},enchantment_glint_override=true,custom_name=[{text:"Star",italic:false}]]
 item replace entity @s inventory.2 with minecraft:air
 item replace entity @s inventory.3 with minecraft:air
 item replace entity @s inventory.4 with minecraft:air
@@ -67,3 +69,14 @@ tag @s[scores={GB_Select=2..}] remove GB_invis
 tag @s[scores={GB_Select=2..}] remove GB_star
 scoreboard players set @s[scores={GB_Select=2..}] GB_Points 0
 execute if score @s GB_Select matches 2 run clear @s
+
+execute store result score @s GB_Select run clear @s gold_nugget 0
+execute if score @s[tag=GB_star] GB_Select matches 2 run tag @s add GB_check
+execute if score @s[tag=GB_check] GB_Select matches 2 run tag @s remove GB_star
+execute if score @s[tag=GB_check] GB_Select matches 2 run scoreboard players remove @s GB_Points 2
+execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s[scores={GB_Points=4..}] add GB_check
+execute if score @s[tag=!GB_check] GB_Select matches 2 run scoreboard players add @s GB_Points 2
+execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s add GB_star
+tag @s remove GB_check
+execute if score @s GB_Select matches 2 run clear @s
+scoreboard players set @s GB_Select 1
