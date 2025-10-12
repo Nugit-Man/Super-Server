@@ -19,39 +19,39 @@ execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Mileston
 execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins = $ GB_Milestones_Wins run scoreboard players set @s GB_Rank 1
 
 scoreboard players set $ GB_Milestones_Wins 0
-execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins = @s GB_Milestones_Wins
+execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins > @s GB_Milestones_Wins
 execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins = $ GB_Milestones_Wins run scoreboard players set @s GB_Rank 2
 
 scoreboard players set $ GB_Milestones_Wins 0
-execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins = @s GB_Milestones_Wins
+execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins > @s GB_Milestones_Wins
 execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins = $ GB_Milestones_Wins run scoreboard players set @s GB_Rank 3
 
 scoreboard players set $ GB_Milestones_Wins 0
-execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins = @s GB_Milestones_Wins
+execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins > @s GB_Milestones_Wins
 execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins = $ GB_Milestones_Wins run scoreboard players set @s GB_Rank 4
 
 scoreboard players set $ GB_Milestones_Wins 0
-execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins = @s GB_Milestones_Wins
+execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins > @s GB_Milestones_Wins
 execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins = $ GB_Milestones_Wins run scoreboard players set @s GB_Rank 5
 
 scoreboard players set $ GB_Milestones_Wins 0
-execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins = @s GB_Milestones_Wins
+execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins > @s GB_Milestones_Wins
 execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins = $ GB_Milestones_Wins run scoreboard players set @s GB_Rank 6
 
 scoreboard players set $ GB_Milestones_Wins 0
-execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins = @s GB_Milestones_Wins
+execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins > @s GB_Milestones_Wins
 execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins = $ GB_Milestones_Wins run scoreboard players set @s GB_Rank 7
 
 scoreboard players set $ GB_Milestones_Wins 0
-execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins = @s GB_Milestones_Wins
+execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins > @s GB_Milestones_Wins
 execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins = $ GB_Milestones_Wins run scoreboard players set @s GB_Rank 8
 
 scoreboard players set $ GB_Milestones_Wins 0
-execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins = @s GB_Milestones_Wins
+execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins > @s GB_Milestones_Wins
 execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins = $ GB_Milestones_Wins run scoreboard players set @s GB_Rank 9
 
 scoreboard players set $ GB_Milestones_Wins 0
-execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins = @s GB_Milestones_Wins
+execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins > $ GB_Milestones_Wins run scoreboard players operation $ GB_Milestones_Wins > @s GB_Milestones_Wins
 execute as @a[scores={GB_Rank=0}] if score @s GB_Milestones_Wins = $ GB_Milestones_Wins run scoreboard players set @s GB_Rank 10
 
 execute in gorbino:lobby run data modify entity @e[type=text_display,limit=1,sort=arbitrary,tag=GB_1] text set value ["1st: ",{"selector":"@r[scores={GB_Rank=1}]"}," ",{"score":{"name":"@r[scores={GB_Rank=1}]","objective":"GB_Milestones_Wins"}}]
