@@ -1,4 +1,4 @@
-item replace entity @s inventory.0 with air
+item replace entity @s inventory.0 with spectral_arrow[custom_name=[{text:"Page 2",italic:false}]]
 item replace entity @s inventory.1 with air
 item replace entity @s[tag=!GB_mace_master] inventory.2 with mace[custom_name=[{text:"Mace Master [2]",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers]
 item replace entity @s[tag=!GB_cancer] inventory.3 with prismarine_crystals[custom_name=[{text:"Cancer [1]",italic:false}]]
