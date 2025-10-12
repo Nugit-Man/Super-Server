@@ -16,7 +16,7 @@
       }
     },
     "rewards": {
-      "function": "gorbino:advancement/advancement/fall"
+      "function": "gorbino:advancement/advancement/radiate"
     }
   }
   
