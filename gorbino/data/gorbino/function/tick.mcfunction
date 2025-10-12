@@ -48,6 +48,7 @@ execute at @a[scores={GB_Mode=2..,MAIN_Game=3}] run fill ~20 ~-9 ~20 ~-20 ~-19 ~
 #leave game
 item replace entity @a[scores={GB_Mode=1..,MAIN_Game=3}] inventory.13 with barrier[custom_name=[{text:"Leave The Fight",italic:false}]]
 execute as @a run execute store result score @s[scores={GB_Mode=1..,MAIN_Game=3}] GB_Select run clear @s[scores={GB_Mode=1..,MAIN_Game=3}] barrier 0
+execute if score 1 GB_Select matches 2 run scoreboard players set @a[scores={GB_Mode=1,MAIN_Game=3}] GB_Select 2
 execute in gorbino:lobby run tp @a[scores={GB_Mode=1..,GB_Select=2,MAIN_Game=3}] 56 5 26 0 0
 effect clear @a[scores={GB_Mode=1..,GB_Select=2,MAIN_Game=3}]
 execute as @a[scores={GB_Mode=1..,GB_Select=2,MAIN_Game=3}] run clear @s[scores={GB_Mode=1..}]
@@ -223,4 +224,4 @@ item replace entity @a[scores={MAIN_Game=3,GB_Mode=1},tag=!GB_Knight] weapon.off
 
 #Radiation System
 scoreboard players add @a[scores={GB_Radiation=1..}] GB_Radiation 1
-execute as @a[scores={GB_Radiation=600..}] run damage @s 100 gorbino:radiation
+#execute as @a[scores={GB_Radiation=600..}] run damage @s 100 gorbino:radiation
