@@ -1,6 +1,6 @@
 {
     "death_message_type": "default",
-    "message_id": "crush",
+    "message_id": "radiation",
     "scaling": "never",
     "effects": "hurt",
     "exhaustion": 0.1

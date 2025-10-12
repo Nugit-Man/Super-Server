@@ -224,4 +224,5 @@ item replace entity @a[scores={MAIN_Game=3,GB_Mode=1},tag=!GB_Knight] weapon.off
 
 #Radiation System
 scoreboard players add @a[scores={GB_Radiation=1..}] GB_Radiation 1
-#execute as @a[scores={GB_Radiation=600..}] run damage @s 100 gorbino:radiation
+advancement grant @a[scores={GB_Radiation=600..}] only gorbino:radiate
+execute as @a[scores={GB_Radiation=600..}] run damage @s 100 gorbino:radiation
