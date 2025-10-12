@@ -1,4 +1,4 @@
-item replace entity @s inventory.0 with air
+item replace entity @s inventory.0 with spectral_arrow[custom_name=[{text:"Page 2",italic:false}]]
 item replace entity @s[tag=!GB_simple_armor] inventory.2 with leather_chestplate[custom_name=[{text:"Light Armor [1]",italic:false}],!attribute_modifiers]
 item replace entity @s[tag=GB_simple_armor] inventory.2 with leather_chestplate[custom_name=[{text:"Light Armor [1]",italic:false}],!attribute_modifiers,enchantment_glint_override=true]
 item replace entity @s[tag=!GB_knight] inventory.3 with iron_sword[custom_name=[{text:"Knight [2]",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers]
@@ -370,5 +370,6 @@ tag @s[scores={GB_Select=2..}] remove GB_freeze_bolt
 tag @s[scores={GB_Select=2..}] remove GB_archer
 tag @s[scores={GB_Select=2..}] remove GB_heavy_armor
 tag @s[scores={GB_Select=2..}] remove GB_invis
+tag @s[scores={GB_Select=2..}] remove GB_star
 scoreboard players set @s[scores={GB_Select=2..}] GB_Points 0
 execute if score @s GB_Select matches 2 run clear @s
