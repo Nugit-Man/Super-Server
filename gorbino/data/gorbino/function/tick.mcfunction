@@ -92,6 +92,7 @@ execute in gorbino:lobby run item replace block 74 -18 42 container.13 with mine
 execute in gorbino:lobby run item replace block 100 -37 21 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in gorbino:lobby run item replace block 85 1 66 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in gorbino:game run item replace block 3991 12 -11 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in gorbino:lobby run item replace block 30 36 -50 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Wall] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 1
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Top] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 2
@@ -99,6 +100,7 @@ execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Stewie] run scoreboard 
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Ice] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 4
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Trickshot] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 5
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Map] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 6
+execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Nuke] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 7
 
 execute as @a[scores={MAIN_Game=3}] run execute store result score @s GB_Barrel_Check run clear @s sunflower
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=1}] only gorbino:barrel/wall
@@ -107,6 +109,7 @@ advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=3}] o
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=4}] only gorbino:barrel/ice
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=5}] only gorbino:barrel/trickshot
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=6}] only gorbino:barrel/map
+advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=7}] only gorbino:barrel/nuke
 
 #give saturation
 effect give @a[scores={MAIN_Game=3,GB_Mode=0}] saturation 1 0
