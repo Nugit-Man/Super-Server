@@ -10,6 +10,10 @@ scoreboard objectives add GB_Arrow dummy
 scoreboard objectives add GB_Milestones_Wins dummy
 scoreboard objectives add GB_Barrel_Pos dummy
 scoreboard objectives add GB_Barrel_Check dummy
+scoreboard objectives add GB_Radiation dummy
+scoreboard objectives add GB_Rank dummy
 
 scoreboard players set @a GB_Mode 0
 scoreboard players set @a GB_Menu 0
+
+function gorbino:rank

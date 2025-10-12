@@ -51,6 +51,7 @@ execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_clea
 
 execute if score 1 GB_Select matches 1 run execute at @e[type=marker,tag=GB_Rooted_Dirt] run setblock ~ ~ ~ rooted_dirt
 
+execute if score 1 GB_Select matches 1 run function gorbino:rank
 
 #Give advancements
 execute if score 1 GB_Select matches 1 run execute as @a[scores={MAIN_Game=3,GB_Mode=1,GB_Points=5},tag=!GB_knight] run execute as @s[tag=!GB_lava] run execute as @s[tag=!GB_fireball] run execute as @s[tag=!GB_chain_armor] run execute as @s[tag=!GB_heavy_armor] run execute as @s[tag=!GB_lumberjack] run execute as @s[tag=!GB_knockback] run advancement grant @s[tag=!GB_archer] only gorbino:spells
