@@ -112,7 +112,7 @@ advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=6}] o
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=7}] only gorbino:barrel/nuke
 
 #give saturation
-effect give @a[scores={MAIN_Game=3,GB_Mode=0}] saturation 1 0
+effect give @a[scores={MAIN_Game=3,GB_Mode=0}] saturation 1 0 true
 
 
 
