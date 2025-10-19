@@ -10,7 +10,12 @@ clear @a[scores={MAIN_Game=1,AS_Countdown=11}]
 execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] 1020 3 34 180 0
 execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=2}] 2032 42 60 180 0
 execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=3}] 3079 3 23 0 0
+execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=4}] 4081 -1 81 180 0
+execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=5}] 5002 7 17 -90 0
+execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=10}] 10016 3 16
+execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=11}] 11018 12 78 180 0
 execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=12}] 12036 10 55.0 270 0
+execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=13}] 13093 23 67 0 0
 scoreboard players set @a[scores={MAIN_Game=1,AS_Countdown=11}] AS_Mode 1
 
 give @a[scores={AS_Countdown=14,MAIN_Game=1}] bow[enchantment_glint_override=false,enchantments={infinity:1},unbreakable={},tooltip_display={hidden_components:[enchantments,unbreakable]}]

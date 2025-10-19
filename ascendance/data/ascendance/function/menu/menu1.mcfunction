@@ -12,7 +12,12 @@ item replace entity @s[scores={AS_Map=0}] inventory.10 with minecraft:grass_bloc
 item replace entity @s[scores={AS_Map=1}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"Desert Tomb","italic":false,"color":"white"}]]]
 item replace entity @s[scores={AS_Map=2}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"Tabletop","italic":false,"color":"white"}]]]
 item replace entity @s[scores={AS_Map=3}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"Brutalism","italic":false,"color":"white"}]]]
+item replace entity @s[scores={AS_Map=4}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"Colosseum","italic":false,"color":"white"}]]]
+item replace entity @s[scores={AS_Map=5}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"The Club","italic":false,"color":"white"}]]]
+item replace entity @s[scores={AS_Map=10}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"The Cube","italic":false,"color":"white"}]]]
+item replace entity @s[scores={AS_Map=11}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"Ice Spikes","italic":false,"color":"white"}]]]
 item replace entity @s[scores={AS_Map=12}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"Jungle Pikes","italic":false,"color":"white"}]]]
+item replace entity @s[scores={AS_Map=13}] inventory.10 with minecraft:grass_block[custom_name={text:"Select Map",italic:false},lore=[[{"text":"Current Map: ","italic":false,"color":"gray"},{"text":"Bridge","italic":false,"color":"white"}]]]
 item replace entity @s inventory.11 with minecraft:air
 item replace entity @s inventory.12 with minecraft:air
 #Gaming
