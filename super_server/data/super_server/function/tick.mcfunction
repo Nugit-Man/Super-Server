@@ -131,6 +131,7 @@ team join Ascendance @a[scores={MAIN_Game=1}]
 
 #Pass the MAIN_------ scoreboards into the game specific ones
 execute as @a[scores={MAIN_Game=1}] run scoreboard players operation @s AS_Kills = @s MAIN_Player_Kills
+execute as @a[scores={MAIN_Game=1}] run scoreboard players operation @s AS_Singleplayer_Kills = @s MAIN_Total_Kills
 
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sneak_Time = @s MAIN_Sneak_Time
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Health = @s MAIN_Health
@@ -177,9 +178,10 @@ function super_server:mace/tick
 
 
 #Timers
-execute if score MAIN_5s MAIN_Time matches 100 run scoreboard players set MAIN_5s MAIN_Time 0
+execute if score MAIN_5s MAIN_Time matches 100.. run scoreboard players set MAIN_5s MAIN_Time 0
 scoreboard players add MAIN_5s MAIN_Time 1
-
+execute if score MAIN_2t MAIN_Time matches 2.. run scoreboard players set MAIN_2t MAIN_Time 0
+scoreboard players add MAIN_2t MAIN_Time 1
 
 
 #Barrels

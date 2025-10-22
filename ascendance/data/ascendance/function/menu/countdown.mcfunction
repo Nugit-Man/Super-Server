@@ -2,7 +2,7 @@ scoreboard players add @a[scores={MAIN_Game=1,AS_Countdown=1..}] AS_Countdown 1
 
 #starting the game code, the person who started it will have a score of 11 and the ones who joined a score of -1
 execute if entity @a[scores={MAIN_Game=1,AS_Countdown=11}] run function ascendance:menu/mapstart
-
+#Dude this function does not exist?????
 
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11}] run scoreboard players operation @a[scores={MAIN_Game=1,AS_Countdown=-1}] AS_Map = @s AS_Map
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11}] run scoreboard players set @a[scores={MAIN_Game=1,AS_Countdown=-1}] AS_Countdown 11

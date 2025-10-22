@@ -1,12 +1,22 @@
 execute if entity @a[scores={MAIN_Game=1,AS_Map=1},tag=AS_Winner] run tellraw @a[scores={MAIN_Game=1}] [{selector:"@a[tag=AS_Winner,scores={MAIN_Game=1,AS_Map=1}]"},{text:" won the game on Desert Tomb!"}]
 execute if entity @a[scores={MAIN_Game=1,AS_Map=2},tag=AS_Winner] run tellraw @a[scores={MAIN_Game=1}] [{selector:"@a[tag=AS_Winner,scores={MAIN_Game=1,AS_Map=2}]"},{text:" won the game on Tabletop!"}]
 execute if entity @a[scores={MAIN_Game=1,AS_Map=3},tag=AS_Winner] run tellraw @a[scores={MAIN_Game=1}] [{selector:"@a[tag=AS_Winner,scores={MAIN_Game=1,AS_Map=3}]"},{text:" won the game on Brutalism!"}]
+execute if entity @a[scores={MAIN_Game=1,AS_Map=4},tag=AS_Winner] run tellraw @a[scores={MAIN_Game=1}] [{selector:"@a[tag=AS_Winner,scores={MAIN_Game=1,AS_Map=4}]"},{text:" won the game in the Colosseum!"}]
+execute if entity @a[scores={MAIN_Game=1,AS_Map=5},tag=AS_Winner] run tellraw @a[scores={MAIN_Game=1}] [{selector:"@a[tag=AS_Winner,scores={MAIN_Game=1,AS_Map=5}]"},{text:" won the game on Death Cub!"}]
+execute if entity @a[scores={MAIN_Game=1,AS_Map=10},tag=AS_Winner] run tellraw @a[scores={MAIN_Game=1}] [{selector:"@a[tag=AS_Winner,scores={MAIN_Game=1,AS_Map=10}]"},{text:" won the game on The Cube!"}]
+execute if entity @a[scores={MAIN_Game=1,AS_Map=11},tag=AS_Winner] run tellraw @a[scores={MAIN_Game=1}] [{selector:"@a[tag=AS_Winner,scores={MAIN_Game=1,AS_Map=11}]"},{text:" won the game on Ice Spikes!"}]
 execute if entity @a[scores={MAIN_Game=1,AS_Map=12},tag=AS_Winner] run tellraw @a[scores={MAIN_Game=1}] [{selector:"@a[tag=AS_Winner,scores={MAIN_Game=1,AS_Map=12}]"},{text:" won the game on Jungle Pikes!"}]
+execute if entity @a[scores={MAIN_Game=1,AS_Map=13},tag=AS_Winner] run tellraw @a[scores={MAIN_Game=1}] [{selector:"@a[tag=AS_Winner,scores={MAIN_Game=1,AS_Map=13}]"},{text:" won the game on the Bridge!"}]
 
 execute if entity @a[scores={MAIN_Game=1,AS_Map=1},tag=AS_Winner] run scoreboard objectives remove AS_Map_DesertTomb
 execute if entity @a[scores={MAIN_Game=1,AS_Map=2},tag=AS_Winner] run scoreboard objectives remove AS_Map_Tabletop
 execute if entity @a[scores={MAIN_Game=1,AS_Map=3},tag=AS_Winner] run scoreboard objectives remove AS_Map_Brutalism
+execute if entity @a[scores={MAIN_Game=1,AS_Map=4},tag=AS_Winner] run scoreboard objectives remove AS_Map_Colosseum
+execute if entity @a[scores={MAIN_Game=1,AS_Map=5},tag=AS_Winner] run scoreboard objectives remove AS_Map_Club
+execute if entity @a[scores={MAIN_Game=1,AS_Map=10},tag=AS_Winner] run scoreboard objectives remove AS_Map_Cube
+execute if entity @a[scores={MAIN_Game=1,AS_Map=11},tag=AS_Winner] run scoreboard objectives remove AS_Map_IceSpikes
 execute if entity @a[scores={MAIN_Game=1,AS_Map=12},tag=AS_Winner] run scoreboard objectives remove AS_Map_JunglePikes
+execute if entity @a[scores={MAIN_Game=1,AS_Map=13},tag=AS_Winner] run scoreboard objectives remove AS_Map_Bridge
 
 clear @a[tag=AS_Winner,scores={MAIN_Game=1}]
 clear @a[tag=AS_Loser,scores={MAIN_Game=1}]

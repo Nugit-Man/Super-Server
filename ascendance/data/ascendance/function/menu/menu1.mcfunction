@@ -21,15 +21,17 @@ item replace entity @s[scores={AS_Map=13}] inventory.10 with minecraft:grass_blo
 item replace entity @s inventory.11 with minecraft:air
 item replace entity @s inventory.12 with minecraft:air
 #Gaming
-item replace entity @s[scores={AS_Map=0}] inventory.13 with minecraft:black_concrete[custom_name={text:"Select fallowing settings before starting: ",italic:false},lore=[{text:"Map",color:gray}]]
-item replace entity @s[scores={AS_Map=1..}] inventory.13 with minecraft:green_concrete[custom_name={text:"Click to start",italic:false}]
+item replace entity @s[scores={AS_Map=0,AS_Gamemode=1..}] inventory.13 with minecraft:black_concrete[custom_name={text:"Select fallowing settings before starting: ",italic:false},lore=[{text:"Map",color:gray}]]
+item replace entity @s[scores={AS_Map=0,AS_Gamemode=0}] inventory.13 with minecraft:black_concrete[custom_name={text:"Select fallowing settings before starting: ",italic:false},lore=[{text:"Map",color:gray},{text:"Gamemode",color:gray}]]
+item replace entity @s[scores={AS_Map=1..,AS_Gamemode=0}] inventory.13 with minecraft:black_concrete[custom_name={text:"Select fallowing settings before starting: ",italic:false},lore=[{text:"Gamemode",color:gray}]]
+item replace entity @s[scores={AS_Map=1..,AS_Gamemode=1..}] inventory.13 with minecraft:green_concrete[custom_name={text:"Click to start",italic:false}]
 execute if entity @r[scores={MAIN_Game=1,AS_Countdown=1..11}] run item replace entity @s inventory.13 with minecraft:barrier[custom_name={text:"A match is already starting",italic:false}]
 execute if score @s AS_Countdown matches 1.. run item replace entity @s[scores={AS_Map=1..}] inventory.13 with minecraft:red_concrete[custom_name={text:"Cancel",italic:false}]
 
 
 item replace entity @s inventory.14 with minecraft:air
 item replace entity @s inventory.15 with minecraft:air
-item replace entity @s inventory.16 with minecraft:paper[custom_name={text:"Change Rules",italic:false},lore=[[{text:"Comming Soon, once it's out of beta"}]]]
+item replace entity @s inventory.16 with minecraft:paper[custom_name={text:"Change Rules",italic:false}]
 item replace entity @s inventory.17 with minecraft:air
 item replace entity @s inventory.18 with minecraft:air
 item replace entity @s inventory.19 with minecraft:air
@@ -55,7 +57,8 @@ clear @a[scores={MAIN_Game=1,AS_Select=2}]
 
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
 execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s paper 0
-#scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 3
+scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2,AS_Countdown=0}] AS_Menu 3
+tellraw @a[scores={MAIN_Game=1,AS_Select=2,AS_Countdown=1..}] {text:"You cannot change the gamemode while starting a match",color:red}
 clear @a[scores={MAIN_Game=1,AS_Select=2}]
 
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0

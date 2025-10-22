@@ -1,7 +1,7 @@
 import os
 
 # File extensions to include (you can modify this)
-CODE_EXTENSIONS = {'.py', '.js', '.java', '.cpp', '.c', '.cs', '.ts', '.html', '.css','.json','.mcfunction'}
+CODE_EXTENSIONS = {'.py', '.js', '.java', '.cpp', '.c', '.cs', '.ts', '.html', '.css','.json','.mcfunction','.mcmeta'}
 
 def count_lines_in_file(file_path):
     try:

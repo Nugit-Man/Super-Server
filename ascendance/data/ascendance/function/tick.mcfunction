@@ -3,6 +3,7 @@ scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Map 0
 scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Mode 0
 scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Menu 0
 scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Countdown 0
+scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Gamemode 0
 tag @a[scores={MAIN_Game=1},tag=!AS_Welcome] add AS_Welcome
 
 
@@ -24,13 +25,23 @@ execute as @a[scores={MAIN_Game=1,AS_Menu=3,AS_Mode=0}] run function ascendance:
 execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=1}] run scoreboard players set @a[scores={AS_Countdown=0,MAIN_Game=1,AS_Map=1}] AS_Map 0
 execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=2}] run scoreboard players set @a[scores={AS_Countdown=0,MAIN_Game=1,AS_Map=2}] AS_Map 0
 execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=3}] run scoreboard players set @a[scores={AS_Countdown=0,MAIN_Game=1,AS_Map=3}] AS_Map 0
+execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=4}] run scoreboard players set @a[scores={AS_Countdown=0,MAIN_Game=1,AS_Map=4}] AS_Map 0
+execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=5}] run scoreboard players set @a[scores={AS_Countdown=0,MAIN_Game=1,AS_Map=5}] AS_Map 0
+execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=10}] run scoreboard players set @a[scores={AS_Countdown=0,MAIN_Game=1,AS_Map=10}] AS_Map 0
+execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=11}] run scoreboard players set @a[scores={AS_Countdown=0,MAIN_Game=1,AS_Map=11}] AS_Map 0
 execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=12}] run scoreboard players set @a[scores={AS_Countdown=0,MAIN_Game=1,AS_Map=12}] AS_Map 0
+execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=13}] run scoreboard players set @a[scores={AS_Countdown=0,MAIN_Game=1,AS_Map=13}] AS_Map 0
 
 #Run the thing if the map is in use
-execute if score $ AS_Map_DesertTomb matches 100 run function ascendance:gaming/maps/desert_tomb/tick
-execute if score $ AS_Map_Tabletop matches 100 run function ascendance:gaming/maps/tabletop/tick
-execute if score $ AS_Map_Brutalism matches 100 run function ascendance:gaming/maps/brutalism/tick
-execute if score $ AS_Map_JunglePikes matches 100 run function ascendance:gaming/maps/jungle_pikes/tick
+execute if score $ AS_Map_DesertTomb matches 100.. run function ascendance:gaming/maps/desert_tomb/tick
+execute if score $ AS_Map_Tabletop matches 100.. run function ascendance:gaming/maps/tabletop/tick
+execute if score $ AS_Map_Brutalism matches 100.. run function ascendance:gaming/maps/brutalism/tick
+execute if score $ AS_Map_Colosseum matches 100.. run function ascendance:gaming/maps/colosseum/load
+execute if score $ AS_Map_Club matches 100.. run function ascendance:gaming/maps/club/tick
+execute if score $ AS_Map_Cube matches 100.. run function ascendance:gaming/maps/cube/tick
+execute if score $ AS_Map_IceSpikes matches 100.. run function ascendance:gaming/maps/ice_spikes/load
+execute if score $ AS_Map_JunglePikes matches 100.. run function ascendance:gaming/maps/jungle_pikes/tick
+execute if score $ AS_Map_Bridge matches 100.. run function ascendance:gaming/maps/bridge/tick
 
 
 
@@ -82,4 +93,5 @@ advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=8}] o
 
 
 #Stop players from dropping items
-execute at @a[scores={MAIN_Game=1}] run kill @e[type=item,distance=..10]
+execute at @a[scores={MAIN_Game=1}] run kill @e[type=item,distance=..100]
+execute at @a[scores={MAIN_Game=1}] run kill @e[type=experience_orb,distance=..100]
