@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "super_server:advancements/good_at_this_game"
+    "function": "super_server:advancement/gorbino"
   }
 }
