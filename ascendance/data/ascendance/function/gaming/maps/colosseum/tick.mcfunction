@@ -1,7 +1,7 @@
-execute as @a[scores={MAIN_Game=1,AS_Map=5,AS_Mode=1}] run scoreboard players operation @s AS_Map_Colosseum += @s AS_Kills
+execute as @a[scores={MAIN_Game=1,AS_Map=4,AS_Mode=1}] run scoreboard players operation @s AS_Map_Colosseum += @s AS_Kills
 
 #Spawn points
-execute at @e[type=marker,limit=1,sort=random,tag=AS_Spawn_Colosseum] run spawnpoint @r[scores={MAIN_Game=1,AS_Map=5,AS_Mode=1}]
+execute at @e[type=marker,limit=1,sort=random,tag=AS_Spawn_Colosseum] run spawnpoint @r[scores={MAIN_Game=1,AS_Map=4,AS_Mode=1}]
 
 
 #Check if singleplayer or multiiplayer
