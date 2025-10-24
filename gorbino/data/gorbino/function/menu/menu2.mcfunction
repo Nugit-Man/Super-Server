@@ -2,7 +2,10 @@ item replace entity @s inventory.0 with spectral_arrow[custom_name=[{text:"Page 
 item replace entity @s[advancements={final_island:star=false}] inventory.1 with minecraft:structure_void[custom_name=[{text:"Locked",color:gray,italic:false}],lore=[{text:"Get an achivement in:",color:"dark_gray",italic:false},{text:"Final Island",color:"dark_gray",italic:false},{text:"to unlock",color:"dark_gray",italic:false}]]
 item replace entity @s[advancements={final_island:star=true},tag=!GB_star] inventory.1 with minecraft:gold_nugget[custom_model_data={strings:['GB_Star']},custom_name=[{text:"Star [2]",italic:false}]]
 item replace entity @s[advancements={final_island:star=true},tag=GB_star] inventory.1 with minecraft:gold_nugget[custom_model_data={strings:['GB_Star']},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}],custom_name=[{text:"Star [2]",italic:false}]]
-item replace entity @s inventory.2 with minecraft:air
+
+item replace entity @s[advancements={gorbino:hazmat=false}] inventory.2 with minecraft:structure_void[custom_name=[{text:"Locked",color:gray,italic:false}],lore=[{text:"Get an achivement in:",color:"dark_gray",italic:false},{text:"Final Island",color:"dark_gray",italic:false},{text:"to unlock",color:"dark_gray",italic:false}]]
+item replace entity @s[advancements={gorbino:hazmat=true},tag=!GB_Hazmat] inventory.2 with leather_chestplate[trim={pattern:sentry,material:netherite},dyed_color=16776960,custom_name=[{text:"Hazmat Suit",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]}]
+item replace entity @s[advancements={gorbino:hazmat=true},tag=GB_Hazmat] inventory.2 with leather_chestplate[trim={pattern:sentry,material:netherite},dyed_color=16776960,custom_name=[{text:"Hazmat Suit",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 item replace entity @s inventory.3 with minecraft:air
 item replace entity @s inventory.4 with minecraft:air
 item replace entity @s inventory.5 with minecraft:air
