@@ -5,7 +5,7 @@ execute at @e[type=marker,limit=1,sort=random,tag=AS_Spawn_Bridge] run spawnpoin
 
 
 #Kill if go on glass
-execute as @a[scores={AS_Map=13,MAIN_Game=1}] at @s run execute if block ~ ~-1 ~ minecraft:gray_stained_glass run kill @s
+execute as @a[scores={AS_Map=13,MAIN_Game=1}] run execute at @s run execute if block ~ ~-1 ~ minecraft:gray_stained_glass run kill @s
 
 
 #Check if singleplayer or multiiplayer

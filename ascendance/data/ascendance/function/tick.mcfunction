@@ -45,6 +45,7 @@ execute if score $ AS_Map_Bridge matches 100.. run function ascendance:gaming/ma
 
 
 
+
 #Reset Kills
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Kills 0
 

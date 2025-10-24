@@ -1,35 +1,9 @@
-execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1}] run scoreboard players operation @s AS_Map_JunglePikes += @s AS_Kills
-tag @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1,AS_Map_JunglePikes=25..}] add AS_Winner
-execute as @a[scores={MAIN_Game=1},tag=AS_Winner] run tag @a[scores={MAIN_Game=1,AS_Map=12},tag=!AS_Winner] add AS_Loser
-execute as @a[scores={MAIN_Game=1},tag=AS_Winner] run function ascendance:gaming/end/gameend
+execute as @a[scores={MAIN_Game=1,AS_Map=1,AS_Mode=1}] run scoreboard players operation @s AS_Map_JunglePikes += @s AS_Kills
 
 #Spawn points
-execute at @e[type=marker,limit=1,sort=random,tag=AS_Spawn_JunglePikes] run spawnpoint @r[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1}]
-
-#reset the $'s
-scoreboard players set $ AS_Spread 0
-scoreboard players set $$ AS_Spread 0
-scoreboard players set $$$ AS_Spread 0
-
-#Get Spread and Winning
-scoreboard players operation $ AS_Spread > @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1}] AS_Map_JunglePikes
-execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1}] run scoreboard players operation @s AS_Spread = @s AS_Map_JunglePikes
-scoreboard players operation @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1}] AS_Spread -= $ AS_Spread
-execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1}] run execute if score @s AS_Spread matches 0 run tag @s add AS_Winning
-execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1}] run execute unless score @s AS_Spread matches 0 run tag @s remove AS_Winning
-scoreboard players operation $$ AS_Spread > @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1},tag=!AS_Winning] AS_Map_JunglePikes
-execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1},tag=AS_Winning] run scoreboard players operation @s AS_Spread = @s AS_Map_JunglePikes
-execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1},tag=AS_Winning] run scoreboard players operation @s AS_Spread -= $$ AS_Spread
+execute at @e[type=marker,limit=1,sort=random,tag=AS_Spawn_JunglePikes] run spawnpoint @r[scores={MAIN_Game=1,AS_Map=1,AS_Mode=1}]
 
 
-
-#actionbar
-execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1}] run title @s actionbar [{text:"Score: "},{score:{"objective":"AS_Map_JunglePikes","name":"@s"}},{text:"/25, Spread: "},{score:{"objective":"AS_Spread","name":"@s"}},{text:", Winning: "},{selector:"@a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1},tag=AS_Winning]"}]
-
-#Check if game ends due to there ony being one player
-scoreboard players set $$$ AS_Spread 0
-execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1}] run scoreboard players add $$$ AS_Spread 1
-execute if score $$$ AS_Spread matches 0..1 run tellraw @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1}] {text:"Game was canceled because there was only one player",italic:false}
-execute if score $$$ AS_Spread matches 0..1 run scoreboard objectives remove AS_Map_JunglePikes
-execute if score $$$ AS_Spread matches 0..1 run tag @a[scores={MAIN_Game=1,AS_Map=12,AS_Mode=1}] add AS_GoHome
-execute if score $$$ AS_Spread matches 0..1 run function ascendance:gaming/end/go_home
+#Check if singleplayer or multiiplayer
+execute if score $ AS_Map_JunglePikes matches 100 run function ascendance:gaming/maps/jungle_pikes/multiplayer
+execute if score $ AS_Map_JunglePikes matches 101 run function ascendance:gaming/maps/jungle_pikes/singleplayer
