@@ -68,7 +68,7 @@ execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_
 #execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=mace_master] run execute as @s[tag=ground_slam] run advancement grant @s[tag=dripstone,scores={GB_Points=4}] only gorbino:crush
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_heavy_armor] run execute as @s[tag=GB_grow] run advancement grant @s[tag=GB_lumberjack,scores={GB_Points=5}] only gorbino:little_baby_man
 #execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=archer] run advancement grant @s[tag=laser,scores={GB_Points=4}] only gorbino:professionals
-execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=fireball] run execute as @s[tag=lava] run advancement grant @s[tag=curry,scores={GB_Points=5}] only gorbino:pyro
+execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_fireball] run execute as @s[tag=GB_lava] run advancement grant @s[tag=GB_curry,scores={GB_Points=5}] only gorbino:pyro
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=2,MAIN_Game=3},tag=GB_grow] run advancement grant @a[scores={GB_Mode=1},tag=GB_shrink] only gorbino:aot
 #execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=dash] run execute as @s[tag=shrink] run execute as @s[tag=crack] run advancement grant @s[tag=flame_runner,scores={GB_Points=4}] only gorbino:iamspeed
 #Milestones
