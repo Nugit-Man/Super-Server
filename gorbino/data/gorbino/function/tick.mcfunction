@@ -221,7 +221,7 @@ execute as @a run execute at @s run advancement grant @s[y=-44,dy=-20,scores={MA
 
 
 #prevent offhand bug
-item replace entity @a[scores={MAIN_Game=3,GB_Mode=1},tag=!GB_Knight] weapon.offhand with air
+item replace entity @a[scores={MAIN_Game=3,GB_Mode=1},tag=!GB_knight] weapon.offhand with air
 
 
 
