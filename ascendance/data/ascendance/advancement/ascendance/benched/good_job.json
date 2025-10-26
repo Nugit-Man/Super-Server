@@ -3,20 +3,20 @@
     "icon": {
       "id": "minecraft:arrow"
     },
-    "title": "Nice Shot Mate",
-    "description": "Shoot a skeleton at the shooting range",
+    "title": "Good Job",
+    "description": "Shoot yourself at the shooting range",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
-  "parent": "ascendance:ascendance/good_job",
+  "parent": "ascendance:ascendance/death_club",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"
     }
   },
   "rewards": {
-    "function": "ascendance:advancements/nice_shot_mate"
+    "function": "ascendance:advancements/good_job"
   }
 }

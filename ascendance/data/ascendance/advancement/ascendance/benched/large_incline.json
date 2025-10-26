@@ -1,14 +1,14 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:acacia_hanging_sign"
+      "id": "minecraft:armor_stand"
     },
-    "title": "Dethroner",
-    "description": "Kill 20 kings in a game of kings crown",
+    "title": "Large Incline",
+    "description": "Win a game of King of the Hill without getting a single kill",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
   "parent": "ascendance:ascendance/first_blood",
   "criteria": {
@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "ascendance:advancements/dethroner"
+    "function": "ascendance:advancements/large_incline"
   }
 }
