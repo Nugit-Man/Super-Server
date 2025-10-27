@@ -7,6 +7,11 @@ scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Gamemode 0
 tag @a[scores={MAIN_Game=1},tag=!AS_Welcome] add AS_Welcome
 
 
+##remove the crown from players outside of a game
+tag @a[scores={AS_Mode=0,MAIN_Game=1}] remove AS_Crown
+tag @a[scores={MAIN_Game=0}] remove AS_Crown
+
+
 effect give @a[scores={MAIN_Game=1}] saturation infinite 0 true
 
 

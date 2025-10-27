@@ -14,6 +14,7 @@ scoreboard objectives add AS_Barrel_Pos dummy
 scoreboard objectives add AS_Barrel_Check dummy
 scoreboard objectives add AS_Gamemode dummy
 scoreboard objectives add AS_Singleplayer_Kills dummy
+scoreboard objectives add AS_Deaths dummy
 
 #start the countdown timer
 function ascendance:menu/countdown
