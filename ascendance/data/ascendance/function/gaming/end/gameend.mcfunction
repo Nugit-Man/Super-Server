@@ -18,11 +18,18 @@ execute if entity @a[scores={MAIN_Game=1,AS_Map=11},tag=AS_Winner] run scoreboar
 execute if entity @a[scores={MAIN_Game=1,AS_Map=12},tag=AS_Winner] run scoreboard objectives remove AS_Map_JunglePikes
 execute if entity @a[scores={MAIN_Game=1,AS_Map=13},tag=AS_Winner] run scoreboard objectives remove AS_Map_Bridge
 
+
+
 clear @a[tag=AS_Winner,scores={MAIN_Game=1}]
 clear @a[tag=AS_Loser,scores={MAIN_Game=1}]
 
 tag @a[tag=AS_Winner,scores={MAIN_Game=1}] add AS_GoHome
 tag @a[tag=AS_Loser,scores={MAIN_Game=1}] add AS_GoHome
+
+scoreboard players add @a[tag=AS_GoHome,tag=AS_Winner] AS_Winstreak 1
+scoreboard players set @a[tag=AS_GoHome,tag=AS_Loser] AS_Winstreak 0
+advancement grant @a[scores={MAIN_Game=1,AS_Winstreak=3},tag=AS_GoHome] only ascendance:ascendance/chicken_dinner
+
 
 tag @a[scores={MAIN_Game=1}] remove AS_Winner
 tag @a[scores={MAIN_Game=1}] remove AS_Loser

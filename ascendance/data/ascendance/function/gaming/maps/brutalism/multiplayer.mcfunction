@@ -1,5 +1,5 @@
 #Winner
-tag @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Map_Brutalism=25..}] add AS_Winner
+execute as @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1}] if score @s AS_Map_Brutalism >= $Par AS_Map_Brutalism run tag @s add AS_Winner
 execute as @a[scores={MAIN_Game=1},tag=AS_Winner] run tag @a[scores={MAIN_Game=1,AS_Map=3},tag=!AS_Winner] add AS_Loser
 execute as @a[scores={MAIN_Game=1},tag=AS_Winner] run function ascendance:gaming/end/gameend
 
@@ -19,7 +19,7 @@ execute as @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1},tag=AS_Winning] run scoreb
 execute as @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1},tag=AS_Winning] run scoreboard players operation @s AS_Spread -= $$ AS_Spread
 
 #actionbar
-execute as @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1}] run title @s actionbar [{text:"Score: "},{score:{"objective":"AS_Map_Brutalism","name":"@s"}},{text:"/25, Spread: "},{score:{"objective":"AS_Spread","name":"@s"}},{text:", Winning: "},{selector:"@a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1},tag=AS_Winning]"}]
+execute as @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1}] run title @s actionbar [{text:"Score: "},{score:{"objective":"AS_Map_Brutalism","name":"@s"}},{text:"/"},{score:{objective:AS_Map_Brutalism,name:"$Par"}},{text:", Spread: "},{score:{"objective":"AS_Spread","name":"@s"}},{text:", Winning: "},{selector:"@a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1},tag=AS_Winning]"}]
 
 #Check if game ends due to there ony being one player
 scoreboard players set $$$ AS_Spread 0
@@ -31,3 +31,17 @@ execute if score $$$ AS_Spread matches 0..1 run function ascendance:gaming/end/g
 
 #Creeper Cleanup
 execute at @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1}] run kill @e[type=creeper,distance=..250]
+
+
+#Deal with crown
+execute as @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=2,AS_Deaths=1..},tag=AS_Crown] run tag @a[limit=1,tag=!AS_Crown,scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=2,AS_Kills=1..}] add AS_Crown
+item replace entity @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=2,AS_Deaths=1..},tag=AS_Crown] armor.head with air
+execute as @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=2,AS_Deaths=1..},tag=AS_Crown] run item replace entity @a[limit=1,tag=!AS_Crown,scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=2,AS_Kills=1..}] armor.head with golden_helmet[enchantments={binding_curse:1},unbreakable={},enchantment_glint_override=false,tooltip_display={hidden_components:[enchantments,unbreakable]}]
+tag @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=2,AS_Deaths=1..},tag=AS_Crown] remove AS_Crown 
+effect give @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=2},tag=AS_Crown] glowing infinite 0 true
+
+#Check for no crown
+execute unless entity @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=2},tag=AS_Crown] run tag @r[limit=1,tag=!AS_Crown,scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=2,AS_Countdown=16..}] add AS_Get_Crown
+item replace entity @a[tag=AS_Get_Crown] armor.head with golden_helmet[enchantments={binding_curse:1},unbreakable={},enchantment_glint_override=false,tooltip_display={hidden_components:[enchantments,unbreakable]}]
+tag @a[tag=AS_Get_Crown] add AS_Crown
+tag @a remove AS_Get_Crown
