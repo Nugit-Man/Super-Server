@@ -5,7 +5,7 @@
     },
     "title": "Ascendance",
     "description": "The achivements of Ascendance",
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "background": "block/spruce_planks",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false
