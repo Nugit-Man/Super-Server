@@ -68,6 +68,7 @@ execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s jump_strength bas
 execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s entity_interaction_range base reset
 execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s max_health base reset
 execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s step_height base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s armor base reset
 
 #sclae
 execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s scale base reset
@@ -75,6 +76,7 @@ execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s jump_strength
 execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s entity_interaction_range base reset
 execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s max_health base reset
 execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s step_height base reset
+execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s armor base reset
 
 #Check Deaths
 clear @a[scores={GB_Deaths=1..,MAIN_Game=3}]
