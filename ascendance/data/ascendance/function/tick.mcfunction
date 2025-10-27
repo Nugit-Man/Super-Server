@@ -76,6 +76,8 @@ execute in ascendance:game run item replace block 1020 0 49 container.13 with mi
 execute in ascendance:game run item replace block 2034 40 110 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in ascendance:game run item replace block 3064 5 30 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in ascendance:game run item replace block 12011 14 42 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in ascendance:game run item replace block 13075 20 68 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+
 
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_1] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 1
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_2] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 2
@@ -85,6 +87,7 @@ execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Desert_Tomb] run scor
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Tabletop] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 6
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Brutalism] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 7
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Jungle_Pikes] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 8
+execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Bridge] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 9
 
 execute as @a[scores={MAIN_Game=1}] run execute store result score @s AS_Barrel_Check run clear @s sunflower
 advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=1}] only ascendance:berrel/barrel1
@@ -95,9 +98,44 @@ advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=5}] o
 advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=6}] only ascendance:berrel/barreltt
 advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=7}] only ascendance:berrel/barrelb
 advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=8}] only ascendance:berrel/barreljp
+advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=9}] only ascendance:berrel/barrelbr
 
 
 
 #Stop players from dropping items
 execute at @a[scores={MAIN_Game=1}] run kill @e[type=item,distance=..100]
 execute at @a[scores={MAIN_Game=1}] run kill @e[type=experience_orb,distance=..100]
+
+#Count Deaths Per game
+scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_Deaths_Count 0
+scoreboard players add @a[scores={MAIN_Game=1,AS_Mode=1,AS_Deaths=1..}] AS_Deaths_Count 1
+
+
+
+#Count Kills Per game
+scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_Kill_Count 0
+scoreboard players add @a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}] AS_Kill_Count 1
+
+
+
+
+
+
+
+
+#Check for deah club
+scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_Death_Club 0
+scoreboard players add @a[scores={MAIN_Game=1,AS_Mode=1,AS_Deaths=1..,AS_Map=5}] AS_Death_Club 1
+advancement grant @a[scores={MAIN_Game=1,AS_Death_Club=100..}] only ascendance:ascendance/death_club
+
+#Cehck for did I win?
+advancement grant @a[scores={MAIN_Game=1,AS_Deaths_Count=0,AS_Gamemode=1},tag=AS_Winner] only ascendance:ascendance/did_i_win
+
+#First blood
+advancement grant @a[scores={MAIN_Game=1,AS_Kills=1,AS_Gamemode=1..}] only ascendance:ascendance/first_blood
+
+#Check for not that kind of deathmatch
+advancement grant @a[scores={MAIN_Game=1,AS_Deaths_Count=50,AS_Gamemode=1}] only ascendance:ascendance/not_that_kind_of_deathmatch
+
+#Check for Dethroner
+advancement grant @a[scores={MAIN_Game=1,AS_Kill_Count=50,AS_Gamemode=1}] only ascendance:ascendance/off_with_his_head

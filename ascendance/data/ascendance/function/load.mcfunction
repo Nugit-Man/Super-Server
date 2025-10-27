@@ -15,10 +15,12 @@ scoreboard objectives add AS_Barrel_Check dummy
 scoreboard objectives add AS_Gamemode dummy
 scoreboard objectives add AS_Singleplayer_Kills dummy
 scoreboard objectives add AS_Deaths dummy
-scoreboard objectives add AS_Dethrone_Count dummy
+scoreboard objectives add AS_Deaths_Count dummy
 scoreboard objectives add AS_Match_Kills dummy
 scoreboard objectives add AS_Winstreak dummy
-
+scoreboard objectives add AS_Death_Club dummy
+scoreboard objectives add AS_Gambling dummy
+scoreboard objectives add AS_Kill_Count dummy
 
 scoreboard objectives add AS_Milestone_Kills dummy
 scoreboard objectives add AS_Milestone_Deaths dummy

@@ -7,7 +7,7 @@
     "description": "Die 5 times before the game starts",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
   "parent": "ascendance:ascendance/root",
   "criteria": {
