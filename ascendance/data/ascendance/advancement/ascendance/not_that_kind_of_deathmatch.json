@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "ascendance:advancements/not_that_kind_of_deathmatch"
+    "function": "ascendance:advancements/10"
   }
 }

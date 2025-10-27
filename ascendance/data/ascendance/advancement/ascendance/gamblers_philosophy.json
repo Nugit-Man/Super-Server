@@ -10,14 +10,14 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "ascendance:ascendance/crackhead",
+    "parent": "ascendance:ascendance/root",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
       }
     },
     "rewards": {
-      "function": "ascendance:advancements/gamblers_philosophy"
+      "function": "ascendance:advancements/50"
     }
   }
   

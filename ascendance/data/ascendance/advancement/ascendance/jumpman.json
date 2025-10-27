@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "ascendance:advancements/jumpman"
+    "function": "ascendance:advancements/10"
   }
 }

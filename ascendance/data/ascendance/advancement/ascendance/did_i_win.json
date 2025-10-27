@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "ascendance:advancements/did_i_win"
+    "function": "ascendance:advancements/50"
   }
 }

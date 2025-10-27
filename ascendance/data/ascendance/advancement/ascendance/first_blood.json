@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "ascendance:advancements/first_blood"
+    "function": "ascendance:advancements/1"
   }
 }
