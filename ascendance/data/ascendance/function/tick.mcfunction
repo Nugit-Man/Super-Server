@@ -86,7 +86,7 @@ execute in ascendance:game at @e[type=marker,tag=AS_Barrel_4] run scoreboard pla
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Desert_Tomb] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 5
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Tabletop] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 6
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Brutalism] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 7
-execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Jungle_Pikes] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 8
+execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Jungle_Pikes] run scoreboard players set @a[distance=..10] AS_Barrel_Pos 8
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Bridge] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 9
 
 execute as @a[scores={MAIN_Game=1}] run execute store result score @s AS_Barrel_Check run clear @s sunflower
