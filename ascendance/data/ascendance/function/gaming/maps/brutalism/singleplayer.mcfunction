@@ -39,3 +39,5 @@ execute as @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=100,AS_Singlepl
 tag @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=100,AS_Singleplayer_Kills=1,AS_Map_Brutalism=20}] add AS_GoHome
 execute as @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=100,AS_Singleplayer_Kills=1,AS_Map_Brutalism=20}] run function ascendance:gaming/end/go_home
 execute as @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=100,AS_Singleplayer_Kills=1,AS_Map_Brutalism=20}] run scoreboard objectives remove AS_Map_Brutalism
+
+execute unless entity @a[scores={MAIN_Game=1,AS_Map=3,AS_Mode=1,AS_Gamemode=101}] run scoreboard objectives remove AS_Map_Brutalism
