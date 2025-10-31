@@ -84,3 +84,14 @@ execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s add GB_star
 tag @s remove GB_check
 execute if score @s GB_Select matches 2 run clear @s
 scoreboard players set @s GB_Select 1
+
+execute store result score @s GB_Select run clear @s leather_chestplate 0
+execute if score @s[tag=GB_Hazamt] GB_Select matches 2 run tag @s add GB_check
+execute if score @s[tag=GB_check] GB_Select matches 2 run tag @s remove GB_Hazmat
+execute if score @s[tag=GB_check] GB_Select matches 2 run scoreboard players remove @s GB_Points 2
+execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s[scores={GB_Points=4..}] add GB_check
+execute if score @s[tag=!GB_check] GB_Select matches 2 run scoreboard players add @s GB_Points 2
+execute if score @s[tag=!GB_check] GB_Select matches 2 run tag @s add GB_Hazmat
+tag @s remove GB_check
+execute if score @s GB_Select matches 2 run clear @s
+scoreboard players set @s GB_Select 1
