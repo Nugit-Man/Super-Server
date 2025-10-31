@@ -1,34 +1,34 @@
 tag @s add dasher
 particle minecraft:smoke ~ ~1 ~ .4 .4 .4 .01 1000 normal
-summon armor_stand ~ ~ ~ {Tags:["Dash1"]}
+summon marker ~ ~ ~ {Tags:["Dash1"]}
 execute anchored eyes run tp @e[tag=Dash1,limit=1,sort=nearest] ^ ^ ^0.5 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash2"]}
+summon marker ~ ~ ~ {Tags:["Dash2"]}
 execute anchored eyes run tp @e[tag=Dash2,limit=1,sort=nearest] ^ ^ ^1 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash3"]}
+summon marker ~ ~ ~ {Tags:["Dash3"]}
 execute anchored eyes run tp @e[tag=Dash3,limit=1,sort=nearest] ^ ^ ^1.5 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash4"]}
+summon marker ~ ~ ~ {Tags:["Dash4"]}
 execute anchored eyes run tp @e[tag=Dash4,limit=1,sort=nearest] ^ ^ ^2 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash5"]}
+summon marker ~ ~ ~ {Tags:["Dash5"]}
 execute anchored eyes run tp @e[tag=Dash5,limit=1,sort=nearest] ^ ^ ^2.5 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash6"]}
+summon marker ~ ~ ~ {Tags:["Dash6"]}
 execute anchored eyes run tp @e[tag=Dash6,limit=1,sort=nearest] ^ ^ ^3 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash7"]}
+summon marker ~ ~ ~ {Tags:["Dash7"]}
 execute anchored eyes run tp @e[tag=Dash7,limit=1,sort=nearest] ^ ^ ^3.5 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash8"]}
+summon marker ~ ~ ~ {Tags:["Dash8"]}
 execute anchored eyes run tp @e[tag=Dash8,limit=1,sort=nearest] ^ ^ ^4 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash9"]}
+summon marker ~ ~ ~ {Tags:["Dash9"]}
 execute anchored eyes run tp @e[tag=Dash9,limit=1,sort=nearest] ^ ^ ^4.5 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash10"]}
+summon marker ~ ~ ~ {Tags:["Dash10"]}
 execute anchored eyes run tp @e[tag=Dash10,limit=1,sort=nearest] ^ ^1 ^5 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash11"]}
+summon marker ~ ~ ~ {Tags:["Dash11"]}
 execute anchored eyes run tp @e[tag=Dash11,limit=1,sort=nearest] ^ ^ ^5.5 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash12"]}
+summon marker ~ ~ ~ {Tags:["Dash12"]}
 execute anchored eyes run tp @e[tag=Dash12,limit=1,sort=nearest] ^ ^ ^6 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash13"]}
+summon marker ~ ~ ~ {Tags:["Dash13"]}
 execute anchored eyes run tp @e[tag=Dash13,limit=1,sort=nearest] ^ ^ ^6.5 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash14"]}
+summon marker ~ ~ ~ {Tags:["Dash14"]}
 execute anchored eyes run tp @e[tag=Dash14,limit=1,sort=nearest] ^ ^ ^7 ~ ~
-summon armor_stand ~ ~ ~ {Tags:["Dash15"]}
+summon marker ~ ~ ~ {Tags:["Dash15"]}
 execute anchored eyes run tp @e[tag=Dash15,limit=1,sort=nearest] ^ ^ ^7.5 ~ ~
 
 
@@ -66,7 +66,21 @@ execute if score @s GB_velocity matches 13 run tp @s @e[limit=1,sort=nearest,tag
 execute if score @s GB_velocity matches 14 run tp @s @e[limit=1,sort=nearest,tag=Dash14]
 execute if score @s GB_velocity matches 15 run tp @s @e[limit=1,sort=nearest,tag=Dash15]
 
-kill @e[type=armor_stand]
+kill @e[type=marker,tag=Dash1]
+kill @e[type=marker,tag=Dash2]
+kill @e[type=marker,tag=Dash3]
+kill @e[type=marker,tag=Dash4]
+kill @e[type=marker,tag=Dash5]
+kill @e[type=marker,tag=Dash6]
+kill @e[type=marker,tag=Dash7]
+kill @e[type=marker,tag=Dash8]
+kill @e[type=marker,tag=Dash9]
+kill @e[type=marker,tag=Dash10]
+kill @e[type=marker,tag=Dash11]
+kill @e[type=marker,tag=Dash12]
+kill @e[type=marker,tag=Dash13]
+kill @e[type=marker,tag=Dash14]
+kill @e[type=marker,tag=Dash15]
 
 tag @s remove dasher
 give @s sugar[custom_name=[{"text":"Dash","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.05,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:2}]
