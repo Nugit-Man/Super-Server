@@ -1,4 +1,4 @@
-schedule function gorbino:rank 300s
+schedule function gorbino:rank 3s
 
 execute in gorbino:lobby run data modify entity @e[type=text_display,limit=1,sort=arbitrary,tag=GB_1] text set value "1st:"
 execute in gorbino:lobby run data modify entity @e[type=text_display,limit=1,sort=arbitrary,tag=GB_2] text set value "2nd:"
