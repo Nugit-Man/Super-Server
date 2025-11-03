@@ -63,7 +63,10 @@ execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=
 execute if score 1 GB_Select matches 1 run advancement grant @a[scores={GB_Mode=1,GB_Points=0,MAIN_Game=3}] only gorbino:0points
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,GB_Points=5,MAIN_Game=3},tag=GB_knight] run execute as @s[tag=GB_lumberjack] run advancement grant @s[tag=GB_archer] only gorbino:arsenal
 #execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,GB_Points=3,MAIN_Game=3},tag=cancer] run execute as @s[tag=frog] run advancement grant @s[tag=chad] only gorbino:kk
-execute if score 1 GB_Select matches 1 run execute as @a run execute at @s run advancement grant @s[y=-44,dy=-20,scores={GB_Mode=1,MAIN_Game=3}] only gorbino:falling
+
+
+execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3}] store result score @s GB_Shotgun run data get entity @s Pos[1] 1
+execute if score 1 GB_Select matches 1 run execute as @a run execute at @s run advancement grant @s[scores={GB_Mode=1,MAIN_Game=3,GB_Shotgun=..-40}] only gorbino:falling
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=!GB_archer] run execute as @s[tag=!GB_knight] run execute as @s[tag=!GB_lumberjack] run execute as @s[tag=!GB_mace_master] run execute as @s[tag=!GB_burst_charm] run execute as @s[tag=!GB_freeze_bolt] run execute as @s[tag=!GB_fireball] run execute as @s[tag=!GB_ground_slam] run execute as @s[tag=!GB_dripstone] run execute as @s[tag=!GB_bomber] run execute as @s[tag=!GB_shotgun] run execute as @s[tag=!GB_lightning_bolt] run execute as @s[tag=!GB_curry] run execute as @s[tag=!GB_super_shotgun] run advancement grant @s[tag=!GB_laser] only gorbino:peace
 #execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=mace_master] run execute as @s[tag=ground_slam] run advancement grant @s[tag=dripstone,scores={GB_Points=4}] only gorbino:crush
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_heavy_armor] run execute as @s[tag=GB_grow] run advancement grant @s[tag=GB_lumberjack,scores={GB_Points=5}] only gorbino:little_baby_man
