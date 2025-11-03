@@ -143,11 +143,12 @@ execute as @a[tag=GB_GSS,scores={GB_velocity=-99}] run tag @s remove GB_GSS
 execute as @e[tag=GB_Freeze] run execute at @s run tp @s ^ ^ ^0.8
 execute at @e[tag=GB_Freeze] run particle snowflake ~ ~ ~ 0.4 0.4 0.4 0.01 10
 scoreboard players add @e[tag=GB_Freeze] GB_velocity 1
-execute at @e[tag=GB_Freeze] run damage @r[distance=..2.5,tag=!GB_Hazmat] 2 freeze
-execute at @e[tag=GB_Freeze] run damage @r[distance=..2.5,tag=GB_Hazmat] 1 freeze
-execute at @e[tag=GB_Freeze] run effect give @a[distance=..2.5,tag=!GB_Hazmat] slowness 5 2
-execute at @e[tag=GB_Freeze] run effect give @a[distance=..2.5,tag=GB_Hazmat] slowness 3 1
+execute at @e[tag=GB_Freeze] run damage @r[distance=..2.2,tag=!GB_Hazmat] 2 freeze
+execute at @e[tag=GB_Freeze] run damage @r[distance=..2.2,tag=GB_Hazmat] 1 freeze
+execute at @e[tag=GB_Freeze] run effect give @a[distance=..2.2,tag=!GB_Hazmat] slowness 5 2
+execute at @e[tag=GB_Freeze] run effect give @a[distance=..2.2,tag=GB_Hazmat] slowness 3 1
 kill @e[tag=GB_Freeze,scores={GB_velocity=20}]
+tag @a[scores={MAIN_Game=3}] remove GB_Frost_Fix
 
 #Dripstone
 execute at @e[tag=GB_Dripstone] run damage @r[distance=..2] 50 gorbino:crush
