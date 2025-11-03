@@ -32,3 +32,9 @@ function ascendance:menu/countdown
 
 #scoreboards for stats
 scoreboard objectives add AS_Kills dummy
+
+
+
+
+scoreboard objectives add AS_Score_Add dummy
+scoreboard objectives add AS_Score_Singleplayer dummy

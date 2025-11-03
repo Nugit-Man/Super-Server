@@ -7,3 +7,5 @@ execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=10}] run function ascen
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=11}] run function ascendance:gaming/maps/ice_spikes/load
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=12}] run function ascendance:gaming/maps/jungle_pikes/load
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=13}] run function ascendance:gaming/maps/bridge/load
+
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Mode=2}] run schedule function ascendance:gaming/spawn_first 3s

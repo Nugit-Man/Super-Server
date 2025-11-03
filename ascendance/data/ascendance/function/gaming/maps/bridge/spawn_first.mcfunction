@@ -1,1 +1,0 @@
-execute at @e[type=marker,tag=AS_Training_Bridge_1] run summon creeper ~ ~ ~ {NoAI:true,Health:1,Glowing:true}

@@ -1,1 +1,0 @@
-execute at @e[type=marker,tag=AS_Training_Tabletop_1] run summon creeper ~ ~ ~ {NoAI:true,Health:1,Glowing:true}

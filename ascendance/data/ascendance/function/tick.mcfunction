@@ -7,16 +7,6 @@ scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Gamemode 0
 tag @a[scores={MAIN_Game=1},tag=!AS_Welcome] add AS_Welcome
 
 
-##remove the crown from players outside of a game
-tag @a[scores={AS_Mode=0,MAIN_Game=1}] remove AS_Crown
-tag @a[scores={MAIN_Game=0}] remove AS_Crown
-
-
-effect give @a[scores={MAIN_Game=1}] saturation infinite 0 true
-
-
-#Arrow Cleanup
-execute at @a[scores={MAIN_Game=1}] run kill @e[type=arrow,distance=..50,nbt={Motion:[0d,0d,0d]}]
 
 
 #Give the players menus
@@ -37,105 +27,17 @@ execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=11}] run scoreb
 execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=12}] run scoreboard players set @a[scores={AS_Countdown=0,MAIN_Game=1,AS_Map=12}] AS_Map 0
 execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=13}] run scoreboard players set @a[scores={AS_Countdown=0,MAIN_Game=1,AS_Map=13}] AS_Map 0
 
-#Run the thing if the map is in use
-execute if score $ AS_Map_DesertTomb matches 100.. run function ascendance:gaming/maps/desert_tomb/tick
-execute if score $ AS_Map_Tabletop matches 100.. run function ascendance:gaming/maps/tabletop/tick
-execute if score $ AS_Map_Brutalism matches 100.. run function ascendance:gaming/maps/brutalism/tick
-execute if score $ AS_Map_Colosseum matches 100.. run function ascendance:gaming/maps/colosseum/load
-execute if score $ AS_Map_Club matches 100.. run function ascendance:gaming/maps/club/tick
-execute if score $ AS_Map_Cube matches 100.. run function ascendance:gaming/maps/cube/tick
-execute if score $ AS_Map_IceSpikes matches 100.. run function ascendance:gaming/maps/ice_spikes/load
-execute if score $ AS_Map_JunglePikes matches 100.. run function ascendance:gaming/maps/jungle_pikes/tick
-execute if score $ AS_Map_Bridge matches 100.. run function ascendance:gaming/maps/bridge/tick
-
-
-
-
-#Reset Kills
-scoreboard players set @a[scores={MAIN_Game=1}] AS_Kills 0
-
-
-#kill on hit and remove hitting
-kill @a[nbt={HurtTime:9s, Dimension:"ascendance:game"},scores={MAIN_Game=1}]
-execute as @a[scores={MAIN_Game=1}] run attribute @s attack_damage base set -10
-
 
 #Set up join game
-scoreboard players enable @a[scores={MAIN_Game=1,AS_Mode=0}] AS_JoinGame
 scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0,AS_JoinGame=1..}] AS_Countdown -1
 tellraw @a[scores={MAIN_Game=1,AS_Mode=0,AS_JoinGame=1..}] "You have joined the game"
 scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_JoinGame 0
 
 
-#Barrels
-execute in ascendance:game run item replace block 61 22 60 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-execute in ascendance:game run item replace block 13 21 16 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-execute in ascendance:game run item replace block 4 22 51 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-execute in ascendance:game run item replace block 73 31 49 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-execute in ascendance:game run item replace block 1020 0 49 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-execute in ascendance:game run item replace block 2034 40 110 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-execute in ascendance:game run item replace block 3064 5 30 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-execute in ascendance:game run item replace block 12011 14 42 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-execute in ascendance:game run item replace block 13075 20 68 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-
-
-execute in ascendance:game at @e[type=marker,tag=AS_Barrel_1] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 1
-execute in ascendance:game at @e[type=marker,tag=AS_Barrel_2] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 2
-execute in ascendance:game at @e[type=marker,tag=AS_Barrel_3] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 3
-execute in ascendance:game at @e[type=marker,tag=AS_Barrel_4] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 4
-execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Desert_Tomb] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 5
-execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Tabletop] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 6
-execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Brutalism] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 7
-execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Jungle_Pikes] run scoreboard players set @a[distance=..10] AS_Barrel_Pos 8
-execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Bridge] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 9
-
-execute as @a[scores={MAIN_Game=1}] run execute store result score @s AS_Barrel_Check run clear @s sunflower
-advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=1}] only ascendance:berrel/barrel1
-advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=2}] only ascendance:berrel/barrel2
-advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=3}] only ascendance:berrel/barrel3
-advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=4}] only ascendance:berrel/barrel4
-advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=5}] only ascendance:berrel/barreldt
-advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=6}] only ascendance:berrel/barreltt
-advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=7}] only ascendance:berrel/barrelb
-advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=8}] only ascendance:berrel/barreljp
-advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=9}] only ascendance:berrel/barrelbr
-
-
-
-#Stop players from dropping items
-execute at @a[scores={MAIN_Game=1}] run kill @e[type=item,distance=..100]
-execute at @a[scores={MAIN_Game=1}] run kill @e[type=experience_orb,distance=..100]
-
-#Count Deaths Per game
-scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_Deaths_Count 0
-scoreboard players add @a[scores={MAIN_Game=1,AS_Mode=1,AS_Deaths=1..}] AS_Deaths_Count 1
-
-
-
-#Count Kills Per game
-scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_Kill_Count 0
-scoreboard players add @a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}] AS_Kill_Count 1
-
-
-
-
-
-
-
-
-#Check for deah club
-scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_Death_Club 0
-scoreboard players add @a[scores={MAIN_Game=1,AS_Mode=1,AS_Deaths=1..,AS_Map=5}] AS_Death_Club 1
-advancement grant @a[scores={MAIN_Game=1,AS_Death_Club=100..}] only ascendance:ascendance/death_club
-
-#Cehck for did I win?
-advancement grant @a[scores={MAIN_Game=1,AS_Deaths_Count=0,AS_Gamemode=1},tag=AS_Winner] only ascendance:ascendance/did_i_win
-
-#First blood
-advancement grant @a[scores={MAIN_Game=1,AS_Kills=1,AS_Gamemode=1..}] only ascendance:ascendance/first_blood
-
-#Check for not that kind of deathmatch
-advancement grant @a[scores={MAIN_Game=1,AS_Deaths_Count=50,AS_Gamemode=1}] only ascendance:ascendance/not_that_kind_of_deathmatch
-
-#Check for Dethroner
-advancement grant @a[scores={MAIN_Game=1,AS_Kill_Count=50,AS_Gamemode=1}] only ascendance:ascendance/off_with_his_head
+#Call the main functions
+function ascendance:main/advnacement
+function ascendance:main/barrel
+function ascendance:main/call_multiplayer_macros
+function ascendance:main/crown
+function ascendance:main/rules
+function ascendance:main/scoreadd

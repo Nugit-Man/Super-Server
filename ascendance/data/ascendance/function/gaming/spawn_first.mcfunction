@@ -1,0 +1,1 @@
+execute at @e[type=marker,tag=AS_Training_0,limit=1,sort=nearest] run summon creeper ~ ~ ~ {NoAI:true,Health:1,Glowing:true}

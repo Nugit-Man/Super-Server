@@ -6,7 +6,6 @@ execute as @a[scores={MAIN_Game=1,AS_Map=1,AS_Gamemode=100}] run scoreboard play
 execute as @a[scores={MAIN_Game=1,AS_Map=1,AS_Gamemode=100}] run scoreboard players set $Time_10s AS_Map_DesertTomb 0
 execute as @a[scores={MAIN_Game=1,AS_Map=1,AS_Gamemode=100}] run scoreboard players set $Time_sec AS_Map_DesertTomb 0
 execute as @a[scores={MAIN_Game=1,AS_Map=1,AS_Gamemode=100}] run scoreboard players set $Time_min AS_Map_DesertTomb 0
-execute as @a[scores={MAIN_Game=1,AS_Map=1,AS_Gamemode=100}] run schedule function ascendance:gaming/maps/desert_tomb/spawn_first 13t
 
 #Fill in the secret
 setblock 1014 1 42 minecraft:cut_red_sandstone

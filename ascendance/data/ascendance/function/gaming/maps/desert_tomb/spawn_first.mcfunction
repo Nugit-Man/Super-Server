@@ -1,1 +1,0 @@
-execute at @e[type=marker,tag=AS_Training_DesertTomb_1] run summon creeper ~ ~ ~ {NoAI:true,Health:1,Glowing:true}
