@@ -132,7 +132,7 @@ team join Ascendance @a[scores={MAIN_Game=1}]
 #Pass the MAIN_------ scoreboards into the game specific ones
 execute as @a[scores={MAIN_Game=1}] run scoreboard players operation @s AS_Kills = @s MAIN_Player_Kills
 execute as @a[scores={MAIN_Game=1}] run scoreboard players operation @s AS_Singleplayer_Kills = @s MAIN_Total_Kills
-execute as @a[scores={MAIN_Game=1}] run scoreboard players operation @s AS_Deaths += @s MAIN_Deaths
+execute as @a[scores={MAIN_Game=1}] run scoreboard players operation @s AS_Deaths = @s MAIN_Deaths
 execute as @a[scores={MAIN_Game=1}] run scoreboard players operation @s AS_Milestone_Deaths += @s MAIN_Deaths
 execute as @a[scores={MAIN_Game=1}] run scoreboard players operation @s AS_Milestone_Kills += @s MAIN_Player_Kills
 execute as @a[scores={MAIN_Game=1}] run scoreboard players operation @s AS_Milestone_Shots += @s MAIN_Bow_Used

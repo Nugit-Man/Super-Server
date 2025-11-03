@@ -18,7 +18,7 @@ $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] run title @s 
 
 
 #actionbar but for singpleplayer
-$execute as @a[scores={MAIN_Game=1,AS_Map=(map_parse),AS_Mode=2}] run title @s actionbar [{text:"Score: "},{score:{"objective":"AS_Score_Singleplayer","name":"@s"}},{text:"/20, Time: "},{score:{"objective":"$(map_name)","name":"$Time_min"}},{text:":"},{score:{"objective":"$(map_name)","name":"$Time_sec"}},{text:"."},{score:{"objective":"$(map_name)","name":"$Time_10s"}}]
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=2}] run title @s actionbar [{text:"Score: "},{score:{"objective":"AS_Score_Singleplayer","name":"@s"}},{text:"/20, Time: "},{score:{"objective":"$(map_name)","name":"$Time_min"}},{text:":"},{score:{"objective":"$(map_name)","name":"$Time_sec"}},{text:"."},{score:{"objective":"$(map_name)","name":"$Time_10s"}}]
 
 
 
@@ -59,13 +59,13 @@ $execute if score $Time_10s $(map_name) matches 10 run scoreboard players add $T
 $execute if score $Time_10s $(map_name) matches 10 run scoreboard players set $Time_10s $(map_name) 0
 $execute if score $Time_sec $(map_name) matches 60 run scoreboard players add $Time_min $(map_name) 1
 $execute if score $Time_sec $(map_name) matches 60 run scoreboard players set $Time_sec $(map_name) 0
-$execute if score $Time_min $(map_name) matches 10 run tag @a[scores={MAIN_Game=1,AS_Map=$(Map_parse),AS_Mode=2}] add AS_GoHome
+$execute if score $Time_min $(map_name) matches 10 run tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=2}] add AS_GoHome
 $execute if score $Time_min $(map_name) matches 10 run function ascendance:gaming/end/go_home
 
 
 
 #Spawn points
-$execute at @e[type=marker,limit=1,sort=random,tag=$(map_name)] run spawnpoint @r[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1..}]
+$execute at @e[type=marker,limit=1,sort=random,tag=$(map_spawn)] run spawnpoint @r[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1..}]
 
 
 #Winner but for singplayer
@@ -78,6 +78,12 @@ $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=2,AS_Score_Single
 
 
 #Check if map is on kings crown
-$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=1}] run scoreboard players set $Crowncheck $(map_name) 0
-$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=1}] run scoreboard players set $Crowncheck $(map_name) 0
+$scoreboard players set $Crowncheck $(map_name) 0
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=1,AS_Mode=2},tag=AS_Crown] run scoreboard players set $Crowncheck $(map_name) 1
 #Give a player the crown
+$execute if score $Crowncheck $(map_name) matches 0 run tag @r[scores={MAIN_Game=1,AS_Mode=2,AS_Map=$(map_parse)}] add AS_Crown_Gain
+$execute if score $Crowncheck $(map_name) matches 2.. run tag @r[scores={MAIN_Game=1,AS_Mode=2,AS_Map=$(map_parse)},tag=AS_Crown] add AS_Crown_Lose
+
+#Deal with crown
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Mode=2,AS_Deaths=1..},tag=AS_Crown] run tag @a[limit=1,tag=!AS_Crown,scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Mode=2,AS_Kills=1..}] add AS_Crown_Gain
+$tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Mode=2,AS_Deaths=1..},tag=AS_Crown] remove AS_Crown_Lose

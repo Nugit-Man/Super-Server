@@ -5,6 +5,7 @@ execute if entity @a[scores={MAIN_Game=1,AS_Countdown=11}] run function ascendan
 #Dude this function does not exist?????
 
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11}] run scoreboard players operation @a[scores={MAIN_Game=1,AS_Countdown=-1}] AS_Map = @s AS_Map
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11}] run scoreboard players operation @a[scores={MAIN_Game=1,AS_Countdown=-1}] AS_Gamemode = @s AS_Gamemode
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11}] run scoreboard players set @a[scores={MAIN_Game=1,AS_Countdown=-1}] AS_Countdown 11
 clear @a[scores={MAIN_Game=1,AS_Countdown=11}]
 execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=1}] 1020 3 34 180 0

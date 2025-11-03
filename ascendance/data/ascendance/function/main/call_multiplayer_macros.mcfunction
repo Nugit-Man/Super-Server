@@ -14,4 +14,17 @@ execute if score $Parse AS_Map matches 12 run data modify storage ascendance:mul
 execute if score $Parse AS_Map matches 13 run data modify storage ascendance:multiplayer map_name set value "AS_Map_Bridge"
 
 
+#Get name of map
+execute if score $Parse AS_Map matches 1 run data modify storage ascendance:multiplayer map_spawn set value "AS_Spawn_DesertTomb"
+execute if score $Parse AS_Map matches 2 run data modify storage ascendance:multiplayer map_spawn set value "AS_Spawn_Tabletop"
+execute if score $Parse AS_Map matches 3 run data modify storage ascendance:multiplayer map_spawn set value "AS_Spawn_Brutalism"
+execute if score $Parse AS_Map matches 4 run data modify storage ascendance:multiplayer map_spawn set value "AS_Spawn_Colosseum"
+execute if score $Parse AS_Map matches 5 run data modify storage ascendance:multiplayer map_spawn set value "AS_Spawn_Club"
+execute if score $Parse AS_Map matches 10 run data modify storage ascendance:multiplayer map_spawn set value "AS_Spawn_Cube"
+execute if score $Parse AS_Map matches 11 run data modify storage ascendance:multiplayer map_spawn set value "AS_Spawn_IceSpikes"
+execute if score $Parse AS_Map matches 12 run data modify storage ascendance:multiplayer map_spawn set value "AS_Spawn_JunglePikes"
+execute if score $Parse AS_Map matches 13 run data modify storage ascendance:multiplayer map_spawn set value "AS_Spawn_Bridge"
+
+
+
 execute unless score $Parse AS_Map matches 0 run function ascendance:main/call_multiplayer_macros
