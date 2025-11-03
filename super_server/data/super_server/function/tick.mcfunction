@@ -203,3 +203,9 @@ execute as @a[scores={MAIN_Game=0}] run execute store result score @s MAIN_Barre
 advancement grant @a[scores={MAIN_Game=0,MAIN_Barrel_Check=1..,MAIN_Barrel_Pos=1}] only super_server:barrel/hidden/wall
 advancement grant @a[scores={MAIN_Game=0,MAIN_Barrel_Check=1..,MAIN_Barrel_Pos=2}] only super_server:barrel/hidden/well
 advancement grant @a[scores={MAIN_Game=0,MAIN_Barrel_Check=1..,MAIN_Barrel_Pos=3}] only super_server:barrel/hidden/wall_2
+
+
+
+
+advancement revoke @a[tag=!GB_Milestone_Reset] through super_server:milestones/gorbino/gorbino_guy
+tag @a add GB_Milestone_Reset

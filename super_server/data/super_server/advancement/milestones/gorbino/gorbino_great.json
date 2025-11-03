@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "super_server:advancement/gorbino"
+    "function": "gorbino:advancement/milestones/gorbino_guy"
   }
 }
