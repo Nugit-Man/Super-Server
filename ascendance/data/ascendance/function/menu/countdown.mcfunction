@@ -26,4 +26,4 @@ schedule function ascendance:menu/countdown 1s
 
 
 #remove the trigger command
-execute if entity @r[scores={MAIN_Game=1,AS_Countdown=12}] run execute as @a run trigger AS_JoinGame add 0
+execute if entity @r[scores={MAIN_Game=1}] run execute as @a run trigger AS_JoinGame add 0

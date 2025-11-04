@@ -28,3 +28,6 @@ scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_Score_Singleplayer 
 #Gambliers philiosphy
 execute as @a[scores={AS_Map=2,AS_Gamemode=1..,MAIN_Game=1}] run execute store result score @s AS_Gambling run random value 1..100000
 advancement grant @a[scores={AS_Map=2,AS_Gamemode=1..,MAIN_Game=1,AS_Gambling=69420}] only ascendance:ascendance/gamblers_philosophy
+
+#Kill players on glass on bridge
+execute as @a[scores={MAIN_Game=1,AS_Map=13}] at @s if block ~ ~-1 ~ minecraft:gray_stained_glass run kill @s
