@@ -17,7 +17,8 @@ execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=
 execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=11}] 11018 12 78 180 0
 execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=12}] 12036 10 55.0 270 0
 execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=13}] 13093 23 67 0 0
-scoreboard players set @a[scores={MAIN_Game=1,AS_Countdown=11}] AS_Mode 1
+scoreboard players set @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=1..2}] AS_Mode 1
+scoreboard players set @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=100}] AS_Mode 2
 
 give @a[scores={AS_Countdown=14,MAIN_Game=1}] bow[enchantment_glint_override=false,enchantments={infinity:1},unbreakable={},tooltip_display={hidden_components:[enchantments,unbreakable]}]
 give @a[scores={AS_Countdown=16,MAIN_Game=1}] arrow
