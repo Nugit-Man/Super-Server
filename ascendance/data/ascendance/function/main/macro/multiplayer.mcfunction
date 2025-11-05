@@ -79,11 +79,11 @@ $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=2,AS_Score_Single
 
 #Check if map is on kings crown
 $scoreboard players set $Crowncheck $(map_name) 0
-$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=1,AS_Mode=2},tag=AS_Crown] run scoreboard players set $Crowncheck $(map_name) 1
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=2,AS_Mode=1},tag=AS_Crown] run scoreboard players set $Crowncheck $(map_name) 1
 #Give a player the crown
-$execute if score $Crowncheck $(map_name) matches 0 run tag @r[scores={MAIN_Game=1,AS_Mode=2,AS_Map=$(map_parse)}] add AS_Crown_Gain
-$execute if score $Crowncheck $(map_name) matches 2.. run tag @r[scores={MAIN_Game=1,AS_Mode=2,AS_Map=$(map_parse)},tag=AS_Crown] add AS_Crown_Lose
+$execute if score $Crowncheck $(map_name) matches 0 run tag @r[scores={MAIN_Game=1,AS_Mode=1,AS_Gamemode=2,AS_Map=$(map_parse)}] add AS_Crown_Gain
+$execute if score $Crowncheck $(map_name) matches 2.. run tag @r[scores={MAIN_Game=1,AS_Mode=1,AS_Gamemode=2,,AS_Map=$(map_parse)},tag=AS_Crown] add AS_Crown_Lose
 
 #Deal with crown
-$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Mode=2,AS_Deaths=1..},tag=AS_Crown] run tag @a[limit=1,tag=!AS_Crown,scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Mode=2,AS_Kills=1..}] add AS_Crown_Gain
-$tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Mode=2,AS_Deaths=1..},tag=AS_Crown] remove AS_Crown_Lose
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=2,AS_Deaths=1..},tag=AS_Crown] run tag @a[limit=1,tag=!AS_Crown,scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=2,AS_Kills=1..}] add AS_Crown_Gain
+$tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=2,AS_Deaths=1..},tag=AS_Crown] gain AS_Crown_Lose
