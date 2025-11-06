@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:barrel"
+    },
+    "title": "Ascendance Barrel 5",
+    "description": "Quick Trigger",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ascendance:berrel/barrel4",
+  "rewards":{
+    "function": "final_island:advancement/barrel/balloon"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
