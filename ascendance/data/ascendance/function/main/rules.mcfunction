@@ -31,3 +31,7 @@ advancement grant @a[scores={AS_Map=2,AS_Gamemode=1..,MAIN_Game=1,AS_Gambling=69
 
 #Kill players on glass on bridge
 execute as @a[scores={MAIN_Game=1,AS_Map=13}] at @s if block ~ ~-1 ~ minecraft:gray_stained_glass run kill @s
+
+
+#Parkour achivement
+execute at @e[type=marker,tag=AS_Parkour_Finish] run advancement grant @a[distance=..2] only ascendance:ascendance/jumpman
