@@ -43,8 +43,8 @@ execute at @a[scores={MAIN_Game=1,AS_Mode=1}] run kill @e[type=creeper,distance=
 
 #exit if there is jsut 1 or aero players (singple player is counted as 2 players)
 scoreboard players set $$$ AS_Spread 0
-$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] run scoreboard players add $$$ AS_Spread 1
-$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=2}] run scoreboard players add $$$ AS_Spread 2
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=1..2}] run scoreboard players add $$$ AS_Spread 1
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=100}] run scoreboard players add $$$ AS_Spread 2
 $execute if score $$$ AS_Spread matches 0..1 run tellraw @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] {text:"Game was canceled because there was only one player",italic:false}
 $execute if score $$$ AS_Spread matches 0..1 run scoreboard objectives remove $(map_name)
 $execute if score $$$ AS_Spread matches 0..1 run tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] add AS_GoHome
