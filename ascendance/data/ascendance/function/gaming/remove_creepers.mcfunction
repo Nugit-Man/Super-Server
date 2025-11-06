@@ -1,1 +1,1 @@
-execute at @s run kill @e[type=creeper,distance=..250]
+execute at @a[scores={MAIN_Game=1,AS_Mode=2,AS_Gamemode=100,AS_Countdown=10..15}] run kill @e[type=creeper,distance=..250]
