@@ -86,4 +86,4 @@ $execute if score $Crowncheck $(map_name) matches 2.. run tag @r[scores={MAIN_Ga
 
 #Deal with crown
 $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=2,AS_Deaths=1..},tag=AS_Crown] run tag @a[limit=1,tag=!AS_Crown,scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=2,AS_Kills=1..}] add AS_Crown_Gain
-$tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=2,AS_Deaths=1..},tag=AS_Crown] gain AS_Crown_Lose
+$tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=2,AS_Deaths=1..},tag=AS_Crown] add AS_Crown_Lose
