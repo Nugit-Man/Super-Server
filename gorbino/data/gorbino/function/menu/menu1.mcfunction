@@ -1,30 +1,30 @@
 item replace entity @s inventory.0 with spectral_arrow[custom_name=[{text:"Page 2",italic:false}]]
-item replace entity @s[tag=!GB_simple_armor] inventory.2 with leather_chestplate[custom_name=[{text:"Light Armor [1]",italic:false}],!attribute_modifiers]
+item replace entity @s[tag=!GB_simple_armor] inventory.2 with leather_chestplate[custom_name=[{text:"Light Armor [1]",italic:false}],!attribute_modifiers,lore=[{text:"Gives you leather armour",color:dark_gray},{text:"Infinite durability",color:dark_gray}]]
 item replace entity @s[tag=GB_simple_armor] inventory.2 with leather_chestplate[custom_name=[{text:"Light Armor [1]",italic:false}],!attribute_modifiers,enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
-item replace entity @s[tag=!GB_knight] inventory.3 with iron_sword[custom_name=[{text:"Knight [2]",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers]
+item replace entity @s[tag=!GB_knight] inventory.3 with iron_sword[custom_name=[{text:"Knight [2]",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers,lore=[{text:"Gives you an Iron sword",color:dark_gray},{text:"Gives you a shield",color:dark_gray}]]
 item replace entity @s[tag=GB_knight] inventory.3 with iron_sword[custom_name=[{text:"Knight [2]",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers,enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 #item replace entity @s[tag=!GB_frog] inventory.6 with ochre_froglight[custom_name=[{text:"Frog [1]",italic:false}]]
 #item replace entity @s[tag=GB_frog] inventory.6 with ochre_froglight[custom_name=[text:"Frog [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 #item replace entity @s[tag=!GB_builder] inventory.5 with oak_planks[custom_name=[{text:"Builder [1]",italic:false}]]
 #item replace entity @s[tag=GB_builder] inventory.5 with oak_planks[custom_name=[{text:"Builder [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
-item replace entity @s[tag=!GB_dash] inventory.4 with sugar[custom_name=[{text:"Dash [1]",italic:false}]]
+item replace entity @s[tag=!GB_dash] inventory.4 with sugar[custom_name=[{text:"Dash [1]",italic:false}],lore=[{text:"Launchers/Teleports you in the direction your facing",color:dark_gray},{text:"Short cooldown",color:dark_gray}]]
 item replace entity @s inventory.8 with air
 item replace entity @s inventory.9 with arrow[custom_name=[{text:"Main Menu",italic:false}]]
-item replace entity @s[tag=!GB_chain_armor] inventory.11 with chainmail_chestplate[custom_name=[{text:"Chain Armor [2]",italic:false}],!attribute_modifiers]
+item replace entity @s[tag=!GB_chain_armor] inventory.11 with chainmail_chestplate[custom_name=[{text:"Chain Armor [2]",italic:false}],!attribute_modifiers,lore=[{text:"Gives you chainmail armour",color:dark_gray}]]
 item replace entity @s[tag=GB_chain_armor] inventory.11 with chainmail_chestplate[custom_name=[{text:"Chain Armor [2]",italic:false}],!attribute_modifiers,enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
-item replace entity @s[tag=!GB_lumberjack] inventory.12 with iron_axe[custom_name=[{text:"Lumberjack [1]",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers]
-item replace entity @s[tag=!GB_burst_charm] inventory.13 with nether_star[custom_name=[{text:"Burst Charm [1]",italic:false}],enchantment_glint_override=false]
-item replace entity @s[tag=!GB_fireball] inventory.14 with fire_charge[custom_name=[{text:"Fireball [2]",italic:false}]]
-item replace entity @s[tag=!GB_dripstone] inventory.5 with dripstone_block[custom_name=[{text:"Dripstone [1]",italic:false}]]
+item replace entity @s[tag=!GB_lumberjack] inventory.12 with iron_axe[custom_name=[{text:"Lumberjack [1]",italic:false}],!tool,!damage,!max_damage,!attribute_modifiers,lore=[{text:"Gives you an iron axe",color:dark_gray}]]
+item replace entity @s[tag=!GB_burst_charm] inventory.13 with nether_star[custom_name=[{text:"Burst Charm [1]",italic:false}],enchantment_glint_override=false,lore=[{text:"Causes an explosion a few blocks in front of you",color:dark_gray},{text:"Requires charge before launching",color:dark_gray}]]
+item replace entity @s[tag=!GB_fireball] inventory.14 with fire_charge[custom_name=[{text:"Fireball [2]",italic:false}],lore=[{text:"Launches a fireball",color:dark_gray},{text:"Way faster than a standard fireball",color:dark_gray},{text:"Breaks Dirt",color:dark_gray}]]
+item replace entity @s[tag=!GB_dripstone] inventory.5 with dripstone_block[custom_name=[{text:"Dripstone [1]",italic:false}],lore=[{text:"Spawns dripstone in the air in front of you",color:dark_gray},{text:"Takes a few seconds after use to spawn",color:dark_gray}]]
 item replace entity @s[tag=GB_dripstone] inventory.5 with dripstone_block[custom_name=[{text:"Dripstone [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 item replace entity @s inventory.17 with barrier[custom_name=[{text:"Clear All",italic:false}]]
 item replace entity @s inventory.18 with air
-item replace entity @s[tag=!GB_heavy_armor] inventory.20 with iron_chestplate[custom_name=[{text:"Plate Armor [3]",italic:false}],!attribute_modifiers]
+item replace entity @s[tag=!GB_heavy_armor] inventory.20 with iron_chestplate[custom_name=[{text:"Plate Armor [3]",italic:false}],!attribute_modifiers,lore=[{text:"Give you Iron armour",color:dark_gray}]]
 item replace entity @s[tag=GB_heavy_armor] inventory.20 with iron_chestplate[custom_name=[{text:"Plate Armor [3]",italic:false}],!attribute_modifiers,enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
-item replace entity @s[tag=!GB_archer] inventory.21 with bow[custom_name=[{text:"Archer [2]",italic:false}]]
-item replace entity @s[tag=!GB_freeze_bolt] inventory.22 with breeze_rod[custom_name=[{text:"Freeze Bolt [1]",italic:false}]]
+item replace entity @s[tag=!GB_archer] inventory.21 with bow[custom_name=[{text:"Archer [2]",italic:false}],lore=[{text:"Gives you a bow and arrows",color:dark_gray},{text:"Arrows regenerate over time (Max 8)",color:dark_gray}]]
+item replace entity @s[tag=!GB_freeze_bolt] inventory.22 with breeze_rod[custom_name=[{text:"Freeze Bolt [1]",italic:false}],lore=[{text:"Deals little damage",color:dark_gray},{text:"Slows opponents on hit",color:dark_gray},{text:"Extinguishes self when used",color:dark_gray}]]
 #item replace entity @s[tag=!GB_flame_runner] inventory.23 with flint_and_steel[custom_name=[{text:"Flame Runner [1]",italic:false}]]
-item replace entity @s[tag=!GB_ground_slam] inventory.23 with dirt[custom_name=[{text:"Ground Slam [1]",italic:false}]]
+item replace entity @s[tag=!GB_ground_slam] inventory.23 with dirt[custom_name=[{text:"Ground Slam [1]",italic:false}],lore=[{text:"Slams you into the Ground",color:dark_gray},{text:"Creates a shockwave that deals damage",color:dark_gray},{text:"Breaks dirt",color:dark_gray}]]
 item replace entity @s inventory.26 with air
 
 item replace entity @s[tag=GB_dash] inventory.4 with sugar[custom_name=[{text:"Dash [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
@@ -220,31 +220,31 @@ scoreboard players set @s GB_Select 1
 
 
 #Stuff I moved to page 1
-item replace entity @s[tag=!GB_grow] inventory.6 with oak_sapling[custom_name=[{text:"Grow [1]",italic:false}]]
+item replace entity @s[tag=!GB_grow] inventory.6 with oak_sapling[custom_name=[{text:"Grow [1]",italic:false}],lore=[{text:"Increases size",color:dark_gray},{text:"Doubles health",color:dark_gray}]]
 item replace entity @s[tag=GB_grow] inventory.6 with oak_sapling[custom_name=[{text:"Grow [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
-item replace entity @s[tag=!GB_shrink] inventory.15 with pufferfish[custom_name=[{text:"Shrink [1]",italic:false}]]
+item replace entity @s[tag=!GB_shrink] inventory.15 with pufferfish[custom_name=[{text:"Shrink [1]",italic:false}],lore=[{text:"Decreases size",color:dark_gray},{text:"Only 7 hearts",color:dark_gray}]]
 item replace entity @s[tag=GB_shrink] inventory.15 with pufferfish[custom_name=[{text:"Shrink [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
-item replace entity @s[tag=!GB_lava] inventory.7 with lava_bucket[custom_name=[{text:"Lava [2]",italic:false}]]
+item replace entity @s[tag=!GB_lava] inventory.7 with lava_bucket[custom_name=[{text:"Lava [2]",italic:false}],lore=[{text:"Creates a 5x5 area of lava in the ground in front of you",color:dark_gray},{text:"Takes time to charge up",color:dark_gray}]]
 item replace entity @s[tag=GB_lava] inventory.7 with lava_bucket[custom_name=[{text:"Lava [2]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
 item replace entity @s[tag=!GB_heal] inventory.1 with red_dye[custom_name=[{text:"Heal [1]",italic:false}]]
 item replace entity @s[tag=GB_heal] inventory.1 with red_dye[custom_name=[{text:"Heal [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
-item replace entity @s[tag=!GB_cancer] inventory.25 with prismarine_crystals[custom_name=[{text:"Cancer [1]",italic:false}]]
+item replace entity @s[tag=!GB_cancer] inventory.25 with prismarine_crystals[custom_name=[{text:"Cancer [1]",italic:false}],lore=[{text:"*Cough Cough",color:dark_gray}]]
 item replace entity @s[tag=GB_cancer] inventory.25 with prismarine_crystals[custom_name=[{text:"Cancer [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
-item replace entity @s[tag=!GB_curry] inventory.24 with rabbit_stew[custom_name=[{text:"Curry [1]",italic:false}]]
+item replace entity @s[tag=!GB_curry] inventory.24 with rabbit_stew[custom_name=[{text:"Curry [1]",italic:false}],lore=[{text:"Damages the area directly in front of you",color:dark_gray},{text:"Extremely small cooldown",color:dark_gray}]]
 item replace entity @s[tag=GB_curry] inventory.24 with rabbit_stew[custom_name=[{text:"Curry [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
-item replace entity @s[tag=!GB_knockback] inventory.10 with stick[custom_name=[{text:"Knockback Stick [1]",italic:false}]]
+item replace entity @s[tag=!GB_knockback] inventory.10 with stick[custom_name=[{text:"Knockback Stick [1]",italic:false}],lore=[{text:"Launches opponent with knockback III",color:dark_gray},{text:"No damage",color:dark_gray}]]
 item replace entity @s[tag=GB_knockback] inventory.10 with stick[custom_name=[{text:"Knockback Stick [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
-item replace entity @s[tag=!GB_invis] inventory.19 with glass_pane[custom_name=[{text:"InvisIbilty [1]",italic:false}]]
+item replace entity @s[tag=!GB_invis] inventory.19 with glass_pane[custom_name=[{text:"InvisIbilty [1]",italic:false}],lore=[{text:"Makes you invisible for a short time",color:dark_gray},{text:"Doesn’t affect armour/tools",color:dark_gray},{text:"Large cooldown",color:dark_gray}]]
 item replace entity @s[tag=GB_invis] inventory.19 with glass_pane[custom_name=[{text:"InvisIbilty [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
-item replace entity @s[tag=!GB_elytra] inventory.16 with elytra[custom_name=[{text:"Elytra [1]",italic:false}]]
+item replace entity @s[tag=!GB_elytra] inventory.16 with elytra[custom_name=[{text:"Elytra [1]",italic:false}],lore=[{text:"Gives you a magical horn",color:dark_gray},{text:"Its just an elytra",color:dark_gray}]]
 item replace entity @s[tag=GB_elytra] inventory.16 with elytra[custom_name=[{text:"Elytra [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
 
@@ -371,5 +371,6 @@ tag @s[scores={GB_Select=2..}] remove GB_archer
 tag @s[scores={GB_Select=2..}] remove GB_heavy_armor
 tag @s[scores={GB_Select=2..}] remove GB_invis
 tag @s[scores={GB_Select=2..}] remove GB_star
+tag @s[scores={GB_Select=2..}] remove GB_Hazmat
 scoreboard players set @s[scores={GB_Select=2..}] GB_Points 0
 execute if score @s GB_Select matches 2 run clear @s
