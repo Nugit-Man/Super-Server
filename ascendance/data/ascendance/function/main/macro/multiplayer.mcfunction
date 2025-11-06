@@ -3,6 +3,8 @@ scoreboard players set $ AS_Spread 0
 scoreboard players set $$ AS_Spread 0
 scoreboard players set $$$ AS_Spread 0
 
+$scoreboard players set @a[scores={AS_Map=$(map_parse),MAIN_Game=1,AS_Mode=1,AS_Gamemode=100}] AS_Mode 2
+
 #Get Spread and Winning
 $scoreboard players operation $ AS_Spread > @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] $(map_name)
 $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] run scoreboard players operation @s AS_Spread = @s $(map_name)
