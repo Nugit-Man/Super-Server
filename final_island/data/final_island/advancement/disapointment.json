@@ -10,9 +10,6 @@
     "hidden": false
   },
   "parent": "final_island:knowledge",
-  "rewards":{
-    "function": "final_island:advancement/advancement/disapointment"
-  },
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

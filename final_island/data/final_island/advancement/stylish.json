@@ -10,9 +10,6 @@
     "hidden": false
   },
   "parent": "final_island:root",
-  "rewards":{
-    "function": "final_island:advancement/advancement/stylish"
-  },
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

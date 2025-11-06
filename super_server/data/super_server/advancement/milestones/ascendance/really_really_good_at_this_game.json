@@ -15,8 +15,5 @@
     "requirement": {
       "trigger": "minecraft:impossible"
     }
-  },
-  "rewards": {
-    "function": "super_server:advancements/really_really_good_at_this_game"
   }
 }

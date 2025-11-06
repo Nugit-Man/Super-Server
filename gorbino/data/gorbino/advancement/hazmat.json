@@ -1,8 +1,7 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:leather_helmet",
-        "nbt": "{display:{color:16776960}}"
+        "id": "minecraft:leather_helmet"
       },
       "title": "Found in the wastes",
       "description": "Reduces radiation of up to 50%!",

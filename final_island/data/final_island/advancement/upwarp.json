@@ -10,9 +10,6 @@
     "hidden": false
   },
   "parent": "final_island:root",
-  "rewards":{
-    "function": "final_island:advancement/advancement/upwarp"
-  },
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"
