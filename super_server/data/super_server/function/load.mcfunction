@@ -46,11 +46,6 @@ scoreboard players set 16 MAIN_Num 16
 scoreboard players set 17 MAIN_Num 17
 
 
-#The extra XP that player will have for compleating achivements and milestones wich will enter the players xp next time they go to the main lobby.
-scoreboard objectives add MAIN_Achivement_XP dummy
-scoreboard objectives add MAIN_XP_Timer dummy
-
-
 
 
 

@@ -14,9 +14,5 @@
       "requirement": {
         "trigger": "minecraft:impossible"
       }
-    },
-    "rewards": {
-      "function": "super_server:skyblock/advancement/diamond"
-    }
-  }
+    }}
   

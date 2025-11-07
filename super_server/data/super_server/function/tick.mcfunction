@@ -167,16 +167,6 @@ scoreboard players set @a MAIN_Fish_Caught 0
 function super_server:skyblock/advancement
 
 
-
-#Awarding Xp
-scoreboard players set @a[scores={MAIN_Game=1..}] MAIN_XP_Timer 0
-scoreboard players add @a[scores={MAIN_Game=0}] MAIN_XP_Timer 1
-execute as @a[scores={MAIN_XP_Timer=10,MAIN_Achivement_XP=1..}] run tellraw @s [{"text":"XP Gained: ","color":"gray"},{"color":"gray","score":{"objective":"MAIN_Achivement_XP","name":"@s"}}]
-experience add @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] 1 points
-execute at @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}] run playsound minecraft:entity.experience_orb.pickup master @a[scores={MAIN_XP_Timer=15,MAIN_Achivement_XP=1..}]
-scoreboard players remove @a[scores={MAIN_XP_Timer=16,MAIN_Achivement_XP=1..}] MAIN_Achivement_XP 1
-scoreboard players set @a[scores={MAIN_XP_Timer=21,MAIN_Achivement_XP=1..}] MAIN_XP_Timer 14
-
 #Mace Masters
 function super_server:mace/tick
 
