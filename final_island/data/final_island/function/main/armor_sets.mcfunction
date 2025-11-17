@@ -48,6 +48,6 @@ scoreboard players set @a[scores={FI_Sneak_Time=1..,FI_Mana=45..,FI_Armor_Set_Tu
 scoreboard players remove @a[scores={FI_Sneak_Time=1..,FI_Mana=45..,FI_Armor_Set_Tuff=601},tag=FI_Armor_Set_Tuff] FI_Mana 45
 
 execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Tuff=1..},tag=FI_Armor_Set_Tuff] run attribute @s armor base set 5
-execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Tuff=1..},tag=FI_Armor_Set_Tuff] run attribute @s armor base reset
+execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Tuff=0},tag=FI_Armor_Set_Tuff] run attribute @s armor base reset
 execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Tuff=1..},tag=FI_Armor_Set_Tuff] run attribute @s knockback_resistance base set 10
-execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Tuff=1..},tag=FI_Armor_Set_Tuff] run attribute @s knockback_resistance base reset
+execute as @a[scores={MAIN_Game=2,FI_Armor_Set_Tuff=0},tag=FI_Armor_Set_Tuff] run attribute @s knockback_resistance base reset
