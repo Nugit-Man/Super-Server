@@ -12,5 +12,19 @@
         "base": 0,
         "per_level_above_first": 0
     },
-    "max_level": 5
+    "max_level": 5,
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "attribute": "minecraft:jump_strength",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.12,
+                    "per_level_above_first": 0.10
+                },
+                "operation": "add_value",
+                "id": "customenchant:highjump"
+            }
+        ]
+    }
 }
