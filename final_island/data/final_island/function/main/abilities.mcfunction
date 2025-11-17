@@ -52,7 +52,7 @@ execute as @a unless items entity @s weapon.mainhand *[custom_data~{FI_Dripstone
 
 #flint sword explosive hit
 execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] at @s on attacker if entity @s[tag=FI_Explosive_Hit] run summon marker ~ ~ ~ {Tags:["FI_Ability_Flint_Sword"]}
-execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] run execute at @e[tag=FI_Ability_Flint_Sword] run execute as @e[distance=..4,tag=!FI_Explosive_Hit] run damage @s 6 fireworks
+execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] run execute at @e[tag=FI_Ability_Flint_Sword] run execute as @e[distance=..4,tag=!FI_Explosive_Hit] run damage @s 18 fireworks
 execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] run kill @e[tag=FI_Ability_Flint_Sword]
 execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] at @s on attacker if entity @s[tag=FI_Explosive_Hit] run playsound entity.generic.explode player @a ~ ~ ~
 execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] at @s on attacker if entity @s[tag=FI_Explosive_Hit] run particle explosion ~ ~1 ~ 1 1 1 1 100 normal @a
