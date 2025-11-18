@@ -1,2 +1,0 @@
-item replace block ~ ~ ~ container.2 with minecraft:player_head[custom_name={text:""},profile={id:[I;-1427481120,-1575334649,-1112340981,1191727367],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzMzYWU4ZGU3ZWQwNzllMzhkMmM4MmRkNDJiNzRjZmNiZDk0YjM0ODAzNDhkYmI1ZWNkOTNkYThiODEwMTVlMyJ9fX0="}]},custom_data={ve_ui:1b}] 1
-clear @a player_head[custom_data~{ve_ui:1b}]
