@@ -29,7 +29,7 @@ execute at @e[tag=FI_Spider_Boss] run kill @e[type=minecraft:area_effect_cloud,d
 
 execute if score FI_Spider_Boss FI_Misc matches 0 run execute if score FI_Skeleton_Boss FI_Misc matches 0 run function final_island:boss/skeleton/win
 
-
+execute as @a[scores={MAIN_Game=2,FI_Check_Deaths=1..},tag=FI_Boss_2] run function final_island:boss/skeleton/load
 
 #Check if you are out of time
 scoreboard players remove FI_Boss_Time FI_Misc 1
