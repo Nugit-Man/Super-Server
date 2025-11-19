@@ -24,6 +24,7 @@ execute store result score FI_Emerald FI_Misc run random value 1..1000
 execute if score FI_Emerald FI_Misc matches 1 run function final_island:spawn_items/caves/emerald
 
 #Run the Skeleton Boss
+execute as @a[tag=FI_Boss_2,scores={MAIN_Game=2}] run function final_island:boss/skeleton/lose
 execute as @a[tag=FI_Boss_2,scores={MAIN_Game=2}] run function final_island:boss/skeleton/tick
 tag @a[scores={MAIN_Game=0}] remove FI_Boss_2
 bossbar set fi_skeleton_boss players @a[tag=FI_Boss_2,scores={MAIN_Game=2}]
