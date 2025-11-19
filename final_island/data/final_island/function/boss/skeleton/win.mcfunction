@@ -1,4 +1,4 @@
-tp @a[tag=FI_Boss_2,scores={MAIN_Game=2}] ~ ~ ~
+execute in final_island:game run tp @a[tag=FI_Boss_2,scores={MAIN_Game=2}] 69013 16 32
 
 tellraw @a[tag=FI_Boss_2,scores={MAIN_Game=2}] "Drops:"
 tellraw @a[tag=FI_Boss_2,scores={MAIN_Game=2},predicate=final_island:luck1] "Luck 1 Bonus"
