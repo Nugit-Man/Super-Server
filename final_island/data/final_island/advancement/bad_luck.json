@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:chest_minecart"
+    },
+    "title": "Just bad luck",
+    "description": "With a luck 3 potion, get niether drop from defeating the spider boss",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "final_island:spider_heart",
+  "rewards":{
+    "function": "final_island:advancement/advancement/dethroner"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

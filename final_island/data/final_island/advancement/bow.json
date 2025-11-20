@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bow"
+    },
+    "title": "A unforgivable duel",
+    "description": "Obtain the Anchient Bow",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "final_island:dethroner",
+  "rewards":{
+    "function": "final_island:advancement/advancement/dethroner"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
