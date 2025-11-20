@@ -78,6 +78,7 @@ scoreboard players set @a[scores={MAIN_Game=1,FI_Boss_Music=2,FI_Mana_Max=..99}]
 
 #Set it to 4 if at 2
 execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run stopsound @a[scores={FI_Boss_Music=2..3}] master minecraft:final_island.1st_movement
+execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run execute at @e[scores={FI_Boss_Music=2..3}] run playsound minecraft:final_island.1st_movement master @s
 execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run scoreboard players set @a[scores={FI_Boss_Music=2}] FI_Boss_Music 4
 
 #Set it to 5 if at 3
