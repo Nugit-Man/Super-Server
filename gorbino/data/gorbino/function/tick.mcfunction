@@ -104,7 +104,7 @@ execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Ice] run scoreboard pla
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Trickshot] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 5
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Map] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 6
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Nuke] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 7
-execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Nuke] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 8
+execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Impossable] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 8
 
 execute as @a[scores={MAIN_Game=3}] run execute store result score @s GB_Barrel_Check run clear @s sunflower
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=1}] only gorbino:barrel/wall

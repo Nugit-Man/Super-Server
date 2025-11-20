@@ -12,8 +12,8 @@ execute in final_island:game at @e[type=marker,tag=FI_Barrel_Shop] run scoreboar
 execute in final_island:game at @e[type=marker,tag=FI_Barrel_Balloon] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 12
 execute in final_island:game at @e[type=marker,tag=FI_Barrel_Root] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 13
 execute in final_island:game at @e[type=marker,tag=FI_Barrel_Creeper] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 14
-execute in final_island:game at @e[type=marker,tag=FI_Barrel_Creeper] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 15
-execute in final_island:game at @e[type=marker,tag=FI_Barrel_Creeper] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 16
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Many] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 15
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Pillar] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 16
 
 execute as @a[scores={MAIN_Game=2}] run execute store result score @s FI_Barrel_Check run clear @s sunflower
 advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=1}] only final_island:barrel/waterfall
