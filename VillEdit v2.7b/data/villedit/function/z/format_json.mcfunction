@@ -1,1 +1,0 @@
-$data modify storage ve:temp Name set value "'$(Name)'"
