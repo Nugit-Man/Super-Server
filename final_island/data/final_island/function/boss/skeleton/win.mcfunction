@@ -27,3 +27,4 @@ execute as @a[tag=FI_Boss_2,scores={MAIN_Game=2,FI_Boss_Drops=..5}] run tellraw 
 execute as @a[tag=FI_Boss_2,scores={MAIN_Game=2,FI_Boss_Drops=..5}] run advancement grant @s[tag=FI_RIP,predicate=final_island:luck3] only final_island:bad_luck
 
 tag @a[tag=FI_Boss_2,scores={MAIN_Game=2}] remove FI_Boss_2
+tag @a remove FI_RIP
