@@ -98,9 +98,12 @@ scoreboard objectives add FI_Misc dummy
 #FI_Zombie_Boss_Windcharge: Used to randomly teleport the thing to make windcharges happen
 #FI_Zombie_Bossbar: used for the bossbar regarding the zombie king
 #FI_Emerald: Used as a failsafe to emeralds not working
-#
-#
-#
+#FI_Skeleton_Boss: Used to get the Skeleton Boss' health
+#FI_Spider_Boss: Used to get the Spider Boss' health
+#FI_Skeleton_Phase: Used to see which phase the skeleton boss is on per player
+#FI_Skeleton_Cooldown: Used to store how many ticks until the skeleton boss' rapid fire ends
+#FI_Boss_Time: Used as the timer in the skeleton boss
+
 
 scoreboard objectives add FI_Check_Deaths dummy
 
@@ -123,3 +126,19 @@ scoreboard objectives add FI_gray_crystal_check dummy
 #Barrel
 scoreboard objectives add FI_Barrel_Pos dummy
 scoreboard objectives add FI_Barrel_Check dummy
+
+
+#Skeleton/Spider Boss
+bossbar add fi_skeleton_boss Skeleton
+bossbar add fi_spider_boss Spider
+bossbar add fi_time fi_time
+bossbar set fi_skeleton_boss color white
+bossbar set fi_skeleton_boss max 500
+bossbar set fi_skeleton_boss style notched_6
+bossbar set fi_spider_boss color red
+bossbar set fi_spider_boss max 1000
+bossbar set fi_spider_boss style progress
+bossbar set fi_time color yellow
+bossbar set fi_time max 3600
+bossbar set fi_time style progress
+scoreboard objectives add FI_Boss_Drops dummy

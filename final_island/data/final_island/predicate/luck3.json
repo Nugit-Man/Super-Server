@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "effects": {
+      "minecraft:luck": {
+        "amplifier": 2, 
+        "duration": { "min": 1 }
+      }
+    }
+  }
+}
