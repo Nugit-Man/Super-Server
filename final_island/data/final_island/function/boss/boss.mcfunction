@@ -74,11 +74,11 @@ execute at @e[type=marker,tag=FI_Music_Start] run scoreboard players set @a[dist
 execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 0 run execute at @e[type=marker,tag=FI_Zombie_Boss_Door] run scoreboard players set @a[distance=..5,scores={FI_Boss_Music=1}] FI_Boss_Music 2
 
 #Set it to 3 if at 2
-scoreboard players set @a[scores={MAIN_Game=1,FI_Boss_Music=2,FI_Mana_Max=..99}] FI_Boss_Music 3
+scoreboard players set @a[scores={FI_Boss_Music=2,FI_Mana_Max=..99}] FI_Boss_Music 3
 
 #Set it to 4 if at 2
 execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run stopsound @a[scores={FI_Boss_Music=2..3}] master minecraft:final_island.1st_movement
-execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run execute at @e[scores={FI_Boss_Music=2..3}] run playsound minecraft:final_island.1st_movement master @s
+execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run execute at @e[scores={FI_Boss_Music=2..3}] run playsound minecraft:final_island.3rd_movement master @s
 execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run scoreboard players set @a[scores={FI_Boss_Music=2}] FI_Boss_Music 4
 
 #Set it to 5 if at 3

@@ -7,4 +7,4 @@ execute as @a[scores={MAIN_Game=1,AS_Map=4,AS_Gamemode=100}] run scoreboard play
 execute as @a[scores={MAIN_Game=1,AS_Map=4,AS_Gamemode=100}] run scoreboard players set $Time_sec AS_Map_Colosseum 0
 execute as @a[scores={MAIN_Game=1,AS_Map=4,AS_Gamemode=100}] run scoreboard players set $Time_min AS_Map_Colosseum 0
 
-setblock 4084 4 27 birch_slab[type=top]
+schedule function ascendance:gaming/maps/colosseum/hide 1s
