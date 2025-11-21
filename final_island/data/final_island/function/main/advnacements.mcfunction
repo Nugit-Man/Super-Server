@@ -47,3 +47,6 @@ execute at @e[type=marker,tag=FI_Stylish2,limit=1] run scoreboard players set @a
 
 execute as @a[scores={MAIN_Game=2}] run execute store result score @s FI_gray_crystal_check run clear @s player_head[minecraft:custom_data~{FI_Mana_Crystal_Gray:1b}] 0
 advancement grant @a[scores={MAIN_Game=2,FI_gray_crystal_check=2..}] only final_island:disapointment
+
+
+advancement grant @a[scores={MAIN_Game=2,FI_Health=60..}] only final_island:imortal
