@@ -26,6 +26,7 @@ clear @a[tag=AS_Loser,scores={MAIN_Game=1}]
 tag @a[tag=AS_Winner,scores={MAIN_Game=1}] add AS_GoHome
 tag @a[tag=AS_Loser,scores={MAIN_Game=1}] add AS_GoHome
 
+scoreboard players add @a[tag=AS_GoHome,tag=AS_Winner] AS_Milestone_Wins 1
 scoreboard players add @a[tag=AS_GoHome,tag=AS_Winner] AS_Winstreak 1
 scoreboard players set @a[tag=AS_GoHome,tag=AS_Loser] AS_Winstreak 0
 advancement grant @a[scores={MAIN_Game=1,AS_Winstreak=3},tag=AS_GoHome] only ascendance:ascendance/chicken_dinner

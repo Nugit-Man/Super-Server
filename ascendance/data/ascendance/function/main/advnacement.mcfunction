@@ -26,3 +26,22 @@ advancement grant @a[scores={MAIN_Game=1,AS_Deaths_Count=50,AS_Gamemode=1}] only
 
 #Check for Dethroner
 advancement grant @a[scores={MAIN_Game=1,AS_Kill_Count=50,AS_Gamemode=1}] only ascendance:ascendance/off_with_his_head
+
+#Milestones
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Deaths=250..}] only super_server:milestones/ascendance/philip_moment
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Deaths=500..}] only super_server:milestones/ascendance/osmar_moment
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Deaths=1000..}] only super_server:milestones/ascendance/classic_even
+
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Kills=250..}] only super_server:milestones/ascendance/killing_spree
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Kills=500..}] only super_server:milestones/ascendance/mass_murder
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Kills=1000..}] only super_server:milestones/ascendance/big_kill
+
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=250..}] only super_server:milestones/ascendance/shots_fired
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=1000..}] only super_server:milestones/ascendance/suppressing_fire
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=2500..}] only super_server:milestones/ascendance/heavy_arms
+
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=10..}] only super_server:milestones/ascendance/good_at_this_game
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=25..}] only super_server:milestones/ascendance/really_good_at_this_game
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=50..}] only super_server:milestones/ascendance/really_really_good_at_this_game
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=100..}] only super_server:milestones/ascendance/amazing_at_this_game
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=250..}] only super_server:milestones/ascendance/really_amazing_at_this_game

@@ -15,8 +15,5 @@
     "requirement": {
       "trigger": "minecraft:impossible"
     }
-  },
-  "rewards": {
-    "function": "super_server:advancements/classic_even"
   }
 }
