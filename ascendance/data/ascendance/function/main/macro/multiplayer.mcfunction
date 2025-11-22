@@ -73,6 +73,7 @@ $execute at @e[type=marker,limit=1,sort=random,tag=$(map_spawn)] run spawnpoint 
 #Winner but for singplayer
 $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=2,AS_Score_Singleplayer=20}] run tellraw @s [{text:"Training complete, Time: ",italic:false},{score:{"objective":"$(map_name)","name":"$Time_min"}},{text:":"},{score:{"objective":"$(map_name)","name":"$Time_sec"}},{text:"."},{score:{"objective":"$(map_name)","name":"$Time_10s"}}]
 $tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=2,AS_Score_Singleplayer=20}] add AS_GoHome
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=2,AS_Score_Singleplayer=20}] run function ascendance:gaming/par
 $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=2,AS_Score_Singleplayer=20}] run function ascendance:gaming/end/go_home
 $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=2,AS_Score_Singleplayer=20}] run scoreboard objectives remove $(map_name)
 
