@@ -9,11 +9,11 @@ item replace entity @s inventory.7 with minecraft:air
 item replace entity @s inventory.8 with minecraft:air
 item replace entity @s inventory.9 with minecraft:air
 item replace entity @s inventory.10 with minecraft:air
-item replace entity @s inventory.11 with minecraft:air
+item replace entity @s inventory.11 with minecraft:paper[custom_name={text:"Change Bow",italic:false}]
 item replace entity @s inventory.12 with minecraft:air
-item replace entity @s inventory.13 with minecraft:bow[custom_name={text:"Start a match",italic:false}]
+item replace entity @s inventory.13 with minecraft:air
 item replace entity @s inventory.14 with minecraft:air
-item replace entity @s inventory.15 with minecraft:air
+item replace entity @s inventory.15 with minecraft:bow[custom_name={text:"Start a match",italic:false}]
 item replace entity @s inventory.16 with minecraft:air
 item replace entity @s inventory.17 with minecraft:air
 item replace entity @s inventory.18 with minecraft:air
@@ -29,4 +29,9 @@ item replace entity @s inventory.26 with minecraft:air
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
 execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s bow 0
 scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 1
+clear @a[scores={MAIN_Game=1,AS_Select=2}]
+
+scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
+execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s paper 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 4
 clear @a[scores={MAIN_Game=1,AS_Select=2}]

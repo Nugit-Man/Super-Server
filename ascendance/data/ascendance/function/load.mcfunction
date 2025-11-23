@@ -40,3 +40,4 @@ scoreboard objectives add AS_Score_Add dummy
 scoreboard objectives add AS_Score_Singleplayer dummy
 
 scoreboard objectives add AS_Milestone_Par dummy
+scoreboard objectives add AS_Cosmetic_Bow dummy

@@ -40,8 +40,8 @@ advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=250..}] only super_s
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=1000..}] only super_server:milestones/ascendance/suppressing_fire
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=2500..}] only super_server:milestones/ascendance/heavy_arms
 
-advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=10..}] only super_server:milestones/ascendance/good_at_this_game
-advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=25..}] only super_server:milestones/ascendance/really_good_at_this_game
-advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=50..}] only super_server:milestones/ascendance/really_really_good_at_this_game
-advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=100..}] only super_server:milestones/ascendance/amazing_at_this_game
-advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=250..}] only super_server:milestones/ascendance/really_amazing_at_this_game
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Wins=10..}] only super_server:milestones/ascendance/good_at_this_game
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Wins=25..}] only super_server:milestones/ascendance/really_good_at_this_game
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Wins=50..}] only super_server:milestones/ascendance/really_really_good_at_this_game
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Wins=100..}] only super_server:milestones/ascendance/amazing_at_this_game
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Wins=250..}] only super_server:milestones/ascendance/really_amazing_at_this_game

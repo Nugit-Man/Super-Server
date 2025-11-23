@@ -160,7 +160,7 @@ scoreboard players set @a MAIN_Total_Kills 0
 scoreboard players set @a MAIN_Player_Kills 0
 scoreboard players set @a MAIN_Jumps 0
 scoreboard players set @a MAIN_Fish_Caught 0
-
+scoreboard players set @a MAIN_Bow_Used 0
 
 
 

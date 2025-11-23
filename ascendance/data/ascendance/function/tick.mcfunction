@@ -4,6 +4,7 @@ scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Mode 0
 scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Menu 0
 scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Countdown 0
 scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Gamemode 0
+scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Cosmetic_Bow 0
 tag @a[scores={MAIN_Game=1},tag=!AS_Welcome] add AS_Welcome
 
 
@@ -14,6 +15,7 @@ execute as @a[scores={MAIN_Game=1,AS_Menu=0,AS_Mode=0}] run function ascendance:
 execute as @a[scores={MAIN_Game=1,AS_Menu=1,AS_Mode=0}] run function ascendance:menu/menu1
 execute as @a[scores={MAIN_Game=1,AS_Menu=2,AS_Mode=0}] run function ascendance:menu/menu2
 execute as @a[scores={MAIN_Game=1,AS_Menu=3,AS_Mode=0}] run function ascendance:menu/menu3
+execute as @a[scores={MAIN_Game=1,AS_Menu=4,AS_Mode=0}] run function ascendance:menu/menu4
 
 
 #Prevent a second round starting on the same map as one currently is use

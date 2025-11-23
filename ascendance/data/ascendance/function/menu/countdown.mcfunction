@@ -20,7 +20,13 @@ execute in ascendance:game run tp @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=
 scoreboard players set @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=1..2}] AS_Mode 1
 scoreboard players set @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=100}] AS_Mode 2
 
-give @a[scores={AS_Countdown=14,MAIN_Game=1}] bow[enchantment_glint_override=false,enchantments={infinity:1},unbreakable={},tooltip_display={hidden_components:[enchantments,unbreakable]}]
+give @a[scores={AS_Countdown=14,MAIN_Game=1,AS_Cosmetic_Bow=0}] bow[enchantment_glint_override=false,enchantments={infinity:1},unbreakable={},tooltip_display={hidden_components:[enchantments,unbreakable]}]
+give @a[scores={AS_Countdown=14,MAIN_Game=1,AS_Cosmetic_Bow=1}] bow[enchantment_glint_override=false,enchantments={infinity:1},unbreakable={},tooltip_display={hidden_components:[enchantments,unbreakable]},custom_model_data={strings:["training"]}]
+give @a[scores={AS_Countdown=14,MAIN_Game=1,AS_Cosmetic_Bow=2}] bow[enchantment_glint_override=false,enchantments={infinity:1},unbreakable={},tooltip_display={hidden_components:[enchantments,unbreakable]},custom_model_data={strings:["FI_Anchient_Bow"]}]
+give @a[scores={AS_Countdown=14,MAIN_Game=1,AS_Cosmetic_Bow=3}] bow[enchantment_glint_override=false,enchantments={infinity:1},unbreakable={},tooltip_display={hidden_components:[enchantments,unbreakable]},custom_model_data={strings:["empowered"]}]
+give @a[scores={AS_Countdown=14,MAIN_Game=1,AS_Cosmetic_Bow=4}] bow[enchantment_glint_override=false,enchantments={infinity:1},unbreakable={},tooltip_display={hidden_components:[enchantments,unbreakable]},custom_model_data={strings:["enriched"]}]
+give @a[scores={AS_Countdown=14,MAIN_Game=1,AS_Cosmetic_Bow=5}] bow[enchantment_glint_override=false,enchantments={infinity:1},unbreakable={},tooltip_display={hidden_components:[enchantments,unbreakable]},custom_model_data={strings:["legendary"]}]
+give @a[scores={AS_Countdown=14,MAIN_Game=1,AS_Cosmetic_Bow=6}] bow[enchantment_glint_override=false,enchantments={infinity:1},unbreakable={},tooltip_display={hidden_components:[enchantments,unbreakable]},custom_model_data={strings:["notch"]}]
 give @a[scores={AS_Countdown=16,MAIN_Game=1}] arrow
 
 schedule function ascendance:menu/countdown 1s
