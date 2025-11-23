@@ -13,6 +13,7 @@ scoreboard objectives add GB_Barrel_Check dummy
 scoreboard objectives add GB_Radiation dummy
 scoreboard objectives add GB_Rank dummy
 scoreboard objectives add GB_Heal_Check dummy
+scoreboard objectives add GB_Pillar dummy
 
 scoreboard players set @a GB_Mode 0
 scoreboard players set @a GB_Menu 0

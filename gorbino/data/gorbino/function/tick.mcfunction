@@ -96,6 +96,7 @@ execute in gorbino:lobby run item replace block 85 1 66 container.13 with minecr
 execute in gorbino:game run item replace block 3991 12 -11 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in gorbino:lobby run item replace block 30 36 -50 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in gorbino:lobby run item replace block 49 21 18 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in gorbino:game run item replace block 3000 7 0 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Wall] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 1
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Top] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 2
@@ -105,6 +106,7 @@ execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Trickshot] run scoreboa
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Map] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 6
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Nuke] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 7
 execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Impossable] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 8
+execute in gorbino:lobby at @e[type=marker,tag=GB_Barrel_Pillar] run scoreboard players set @a[distance=..7] GB_Barrel_Pos 9
 
 execute as @a[scores={MAIN_Game=3}] run execute store result score @s GB_Barrel_Check run clear @s sunflower
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=1}] only gorbino:barrel/wall
@@ -114,7 +116,8 @@ advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=4}] o
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=5}] only gorbino:barrel/trickshot
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=6}] only gorbino:barrel/map
 advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=7}] only gorbino:barrel/nuke
-advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=7}] only gorbino:barrel/impossable
+advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=8}] only gorbino:barrel/impossable
+advancement grant @a[scores={MAIN_Game=3,GB_Barrel_Check=1..,GB_Barrel_Pos=9}] only gorbino:barrel/pillar
 
 #give saturation
 effect give @a[scores={MAIN_Game=3,GB_Mode=0}] saturation 1 0 true
@@ -243,3 +246,16 @@ execute as @a[scores={GB_Radiation=900..},advancements={gorbino:hazmat=true}] ru
 
 #Hazmat Suit
 execute at @e[type=marker,tag=GB_Achivement_Hazmat] run advancement grant @a[distance=..2] only gorbino:hazmat
+
+
+
+#Pillar barrel
+execute at @e[type=marker,tag=GB_Pillar1] run scoreboard players set @a[scores={GB_Pillar=0},distance=..2] GB_Pillar 1
+execute at @e[type=marker,tag=GB_Pillar2] run scoreboard players set @a[scores={GB_Pillar=1},distance=..2] GB_Pillar 2
+execute at @e[type=marker,tag=GB_Pillar3] run scoreboard players set @a[scores={GB_Pillar=2},distance=..2] GB_Pillar 3
+execute at @e[type=marker,tag=GB_Pillar4] run scoreboard players set @a[scores={GB_Pillar=3},distance=..2] GB_Pillar 4
+
+execute in gorbino:game if entity @a[scores={GB_Pillar=4,MAIN_Game=3,GB_Mode=1}] run setblock 3000 8 0 air
+execute as @a[scores={GB_Pillar=4,MAIN_Game=3,GB_Mode=1}] at @a[scores={MAIN_Game=3}] run playsound minecraft:gorbino.solution master @s
+
+execute as @a[scores={GB_Pillar=4,MAIN_Game=3,GB_Mode=1}] run scoreboard players set @a[scores={MAIN_Game=3}] GB_Pillar 5
