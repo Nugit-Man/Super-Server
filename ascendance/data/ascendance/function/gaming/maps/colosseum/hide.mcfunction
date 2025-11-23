@@ -1,1 +1,1 @@
-setblock 4084 4 27 birch_slab[type=top]
+execute in ascendance:game run setblock 4084 4 27 birch_slab[type=top]
