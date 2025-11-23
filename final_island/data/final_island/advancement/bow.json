@@ -11,7 +11,7 @@
   },
   "parent": "final_island:dethroner",
   "rewards":{
-    "function": "final_island:advancement/advancement/dethroner"
+    "function": "final_island:advancement/advancement/bow"
   },
   "criteria": {
     "requirement": {

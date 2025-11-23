@@ -1,3 +1,2 @@
-tellraw @s "Rewards: +5 XP"
-tellraw @s "Ascendnace bow: Empowered Bow"
-scoreboard players add @s MAIN_Achivement_XP 5
+tellraw @s "Rewards:"
+tellraw @s "Ascendnace Cosmetic: Empowered Bow"
