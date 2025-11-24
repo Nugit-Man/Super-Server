@@ -29,3 +29,5 @@ advancement grant @s[scores={AS_Milestone_Par=1..}] only super_server:milestones
 advancement grant @s[scores={AS_Milestone_Par=3..}] only super_server:milestones/ascendance/par3
 advancement grant @s[scores={AS_Milestone_Par=5..}] only super_server:milestones/ascendance/par5
 advancement grant @s[scores={AS_Milestone_Par=9..}] only super_server:milestones/ascendance/par9
+
+execute as @s run function ascendance:gaming/record/record_check
