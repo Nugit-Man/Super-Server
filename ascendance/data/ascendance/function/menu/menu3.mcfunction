@@ -4,7 +4,7 @@ item replace entity @s inventory.2 with minecraft:air
 item replace entity @s inventory.3 with minecraft:air
 item replace entity @s inventory.4 with minecraft:air
 item replace entity @s inventory.5 with minecraft:air
-item replace entity @s inventory.6 with minecraft:air
+item replace entity @s inventory.6 with minecraft:painting[custom_name={text:"Show records",italic:false}]
 item replace entity @s inventory.7 with minecraft:air
 item replace entity @s inventory.8 with minecraft:air
 item replace entity @s inventory.9 with minecraft:air
@@ -48,4 +48,9 @@ scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
 execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s bow 0
 scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 1
 scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Gamemode 100
+clear @a[scores={MAIN_Game=1,AS_Select=2}]
+
+scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
+execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s painting 0
+execute as @a[scores={MAIN_Game=1,AS_Select=2}] run function ascendance:gaming/record/show
 clear @a[scores={MAIN_Game=1,AS_Select=2}]
