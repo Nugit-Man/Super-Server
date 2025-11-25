@@ -238,7 +238,7 @@ item replace entity @a[scores={MAIN_Game=3,GB_Mode=1},tag=!GB_knight] weapon.off
 
 
 #Radiation System
-scoreboard players add @a[scores={GB_Radiation=1..}] GB_Radiation 1
+scoreboard players add @a[scores={GB_Radiation=1..},nbt={Dimension:"gorbino:lobby"}] GB_Radiation 1
 advancement grant @a[scores={GB_Radiation=600..}] only gorbino:radiate
 execute as @a[scores={GB_Radiation=600..},advancements={gorbino:hazmat=false}] run damage @s 100 gorbino:radiation
 execute as @a[scores={GB_Radiation=900..},advancements={gorbino:hazmat=true}] run damage @s 100 gorbino:radiation
