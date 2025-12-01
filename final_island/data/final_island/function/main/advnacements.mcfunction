@@ -34,6 +34,9 @@ advancement grant @a[scores={MAIN_Game=2,FI_Milestone_Fishing=1000..}] only supe
 execute as @a[scores={MAIN_Game=2}] if items entity @s inventory.* *[minecraft:custom_data~{FI_Pig_Sword:1b}] run advancement grant @s only final_island:pig_sword
 execute as @a[scores={MAIN_Game=2}] if items entity @s hotbar.* *[minecraft:custom_data~{FI_Pig_Sword:1b}] run advancement grant @s only final_island:pig_sword
 
+execute as @a[scores={MAIN_Game=2}] if items entity @s inventory.* *[minecraft:custom_data~{FI_Yuck_Rod:1b}] run advancement grant @s only final_island:yuck
+execute as @a[scores={MAIN_Game=2}] if items entity @s hotbar.* *[minecraft:custom_data~{FI_Yuck_Rod:1b}] run advancement grant @s only final_island:yuck
+
 advancement grant @a[scores={MAIN_Game=2,FI_Mana_Max=160..}] only final_island:manaflux
 advancement grant @a[scores={MAIN_Game=2,FI_Mana_Regen=3..}] only final_island:knowledge
 
