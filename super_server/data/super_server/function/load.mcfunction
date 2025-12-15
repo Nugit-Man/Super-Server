@@ -14,6 +14,8 @@ scoreboard objectives add MAIN_Fish_Caught minecraft.custom:minecraft.fish_caugh
 scoreboard objectives add MAIN_Bow_Used minecraft.used:minecraft.bow
 scoreboard objectives add MAIN_Kills_Zombies minecraft.killed:minecraft.zombie
 scoreboard objectives add MAIN_Jumps minecraft.custom:minecraft.jump
+scoreboard objectives add MAIN_break_wood_sword minecraft.broken:wooden_sword
+scoreboard objectives add MAIN_break_gold_sword minecraft.broken:golden_sword
 
 #Check what game you are in
 #0 - lobby

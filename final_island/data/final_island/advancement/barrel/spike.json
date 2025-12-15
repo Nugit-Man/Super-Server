@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:barrel"
+      },
+      "title": "Final Island Barrel 18",
+      "description": "poke poke",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "final_island:barrel/smith",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "final_island:advancement/barrel/balloon"
+    }
+  }
+  

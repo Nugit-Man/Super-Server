@@ -145,6 +145,9 @@ execute as @a[scores={MAIN_Game=2,MAIN_Total_Kills=1..}] run scoreboard players 
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Milestone_Fishing += @s MAIN_Fish_Caught
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Milestone_Jumps += @s MAIN_Jumps
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Check_Deaths = @s MAIN_Deaths
+execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sword_Break_Wood = @s MAIN_break_wood_sword
+execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sword_Break_Gold = @s MAIN_break_gold_sword
+
 
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Deaths = @s MAIN_Deaths
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Shotgun = @s MAIN_Crossbow_Used
@@ -161,6 +164,8 @@ scoreboard players set @a MAIN_Player_Kills 0
 scoreboard players set @a MAIN_Jumps 0
 scoreboard players set @a MAIN_Fish_Caught 0
 scoreboard players set @a MAIN_Bow_Used 0
+scoreboard players set @a MAIN_break_gold_sword 0
+scoreboard players set @a MAIN_break_wood_sword 0
 
 
 

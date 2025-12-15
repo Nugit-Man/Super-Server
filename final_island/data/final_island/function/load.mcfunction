@@ -142,3 +142,8 @@ bossbar set fi_time color yellow
 bossbar set fi_time max 3600
 bossbar set fi_time style progress
 scoreboard objectives add FI_Boss_Drops dummy
+
+
+#Sword break achivement stuff
+scoreboard objectives add FI_Sword_Break_Wood dummy
+scoreboard objectives add FI_Sword_Break_Gold dummy

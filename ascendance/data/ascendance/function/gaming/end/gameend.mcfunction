@@ -31,6 +31,9 @@ scoreboard players add @a[tag=AS_GoHome,tag=AS_Winner] AS_Winstreak 1
 scoreboard players set @a[tag=AS_GoHome,tag=AS_Loser] AS_Winstreak 0
 advancement grant @a[scores={MAIN_Game=1,AS_Winstreak=3},tag=AS_GoHome] only ascendance:ascendance/chicken_dinner
 
+scoreboard players set $Player_Count AS_Records 0
+execute as @a[tag=AS_Loser] run scoreboard players add $Player_Count AS_Records 1
+execute if score $Player_Count AS_Records matches 4.. run advancement grant @a[scores={MAIN_Game=1},tag=AS_Winner] only ascendance:ascendance/royale
 
 tag @a[scores={MAIN_Game=1}] remove AS_Winner
 tag @a[scores={MAIN_Game=1}] remove AS_Loser

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:acacia_hanging_sign"
+      "id": "minecraft:golden_helmet"
     },
     "title": "Dethroner",
     "description": "Kill 20 kings in a game of kings crown",
@@ -15,8 +15,5 @@
     "requirement": {
       "trigger": "minecraft:impossible"
     }
-  },
-  "rewards": {
-    "function": "ascendance:advancements/dethroner"
   }
 }
