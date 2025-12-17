@@ -23,7 +23,13 @@ execute at @a[tag=FI_Iron_Curtain,scores={FI_Mana_Cooldown_iron_sword=114}] run 
 execute at @a[tag=FI_Iron_Curtain,scores={FI_Mana_Cooldown_iron_sword=114}] run summon block_display ^-1 ^3 ^6 {block_state:{Name:iron_block},Tags:[FI_Ability_Iron_Curtain]}
 
 
+
+
+
+
 #Sonic Blast
+tag @a[scores={FI_Mana_Cooldown_deep_sword=274}] add FI_Sonic_Immune
+tag @a[scores={FI_Mana_Cooldown_deep_sword=273}] remove FI_Sonic_Immune
 tag @a[scores={FI_Mana_Cooldown_deep_sword=250}] remove FI_Sonic_Blast
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=275}] run execute at @s anchored eyes run summon marker ^ ^ ^16 {Tags:[FI_Sonic_Blast_Marker]}
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=275}] run execute at @s anchored eyes run summon marker ^ ^ ^3 {Tags:[FI_Sonic_Blast_Marker]}
@@ -40,15 +46,31 @@ execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=275}] run e
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=275}] run execute at @s anchored eyes run summon marker ^ ^ ^14 {Tags:[FI_Sonic_Blast_Marker]}
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=275}] run execute at @s anchored eyes run summon marker ^ ^ ^15 {Tags:[FI_Sonic_Blast_Marker]}
 
-execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=274}] run execute at @e[tag=FI_Sonic_Blast_Marker] run damage @e[tag=!FI_Sonic_Blast_Marker,limit=1,sort=nearest,distance=..2,type=!item] 24 sonic_boom
+execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=274}] run execute at @e[tag=FI_Sonic_Blast_Marker] run damage @e[tag=!FI_Sonic_Blast_Immune,limit=1,sort=nearest,distance=..2,type=!item,type=!item] 24 sonic_boom
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=274}] run execute at @e[tag=FI_Sonic_Blast_Marker] run particle minecraft:sonic_boom ~ ~ ~ 0.3 0.3 0.3 1 10 force
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=274}] run execute at @e[tag=FI_Sonic_Blast_Marker] run particle minecraft:sonic_boom ~ ~ ~ 0.3 0.3 0.3 1 1 normal
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=260}] run kill @e[type=marker,tag=FI_Sonic_Blast_Marker]
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=274}] run execute at @s run playsound entity.warden.sonic_boom player
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #dripstone sword extra reach
 execute as @a if items entity @s weapon.mainhand *[custom_data~{FI_Dripstone_Sword:1b}] run attribute @s[scores={MAIN_Game=2}] entity_interaction_range base set 4
-execute as @a unless items entity @s weapon.mainhand *[custom_data~{FI_Dripstone_Sword:1b}] run attribute @s[scores={MAIN_Game=2}] entity_interaction_range base set 3
+execute as @a unless items entity @s weapon.mainhand *[custom_data~{FI_Dripstone_Sword:1b}] run attribute @s[scores={MAIN_Game=2}] entity_interaction_range base reset
 
 #flint sword explosive hit
 execute at @a[tag=FI_Explosive_Hit] run execute as @e[distance=..7] at @s on attacker if entity @s[tag=FI_Explosive_Hit] run summon marker ~ ~ ~ {Tags:["FI_Ability_Flint_Sword"]}
