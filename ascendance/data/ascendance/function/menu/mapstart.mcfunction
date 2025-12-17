@@ -8,5 +8,5 @@ execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=11}] run function ascen
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=12}] run function ascendance:gaming/maps/jungle_pikes/load
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Map=13}] run function ascendance:gaming/maps/bridge/load
 
-execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=100}] run schedule function ascendance:gaming/spawn_first 20t
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=100}] run schedule function ascendance:gaming/spawn_first 60t
 execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=100}] run schedule function ascendance:gaming/remove_creepers 19t
