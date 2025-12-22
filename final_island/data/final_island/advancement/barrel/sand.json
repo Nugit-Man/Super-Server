@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:barrel"
+      },
+      "title": "Final Island Barrel 19",
+      "description": "Yeah, it's in the back",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "final_island:barrel/spike",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "final_island:advancement/barrel/balloon"
+    }
+  }
+  
