@@ -1,0 +1,10 @@
+{
+    "criteria": {
+      "crit_damage": {
+        "trigger": "minecraft:player_hurt_entity"
+      }
+    },
+    "rewards": {
+      "function": "super_server:hit"
+    }
+  }

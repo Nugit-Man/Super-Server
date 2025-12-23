@@ -133,6 +133,18 @@ item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_elytra] armor.head 
 #execute as @a[tag=GB_spin] run summon marker ~ ~ ~ {Tags:[GB_Spin1]}
 #execute as @a[tag=GB_spin] run summon marker ~ ~ ~ {Tags:[GB_Spin2]}
 #give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_bomber] minecraft:tnt[custom_name=[{text:"Bomber",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,animation:block,sound:"entity.generic.explode",has_consume_particles:0b},use_cooldown={seconds:10}]
+
+
+
+give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] wooden_sword[custom_name=[{"text":"Gamble Blade","italic":false}],unbreakable={},tooltip_display={hidden_components:[unbreakable]},custom_data={GB_Gamble_Swowrd:1b}]
+execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Gamble] run attribute @s entity_interaction_range base reset
+execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Gamble] run attribute @s attack_damage base reset
+execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Gamble] run attribute @s attack_knockback base reset
+execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Gamble] run attribute @s attack_speed base reset
+
+
+
+
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run attribute @s scale base set 3
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run attribute @s jump_strength base set 1
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run attribute @s entity_interaction_range base set 10
