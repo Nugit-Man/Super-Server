@@ -48,7 +48,7 @@ execute in gorbino:game run execute if score GB_Map GB_Select matches 17 run tp 
 execute in gorbino:game run execute if score GB_Map GB_Select matches 18 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 18000 9 0
 execute in gorbino:game run execute if score GB_Map GB_Select matches 19 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 19000 1 0
 execute in gorbino:game run execute if score GB_Map GB_Select matches 20 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 20000 1 0
-execute in gorbino:game run execute if score GB_Map GB_Select matches 21 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 20000 5 0
+execute in gorbino:game run execute if score GB_Map GB_Select matches 21 run tp @a[scores={GB_Mode=1..,MAIN_Game=3}] 21000 5 0
 
 #more border
 execute in gorbino:game run worldborder set 100
@@ -136,7 +136,7 @@ item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_elytra] armor.head 
 
 
 
-give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] wooden_sword[custom_name=[{"text":"Gamble Blade","italic":false}],unbreakable={},tooltip_display={hidden_components:[unbreakable]},custom_data={GB_Gamble_Swowrd:1b}]
+give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Gamble] golden_sword[custom_name=[{"text":"Gamble Blade","italic":false}],unbreakable={},tooltip_display={hidden_components:[unbreakable]},custom_data={GB_Gamble_Swowrd:1b}]
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Gamble] run attribute @s entity_interaction_range base reset
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Gamble] run attribute @s attack_damage base reset
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Gamble] run attribute @s attack_knockback base reset

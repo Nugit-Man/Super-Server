@@ -8,8 +8,8 @@ item replace entity @s[advancements={gorbino:hazmat=true},tag=!GB_Hazmat] invent
 item replace entity @s[advancements={gorbino:hazmat=true},tag=GB_Hazmat] inventory.2 with leather_chestplate[trim={pattern:sentry,material:netherite},dyed_color=16776960,custom_name=[{text:"Hazmat Suit",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
 item replace entity @s[advancements={ascendance:ascendance/gamblers_philosophy=false}] inventory.3 with minecraft:structure_void[custom_name=[{text:"Locked",color:gray,italic:false}],lore=[{text:"Get an achivement in:",color:"dark_gray",italic:false},{text:"Ascendance",color:"dark_gray",italic:false},{text:"to unlock",color:"dark_gray",italic:false}]]
-item replace entity @s[advancements={ascendance:ascendance/gamblers_philosophy=true},tag=!GB_Gamble] inventory.3 with wooden_sword[custom_name=[{text:"Gamble Sword [1]",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},!tool,!damage,!max_damage,!attribute_modifiers,]
-item replace entity @s[advancements={ascendance:ascendance/gamblers_philosophy=true},tag=GB_Gamble] inventory.3 with wooden_sword[custom_name=[{text:"Gamble Sword [1]",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}],!tool,!damage,!max_damage,!attribute_modifiers]
+item replace entity @s[advancements={ascendance:ascendance/gamblers_philosophy=true},tag=!GB_Gamble] inventory.3 with golden_sword[custom_name=[{text:"Gamble Sword [1]",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},!tool,!damage,!max_damage,!attribute_modifiers,]
+item replace entity @s[advancements={ascendance:ascendance/gamblers_philosophy=true},tag=GB_Gamble] inventory.3 with golden_sword[custom_name=[{text:"Gamble Sword [1]",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}],!tool,!damage,!max_damage,!attribute_modifiers]
 item replace entity @s inventory.4 with minecraft:air
 item replace entity @s inventory.5 with minecraft:air
 item replace entity @s inventory.6 with minecraft:air
@@ -101,7 +101,7 @@ tag @s remove GB_check
 execute if score @s GB_Select matches 2 run clear @s
 scoreboard players set @s GB_Select 1
 
-execute store result score @s GB_Select run clear @s wooden_sword 0
+execute store result score @s GB_Select run clear @s golden_sword 0
 execute if score @s[tag=GB_Gamble] GB_Select matches 2 run tag @s add GB_check
 execute if score @s[tag=GB_check] GB_Select matches 2 run tag @s remove GB_Gamble
 execute if score @s[tag=GB_check] GB_Select matches 2 run scoreboard players remove @s GB_Points 1
