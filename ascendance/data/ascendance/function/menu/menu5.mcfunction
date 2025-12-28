@@ -9,34 +9,35 @@ item replace entity @s inventory.7 with minecraft:air
 item replace entity @s inventory.8 with minecraft:air
 item replace entity @s inventory.9 with minecraft:air
 item replace entity @s inventory.10 with minecraft:air
-item replace entity @s inventory.11 with minecraft:paper[custom_name={text:"Change Bow",italic:false}]
+item replace entity @s inventory.11 with minecraft:air
 item replace entity @s inventory.12 with minecraft:air
-item replace entity @s inventory.13 with minecraft:bow[custom_name={text:"Start a match",italic:false}]
+item replace entity @s[tag=!AS_Killstreak_Shotgun] inventory.13 with minecraft:firework_rocket[custom_name={text:"Super Shotgun",italic:false},lore=[{text:"Disabled",italic:false}]]
+item replace entity @s[tag=AS_Killstreak_Shotgun] inventory.13 with minecraft:firework_rocket[custom_name={text:"Super Shotgun",italic:false},lore=[{text:"Enabled",italic:false}]]
 item replace entity @s inventory.14 with minecraft:air
-item replace entity @s inventory.15 with minecraft:arrow[custom_name={text:"Killsteak Items",italic:false}]
+item replace entity @s inventory.15 with minecraft:air
 item replace entity @s inventory.16 with minecraft:air
 item replace entity @s inventory.17 with minecraft:air
 item replace entity @s inventory.18 with minecraft:air
 item replace entity @s inventory.19 with minecraft:air
 item replace entity @s inventory.20 with minecraft:air
 item replace entity @s inventory.21 with minecraft:air
-item replace entity @s inventory.22 with minecraft:air
+item replace entity @s inventory.22 with minecraft:barrier[custom_name={text:"Go Back",italic:false}]
 item replace entity @s inventory.23 with minecraft:air
 item replace entity @s inventory.24 with minecraft:air
 item replace entity @s inventory.25 with minecraft:air
 item replace entity @s inventory.26 with minecraft:air
 
-scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
-execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s bow 0
-scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 1
-clear @a[scores={MAIN_Game=1,AS_Select=2}]
 
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
-execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s paper 0
-scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 4
+execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s barrier 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Gamemode 0
 clear @a[scores={MAIN_Game=1,AS_Select=2}]
 
-scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
-execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s arrow 0
-scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 5
-clear @a[scores={MAIN_Game=1,AS_Select=2}]
+
+scoreboard players set @s AS_Select 0
+execute store result score @s AS_Select run clear @s firework_rocket 0
+execute if score @s[tag=AS_Killstreak_Shotgun] AS_Select matches 2 run tag @s add AS_check
+execute if score @s[tag=AS_check] AS_Select matches 2 run tag @s remove AS_Killstreak_Shotgun
+execute if score @s[tag=!AS_check] AS_Select matches 2 run tag @s add AS_Killstreak_Shotgun
+tag @s remove AS_check

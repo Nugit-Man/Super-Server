@@ -18,6 +18,7 @@ execute as @a[scores={MAIN_Game=1,AS_Menu=1,AS_Mode=0}] run function ascendance:
 execute as @a[scores={MAIN_Game=1,AS_Menu=2,AS_Mode=0}] run function ascendance:menu/menu2
 execute as @a[scores={MAIN_Game=1,AS_Menu=3,AS_Mode=0}] run function ascendance:menu/menu3
 execute as @a[scores={MAIN_Game=1,AS_Menu=4,AS_Mode=0}] run function ascendance:menu/menu4
+execute as @a[scores={MAIN_Game=1,AS_Menu=5,AS_Mode=0}] run function ascendance:menu/menu5
 
 
 #Prevent a second round starting on the same map as one currently is use

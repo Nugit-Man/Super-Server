@@ -43,3 +43,8 @@ scoreboard objectives add AS_Milestone_Par dummy
 scoreboard objectives add AS_Cosmetic_Bow dummy
 scoreboard objectives add AS_Records dummy
 scoreboard objectives add AS_Crown_Take dummy
+
+#WARNING FOR FUTURE ME
+#This scoreboard will only count to 3, then reset to 0 so you get an item every 3 kills.
+#If you wanna track kills for the dota anouncer you can just make another scoarboard
+scoreboard objectives add AS_Killstreak dummy
