@@ -11,8 +11,8 @@ item replace entity @s inventory.9 with minecraft:air
 item replace entity @s inventory.10 with minecraft:air
 item replace entity @s inventory.11 with minecraft:air
 item replace entity @s inventory.12 with minecraft:air
-item replace entity @s[tag=!AS_Killstreak_Shotgun] inventory.13 with minecraft:firework_rocket[custom_name={text:"Super Shotgun",italic:false},lore=[{text:"Disabled",italic:false}]]
-item replace entity @s[tag=AS_Killstreak_Shotgun] inventory.13 with minecraft:firework_rocket[custom_name={text:"Super Shotgun",italic:false},lore=[{text:"Enabled",italic:false}]]
+item replace entity @s[tag=!AS_Killstreak_Shotgun] inventory.13 with minecraft:firework_rocket[custom_name={text:"Super Shotgun",italic:false},lore=[{text:"Disabled",italic:false}],tooltip_display={hidden_components:[fireworks]}]
+item replace entity @s[tag=AS_Killstreak_Shotgun] inventory.13 with minecraft:firework_rocket[custom_name={text:"Super Shotgun",italic:false},lore=[{text:"Enabled",italic:false}],tooltip_display={hidden_components:[fireworks]}]
 item replace entity @s inventory.14 with minecraft:air
 item replace entity @s inventory.15 with minecraft:air
 item replace entity @s inventory.16 with minecraft:air
@@ -40,4 +40,6 @@ execute store result score @s AS_Select run clear @s firework_rocket 0
 execute if score @s[tag=AS_Killstreak_Shotgun] AS_Select matches 2 run tag @s add AS_check
 execute if score @s[tag=AS_check] AS_Select matches 2 run tag @s remove AS_Killstreak_Shotgun
 execute if score @s[tag=!AS_check] AS_Select matches 2 run tag @s add AS_Killstreak_Shotgun
+clear @a[scores={MAIN_Game=1,AS_Select=2}]
 tag @s remove AS_check
+
