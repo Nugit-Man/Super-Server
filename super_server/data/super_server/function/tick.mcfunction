@@ -220,3 +220,7 @@ tag @a add GB_Milestone_Reset
 #Give the players menus
 execute as @a[scores={MAIN_Game=0,MAIN_Menu=0}] run function super_server:menu/menu0
 execute as @a[scores={MAIN_Game=0,MAIN_Menu=1}] run function super_server:menu/menu1
+
+
+
+function super_server:team/make

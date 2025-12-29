@@ -37,13 +37,13 @@ tag @a[scores={MAIN_Game=0,MAIN_Select=2}] add GoTo_Final_Island
 clear @a[scores={MAIN_Game=0,MAIN_Select=2}]
 
 scoreboard players set @a[scores={MAIN_Game=0}] MAIN_Select 0
-execute as @a[scores={MAIN_Game=0}] store result score @s MAIN_Select run clear @s diamond 0
+execute as @a[scores={MAIN_Game=0}] store result score @s MAIN_Select run clear @s diamond_sword 0
 tag @a[scores={MAIN_Game=0,MAIN_Select=2}] add GoTo_Gorbino
 clear @a[scores={MAIN_Game=0,MAIN_Select=2}]
 
 scoreboard players set @a[scores={MAIN_Game=0}] MAIN_Select 0
 execute as @a[scores={MAIN_Game=0}] store result score @s MAIN_Select run clear @s grass_block 0
-tag @a[scores={MAIN_Game=0,MAIN_Select=2}] add Main_Join_Skyblock
+tag @a[scores={MAIN_Game=0,MAIN_Select=2}] add GoTo_Skyblock
 clear @a[scores={MAIN_Game=0,MAIN_Select=2}]
 
 scoreboard players set @a[scores={MAIN_Game=0}] MAIN_Select 0
