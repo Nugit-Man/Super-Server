@@ -105,3 +105,7 @@ scoreboard objectives add MAIN_Time dummy
 
 scoreboard objectives add MAIN_Barrel_Check dummy
 scoreboard objectives add MAIN_Barrel_Pos dummy
+
+
+scoreboard objectives add MAIN_Menu dummy
+scoreboard objectives add MAIN_Select dummy

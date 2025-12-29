@@ -72,6 +72,7 @@ tag @a remove GoTo_Ascendance
 tag @a[scores={MAIN_Leave=1..}] remove MAIN_log
 execute as @a[tag=!MAIN_log] run execute in super_server:lobby run tp @s 8 -59 -10 0 0
 execute as @a[tag=!MAIN_log] run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
+execute as @a[tag=!MAIN_log] run scoreboard players set @s MAIN_Menu 0
 #reset attribute
 execute as @a[scores={MAIN_Game=0}] run attribute @s armor base reset
 execute as @a[scores={MAIN_Game=0}] run attribute @s armor_toughness base reset
@@ -214,3 +215,8 @@ advancement grant @a[scores={MAIN_Game=0,MAIN_Barrel_Check=1..,MAIN_Barrel_Pos=3
 
 advancement revoke @a[tag=!GB_Milestone_Reset] through super_server:milestones/gorbino/gorbino_guy
 tag @a add GB_Milestone_Reset
+
+
+#Give the players menus
+execute as @a[scores={MAIN_Game=0,MAIN_Menu=0}] run function super_server:menu/menu0
+execute as @a[scores={MAIN_Game=0,MAIN_Menu=1}] run function super_server:menu/menu1
