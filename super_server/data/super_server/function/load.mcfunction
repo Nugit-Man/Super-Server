@@ -109,3 +109,6 @@ scoreboard objectives add MAIN_Barrel_Pos dummy
 
 scoreboard objectives add MAIN_Menu dummy
 scoreboard objectives add MAIN_Select dummy
+
+scoreboard objectives add MAIN_Barrels dummy
+scoreboard objectives add MAIN_Barrels_Bonus dummy
