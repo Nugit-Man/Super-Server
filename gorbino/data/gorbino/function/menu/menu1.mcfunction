@@ -373,5 +373,6 @@ tag @s[scores={GB_Select=2..}] remove GB_invis
 tag @s[scores={GB_Select=2..}] remove GB_star
 tag @s[scores={GB_Select=2..}] remove GB_Hazmat
 tag @s[scores={GB_Select=2..}] remove GB_Gamble
+tag @s[scores={GB_Select=2..}] remove GB_Piss
 scoreboard players set @s[scores={GB_Select=2..}] GB_Points 0
 execute if score @s GB_Select matches 2 run clear @s
