@@ -65,3 +65,8 @@ scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
 execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s green_concrete 0
 execute as @r[scores={MAIN_Game=1,AS_Select=2}] run function ascendance:menu/gamestart
 clear @a[scores={MAIN_Game=1,AS_Select=2}]
+
+scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
+execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s red_concrete 0
+execute as @a[scores={MAIN_Game=1,AS_Select=2}] run scoreboard players set @a[scores={MAIN_Game=1,AS_Countdown=1..10}] AS_Countdown 0
+clear @a[scores={MAIN_Game=1,AS_Select=2}]
