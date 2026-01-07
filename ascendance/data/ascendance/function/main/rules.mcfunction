@@ -38,6 +38,8 @@ execute at @e[type=marker,tag=AS_Parkour_Finish] run advancement grant @a[distan
 
 #Deal with killstreak
 scoreboard players set @a[scores={MAIN_Game=1,AS_Gamemode=0}] AS_Killstreak 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Gamemode=1..,AS_Deaths=1..}] AS_Killstreak 0
+clear @a[scores={MAIN_Game=1,AS_Gamemode=1..,AS_Deaths=1..}] crossbow
 execute as @a[scores={MAIN_Game=1,AS_Gamemode=1..,AS_Kills=1..}] run scoreboard players operation @s AS_Killstreak += @s AS_Kills
 give @a[scores={MAIN_Game=1,AS_Killstreak=3..}] crossbow[charged_projectiles=[{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:3,explosions:[{shape:"large_ball",has_trail:true,colors:[16711680]},{shape:"large_ball",has_trail:true,colors:[65280]},{shape:"large_ball",has_trail:true,colors:[255]}]}}}],damage=465,tooltip_display={hidden_components:["damage","charged_projectiles"]},custom_name={"italic":false,"text":"Super Shotgun"}] 1
 scoreboard players remove @a[scores={MAIN_Game=1,AS_Killstreak=3..}] AS_Killstreak 3

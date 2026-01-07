@@ -4,7 +4,7 @@
 execute as @a[scores={MAIN_Game=1,AS_Mode=1,AS_Gamemode=1}] run scoreboard players operation @s AS_Score_Add += @s AS_Kills
 
 #Add 1 point per second of having the crown in kings crown
-execute if score $Time_1s MAIN_Time matches 1 run scoreboard players add @a[scores={MAIN_Game=1,AS_Mode=1,AS_Gamemode=2},tag=AS_Crown] AS_Score_Add 1 
+execute if score MAIN_1s MAIN_Time matches 1 run scoreboard players add @a[scores={MAIN_Game=1,AS_Mode=1,AS_Gamemode=2},tag=AS_Crown] AS_Score_Add 1 
 
 
 
