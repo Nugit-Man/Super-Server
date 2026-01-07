@@ -12,8 +12,8 @@ item replace entity @s[advancements={ascendance:ascendance/gamblers_philosophy=t
 item replace entity @s[advancements={ascendance:ascendance/gamblers_philosophy=true},tag=GB_Gamble] inventory.3 with golden_sword[custom_name=[{text:"Gamble Sword [1]",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}],!tool,!damage,!max_damage,!attribute_modifiers]
 
 
-item replace entity @s[tag=!GB_Piss] inventory.4 with minecraft:honey_bottle[custom_name={text:"Super Laser Piss [2]",italic:false}]
-item replace entity @s[tag=GB_Piss] inventory.4 with minecraft:honey_bottle[custom_name={text:"Super Laser Piss [2]",italic:false},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
+#item replace entity @s[tag=!GB_Piss] inventory.4 with minecraft:honey_bottle[custom_name={text:"Super Laser Piss [2]",italic:false}]
+#item replace entity @s[tag=GB_Piss] inventory.4 with minecraft:honey_bottle[custom_name={text:"Super Laser Piss [2]",italic:false},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
 
 
