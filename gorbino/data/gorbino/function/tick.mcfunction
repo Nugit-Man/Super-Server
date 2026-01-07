@@ -267,3 +267,14 @@ execute in gorbino:game if entity @a[scores={GB_Pillar=4,MAIN_Game=3,GB_Mode=1}]
 execute as @a[scores={GB_Pillar=4,MAIN_Game=3,GB_Mode=1}] at @a[scores={MAIN_Game=3}] run playsound minecraft:gorbino.solution master @s
 
 execute as @a[scores={GB_Pillar=4,MAIN_Game=3,GB_Mode=1}] run scoreboard players set @a[scores={MAIN_Game=3}] GB_Pillar 5
+
+
+#Super Laser Piss
+execute as @e[tag=GB_piss] run execute at @s run tp @s ^ ^ ^0.6
+execute at @e[tag=GB_piss] run particle minecraft:dripping_honey ~ ~1 ~ 0.3 0.3 0.3 1 100 force
+execute as @e[tag=GB_piss] run execute at @s run tp @s ^ ^ ^0.6
+execute at @e[tag=GB_piss] run particle minecraft:dripping_honey ~ ~1 ~ 0.3 0.3 0.3 1 100 force
+scoreboard players add @e[tag=GB_piss] GB_velocity 1
+execute at @e[tag=GB_piss] run effect give @a[distance=..1.2,tag=!GB_Hazmat] poison 2 4
+execute at @e[tag=GB_piss] run effect give @a[distance=..1.2,tag=GB_Hazmat] poison 1 1
+kill @e[tag=GB_piss,scores={GB_velocity=50}]

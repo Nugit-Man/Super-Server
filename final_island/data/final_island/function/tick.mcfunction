@@ -3,6 +3,7 @@ function final_island:main/armor_sets
 function final_island:main/mana
 function final_island:main/advnacements
 function final_island:main/barrel
+function final_island:main/talks
 
 scoreboard players set FI_Zombie_Armor_Checker FI_Misc 0
 execute at @e[type=armor_stand,tag=FI_Zombie_Armor_Checker] run execute as @a[distance=..300] run scoreboard players add FI_Zombie_Armor_Checker FI_Misc 1
@@ -30,3 +31,6 @@ scoreboard players set @a[scores={MAIN_Game=2,FI_Check_Deaths=1..}] FI_Check_Dea
 xp add @a[scores={MAIN_Game=2,FI_Check_Deaths=1..}] -1 levels
 tellraw @a[scores={MAIN_Game=2,FI_Check_Deaths=1..}] {text:"You died and lose 1 level",color:red}
 
+scoreboard players add @a[scores={MAIN_Game=2,FI_Villager_Talk_Timer=1..}] FI_Villager_Talk_Timer 1
+scoreboard players add @a[scores={MAIN_Game=2,FI_Villager_Talk=60}] FI_Villager_Talk 1
+execute as @a[scores={MAIN_Game=2,FI_Villager_Talk=60}] run function final_island:talk

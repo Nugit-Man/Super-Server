@@ -147,3 +147,7 @@ scoreboard objectives add FI_Boss_Drops dummy
 #Sword break achivement stuff
 scoreboard objectives add FI_Sword_Break_Wood dummy
 scoreboard objectives add FI_Sword_Break_Gold dummy
+
+scoreboard objectives add FI_Villager_Talk dummy
+scoreboard objectives add FI_Villager_Talk_Timer dummy
+scoreboard objectives add FI_Villager_Check dummy

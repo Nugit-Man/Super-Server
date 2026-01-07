@@ -12,3 +12,4 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:prismarine_crystals"}},sco
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:glass_pane"}},scores={MAIN_Game=3}] run function gorbino:abilities/invis
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:bowl"}},scores={MAIN_Game=3}] run function gorbino:abilities/curry
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:gold_nugget"}},scores={MAIN_Game=3}] run function gorbino:abilities/star
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:honey_bottle"}},scores={MAIN_Game=3}] run function gorbino:abilities/piss
