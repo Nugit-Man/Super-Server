@@ -31,6 +31,8 @@ scoreboard players set @a[scores={MAIN_Game=2,FI_Check_Deaths=1..}] FI_Check_Dea
 xp add @a[scores={MAIN_Game=2,FI_Check_Deaths=1..}] -1 levels
 tellraw @a[scores={MAIN_Game=2,FI_Check_Deaths=1..}] {text:"You died and lose 1 level",color:red}
 
+
+execute as @a[scores={MAIN_Game=2,FI_Villager_Talk_Timer=60}] run function final_island:talk
+scoreboard players add @a[scores={MAIN_Game=2,FI_Villager_Talk_Timer=58}] FI_Villager_Talk 1
 scoreboard players add @a[scores={MAIN_Game=2,FI_Villager_Talk_Timer=1..}] FI_Villager_Talk_Timer 1
-scoreboard players add @a[scores={MAIN_Game=2,FI_Villager_Talk=60}] FI_Villager_Talk 1
-execute as @a[scores={MAIN_Game=2,FI_Villager_Talk=60}] run function final_island:talk
+
