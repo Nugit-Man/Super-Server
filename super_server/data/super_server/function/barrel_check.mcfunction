@@ -21,6 +21,7 @@ scoreboard players add @s[advancements={final_island:barrel/spike=true}] MAIN_Ba
 scoreboard players add @s[advancements={final_island:barrel/under=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={final_island:barrel/waterfall=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={final_island:barrel/root=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={final_island:barrel/stuck=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={ascendance:berrel/barrel1=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={ascendance:berrel/barrel2=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={ascendance:berrel/barrel3=true}] MAIN_Barrels 1

@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:barrel"
+      },
+      "title": "Final Island Barrel 23",
+      "description": "now you're stuck",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "final_island:barrel/roof",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "final_island:advancement/barrel/balloon"
+    }
+  }
+  
