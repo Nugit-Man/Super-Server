@@ -36,3 +36,8 @@ execute as @a[scores={MAIN_Game=2,FI_Villager_Talk_Timer=60}] run function final
 scoreboard players add @a[scores={MAIN_Game=2,FI_Villager_Talk_Timer=58}] FI_Villager_Talk 1
 scoreboard players add @a[scores={MAIN_Game=2,FI_Villager_Talk_Timer=1..}] FI_Villager_Talk_Timer 1
 
+#prevent furnaces from being used
+data modify block -50 -14 -88 lit_time_remaining set value 0s
+data modify block -50 -13 -88 lit_time_remaining set value 0s
+data modify block -48 -11 -75 lit_time_remaining set value 0s
+data modify block -129 4 -56 lit_time_remaining set value 0s
