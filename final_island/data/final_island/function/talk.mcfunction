@@ -19,3 +19,13 @@ tag @s[scores={MAIN_Game=2,FI_Villager_Talk=10}] add FI_Quest_Village_Anvil
 scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=10}] FI_Villager_Talk_Timer 0
 tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=11}] "Thanks again for the Iron blocks"
 scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=11}] FI_Villager_Talk_Timer 0
+tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=12}] "We are da dirt munchers"
+scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=12}] FI_Villager_Talk_Timer 0
+tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=13}] "Dirt yummy"
+scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=13}] FI_Villager_Talk_Timer 0
+tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=14}] "yum yum dirt"
+scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=14}] FI_Villager_Talk_Timer 0
+tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=15}] "dirt dirt go nom nom"
+scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=15}] FI_Villager_Talk_Timer 0
+tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=16}] "mmmmmm, dirt..."
+scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=16}] FI_Villager_Talk_Timer 0
