@@ -122,12 +122,12 @@ execute as @a[nbt={Dimension:"minecraft:the_nether"}] run scoreboard players set
 execute as @a[nbt={Dimension:"super_server:mace_master"}] run scoreboard players set @s MAIN_Game 6
 
 
-team join Final_Island @a[scores={MAIN_Game=2}]
-team join Gorbino @a[scores={MAIN_Game=3}]
-team join Skyblock @a[scores={MAIN_Game=5}]
-team join Mace_Master @a[scores={MAIN_Game=6}]
-team join Lobby @a[scores={MAIN_Game=0}]
-team join Ascendance @a[scores={MAIN_Game=1}]
+#team join Final_Island @a[scores={MAIN_Game=2}]
+#team join Gorbino @a[scores={MAIN_Game=3}]
+#team join Skyblock @a[scores={MAIN_Game=5}]
+#team join Mace_Master @a[scores={MAIN_Game=6}]
+#team join Lobby @a[scores={MAIN_Game=0}]
+#team join Ascendance @a[scores={MAIN_Game=1}]
 
 
 #Pass the MAIN_------ scoreboards into the game specific ones
