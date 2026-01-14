@@ -41,3 +41,7 @@ data modify block -50 -14 -88 lit_time_remaining set value 0s
 data modify block -50 -13 -88 lit_time_remaining set value 0s
 data modify block -48 -11 -75 lit_time_remaining set value 0s
 data modify block -129 4 -56 lit_time_remaining set value 0s
+
+
+
+recipe take @a[scores={MAIN_Game=2}] *
