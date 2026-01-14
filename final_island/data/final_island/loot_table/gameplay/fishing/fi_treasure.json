@@ -23,7 +23,7 @@
               "function": "minecraft:set_custom_model_data",
               "strings": {
                 "values": [
-                  "FI_Coin_Copper"
+                  "FI_coin_copper"
                 ],
                 "mode": "append"
               }
@@ -48,7 +48,7 @@
               "function": "minecraft:set_custom_model_data",
               "strings": {
                 "values": [
-                  "FI_Coin_Iron"
+                  "FI_coin_iron"
                 ],
                 "mode": "append"
               }
@@ -73,7 +73,7 @@
               "function": "minecraft:set_custom_model_data",
               "strings": {
                 "values": [
-                  "FI_Coin_Gold"
+                  "FI_coin_gold"
                 ],
                 "mode": "append"
               }
@@ -98,7 +98,7 @@
               "function": "minecraft:set_custom_model_data",
               "strings": {
                 "values": [
-                  "FI_Coin_Diamond"
+                  "FI_coin_diamond"
                 ],
                 "mode": "append"
               }
@@ -122,7 +122,7 @@
               "function": "minecraft:set_custom_model_data",
               "strings": {
                 "values": [
-                  "FI_Coin_Copper"
+                  "FI_Old_Key"
                 ],
                 "mode": "append"
               }
