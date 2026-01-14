@@ -9,7 +9,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "final_island:barrel/porch",
+    "parent": "final_island:barrel/bake",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
