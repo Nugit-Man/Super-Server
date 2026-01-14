@@ -34,6 +34,6 @@ clear @a[scores={MAIN_Game=0,MAIN_Select=2}]
 
 scoreboard players set @a[scores={MAIN_Game=0}] MAIN_Select 0
 execute as @a[scores={MAIN_Game=0}] store result score @s MAIN_Select run clear @s name_tag 0
-execute as @a[scores={MAIN_Game=0,MAIN_Select=2}] run tellraw @s [["Found: ",{"score":{"name":"@s","objective":"MAIN_Barrels"}},"/50"],["\nUnspent: ",{"score":{"name":"@s","objective":"MAIN_Barrels"}}],["\nBonus: ",{"score":{"name":"@s","objective":"MAIN_Barrels_Bonus"}}]]
+execute as @a[scores={MAIN_Game=0,MAIN_Select=2}] run tellraw @s [["Found: ",{"score":{"name":"@s","objective":"MAIN_Barrels"}},"/53"],["\nUnspent: ",{"score":{"name":"@s","objective":"MAIN_Barrels"}}],["\nBonus: ",{"score":{"name":"@s","objective":"MAIN_Barrels_Bonus"}}]]
 clear @a[scores={MAIN_Game=0,MAIN_Select=2}]
 

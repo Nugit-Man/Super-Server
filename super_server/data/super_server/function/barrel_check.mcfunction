@@ -24,6 +24,9 @@ scoreboard players add @s[advancements={final_island:barrel/root=true}] MAIN_Bar
 scoreboard players add @s[advancements={final_island:barrel/stuck=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={final_island:barrel/porch=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={final_island:barrel/basket=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={final_island:barrel/bake=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={final_island:barrel/tower=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={final_island:barrel/inside=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={ascendance:berrel/barrel1=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={ascendance:berrel/barrel2=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={ascendance:berrel/barrel3=true}] MAIN_Barrels 1
