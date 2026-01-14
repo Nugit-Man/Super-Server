@@ -148,6 +148,7 @@ execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Miles
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Check_Deaths = @s MAIN_Deaths
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sword_Break_Wood = @s MAIN_break_wood_sword
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sword_Break_Gold = @s MAIN_break_gold_sword
+execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Fish_Check = @s MAIN_Fish_Caught
 
 
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Deaths = @s MAIN_Deaths
