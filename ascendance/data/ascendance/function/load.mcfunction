@@ -1,7 +1,9 @@
 #what values of AS_Mode represent
 #0 In lobby
-#1 In a multiplayer game
+#1 In a multiplayer game - FFA
 #2 In a singleplayer game
+#3 In a muntiplayer game - 2 teams
+
 
 scoreboard objectives add AS_Mode dummy
 scoreboard objectives add AS_Map dummy
