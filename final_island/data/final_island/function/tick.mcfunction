@@ -42,6 +42,11 @@ data modify block -50 -13 -88 lit_time_remaining set value 0s
 data modify block -48 -11 -75 lit_time_remaining set value 0s
 data modify block -129 4 -56 lit_time_remaining set value 0s
 
+<<<<<<< HEAD
+
+
+recipe take @a[scores={MAIN_Game=2}] *
+=======
 #FISH
 execute store result score @a[scores={MAIN_Game=2,FI_Fish_Check=1..}] FI_Misc run random value 1..100
 execute as @a[scores={MAIN_Game=2,FI_Fish_Check=1..,FI_Misc=1..2}] if items entity @s weapon.mainhand *[custom_data~{FI_Double_Catch_1:1b}] run loot give @s fish final_island:gameplay/fishing/fi_default ~ ~ ~
@@ -54,3 +59,4 @@ execute as @a[scores={MAIN_Game=2,FI_Fish_Check=1..,FI_Misc=1..14}] if items ent
 execute as @a[scores={MAIN_Game=2,FI_Fish_Check=1..,FI_Misc=1..16}] if items entity @s weapon.mainhand *[custom_data~{FI_Double_Catch_8:1b}] run loot give @s fish final_island:gameplay/fishing/fi_default ~ ~ ~
 execute as @a[scores={MAIN_Game=2,FI_Fish_Check=1..,FI_Misc=1..18}] if items entity @s weapon.mainhand *[custom_data~{FI_Double_Catch_9:1b}] run loot give @s fish final_island:gameplay/fishing/fi_default ~ ~ ~
 execute as @a[scores={MAIN_Game=2,FI_Fish_Check=1..,FI_Misc=1..20}] if items entity @s weapon.mainhand *[custom_data~{FI_Double_Catch_10:1b}] run loot give @s fish final_island:gameplay/fishing/fi_default ~ ~ ~
+>>>>>>> 08a4098ca8b5731a6ed702f43e0dabfbc2fa6880
