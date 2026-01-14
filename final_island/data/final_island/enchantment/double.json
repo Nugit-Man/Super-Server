@@ -1,6 +1,9 @@
 {
     "description": "Double Catch",
-    "supported_items": "fishing_rod",
+    "supported_items": [
+        "book",
+        "fishing_rod"
+    ],
     "slots": ["mainhand"],
     "weight": 1,
     "anvil_cost": 0,
