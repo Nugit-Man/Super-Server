@@ -103,7 +103,7 @@ scoreboard objectives add FI_Misc dummy
 #FI_Skeleton_Phase: Used to see which phase the skeleton boss is on per player
 #FI_Skeleton_Cooldown: Used to store how many ticks until the skeleton boss' rapid fire ends
 #FI_Boss_Time: Used as the timer in the skeleton boss
-
+#Players will use this every time they fish to see if they get a double catch
 
 scoreboard objectives add FI_Check_Deaths dummy
 
@@ -151,3 +151,5 @@ scoreboard objectives add FI_Sword_Break_Gold dummy
 scoreboard objectives add FI_Villager_Talk dummy
 scoreboard objectives add FI_Villager_Talk_Timer dummy
 scoreboard objectives add FI_Villager_Check dummy
+
+scoreboard objectives add FI_Fish_Check dummy
