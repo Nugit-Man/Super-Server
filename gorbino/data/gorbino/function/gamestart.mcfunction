@@ -107,7 +107,7 @@ item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_heavy_armor] armor.
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knight] iron_sword[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_lumberjack] iron_axe[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] bow[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
-give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] arrow 8
+
 scoreboard players set @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] GB_Arrow 0
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knight] weapon.offhand with minecraft:shield[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knockback] stick[custom_name=[{text:"Knockback Stick",italic: false}],enchantments={knockback:3}]
@@ -176,3 +176,5 @@ item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Hazmat] armor.head 
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Hazmat] armor.chest with leather_chestplate[trim={pattern:sentry,material:netherite},dyed_color=16776960,custom_name=[{text:"Hazmat Suit",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Hazmat] armor.legs with leather_leggings[trim={pattern:sentry,material:netherite},dyed_color=16776960,custom_name=[{text:"Hazmat Suit",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Hazmat] armor.feet with leather_boots[trim={pattern:sentry,material:netherite},dyed_color=16776960,custom_name=[{text:"Hazmat Suit",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
+
+give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] arrow 8
