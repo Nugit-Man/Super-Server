@@ -11,6 +11,7 @@ execute in ascendance:game run item replace block 13075 20 68 container.13 with 
 execute in ascendance:game run item replace block 10996 13 71 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in ascendance:game run item replace block 39 37 36 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in ascendance:game run item replace block 4084 5 27 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in ascendance:game run item replace block 5004 14 8 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 
 
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_1] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 1
@@ -25,6 +26,7 @@ execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Bridge] run scoreboar
 execute in ascendance:game at @e[type=marker,tag=AS_Ice_Spikes] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 10
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_5] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 11
 execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Colosseum] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 12
+execute in ascendance:game at @e[type=marker,tag=AS_Barrel_Club] run scoreboard players set @a[distance=..7] AS_Barrel_Pos 13
 
 
 
@@ -41,3 +43,4 @@ advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=9}] o
 advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=10}] only ascendance:berrel/barrelis
 advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=11}] only ascendance:berrel/barrel5
 advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=12}] only ascendance:berrel/barrelcl
+advancement grant @a[scores={MAIN_Game=1,AS_Barrel_Check=1..,AS_Barrel_Pos=13}] only ascendance:berrel/barrelcb

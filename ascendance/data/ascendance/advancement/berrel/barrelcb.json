@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:barrel"
+    },
+    "title": "Ascendance Barrel Club",
+    "description": "V.I.P area",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "ascendance:berrel/barrelcl",
+  "rewards":{
+    "function": "final_island:advancement/barrel/balloon"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
