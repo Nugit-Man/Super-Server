@@ -80,6 +80,7 @@ execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=2,MAIN_
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run execute as @s[tag=GB_knockback] run execute as @s[tag=GB_elytra] run advancement grant @s[tag=GB_dash,scores={GB_Points=5}] only gorbino:agile
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_chain_armor] run execute as @s[tag=GB_star] run advancement grant @s[tag=GB_heal,scores={GB_Points=5}] only gorbino:defense
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run execute as @s[tag=GB_heavy_armor] run advancement grant @s[tag=GB_lumberjack,scores={GB_Points=5}] only gorbino:joust
+execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] run execute as @s[tag=GB_burst_charm] run advancement grant @s[tag=GB_lumberjack,scores={GB_Points=4}] only gorbino:ranges
 
 #Milestones
 advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=25..}] only super_server:milestones/gorbino/gorbino_guy
