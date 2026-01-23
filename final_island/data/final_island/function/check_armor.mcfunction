@@ -167,6 +167,16 @@ execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~{FI_Frog_5:1b}] run effect give @s jump_boost 1 4 true
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.feet *[custom_data~{FI_Frog_5:1b}] run advancement grant @s only final_island:boyoyoing
 
+#Check for speedster pants
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_1:1b}] run effect give @s speed 1 0 true
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_2:1b}] run effect give @s speed 1 1 true
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_3:1b}] run effect give @s speed 1 2 true
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_4:1b}] run effect give @s speed 1 3 true
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_5:1b}] run effect give @s speed 1 4 true
+
+
+
+
 #check for Green Mana Crystal
 execute as @a[scores={MAIN_Game=2}] if items entity @s weapon.offhand *[custom_data~{FI_Mana_Crystal_Green:1b}] run scoreboard players add @s FI_Mana_Bonus 50
 
