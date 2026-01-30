@@ -30,6 +30,7 @@ scoreboard players add @s[advancements={final_island:barrel/inside=true}] MAIN_B
 scoreboard players add @s[advancements={final_island:barrel/ladder=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={final_island:barrel/stair=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={final_island:barrel/door=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={final_island:barrel/dirt=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={ascendance:berrel/barrel1=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={ascendance:berrel/barrel2=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={ascendance:berrel/barrel3=true}] MAIN_Barrels 1
