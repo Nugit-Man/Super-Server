@@ -17,13 +17,13 @@ effect give @a[scores={MAIN_Game=0}] saturation 1 0 true
 ###interaction warps
 
 #Lobby --> Final Island
-execute in final_island:game run spawnpoint @a[tag=GoTo_Final_Island] 0 1 0 90
+execute in final_island:game run spawnpoint @a[tag=GoTo_Final_Island] 0 1 0 90 0
 execute in final_island:game run tp @a[tag=GoTo_Final_Island] 0 1 0 90 0
 tag @a remove GoTo_Final_Island
 
 
 #Final Island --> Lobby
-execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
+execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0 0
 execute as @e[type=interaction,limit=1,tag=FI_Lobby] on target run execute in super_server:lobby run tp @s 8 -59 -10 0 0
 execute as @e[type=interaction,limit=1,tag=FI_Lobby] run data remove entity @s interaction
 
@@ -33,7 +33,7 @@ execute as @e[type=interaction,limit=1,tag=Main_Skyblock] run data remove entity
 function super_server:skyblock/join
 
 #Lobby --> Gorbino
-execute in gorbino:lobby run spawnpoint @a[tag=GoTo_Gorbino] 56 5 26 0
+execute in gorbino:lobby run spawnpoint @a[tag=GoTo_Gorbino] 56 5 26 0 0
 execute in gorbino:lobby run tp @a[tag=GoTo_Gorbino] 56 5 26 0 0
 scoreboard players set @a[tag=GoTo_Gorbino] GB_Menu 0
 scoreboard players set @a[tag=GoTo_Gorbino] GB_Radiation 0
@@ -42,22 +42,22 @@ tag @a remove GoTo_Gorbino
 
 #Anywhere --> Lobby
 scoreboard players enable @a Lobby
-execute in super_server:lobby run spawnpoint @a[scores={Lobby=1..}] 8 -59 -10 0
+execute in super_server:lobby run spawnpoint @a[scores={Lobby=1..}] 8 -59 -10 0 0
 execute in super_server:lobby run tp @a[scores={Lobby=1..}] 8 -59 -10 0 0
 scoreboard players set @a Lobby 0
 
 #Gorbino --> Lobby
-execute as @e[type=interaction,limit=1,tag=GB_Lobby] on target run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
+execute as @e[type=interaction,limit=1,tag=GB_Lobby] on target run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0 0
 execute as @e[type=interaction,limit=1,tag=GB_Lobby] on target run execute in super_server:lobby run tp @s 8 -59 -10 0 0
 execute as @e[type=interaction,limit=1,tag=GB_Lobby] run data remove entity @s interaction
 
 #Lobby --> Mace
-execute in super_server:mace_master run spawnpoint @a[tag=GoTo_Mace_Masters] 0 301 0 0
+execute in super_server:mace_master run spawnpoint @a[tag=GoTo_Mace_Masters] 0 301 0 0 0
 execute in super_server:mace_master run tp @a[tag=GoTo_Mace_Masters] 0 301 0 0 0
 tag @a remove GoTo_Mace_Masters
 
 #Lobby --> Ascendance
-execute in ascendance:game run spawnpoint @a[tag=GoTo_Ascendance] 38 25 37 0
+execute in ascendance:game run spawnpoint @a[tag=GoTo_Ascendance] 38 25 37 0 0
 execute in ascendance:game run tp @a[tag=GoTo_Ascendance] 38 25 37 0 0
 tag @a[tag=GoTo_Ascendance] remove AS_Welcome
 tag @a remove GoTo_Ascendance
@@ -71,7 +71,7 @@ tag @a remove GoTo_Ascendance
 #Deal with players logging on
 tag @a[scores={MAIN_Leave=1..}] remove MAIN_log
 execute as @a[tag=!MAIN_log] run execute in super_server:lobby run tp @s 8 -59 -10 0 0
-execute as @a[tag=!MAIN_log] run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0
+execute as @a[tag=!MAIN_log] run execute in super_server:lobby run spawnpoint @s 8 -59 -10 0 0
 execute as @a[tag=!MAIN_log] run scoreboard players set @s MAIN_Menu 0
 #reset attribute
 execute as @a[scores={MAIN_Game=0}] run attribute @s armor base reset
