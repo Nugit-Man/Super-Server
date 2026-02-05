@@ -27,6 +27,7 @@ bossbar set fi_spider_boss players @a[tag=FI_Boss_2,scores={MAIN_Game=2}]
 bossbar set fi_time players @a[tag=FI_Boss_2,scores={MAIN_Game=2}]
 
 scoreboard players set @a[scores={MAIN_Game=2,FI_Check_Deaths=1..}] FI_Boss_Music 0
+stopsound @a[scores={MAIN_Game=2,FI_Check_Deaths=1..}]
 scoreboard players set @a[scores={MAIN_Game=2,FI_Check_Deaths=1..}] FI_Check_Deaths 0
 xp add @a[scores={MAIN_Game=2,FI_Check_Deaths=1..}] -1 levels
 tellraw @a[scores={MAIN_Game=2,FI_Check_Deaths=1..}] {text:"You died and lose 1 level",color:red}

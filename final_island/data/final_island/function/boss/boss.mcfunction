@@ -8,7 +8,7 @@ execute at @e[type=marker,tag=FI_Zombie_Boss_Check] run execute as @e[type=zombi
 #open the door if there is no zombie
 execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 1.. run clone 68968 81 28 68976 86 28 68981 91 18
 execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 0 run fill 68981 91 18 68989 96 18 air
-
+execute if score FI_Boss_Zombie_Zombie FI_Boss_Check matches 0 run stopsound @a[scores={MAIN_Game=2}] master minecraft:final_island.3rd_movement
 
 #remove the boss and items if there are no players
 execute if score FI_Boss_Zombie_Player FI_Boss_Check matches 0 run execute at @e[type=marker,tag=FI_Zombie_Boss_Check] run kill @e[type=zombie,distance=..18]
