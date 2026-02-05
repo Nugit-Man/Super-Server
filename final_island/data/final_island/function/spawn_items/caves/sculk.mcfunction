@@ -3,4 +3,5 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:sculk",count:64}}] run scoreboa
 
 execute store result score FI_sculk FI_Random run random value 1..80
 execute if score FI_sculk FI_Item_Cap matches 0 in final_island:game if score FI_sculk FI_Random matches 1..6 run summon item 68994 148 -10 {Item:{id:"minecraft:sculk",count:2b}}
+execute if score FI_sculk FI_Item_Cap matches 0 in final_island:game if score FI_sculk FI_Random matches 11..16 run summon item 68996 146 13 {Item:{id:"minecraft:sculk",count:2b}}
 schedule function final_island:spawn_items/caves/sculk 7t
