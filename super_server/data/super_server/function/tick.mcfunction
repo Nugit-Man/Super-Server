@@ -120,6 +120,8 @@ execute as @a[nbt={Dimension:"parkor:game"}] run scoreboard players set @s MAIN_
 execute as @a[nbt={Dimension:"minecraft:overworld"}] run scoreboard players set @s MAIN_Game 5
 execute as @a[nbt={Dimension:"minecraft:the_nether"}] run scoreboard players set @s MAIN_Game 5
 execute as @a[nbt={Dimension:"super_server:mace_master"}] run scoreboard players set @s MAIN_Game 6
+execute as @a[nbt={Dimension:"ric:game"}] run scoreboard players set @s MAIN_Game 7
+execute as @a[nbt={Dimension:"ric:lobby"}] run scoreboard players set @s MAIN_Game 7
 
 
 #team join Final_Island @a[scores={MAIN_Game=2}]
@@ -154,7 +156,7 @@ execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Fish_
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Deaths = @s MAIN_Deaths
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Shotgun = @s MAIN_Crossbow_Used
 
-
+execute as @a[scores={MAIN_Game=7}] run scoreboard players operation @s RIC_Deaths = @s MAIN_Deaths
 
 
 #Reset things like sneak time
@@ -191,6 +193,8 @@ function super_server:mace/tick
 #Timers
 execute if score MAIN_1s MAIN_Time matches 20.. run scoreboard players set MAIN_1s MAIN_Time 0
 scoreboard players add MAIN_1s MAIN_Time 1
+execute if score MAIN_10s MAIN_Time matches 200.. run scoreboard players set MAIN_10s MAIN_Time 0
+scoreboard players add MAIN_10s MAIN_Time 1
 execute if score MAIN_5s MAIN_Time matches 100.. run scoreboard players set MAIN_5s MAIN_Time 0
 scoreboard players add MAIN_5s MAIN_Time 1
 execute if score MAIN_2t MAIN_Time matches 2.. run scoreboard players set MAIN_2t MAIN_Time 0
