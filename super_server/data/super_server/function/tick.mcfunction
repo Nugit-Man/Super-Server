@@ -120,6 +120,8 @@ execute as @a[nbt={Dimension:"parkor:game"}] run scoreboard players set @s MAIN_
 execute as @a[nbt={Dimension:"minecraft:overworld"}] run scoreboard players set @s MAIN_Game 5
 execute as @a[nbt={Dimension:"minecraft:the_nether"}] run scoreboard players set @s MAIN_Game 5
 execute as @a[nbt={Dimension:"super_server:mace_master"}] run scoreboard players set @s MAIN_Game 6
+execute as @a[nbt={Dimension:"ric:game"}] run scoreboard players set @s MAIN_Game 7
+execute as @a[nbt={Dimension:"ric:lobby"}] run scoreboard players set @s MAIN_Game 7
 
 
 #team join Final_Island @a[scores={MAIN_Game=2}]
@@ -154,7 +156,7 @@ execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Fish_
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Deaths = @s MAIN_Deaths
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Shotgun = @s MAIN_Crossbow_Used
 
-
+execute as @a[scores={MAIN_Game=7}] run scoreboard players operation @s RIC_Deaths = @s MAIN_Deaths
 
 
 #Reset things like sneak time
