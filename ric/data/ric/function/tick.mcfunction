@@ -37,5 +37,5 @@ execute if score $In_Game RIC_Main matches 1 run damage @a[limit=1,scores={RIC_M
 
 scoreboard players set @a[scores={MAIN_Game=7,RIC_Deaths=1,RIC_Main=1}] RIC_Main 0
 
-execute if score $Time_10s MAIN_Time matches 0 store result score $Random RIC_Main run random value 1..4
-execute if score $Time_10s MAIN_Time matches 0 if score $Random RIC_Main matches 1 run function ric:random
+execute if score $Time_10s MAIN_Time matches 1 store result score $Random RIC_Main run random value 1..4
+execute if score $Time_10s MAIN_Time matches 1 if score $Random RIC_Main matches 1 run function ric:random
