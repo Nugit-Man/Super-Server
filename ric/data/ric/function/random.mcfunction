@@ -1,3 +1,6 @@
+execute as @a[scores={MAIN_Game=7}] run execute store result score @s RIC_Random run random value 2..1507
+tellraw @a[scores={MAIN_Game=7}] {text:"New Item Drop",color:yellow,italic:false}
+
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=2}] acacia_boat 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=3}] acacia_button 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=4}] acacia_chest_boat 64
