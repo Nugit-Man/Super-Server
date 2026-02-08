@@ -9,9 +9,9 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=522}] fletching_table 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=523}] flint 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=524}] flint_and_steel 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=525}] flow_armor_trim_smithing_template 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=526}] flow_banner_pattern 64
+give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=526}] flow_banner_pattern 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=527}] flow_pottery_sherd 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=528}] flower_banner_pattern 64
+give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=528}] flower_banner_pattern 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=529}] flower_pot 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=530}] flowering_azalea 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=531}] flowering_azalea_leaves 64
@@ -28,7 +28,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=541}] glass 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=542}] glass_bottle 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=543}] glass_pane 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=544}] glistering_melon_slice 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=545}] globe_banner_pattern 64
+give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=545}] globe_banner_pattern 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=546}] glow_berries 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=547}] glow_ink_sac 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=548}] glow_item_frame 64
@@ -91,7 +91,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=609}] green_wool 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=610}] grindstone 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=611}] guardian_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=612}] gunpowder 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=613}] guster_banner_pattern 64
+give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=613}] guster_banner_pattern 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=614}] guster_pottery_sherd 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=615}] hanging_roots 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=616}] happy_ghast_spawn_egg 64
@@ -186,7 +186,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=706}] leather_leggings 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=707}] lectern 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=708}] lever 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=709}] light 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=710}] light_blue_banner 16
+give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=710}] light_blue_banner 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=711}] light_blue_bed 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=712}] light_blue_bundle 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=713}] light_blue_candle 64
@@ -234,7 +234,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=756}] lime_stained_glass 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=757}] lime_stained_glass_pane 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=758}] lime_terracotta 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=759}] lime_wool 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=760}] lingering_potion 64
+give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=760}] lingering_potion 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=761}] llama_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=762}] lodestone 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=763}] loom 64

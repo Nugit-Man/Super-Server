@@ -73,7 +73,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=74}] beef 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=75}] beehive 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=76}] beetroot 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=77}] beetroot_seeds 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=78}] beetroot_soup 64
+give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=78}] beetroot_soup 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=79}] bell 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=80}] big_dripleaf 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=81}] birch_boat 3
@@ -141,7 +141,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=144}] bone_block 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=145}] bone_meal 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=146}] book 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=147}] bookshelf 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=148}] bordure_indented_banner_pattern 64
+give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=148}] bordure_indented_banner_pattern 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=149}] bow 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=150}] bowl 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=151}] brain_coral 64

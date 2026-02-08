@@ -91,7 +91,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=321}] crafter 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=322}] crafting_table 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=323}] creaking_heart 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=324}] creaking_spawn_egg 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=325}] creeper_banner_pattern 64
+give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=325}] creeper_banner_pattern 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=326}] creeper_head 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=327}] creeper_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=328}] crimson_button 64
@@ -273,6 +273,6 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=508}] farmland 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=509}] feather 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=510}] fermented_spider_eye 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=511}] fern 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=512}] field_masoned_banner_pattern 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=513}] filled_map 64
+give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=512}] field_masoned_banner_pattern 3
+give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=513}] filled_map 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=514}] fire_charge 64
