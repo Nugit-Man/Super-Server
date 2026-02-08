@@ -192,7 +192,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=192}] cactus_flower 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=193}] cake 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=194}] calcite 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=195}] calibrated_sculk_sensor 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=196}] camel_husk_spawn_egg 64
+#give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=196}] camel_husk_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=197}] camel_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=198}] campfire 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=199}] candle 64

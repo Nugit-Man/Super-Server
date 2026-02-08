@@ -55,7 +55,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=853}] mutton 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=854}] mycelium 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=855}] name_tag 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=856}] nautilus_shell 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=857}] nautilus_spawn_egg 64
+#give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=857}] nautilus_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=858}] nether_brick 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=859}] nether_brick_fence 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=860}] nether_brick_slab 64
@@ -74,14 +74,14 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=872}] netherite_boots 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=873}] netherite_chestplate 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=874}] netherite_helmet 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=875}] netherite_hoe 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=876}] netherite_horse_armor 64
+#give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=876}] netherite_horse_armor 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=877}] netherite_ingot 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=878}] netherite_leggings 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=879}] netherite_nautilus_armor 64
+#give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=879}] netherite_nautilus_armor 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=880}] netherite_pickaxe 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=881}] netherite_scrap 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=882}] netherite_shovel 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=883}] netherite_spear 64
+#give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=883}] netherite_spear 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=884}] netherite_sword 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=885}] netherite_upgrade_smithing_template 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=886}] netherrack 64
@@ -169,7 +169,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=967}] pale_oak_trapdoor 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=968}] pale_oak_wood 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=969}] panda_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=970}] paper 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=971}] parched_spawn_egg 64
+#give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=971}] parched_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=972}] parrot_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=973}] pearlescent_froglight 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=974}] peony 64

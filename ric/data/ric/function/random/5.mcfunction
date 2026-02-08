@@ -174,7 +174,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1257}] stone_pickaxe 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1258}] stone_pressure_plate 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1259}] stone_shovel 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1260}] stone_slab 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1261}] stone_spear 64
+#give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1261}] stone_spear 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1262}] stone_stairs 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1263}] stone_sword 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1264}] stonecutter 64
