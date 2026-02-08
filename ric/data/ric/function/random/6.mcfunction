@@ -110,7 +110,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1478}] wooden_axe 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1479}] wooden_hoe 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1480}] wooden_pickaxe 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1481}] wooden_shovel 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1482}] wooden_spear 64
+#give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1482}] wooden_spear 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1483}] wooden_sword 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1484}] writable_book 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1485}] written_book 64
@@ -132,7 +132,7 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1500}] yellow_wool 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1501}] zoglin_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1502}] zombie_head 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1503}] zombie_horse_spawn_egg 64
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1504}] zombie_nautilus_spawn_egg 64
+#give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1504}] zombie_nautilus_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1505}] zombie_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1506}] zombie_villager_spawn_egg 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1507}] zombified_piglin_spawn_egg 64

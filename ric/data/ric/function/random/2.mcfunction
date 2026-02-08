@@ -203,7 +203,6 @@ give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=435}] diamond_helmet 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=436}] diamond_hoe 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=437}] diamond_horse_armor 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=438}] diamond_leggings 3
-give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=439}] diamond_nautilus_armor 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=440}] diamond_ore 64
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=441}] diamond_pickaxe 3
 give @s[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=442}] diamond_shovel 3
