@@ -30,6 +30,7 @@ execute in final_island:game at @e[type=marker,tag=FI_Barrel_Ladder] run scorebo
 execute in final_island:game at @e[type=marker,tag=FI_Barrel_Door] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 30
 execute in final_island:game at @e[type=marker,tag=FI_Barrel_Stair] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 31
 execute in final_island:game at @e[type=marker,tag=FI_Barrel_Dirt] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 32
+execute in final_island:game at @e[type=marker,tag=FI_Barrel_Dirt] run scoreboard players set @a[distance=..7] FI_Barrel_Pos 33
 
 execute as @a[scores={MAIN_Game=2}] run execute store result score @s FI_Barrel_Check run clear @s sunflower
 advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=1}] only final_island:barrel/waterfall
@@ -64,6 +65,7 @@ advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=29}] 
 advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=30}] only final_island:barrel/door
 advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=31}] only final_island:barrel/stair
 advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=32}] only final_island:barrel/dirt
+advancement grant @a[scores={MAIN_Game=2,FI_Barrel_Check=1..,FI_Barrel_Pos=33}] only final_island:barrel/church
 
 execute in final_island:game run item replace block 0 11 -1 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in final_island:game run item replace block 14 -2 63 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
@@ -97,4 +99,4 @@ execute in final_island:game run item replace block 68987 228 11 container.13 wi
 execute in final_island:game run item replace block -45 -13 -85 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in final_island:game run item replace block -64 -12 -78 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in final_island:game run item replace block -115 0 -63 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
-
+execute in final_island:game run item replace block -93 -5 -281 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]

@@ -1,4 +1,4 @@
-execute as @a[scores={MAIN_Game=7,RIC_Main=1}] run execute store result score @a RIC_Random run random value 0..1469
+execute as @a[scores={MAIN_Game=7,RIC_Main=1}] run execute store result score @s RIC_Random run random value 0..1469
 tellraw @a[scores={MAIN_Game=7,RIC_Main=1}] {text:"New Item Drop",color:yellow,italic:false}
 
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=0}] acacia_boat 3
@@ -713,7 +713,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=708}] light_gray_concrete 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=709}] light_gray_concrete_powder 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=710}] light_gray_dye 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=711}] light_gray_glazed_terracotta 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=712}] light_gray_harness 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=712}] light_gray_harness 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=713}] light_gray_stained_glass 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=714}] light_gray_stained_glass_pane 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=715}] light_gray_terracotta 64
@@ -732,7 +732,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=727}] lime_concrete 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=728}] lime_concrete_powder 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=729}] lime_dye 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=730}] lime_glazed_terracotta 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=731}] lime_harness 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=731}] lime_harness 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=732}] lime_shulker_box 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=733}] lime_stained_glass 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=734}] lime_stained_glass_pane 64
@@ -849,7 +849,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=844}] nether_wart 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=845}] nether_wart_block 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=846}] netherite_axe 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=847}] netherite_block 3
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=848}] netherite_boots 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=848}] netherite_boots 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=849}] netherite_chestplate 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=850}] netherite_helmet 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=851}] netherite_hoe 3
