@@ -105,3 +105,6 @@ tag @a[scores={MAIN_Game=2,FI_Mana_Cooldown_stone_axe=400},tag=FI_Ability_Speed_
 
 #Gems
 execute as @a[scores={FI_Mana_Cooldown_Gem_Iron=1,MAIN_Game=2}] run attribute @s knockback_resistance base set 0
+
+execute as @a[scores={FI_Mana_Cooldown_Gem_Tuff=1,MAIN_Game=2}] run attribute @s knockback_resistance base set 0
+execute as @a[scores={FI_Mana_Cooldown_Gem_Tuff=1,MAIN_Game=2}] run attribute @s armor base set 0
