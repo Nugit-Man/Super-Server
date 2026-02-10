@@ -8,3 +8,7 @@ execute as @s[scores={MAIN_Game=2}] if items entity @s weapon.mainhand *[custom_
 
 #Final Island Armor Sets
 execute as @s[scores={MAIN_Game=2},tag=FI_Armor_Set_Gold] run function final_island:abilities/gold_armor
+
+
+#Final Island Gems
+execute as @s[scores={MAIN_Game=2}] if items entity @s weapon.offhand *[custom_data~{FI_Gold_Gem:1b}] run function final_island:abilities/gold_armor
