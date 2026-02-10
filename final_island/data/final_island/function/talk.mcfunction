@@ -17,15 +17,21 @@ tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=10}] "Just note, the boss will t
 tag @s[scores={MAIN_Game=2,FI_Villager_Talk=10}] remove FI_Quest_Village_Anvil_Start
 tag @s[scores={MAIN_Game=2,FI_Villager_Talk=10}] add FI_Quest_Village_Anvil
 scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=10}] FI_Villager_Talk_Timer 0
-tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=11}] "Thanks again for the Iron blocks"
+tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=11}] "thanks again for the Iron blocks"
 scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=11}] FI_Villager_Talk_Timer 0
-tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=12}] "We are da dirt munchers"
+tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=12}] "we are da dirt munchers"
 scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=12}] FI_Villager_Talk_Timer 0
-tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=13}] "Dirt yummy"
+tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=13}] "dirt yummy"
 scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=13}] FI_Villager_Talk_Timer 0
 tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=14}] "yum yum dirt"
 scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=14}] FI_Villager_Talk_Timer 0
 tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=15}] "dirt dirt go nom nom"
 scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=15}] FI_Villager_Talk_Timer 0
 tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=16}] "mmmmmm, dirt..."
+scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=16}] FI_Villager_Talk_Timer 0
+tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=17}] "da dirt go munch munch"
+scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=16}] FI_Villager_Talk_Timer 0
+tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=18}] "munch munch da dirt dirt"
+scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=16}] FI_Villager_Talk_Timer 0
+tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=19}] "we munch da dirt"
 scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=16}] FI_Villager_Talk_Timer 0
