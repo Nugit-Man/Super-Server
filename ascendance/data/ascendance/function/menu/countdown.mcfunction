@@ -34,3 +34,14 @@ schedule function ascendance:menu/countdown 1s
 
 #remove the trigger command
 execute unless entity @r[scores={MAIN_Game=1,AS_Countdown=1..11}] run execute as @a run trigger AS_JoinGame add 0
+
+
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=1,AS_Map=1}] run scoreboard players set $Random AS_Map_DesertTomb 65
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=2,AS_Map=2}] run scoreboard players set $Random AS_Map_Tabletop 65
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=3,AS_Map=3}] run scoreboard players set $Random AS_Map_Brutalism 65
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=4,AS_Map=4}] run scoreboard players set $Random AS_Map_Colosseum 65
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=5,AS_Map=5}] run scoreboard players set $Random AS_Map_Club 65
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=10,AS_Map=10}] run scoreboard players set $Random AS_Map_Cube 65
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=11,AS_Map=11}] run scoreboard players set $Random AS_Map_IceSpikes 65
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=12,AS_Map=12}] run scoreboard players set $Random AS_Map_JunglePikes 65
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=13,AS_Map=13}] run scoreboard players set $Random AS_Map_Bridge 65
