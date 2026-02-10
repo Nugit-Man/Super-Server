@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:barrel"
+      },
+      "title": "Gorbino Barrel 11",
+      "description": "Seceret Tunnel",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "gorbino:barrel/edge",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "final_island:advancement/barrel/balloon"
+    }
+  }
+  
