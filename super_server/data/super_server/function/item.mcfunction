@@ -20,7 +20,13 @@ execute as @s[scores={FI_Mana=60..,MAIN_Game=2}] if items entity @s[scores={FI_M
 execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Crystal_Gray=0}] weapon.mainhand *[custom_data~{FI_Mana_Crystal_Gray:1b}] run function final_island:items/crystal_gray
 execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Crystal_Red=0}] weapon.mainhand *[custom_data~{FI_Mana_Crystal_Red:1b}] run function final_island:items/crystal_red
 
-
+#Final Island Gems
+execute as @s[scores={FI_Mana=50..,MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Stone=0}] weapon.mainhand *[custom_data~{FI_Stone_Gem:1b}] run function final_island:items/gem_stone
+execute as @s[scores={FI_Mana=50..,MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Copper=0}] weapon.mainhand *[custom_data~{FI_Copper_Gem:1b}] run function final_island:items/gem_copper
+execute as @s[scores={FI_Mana=10..,MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Gold=0}] weapon.mainhand *[custom_data~{FI_Gold_Gem:1b}] run function final_island:items/gem_gold
+execute as @s[scores={FI_Mana=15..,MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Iron=0}] weapon.mainhand *[custom_data~{FI_Iron_Gem:1b}] run function final_island:items/gem_iron
+execute as @s[scores={FI_Mana=20..,MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Diamond=0}] weapon.mainhand *[custom_data~{FI_Diamond_Gem:1b}] run function final_island:items/gem_diamond
+execute as @s[scores={FI_Mana=40..,MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Tuff=0}] weapon.mainhand *[custom_data~{FI_Tuff_Gem:1b}] run function final_island:items/gem_tuff
 #octothorpe
 
 #The weapon is still on cooldown

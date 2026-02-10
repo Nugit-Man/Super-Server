@@ -101,3 +101,7 @@ tag @a remove FI_Ability_Health_Of_Wealth
 execute as @a[scores={MAIN_Game=2,FI_Mana_Cooldown_stone_axe=400},tag=FI_Ability_Speed_Slice] run attribute @s attack_speed base reset
 tag @a[scores={MAIN_Game=2,FI_Mana_Cooldown_stone_axe=400},tag=FI_Ability_Speed_Slice] remove FI_Ability_Speed_Slice
 
+
+
+#Gems
+execute as @a[scores={FI_Mana_Cooldown_Gem_Iron=1,MAIN_Game=2}] run attribute @s knockback_resistance base set 0

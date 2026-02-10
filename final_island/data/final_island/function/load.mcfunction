@@ -153,3 +153,11 @@ scoreboard objectives add FI_Villager_Talk_Timer dummy
 scoreboard objectives add FI_Villager_Check dummy
 
 scoreboard objectives add FI_Fish_Check dummy
+
+
+scoreboard objectives add FI_Mana_Cooldown_Gem_Stone dummy
+scoreboard objectives add FI_Mana_Cooldown_Gem_Copper dummy
+scoreboard objectives add FI_Mana_Cooldown_Gem_Gold dummy
+scoreboard objectives add FI_Mana_Cooldown_Gem_Iron dummy
+scoreboard objectives add FI_Mana_Cooldown_Gem_Diamond dummy
+scoreboard objectives add FI_Mana_Cooldown_Gem_Tuff dummy
