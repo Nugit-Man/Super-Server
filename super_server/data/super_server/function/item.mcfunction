@@ -37,3 +37,9 @@ execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_
 execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_stone_axe=1..}] weapon.mainhand *[custom_data~{FI_Stone_Axe:1b}] run tellraw @s [{text:"Your weapon is still on cooldown",color:"red"}]
 execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Crystal_Gray=1..}] weapon.mainhand *[custom_data~{FI_Mana_Crystal_Gray:1b}] run tellraw @s [{text:"Your crystal is still on cooldown",color:"red"}]
 execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Crystal_Red=1..}] weapon.mainhand *[custom_data~{FI_Mana_Crystal_Red:1b}] run tellraw @s [{text:"Your crystal is still on cooldown",color:"red"}]
+
+execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Stone=1..}] weapon.mainhand *[custom_data~{FI_Stone_Gem:1b}] run tellraw @s [{text:"Your gem is still on cooldown",color:"red"}]
+execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Copper=1..}] weapon.mainhand *[custom_data~{FI_Copper_Gem:1b}] run tellraw @s [{text:"Your gem is still on cooldown",color:"red"}]
+execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Iron=1..}] weapon.mainhand *[custom_data~{FI_Iron_Gem:1b}] run tellraw @s [{text:"Your gem is still on cooldown",color:"red"}]
+execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Diamond=1..}] weapon.mainhand *[custom_data~{FI_Diamond_Gem:1b}] run tellraw @s [{text:"Your gem is still on cooldown",color:"red"}]
+execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Tuff=1..}] weapon.mainhand *[custom_data~{FI_Tuff_Gem:1b}] run tellraw @s [{text:"Your gem is still on cooldown",color:"red"}]
