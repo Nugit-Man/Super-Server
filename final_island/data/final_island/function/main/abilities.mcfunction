@@ -46,7 +46,7 @@ execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=275}] run e
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=275}] run execute at @s anchored eyes run summon marker ^ ^ ^14 {Tags:[FI_Sonic_Blast_Marker]}
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=275}] run execute at @s anchored eyes run summon marker ^ ^ ^15 {Tags:[FI_Sonic_Blast_Marker]}
 
-execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=274}] run execute at @e[tag=FI_Sonic_Blast_Marker] run damage @e[tag=!FI_Sonic_Blast_Immune,limit=1,sort=nearest,distance=..2,type=!item,type=!marker] 24 sonic_boom
+execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=274}] run execute at @e[tag=FI_Sonic_Blast_Marker] run damage @n[tag=!FI_Sonic_Blast_Immune,distance=..2,type=!item,type=!marker] 24 sonic_boom
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=274}] run execute at @e[tag=FI_Sonic_Blast_Marker] run particle minecraft:sonic_boom ~ ~ ~ 0.3 0.3 0.3 1 10 force
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=274}] run execute at @e[tag=FI_Sonic_Blast_Marker] run particle minecraft:sonic_boom ~ ~ ~ 0.3 0.3 0.3 1 1 normal
 execute as @a[tag=FI_Sonic_Blast,scores={FI_Mana_Cooldown_deep_sword=260}] run kill @e[type=marker,tag=FI_Sonic_Blast_Marker]
