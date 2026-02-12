@@ -40,7 +40,7 @@ scoreboard players set @a[scores={MAIN_Game=7,RIC_Deaths=1,RIC_Main=1}] RIC_Main
 execute if score MAIN_10s MAIN_Time matches 1 run execute store result score $Random RIC_Main run random value 1..4
 execute if score MAIN_10s MAIN_Time matches 1 if score $Random RIC_Main matches 1 run function ric:random
 
-effect give @a[scores={MAIN_Game=7,RIC_Main=1}] saturation infinite 0 true
+effect give @a[scores={MAIN_Game=7}] saturation infinite 0 true
 effect give @a[scores={MAIN_Game=7,RIC_Main=1}] regeneration infinite 0 true
 
 execute at @a[scores={MAIN_Game=7}] run execute as @e[type=item,nbt={PickupDelay:40s}] at @s run data modify entity @s Owner set from entity @p UUID
