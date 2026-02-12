@@ -161,3 +161,5 @@ scoreboard objectives add FI_Mana_Cooldown_Gem_Gold dummy
 scoreboard objectives add FI_Mana_Cooldown_Gem_Iron dummy
 scoreboard objectives add FI_Mana_Cooldown_Gem_Diamond dummy
 scoreboard objectives add FI_Mana_Cooldown_Gem_Tuff dummy
+
+scoreboard objectives add FI_Sugar_Cane dummy

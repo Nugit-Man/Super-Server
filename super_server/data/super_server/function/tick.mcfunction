@@ -155,6 +155,7 @@ execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Check
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sword_Break_Wood = @s MAIN_break_wood_sword
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sword_Break_Gold = @s MAIN_break_gold_sword
 execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Fish_Check = @s MAIN_Fish_Caught
+execute as @a[scores={MAIN_Game=2}] run scoreboard players operation @s FI_Sugar_Cane += @s MAIN_obtain_sugar_cane
 
 
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Deaths = @s MAIN_Deaths
@@ -174,6 +175,7 @@ scoreboard players set @a MAIN_Fish_Caught 0
 scoreboard players set @a MAIN_Bow_Used 0
 scoreboard players set @a MAIN_break_gold_sword 0
 scoreboard players set @a MAIN_break_wood_sword 0
+scoreboard players set @a MAIN_obtain_sugar_cane 0
 
 
 

@@ -57,3 +57,5 @@ advancement grant @a[scores={MAIN_Game=2,FI_Health=60..}] only final_island:imor
 
 advancement grant @a[scores={MAIN_Game=2,FI_Sword_Break_Wood=1..}] only final_island:break1
 advancement grant @a[scores={MAIN_Game=2,FI_Sword_Break_Gold=1..}] only final_island:break2
+
+advancement grant @a[scores={MAIN_Game=2,FI_Sugar_Cane=10000..}] only final_island:road_to_1mil
