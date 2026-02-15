@@ -39,8 +39,6 @@ tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=19}] "we munch da dirt"
 scoreboard players set @s[scores={MAIN_Game=2,FI_Villager_Talk=19}] FI_Villager_Talk_Timer 0
 
 
-execute at @s run playsound entity.villager.ambient master @s
-scoreboard players set @s FI_Villager_Talk_Timer 1
 tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=20}] "Hey, can you give me a hand"
 tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=21}] "I am an apprentance here and I was supposed to bring a new bookshelf"
 tellraw @s[scores={MAIN_Game=2,FI_Villager_Talk=22}] "I spent hours grinding sugar cane and other recourses"
