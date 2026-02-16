@@ -8,3 +8,5 @@ execute as @a[scores={MAIN_Game=1,AS_Map=4,AS_Gamemode=100}] run scoreboard play
 execute as @a[scores={MAIN_Game=1,AS_Map=4,AS_Gamemode=100}] run scoreboard players set $Time_min AS_Map_Colosseum 0
 
 schedule function ascendance:gaming/maps/colosseum/hide 1s
+
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=3,AS_Map=4}] run scoreboard players set $Time AS_Map_Colosseum 65

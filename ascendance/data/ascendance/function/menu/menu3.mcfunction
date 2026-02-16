@@ -4,8 +4,8 @@ item replace entity @s inventory.2 with minecraft:air
 item replace entity @s inventory.3 with minecraft:air
 item replace entity @s inventory.4 with minecraft:air
 item replace entity @s inventory.5 with minecraft:air
-item replace entity @s inventory.6 with minecraft:painting[custom_name={text:"Show records",italic:false}]
-item replace entity @s inventory.7 with minecraft:air
+item replace entity @s inventory.7 with minecraft:painting[custom_name={text:"Show records",italic:false}]
+item replace entity @s inventory.6 with minecraft:air
 item replace entity @s inventory.8 with minecraft:air
 item replace entity @s inventory.9 with minecraft:air
 item replace entity @s inventory.10 with minecraft:skeleton_skull[custom_name={text:"Deathmatch",italic:false},lore=[{text:"Kill others to gain points",italic:false},{text:"First to 25 points wins!",italic:false}]]
@@ -45,7 +45,7 @@ scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Gamemode 2
 clear @a[scores={MAIN_Game=1,AS_Select=2}]
 
 scoreboard players set @a[scores={MAIN_Game=1}] AS_Select 0
-execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s golden_helmet 0
+execute as @a[scores={MAIN_Game=1}] store result score @s AS_Select run clear @s crossbow 0
 scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Menu 1
 scoreboard players set @a[scores={MAIN_Game=1,AS_Select=2}] AS_Gamemode 3
 clear @a[scores={MAIN_Game=1,AS_Select=2}]

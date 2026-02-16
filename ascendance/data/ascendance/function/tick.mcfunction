@@ -4,6 +4,7 @@ scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Mode 0
 scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Menu 0
 scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Countdown 0
 scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Welcome] AS_Gamemode 0
+tag @a[scores={MAIN_Game=1},tag=!AS_Welcome] remove AS_Curse
 tag @a[scores={MAIN_Game=1},tag=!AS_Welcome] add AS_Welcome
 
 
@@ -40,9 +41,9 @@ scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_JoinGame 0
 
 
 #Call the main functions
+function ascendance:main/rules
 function ascendance:main/advnacement
 function ascendance:main/barrel
 function ascendance:main/call_multiplayer_macros
 function ascendance:main/crown
-function ascendance:main/rules
 function ascendance:main/scoreadd

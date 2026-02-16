@@ -6,3 +6,5 @@ execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Gamemode=100}] run scoreboard pla
 execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Gamemode=100}] run scoreboard players set $Time_10s AS_Map_JunglePikes 0
 execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Gamemode=100}] run scoreboard players set $Time_sec AS_Map_JunglePikes 0
 execute as @a[scores={MAIN_Game=1,AS_Map=12,AS_Gamemode=100}] run scoreboard players set $Time_min AS_Map_JunglePikes 0
+
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=3,AS_Map=12}] run scoreboard players set $Time AS_Map_JunglePikes 65

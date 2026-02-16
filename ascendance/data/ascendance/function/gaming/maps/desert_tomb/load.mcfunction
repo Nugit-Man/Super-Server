@@ -12,3 +12,5 @@ execute as @a[scores={MAIN_Game=1,AS_Map=1,AS_Gamemode=100}] run scoreboard play
 execute as @a[scores={MAIN_Game=1,AS_Map=1,AS_Gamemode=100}] run scoreboard players set $Time_min AS_Map_DesertTomb 0
 
 schedule function ascendance:gaming/maps/desert_tomb/secret 10t
+
+execute as @a[scores={MAIN_Game=1,AS_Countdown=11,AS_Gamemode=3,AS_Map=1}] run scoreboard players set $Time AS_Map_DesertTomb 65
