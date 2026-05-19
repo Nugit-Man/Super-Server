@@ -7,7 +7,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=2}] acacia_chest_boat 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=3}] acacia_door 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=4}] acacia_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=5}] acacia_fence_gate 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=6}] acacia_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=6}] acacia_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=7}] acacia_leaves 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=8}] acacia_log 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=9}] acacia_planks 64
@@ -52,7 +52,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=47}] bamboo_chest_raft 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=48}] bamboo_door 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=49}] bamboo_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=50}] bamboo_fence_gate 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=51}] bamboo_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=51}] bamboo_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=52}] bamboo_mosaic 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=53}] bamboo_mosaic_slab 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=54}] bamboo_mosaic_stairs 64
@@ -85,7 +85,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=80}] birch_chest_boat 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=81}] birch_door 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=82}] birch_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=83}] birch_fence_gate 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=84}] birch_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=84}] birch_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=85}] birch_leaves 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=86}] birch_log 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=87}] birch_planks 64
@@ -213,7 +213,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=208}] cherry_chest_boat 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=209}] cherry_door 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=210}] cherry_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=211}] cherry_fence_gate 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=212}] cherry_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=212}] cherry_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=213}] cherry_leaves 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=214}] cherry_log 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=215}] cherry_planks 64
@@ -325,7 +325,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=320}] crimson_door 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=321}] crimson_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=322}] crimson_fence_gate 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=323}] crimson_fungus 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=324}] crimson_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=324}] crimson_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=325}] crimson_hyphae 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=326}] crimson_nylium 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=327}] crimson_planks 64
@@ -369,7 +369,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=364}] dark_oak_chest_boat 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=365}] dark_oak_door 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=366}] dark_oak_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=367}] dark_oak_fence_gate 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=368}] dark_oak_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=368}] dark_oak_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=369}] dark_oak_leaves 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=370}] dark_oak_log 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=371}] dark_oak_planks 64
@@ -597,7 +597,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=592}] guardian_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=593}] gunpowder 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=594}] guster_banner_pattern 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=595}] guster_pottery_sherd 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=596}] hanging_roots 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=596}] hanging_roots 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=597}] happy_ghast_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=598}] hay_block 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=599}] heart_of_the_sea 64
@@ -657,7 +657,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=652}] jungle_chest_boat 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=653}] jungle_door 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=654}] jungle_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=655}] jungle_fence_gate 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=656}] jungle_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=656}] jungle_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=657}] jungle_leaves 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=658}] jungle_log 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=659}] jungle_planks 64
@@ -767,7 +767,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=762}] mangrove_chest_boat 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=763}] mangrove_door 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=764}] mangrove_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=765}] mangrove_fence_gate 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=766}] mangrove_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=766}] mangrove_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=767}] mangrove_leaves 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=768}] mangrove_log 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=769}] mangrove_planks 64
@@ -868,7 +868,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=863}] oak_chest_boat 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=864}] oak_door 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=865}] oak_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=866}] oak_fence_gate 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=867}] oak_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=867}] oak_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=868}] oak_leaves 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=869}] oak_log 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=870}] oak_planks 64
@@ -921,7 +921,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=916}] oxidized_lightning_rod 6
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=917}] packed_ice 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=918}] packed_mud 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=919}] painting 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=920}] pale_hanging_moss 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=920}] pale_hanging_moss 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=921}] pale_moss_block 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=922}] pale_moss_carpet 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=923}] pale_oak_boat 3
@@ -930,7 +930,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=925}] pale_oak_chest_boat 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=926}] pale_oak_door 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=927}] pale_oak_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=928}] pale_oak_fence_gate 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=929}] pale_oak_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=929}] pale_oak_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=930}] pale_oak_leaves 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=931}] pale_oak_log 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=932}] pale_oak_planks 64
@@ -1202,7 +1202,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1197}] spruce_chest_boat 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1198}] spruce_door 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1199}] spruce_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1200}] spruce_fence_gate 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1201}] spruce_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1201}] spruce_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1202}] spruce_leaves 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1203}] spruce_log 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1204}] spruce_planks 64
@@ -1326,7 +1326,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1321}] warped_fence 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1322}] warped_fence_gate 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1323}] warped_fungus 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1324}] warped_fungus_on_a_stick 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1325}] warped_hanging_sign 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1325}] warped_hanging_sign 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1326}] warped_hyphae 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1327}] warped_nylium 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1328}] warped_planks 64
@@ -1443,7 +1443,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1438}] wither_rose 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1439}] wither_skeleton_skull 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1440}] wither_skeleton_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1441}] wither_spawn_egg 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1442}] wolf_armor 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1442}] wolf_armor 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1443}] wolf_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1444}] wooden_axe 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1445}] wooden_hoe 3
