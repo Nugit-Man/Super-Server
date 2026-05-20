@@ -742,7 +742,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=737}] lingering_potion 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=738}] llama_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=739}] lodestone 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=740}] loom 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=741}] mace 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=741}] mace 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=742}] magenta_banner 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=743}] magenta_bed 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=744}] magenta_bundle 3
