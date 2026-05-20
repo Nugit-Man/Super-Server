@@ -32,7 +32,7 @@ execute if score $In_Game RIC_Main matches 0 if score $In_Que RIC_Main matches 0
 
 
 
-execute if score $In_Game RIC_Main matches 1 run title @a[scores={MAIN_Game=7,RIC_Main=1}] title "WINEER"
+execute if score $In_Game RIC_Main matches 1 run title @a[scores={MAIN_Game=7,RIC_Main=1}] title "WINNER"
 execute if score $In_Game RIC_Main matches 1 run damage @a[limit=1,scores={RIC_Main=1}] 1 generic_kill
 
 
