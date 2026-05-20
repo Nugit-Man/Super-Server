@@ -1,6 +1,7 @@
 #RIC main values:
 #0 - in lobby
 #1 - in game
+#2 - PVP in lobby
 
 scoreboard objectives add RIC_Item dummy
 scoreboard objectives add RIC_Main dummy
