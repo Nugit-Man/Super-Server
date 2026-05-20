@@ -34,7 +34,7 @@ execute if score $In_Game RIC_Main matches 1 run title @a[scores={MAIN_Game=7}] 
 execute if score $In_Game RIC_Main matches 1 run damage @a[limit=1,scores={RIC_Main=1}] 1 generic_kill
 
 
-execute as @a[scores={RIC_Main=0,},nbt=di]
+execute as @a[scores={RIC_Main=0,},nbt={Dimension:"ric:game"}] run trigger Lobby
 scoreboard players set @a[scores={MAIN_Game=7,RIC_Deaths=1,RIC_Main=1}] RIC_Main 0
 clear @a[scores={MAIN_Game=7,RIC_Deaths=1}]
 
