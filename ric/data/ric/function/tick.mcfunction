@@ -44,3 +44,8 @@ effect give @a[scores={MAIN_Game=7}] saturation infinite 0 true
 effect give @a[scores={MAIN_Game=7,RIC_Main=1}] regeneration infinite 0 true
 
 execute at @a[scores={MAIN_Game=7}] run execute as @e[type=item,nbt={PickupDelay:40s}] at @s run data modify entity @s Owner set from entity @p UUID
+
+execute as @a[scores={MAIN_Game=7}] at @s run execute if block ~ ~-2 ~ obsidian run tag @s add RIC_Reset
+
+
+tp @a[tag=RIC_Reset] -19.5 -36.00 26.5 315 45
