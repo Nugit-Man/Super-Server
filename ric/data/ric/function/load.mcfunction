@@ -9,3 +9,5 @@ scoreboard objectives add RIC_Menu dummy
 scoreboard objectives add RIC_Select dummy
 scoreboard objectives add RIC_Deaths dummy
 scoreboard objectives add RIC_Random dummy
+scoreboard objectives add RIC_Barrel_Pos dummy
+scoreboard objectives add RIC_Barrel_Check dummy

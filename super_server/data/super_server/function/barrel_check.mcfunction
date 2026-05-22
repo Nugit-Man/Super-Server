@@ -62,3 +62,6 @@ scoreboard players add @s[advancements={super_server:barrel/hidden/wall=true}] M
 scoreboard players add @s[advancements={super_server:barrel/hidden/wall_2=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={super_server:barrel/hidden/well=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={super_server:barrel/hidden/well_2=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={ric:barrel/trickshot=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={ric:barrel/tunel=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={ric:barrel/wall=true}] MAIN_Barrels 1

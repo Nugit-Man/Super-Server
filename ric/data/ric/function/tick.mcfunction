@@ -106,3 +106,21 @@ execute as @a[scores={MAIN_Game=7,RIC_Main=2}] run give @s[scores={MAIN_Game=7,R
 execute as @a[scores={MAIN_Game=7,RIC_Main=2}] run give @s[scores={MAIN_Game=7,RIC_Random=46}] netherite_chestplate
 execute as @a[scores={MAIN_Game=7,RIC_Main=2}] run give @s[scores={MAIN_Game=7,RIC_Random=47}] netherite_leggings
 execute as @a[scores={MAIN_Game=7,RIC_Main=2}] run give @s[scores={MAIN_Game=7,RIC_Random=48}] netherite_helmet
+
+
+
+#Barrels
+execute in ric:lobby run item replace block -19 -39 27 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in ric:lobby run item replace block -43 -42 -9 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in ric:lobby run item replace block -29 -39 -13 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+
+
+execute in ric:lobby at @e[type=marker,tag=RIC_Barrel_Wall] run scoreboard players set @a[distance=..7] RIC_Barrel_Pos 1
+execute in ric:lobby at @e[type=marker,tag=RIC_Barrel_Top] run scoreboard players set @a[distance=..7] RIC_Barrel_Pos 2
+execute in ric:lobby at @e[type=marker,tag=RIC_Barrel_Stewie] run scoreboard players set @a[distance=..7] RIC_Barrel_Pos 3
+
+
+execute as @a[scores={MAIN_Game=7}] run execute store result score @s RIC_Barrel_Check run clear @s sunflower
+advancement grant @a[scores={MAIN_Game=7,RIC_Barrel_Check=1..,RIC_Barrel_Pos=1}] only ric:barrel/wall
+advancement grant @a[scores={MAIN_Game=7,RIC_Barrel_Check=1..,RIC_Barrel_Pos=2}] only ric:barrel/tunel
+advancement grant @a[scores={MAIN_Game=7,RIC_Barrel_Check=1..,RIC_Barrel_Pos=3}] only ric:barrel/trickshot
