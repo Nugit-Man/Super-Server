@@ -39,7 +39,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=34}] armadillo_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=35}] armor_stand 16
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=36}] arms_up_pottery_sherd 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=37}] arrow 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=38}] axolotl_bucket 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=38}] axolotl_bucket 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=39}] axolotl_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=40}] azalea 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=41}] azalea_leaves 64
