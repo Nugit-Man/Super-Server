@@ -1,3 +1,9 @@
+#What different values of RIC_Main represent
+#0 - Lobby
+#1 - In Game
+#2 - Lobby PVP
+#3 - Spectating
+
 scoreboard players set @a[scores={MAIN_Game=7},tag=!RIC_Welcome] RIC_Menu 0
 tag @a[scores={MAIN_Game=7}] add RIC_Welcome
 
