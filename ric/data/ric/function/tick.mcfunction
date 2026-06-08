@@ -127,6 +127,6 @@ execute in ric:lobby at @e[type=marker,tag=RIC_Barrel_3] run scoreboard players 
 
 
 execute as @a[scores={MAIN_Game=7}] run execute store result score @s RIC_Barrel_Check run clear @s sunflower
-advancement grant @a[scores={MAIN_Game=7,RIC_Barrel_Check=1..,RIC_Barrel_Pos=1}] only ric:barrel/wall
-advancement grant @a[scores={MAIN_Game=7,RIC_Barrel_Check=1..,RIC_Barrel_Pos=2}] only ric:barrel/tunel
-advancement grant @a[scores={MAIN_Game=7,RIC_Barrel_Check=1..,RIC_Barrel_Pos=3}] only ric:barrel/trickshot
+advancement grant @a[scores={MAIN_Game=7,RIC_Barrel_Check=1..,RIC_Barrel_Pos=1},nbt={Dimension:"ric:lobby"}] only ric:barrel/wall
+advancement grant @a[scores={MAIN_Game=7,RIC_Barrel_Check=1..,RIC_Barrel_Pos=2},nbt={Dimension:"ric:lobby"}] only ric:barrel/tunel
+advancement grant @a[scores={MAIN_Game=7,RIC_Barrel_Check=1..,RIC_Barrel_Pos=3},nbt={Dimension:"ric:lobby"}] only ric:barrel/trickshot
