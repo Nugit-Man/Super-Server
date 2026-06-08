@@ -40,13 +40,13 @@ execute if score $In_Game RIC_Main matches 0 if score $In_Que RIC_Main matches .
 execute if score $In_Game RIC_Main matches 0 if score $In_Que RIC_Main matches 0.. if score $Countdown RIC_Main matches 600.. run function ric:gamestart
 
 
-
+execute if score $In_Game RIC_Main matches 0 run scoreboard players set @a[scores={MAIN_Game=7,RIC_Main=3}] RIC_Main 0
 
 execute if score $In_Game RIC_Main matches 1 run title @a[scores={MAIN_Game=7,RIC_Main=1}] title "WINNER"
 execute if score $In_Game RIC_Main matches 1 run damage @a[limit=1,scores={RIC_Main=1}] 1 generic_kill
 
 
-execute as @a[scores={RIC_Main=0},nbt={Dimension:"ric:game"}] run trigger Lobby
+execute as @a[scores={RIC_Main=0},nbt={Dimension:"ric:game"}] run tp @s -30.5 -31.00 8.5 -90.00 0.00
 scoreboard players set @a[scores={MAIN_Game=7,RIC_Deaths=1,RIC_Main=1}] RIC_Main 0
 clear @a[scores={MAIN_Game=7,RIC_Deaths=1}]
 
