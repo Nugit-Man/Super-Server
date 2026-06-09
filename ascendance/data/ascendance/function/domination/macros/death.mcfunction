@@ -1,1 +1,3 @@
-$scoreboard players set $(death) AS_Dominate_$(kill) 0
+$execute if score $(kill) AS_Dominate_$(death) matches 4.. run tellraw @a [{"selector":"@a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}]",color:red},{text:" got revenge on ",italic:false,color:red},{"selector":"@a[scores={MAIN_Game=1,AS_Mode=1,AS_Deaths=1..}]",color:red}]
+
+$scoreboard players set $(kill) AS_Dominate_$(death) 0

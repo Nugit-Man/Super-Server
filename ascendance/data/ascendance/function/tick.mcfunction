@@ -8,7 +8,6 @@ tag @a[scores={MAIN_Game=1},tag=!AS_Welcome] remove AS_Curse
 tag @a[scores={MAIN_Game=1},tag=!AS_Welcome] add AS_Welcome
 
 
-
 scoreboard players set @a[scores={MAIN_Game=1},tag=!AS_Give_Bow] AS_Cosmetic_Bow 0
 tag @a[scores={MAIN_Game=1}] add AS_Give_Bow
 

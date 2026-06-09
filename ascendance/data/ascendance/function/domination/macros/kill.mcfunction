@@ -1,3 +1,3 @@
 $scoreboard players add $(death) AS_Dominate_$(kill) 1
 
-$execute if score $(death) AS_Dominate_$(kill) matches 4 run tellraw @a [{"selector":"@a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}]"},{text:" Is dominating ",italic:false},{"selector":"@a[scores={MAIN_Game=1,AS_Mode=1,AS_Deaths=1..}]"}]
+$execute if score $(death) AS_Dominate_$(kill) matches 4 run tellraw @a [{"selector":"@a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}]",color:blue},{text:" Is dominating ",italic:false,color:blue},{"selector":"@a[scores={MAIN_Game=1,AS_Mode=1,AS_Deaths=1..}]",color:blue}]

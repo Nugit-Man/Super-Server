@@ -6,7 +6,6 @@ execute as @a[tag=MAIN_UUID,limit=1] run function super_server:team/macro with s
 
 execute as @a[tag=MAIN_UUID,limit=1] run function super_server:team/sufix/macro with storage super_server:team
 
-
 #Domination Code
 execute as @a[tag=MAIN_UUID,limit=1] run function ascendance:domination/macros/create with storage super_server:team
 
