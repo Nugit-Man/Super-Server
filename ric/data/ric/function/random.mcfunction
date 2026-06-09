@@ -145,7 +145,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=140}] bone_meal 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=141}] book 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=142}] bookshelf 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=143}] bordure_indented_banner_pattern 3
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=144}] bow 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=144}] bow 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=145}] bowl 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=146}] brain_coral 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=147}] brain_coral_block 64
@@ -1015,7 +1015,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1010}] porkchop 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1011}] potato 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1012}] potion 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1013}] powder_snow_bucket 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1014}] powered_rail 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1014}] powered_rail 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1015}] prismarine 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1016}] prismarine_brick_slab 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1017}] prismarine_brick_stairs 64
