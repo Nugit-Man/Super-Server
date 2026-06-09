@@ -5,4 +5,9 @@ data modify storage super_server:team uuid set string entity @a[tag=MAIN_UUID,li
 execute as @a[tag=MAIN_UUID,limit=1] run function super_server:team/macro with storage super_server:team
 
 execute as @a[tag=MAIN_UUID,limit=1] run function super_server:team/sufix/macro with storage super_server:team
+
+
+#Domination Code
+execute as @a[tag=MAIN_UUID,limit=1] run function ascendance:domination/macros/create with storage super_server:team
+
 tag @a remove MAIN_UUID

@@ -1,0 +1,1 @@
+$scoreboard objectives add AS_Dominate_$(uuid) dummy

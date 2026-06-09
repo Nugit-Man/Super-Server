@@ -23,6 +23,7 @@ scoreboard objectives add AS_Winstreak dummy
 scoreboard objectives add AS_Death_Club dummy
 scoreboard objectives add AS_Gambling dummy
 scoreboard objectives add AS_Kill_Count dummy
+scoreboard objectives add AS_Domination dummy
 
 scoreboard objectives add AS_Milestone_Kills dummy
 scoreboard objectives add AS_Milestone_Deaths dummy

@@ -1,0 +1,1 @@
+$scoreboard players set $(death) AS_Dominate_$(kill) 0

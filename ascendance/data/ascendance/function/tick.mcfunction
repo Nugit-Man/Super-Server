@@ -41,6 +41,7 @@ scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_JoinGame 0
 
 
 #Call the main functions
+function ascendance:domination/checks
 function ascendance:main/rules
 function ascendance:main/advnacement
 function ascendance:main/barrel
