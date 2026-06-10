@@ -38,7 +38,7 @@ $execute if score $Time $(map_name) matches 0 run scoreboard players set @a[scor
 $execute if score $$$ AS_Spread matches 2 if score $Time $(map_name) matches 0 run tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=3}] add AS_Winner
 
 #Cursed crossbow loop and start
-$execute if score $Time $(map_name) matches -1 run scoreboard players remove $Time $(map_name) 64
+$execute if score $Time $(map_name) matches ..-1 run scoreboard players set $Time $(map_name) 64
 $execute if score $Time $(map_name) matches 60 if score MAIN_1s MAIN_Time matches 1 run tag @r[scores={MAIN_Game=1,AS_Map=$(map_parse)}] add AS_Curse_Get
 
 #Give the curse
