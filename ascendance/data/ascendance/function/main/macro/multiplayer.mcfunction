@@ -18,28 +18,24 @@ $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1},tag=AS_Winning
 
 
 
-#exit if there is jsut 1 or aero players (singple player is counted as 2 players)
-scoreboard players set $$$ AS_Spread 0
-$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=1..3}] run scoreboard players add $$$ AS_Spread 1
-$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=100}] run scoreboard players add $$$ AS_Spread 2
-$execute if score $$$ AS_Spread matches 0..1 run tellraw @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] {text:"Game was canceled because there was only one player",italic:false}
-$execute if score $$$ AS_Spread matches 0..1 run scoreboard objectives remove $(map_name)
-$execute if score $$$ AS_Spread matches 0..1 run tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] add AS_GoHome
-execute if score $$$ AS_Spread matches 0..1 run function ascendance:gaming/end/go_home
-
-
-
 
 #Countdown for cursed crossbow
 $execute if score MAIN_1s MAIN_Time matches 1 run scoreboard players remove $Time $(map_name) 1
 $execute if score $Time $(map_name) matches 0 run gamemode spectator @a[scores={MAIN_Game=1,AS_Map=$(map_parse)},tag=AS_Curse]
 $execute if score $Time $(map_name) matches 0 run scoreboard players set @a[scores={MAIN_Game=1,AS_Map=$(map_parse)},tag=AS_Curse] AS_Mode 0
-$execute if score $Time $(map_name) matches 0 run scoreboard players set @a[scores={MAIN_Game=1,AS_Map=$(map_parse)},tag=AS_Curse] AS_Gamemode 0
-$execute if score $$$ AS_Spread matches 2 if score $Time $(map_name) matches 0 run tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=3}] add AS_Winner
+#$execute if score $Time $(map_name) matches 0 run scoreboard players set @a[scores={MAIN_Game=1,AS_Map=$(map_parse)},tag=AS_Curse] AS_Gamemode 0
+scoreboard players set $$$$ AS_Spread 0
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] run scoreboard players add $$$$ AS_Spread 1
+$execute if score $$$$ AS_Spread matches 1 if score $Time $(map_name) matches 0 run tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=3,AS_Mode=1}] add AS_Winner
+$execute if score $$$$ AS_Spread matches 1 if score $Time $(map_name) matches 0 run tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=3,AS_Mode=0}] add AS_Loser
+$execute if score $$$$ AS_Spread matches 1 if score $Time $(map_name) matches 0 run function ascendance:gaming/end/gameend
+
+#Remove the crossbow from players in spectator
+tag @a[gamemode=spectator] remove AS_Curse
 
 #Cursed crossbow loop and start
 $execute if score $Time $(map_name) matches ..-1 run scoreboard players set $Time $(map_name) 64
-$execute if score $Time $(map_name) matches 60 if score MAIN_1s MAIN_Time matches 1 run tag @r[scores={MAIN_Game=1,AS_Map=$(map_parse)}] add AS_Curse_Get
+$execute if score $Time $(map_name) matches 60 if score MAIN_1s MAIN_Time matches 1 run tag @r[scores={MAIN_Game=1,AS_Map=$(map_parse)},gamemode=adventure] add AS_Curse_Get
 
 #Give the curse
 clear @a[scores={MAIN_Game=1},tag=AS_Curse_Get] bow
@@ -117,3 +113,16 @@ $execute if score $Crowncheck $(map_name) matches 2.. run tag @r[scores={MAIN_Ga
 #Deal with crown
 $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=2,AS_Deaths=1..},tag=AS_Crown] run tag @a[limit=1,tag=!AS_Crown,scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=2,AS_Kills=1..}] add AS_Crown_Gain
 $tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=2,AS_Deaths=1..},tag=AS_Crown] add AS_Crown_Lose
+
+
+
+#exit if there is jsut 1 or aero players (singple player is counted as 2 players)
+scoreboard players set $$$ AS_Spread 0
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=1..3}] run scoreboard players add $$$ AS_Spread 1
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Gamemode=100}] run scoreboard players add $$$ AS_Spread 2
+$execute if score $$$ AS_Spread matches 0..1 run tellraw @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] {text:"Game was canceled because there was only one player",italic:false}
+$execute if score $$$ AS_Spread matches 0..1 run scoreboard objectives remove $(map_name)
+$execute if score $$$ AS_Spread matches 0..1 run tag @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] add AS_GoHome
+execute if score $$$ AS_Spread matches 0..1 run function ascendance:gaming/end/go_home
+
+
