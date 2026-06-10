@@ -1,0 +1,1 @@
+$data merge entity @e[type=minecraft:wandering_trader,limit=1,tag=Kanye] {wander_target:[I;$(X),$(Y),$(Z)]}

@@ -67,9 +67,10 @@ execute in ric:lobby run spawnpoint @a[tag=GoTo_RIC] -31 -31 8 -90 0
 execute in ric:lobby run tp @a[tag=GoTo_RIC] -31 -31 8 -90 0
 tag @a remove GoTo_RIC
 
-
-
-
+#Lobby --> Kanye
+execute in super_server:kanye if score MAIN_2t MAIN_Time matches 2 run tp @a[tag=GoTo_Kanye] 155.30 -28.00 -33.70 -45 14
+execute in super_server:kanye if score MAIN_2t MAIN_Time matches 1 run tp @a[tag=GoTo_Kanye] 257.70 -28.00 132.70 135 14
+tag @a remove GoTo_Kanye
 
 
 #Deal with players logging on
@@ -126,6 +127,7 @@ execute as @a[nbt={Dimension:"minecraft:the_nether"}] run scoreboard players set
 execute as @a[nbt={Dimension:"super_server:mace_master"}] run scoreboard players set @s MAIN_Game 6
 execute as @a[nbt={Dimension:"ric:game"}] run scoreboard players set @s MAIN_Game 7
 execute as @a[nbt={Dimension:"ric:lobby"}] run scoreboard players set @s MAIN_Game 7
+execute as @a[nbt={Dimension:"super_server:kanye"}] run scoreboard players set @s MAIN_Game 8
 
 
 #team join Final_Island @a[scores={MAIN_Game=2}]
@@ -194,6 +196,7 @@ scoreboard players set @a[scores={MAIN_XP_Timer=21,MAIN_Achivement_XP=1..}] MAIN
 
 #Mace Masters
 function super_server:mace/tick
+function super_server:kanye/tick
 
 
 #Timers
