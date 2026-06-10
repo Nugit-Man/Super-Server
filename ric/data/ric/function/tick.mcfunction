@@ -15,9 +15,11 @@ execute if score MAIN_1s MAIN_Time matches 1 at @e[type=marker,tag=RIC_Reset] ru
 scoreboard players set @a[scores={MAIN_Game=7},nbt={Dimension:"ric:lobby"}] RIC_Main 0
 execute as @a[scores={MAIN_Game=7,RIC_Menu=0,RIC_Main=0}] run function ric:menu/menu0
 execute as @a[scores={MAIN_Game=7,RIC_Menu=1,RIC_Main=0}] run function ric:menu/menu1
+execute as @a[scores={MAIN_Game=7,RIC_Menu=2,RIC_Main=0}] run function ric:menu/menu2
 
 execute as @a[scores={MAIN_Game=7,RIC_Menu=0,RIC_Main=2}] run function ric:menu/menu0
 execute as @a[scores={MAIN_Game=7,RIC_Menu=1,RIC_Main=2}] run function ric:menu/menu1
+execute as @a[scores={MAIN_Game=7,RIC_Menu=2,RIC_Main=2}] run function ric:menu/menu2
 
 
 #See how many players are where
@@ -64,3 +66,4 @@ execute at @a[scores={MAIN_Game=7}] run execute as @e[type=item,nbt={PickupDelay
 function ric:main/parkoure
 function ric:main/pvp
 function ric:main/barrels
+function ric:pillars/tick
