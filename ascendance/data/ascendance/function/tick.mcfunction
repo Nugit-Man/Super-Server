@@ -47,3 +47,7 @@ function ascendance:main/barrel
 function ascendance:main/call_multiplayer_macros
 function ascendance:main/crown
 function ascendance:main/scoreadd
+
+
+#FUCK CROSSBOW
+tag @a[scores={AS_Mode=0}] remove AS_Curse
