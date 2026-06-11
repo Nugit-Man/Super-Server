@@ -60,7 +60,7 @@ execute if score MAIN_10s MAIN_Time matches 1 if score $Random RIC_Main matches 
 effect give @a[scores={MAIN_Game=7,RIC_Main=0..4}] saturation infinite 0 true
 effect give @a[scores={MAIN_Game=7,RIC_Main=0..4}] regeneration infinite 0 true
 
-execute at @a[scores={MAIN_Game=7}] run execute as @e[type=item,nbt={PickupDelay:40s}] at @s run data modify entity @s Owner set from entity @p UUID
+execute at @a[scores={MAIN_Game=7}] run execute as @e[type=item,nbt={PickupDelay:40s},distance=..10] at @s run data modify entity @s Owner set from entity @p UUID
 
 
 function ric:main/parkoure
