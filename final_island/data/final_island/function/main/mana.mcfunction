@@ -9,6 +9,7 @@ execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players s
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_flint_sword 0
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_iron_sword 0
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_stone_axe 0
+execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_iron_axe 0
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_stone_sword 0
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_Crystal_Gray 0
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_Crystal_Red 0
@@ -34,6 +35,9 @@ scoreboard players remove @a[scores={FI_Mana_Cooldown_deep_sword=1..,MAIN_Game=2
 
 scoreboard players remove @a[scores={FI_Mana_Cooldown_diamond_axe=1..,MAIN_Game=2}] FI_Mana_Cooldown_diamond_axe 1
 scoreboard players remove @a[scores={FI_Mana_Cooldown_diamond_axe=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown_diamond_axe 1
+
+scoreboard players remove @a[scores={FI_Mana_Cooldown_iron_axe=1..,MAIN_Game=2}] FI_Mana_Cooldown_iron_axe 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_iron_axe=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown_iron_axe 1
 
 scoreboard players remove @a[scores={FI_Mana_Cooldown_flint_sword=1..,MAIN_Game=2}] FI_Mana_Cooldown_flint_sword 1
 scoreboard players remove @a[scores={FI_Mana_Cooldown_flint_sword=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown_flint_sword 1
