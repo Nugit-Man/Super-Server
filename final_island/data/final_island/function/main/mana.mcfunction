@@ -20,6 +20,11 @@ execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players s
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Armor_Set_Tuff 0
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Boss_Music 0
 execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Villager_Talk 0
+execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_Gem_Stone 0
+execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_Gem_Copper 0
+execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_Gem_Iron 0
+execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_Gem_Diamond 0
+execute in final_island:game at @e[tag=FI_Mana_Restore] run scoreboard players set @a[distance=..3] FI_Mana_Cooldown_Gem_Tuff 0
 execute as @a[scores={MAIN_Game=2}] run title @s actionbar ["Mana: ",{score:{objective:"FI_Mana",name:"@s"}},"/",{score:{objective:"FI_Mana_Max",name:"@s"}}]
 
 
@@ -49,3 +54,19 @@ scoreboard players remove @a[scores={FI_Mana_Cooldown_Crystal_Red=1..,MAIN_Game=
 scoreboard players remove @a[scores={FI_Mana_Cooldown_Crystal_Red=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown_Crystal_Red 1
 scoreboard players remove @a[scores={FI_Mana_Cooldown_Crystal_Red=..600},tag=FI_Mana_Crystal_Red] FI_Mana_Regen 1
 tag @a[scores={FI_Mana_Cooldown_Crystal_Red=..600},tag=FI_Mana_Crystal_Red] remove FI_Mana_Crystal_Red
+
+
+scoreboard players remove @a[scores={FI_Mana_Cooldown_Gem_Stone=1..,MAIN_Game=2}] FI_Mana_Cooldown_Gem_Stone 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_Gem_Stone=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown_Gem_Stone 1
+
+scoreboard players remove @a[scores={FI_Mana_Cooldown_Gem_Copper=1..,MAIN_Game=2}] FI_Mana_Cooldown_Gem_Copper 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_Gem_Copper=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown_Gem_Copper 1
+
+scoreboard players remove @a[scores={FI_Mana_Cooldown_Gem_Iron=1..,MAIN_Game=2}] FI_Mana_Cooldown_Gem_Iron 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_Gem_Iron=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown_Gem_Iron 1
+
+scoreboard players remove @a[scores={FI_Mana_Cooldown_Gem_Diamond=1..,MAIN_Game=2}] FI_Mana_Cooldown_Gem_Diamond 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_Gem_Diamond=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown_Gem_Diamond 1
+
+scoreboard players remove @a[scores={FI_Mana_Cooldown_Gem_Tuff=1..,MAIN_Game=2}] FI_Mana_Cooldown_Gem_Tuff 1
+scoreboard players remove @a[scores={FI_Mana_Cooldown_Gem_Tuff=1..,MAIN_Game=2},tag=FI_Armor_Set_Amethyst] FI_Mana_Cooldown_Gem_Tuff 1
