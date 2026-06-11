@@ -52,5 +52,5 @@ execute in ric:pillars run tp @a[scores={MAIN_Game=7,RIC_Main=4},tag=RIC_Spawnin
 tag @a[scores={MAIN_Game=7,RIC_Main=4},tag=RIC_Spawning] remove RIC_Pillar_Spawn
 tag @a remove RIC_Spawning
 
-schedule function ric:pillars/reset 2t
+schedule function ric:pillars/reset 2s
 
