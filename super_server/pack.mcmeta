@@ -2,7 +2,7 @@
   "pack": {
     "min_format": 88,
     "max_format": 88,
-    "description": "Super server pack connecter. Version: 1.8"
+    "description": "Super server pack connecter. Version: 1.8.1"
   },
   "filter": {
     "block": [
