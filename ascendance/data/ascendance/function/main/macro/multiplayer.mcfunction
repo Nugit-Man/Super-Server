@@ -3,7 +3,7 @@ scoreboard players set $ AS_Spread 0
 scoreboard players set $$ AS_Spread 0
 scoreboard players set $$$ AS_Spread 0
 
-$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=3}] run function ascendance:main/macro/crossbow with storage ascendance:multiplayer
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=3},limit=1] run function ascendance:main/macro/crossbow with storage ascendance:multiplayer
 
 $scoreboard players set @a[scores={AS_Map=$(map_parse),MAIN_Game=1,AS_Mode=1,AS_Gamemode=100}] AS_Mode 2
 
