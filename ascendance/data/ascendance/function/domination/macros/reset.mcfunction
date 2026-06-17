@@ -1,1 +1,1 @@
-$scoreboard players set $(name) AS_Domination_$(uuid) 0
+$scoreboard players set $(name) AS_Dominate_$(uuid) 0
