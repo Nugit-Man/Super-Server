@@ -4,7 +4,7 @@
         "id": "minecraft:bamboo"
       },
       "title": "Wicked Sick",
-      "description": "Get a twenty killstreak",
+      "description": "Get a seven killstreak",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,

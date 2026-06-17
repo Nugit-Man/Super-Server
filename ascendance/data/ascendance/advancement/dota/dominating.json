@@ -4,7 +4,7 @@
         "id": "minecraft:bamboo"
       },
       "title": "Dominating",
-      "description": "Get a seven killstreak",
+      "description": "Get a four killstreak",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,

@@ -4,7 +4,7 @@
         "id": "minecraft:bamboo"
       },
       "title": "Monster Kill",
-      "description": "Kill six or more players at the same time",
+      "description": "Get an eight killstreak",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,

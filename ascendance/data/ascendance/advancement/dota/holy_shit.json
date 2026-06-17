@@ -4,7 +4,7 @@
         "id": "minecraft:bamboo"
       },
       "title": "Holy Shit",
-      "description": "Get a thirty killstreak",
+      "description": "Get a ten killstreak",
       "frame": "challenge",
       "show_toast": true,
       "announce_to_chat": true,

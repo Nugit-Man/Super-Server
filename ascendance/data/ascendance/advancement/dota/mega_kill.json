@@ -4,7 +4,7 @@
         "id": "minecraft:bamboo"
       },
       "title": "Mega Kill",
-      "description": "Kill four players at the same time",
+      "description": "Get a five killstreak",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,

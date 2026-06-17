@@ -4,7 +4,7 @@
         "id": "minecraft:bamboo"
       },
       "title": "Ultra Kill",
-      "description": "Kill five players at the same time",
+      "description": "Kill four players at the same time",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,

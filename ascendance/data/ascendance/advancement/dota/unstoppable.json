@@ -4,7 +4,7 @@
         "id": "minecraft:bamboo"
       },
       "title": "Unstoppable",
-      "description": "Get a ten killstreak",
+      "description": "Get a six killstreak",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,

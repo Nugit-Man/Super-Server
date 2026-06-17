@@ -4,7 +4,7 @@
         "id": "minecraft:bamboo"
       },
       "title": "Ownage",
-      "description": "Get a five killstreak",
+      "description": "Compleatly dominate a player",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
