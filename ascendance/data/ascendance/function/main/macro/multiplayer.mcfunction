@@ -19,7 +19,7 @@ $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1},tag=AS_Winning
 
 
 #actionbar
-$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1}] run title @s actionbar [{text:"Score: "},{score:{"objective":"$(map_name)","name":"@s"}},{text:"/"},{score:{objective:$(map_name),name:"$Par"}},{text:", Spread: "},{score:{"objective":"AS_Spread","name":"@s"}},{text:", Winning: "},{selector:"@a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1},tag=AS_Winning]"}]
+$execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1,AS_Gamemode=1..2}] run title @s actionbar [{text:"Score: "},{score:{"objective":"$(map_name)","name":"@s"}},{text:"/"},{score:{objective:$(map_name),name:"$Par"}},{text:", Spread: "},{score:{"objective":"AS_Spread","name":"@s"}},{text:", Winning: "},{selector:"@a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1},tag=AS_Winning]"}]
 $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=3}] run title @s actionbar [{text:"Red score: "},{score:{"objective":"$(map_name)","name":"$Red"}},{text:" Blue score: "},{score:{objective:$(map_name),name:"$Blue"}}]
 
 #actionbar but for singpleplayer
