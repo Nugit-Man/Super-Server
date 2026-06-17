@@ -8,9 +8,9 @@
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
-      "hidden": false
+      "hidden": true
     },
-    "parent": "ascendance:dota/killing_spree",
+    "parent": "ascendance:dota/holy_shit",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"

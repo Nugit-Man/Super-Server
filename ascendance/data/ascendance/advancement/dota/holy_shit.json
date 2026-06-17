@@ -5,10 +5,10 @@
       },
       "title": "Holy Shit",
       "description": "Get a ten killstreak",
-      "frame": "challenge",
+      "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
-      "hidden": true
+      "hidden": false
     },
     "parent": "ascendance:dota/godlike",
     "criteria": {

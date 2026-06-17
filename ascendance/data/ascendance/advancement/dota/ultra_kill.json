@@ -10,7 +10,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "ascendance:dota/mega_kill",
+    "parent": "ascendance:dota/triple_kill",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"

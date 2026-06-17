@@ -10,7 +10,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "ascendance:dota/ownage",
+    "parent": "ascendance:dota/killing_spree",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
