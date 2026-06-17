@@ -49,3 +49,30 @@ advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Wins=25..}] only super_ser
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Wins=50..}] only super_server:milestones/ascendance/really_really_good_at_this_game
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Wins=100..}] only super_server:milestones/ascendance/amazing_at_this_game
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Wins=250..}] only super_server:milestones/ascendance/really_amazing_at_this_game
+
+
+
+
+
+
+
+#Dota
+scoreboard players add @a[scores={MAIN_Game=1,AS_Kills=1}] AS_Dota_Killstreak 1
+scoreboard players add @a[scores={MAIN_Game=1,AS_Kills=1}] AS_Dota_Multikill 1
+scoreboard players set @a[scores={MAIN_Game=1,AS_Kills=1}] AS_Dota_Multikill_Timer 50
+
+
+scoreboard players set @a[scores={MAIN_Game=1,AS_Dota_Multikill_Timer=0}] AS_Dota_Multikill 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Deaths=0}] AS_Dota_Multikill 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Deaths=0}] AS_Dota_Killstreak 0
+
+
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=2}] only ascendance:dota/double_kill
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=3}] only ascendance:dota/triple_kill
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=4}] only ascendance:dota/ultra_kill
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=5}] only ascendance:dota/rampage
+
+execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=2}] at @s run playsound dota.double_kill master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=3}] at @s run playsound dota.triple_kill master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=4}] at @s run playsound dota.ultra_kill master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=5}] at @s run playsound dota.rampage master @s

@@ -37,6 +37,11 @@ execute if entity @a[scores={MAIN_Game=1,AS_Countdown=1..,AS_Map=13}] run scoreb
 scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0,AS_JoinGame=1..}] AS_Countdown -1
 tellraw @a[scores={MAIN_Game=1,AS_Mode=0,AS_JoinGame=1..}] "You have joined the game"
 scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_JoinGame 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_Dota_Killstreak 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_Dota_Multikill 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_Dota_Multikill_Timer 0
+
+
 
 
 #Call the main functions
