@@ -4,7 +4,7 @@
       "id": "minecraft:red_dye"
     },
     "title": "Did I Win?!",
-    "description": "Finish a game of deathmatch without dying",
+    "description": "Win a game of deathmatch without dying",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

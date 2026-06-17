@@ -25,11 +25,11 @@ advancement grant @a[scores={MAIN_Game=1,AS_Kills=1,AS_Gamemode=1..}] only ascen
 advancement grant @a[scores={MAIN_Game=1,AS_Deaths_Count=50,AS_Gamemode=1}] only ascendance:ascendance/not_that_kind_of_deathmatch
 
 #Check for Off with his head
-advancement grant @a[scores={MAIN_Game=1,AS_Kill_Count=50,AS_Gamemode=1}] only ascendance:ascendance/off_with_his_head
+advancement grant @a[scores={MAIN_Game=1,AS_Kill_Count=50,AS_Gamemode=2}] only ascendance:ascendance/off_with_his_head
 
 #Dethroner
 scoreboard players set @a[scores={MAIN_Game=1,AS_Mode=0}] AS_Crown_Take 0
-advancement grant @a[scores={MAIN_Game=1,AS_Kill_Count=50,AS_Gamemode=1}] only ascendance:ascendance/dethroner
+advancement grant @a[scores={MAIN_Game=1,AS_Crown_Take=20,AS_Gamemode=1}] only ascendance:ascendance/dethroner
 
 #Milestones
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Deaths=250..}] only super_server:milestones/ascendance/philip_moment
