@@ -9,7 +9,7 @@ item replace entity @s inventory.7 with minecraft:air
 item replace entity @s inventory.8 with minecraft:air
 item replace entity @s inventory.9 with minecraft:air
 item replace entity @s inventory.10 with minecraft:air
-item replace entity @s inventory.11 with minecraft:barrel[custom_data={text:"Barrel Menu",italic:false}]
+item replace entity @s inventory.11 with minecraft:barrel[custom_name={text:"Barrel Menu",italic:false}]
 item replace entity @s inventory.12 with minecraft:air
 item replace entity @s inventory.13 with minecraft:compass[custom_name={text:"Quick Join",italic:false}]
 item replace entity @s inventory.14 with minecraft:air
