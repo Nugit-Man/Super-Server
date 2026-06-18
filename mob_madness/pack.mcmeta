@@ -1,0 +1,15 @@
+{
+  "pack": {
+    "min_format": 94.1,
+    "max_format": 94.1,
+    "description": "Super server pack connecter. Version: 1.9"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "advancements?"
+      }
+    ]
+  }
+}
