@@ -54,7 +54,7 @@ execute in gorbino:game run execute if score GB_Map GB_Select matches 22 run tp 
 
 #more border
 execute in gorbino:game run worldborder set 100
-execute in gorbino:game run worldborder set 33 180
+execute in gorbino:game run worldborder set 33 180s
 schedule clear gorbino:border/sudden_death
 schedule clear gorbino:border/border2
 schedule function gorbino:border/border2 180s
