@@ -62,37 +62,38 @@ scoreboard players add @a[scores={MAIN_Game=1,AS_Kills=1}] AS_Dota_Multikill 1
 scoreboard players set @a[scores={MAIN_Game=1,AS_Kills=1}] AS_Dota_Multikill_Timer 50
 
 
+scoreboard players remove @a[scores={MAIN_Game=1,AS_Dota_Multikill_Timer=1..}] AS_Dota_Multikill_Timer 1
 scoreboard players set @a[scores={MAIN_Game=1,AS_Dota_Multikill_Timer=0}] AS_Dota_Multikill 0
-scoreboard players set @a[scores={MAIN_Game=1,AS_Deaths=0}] AS_Dota_Multikill 0
-scoreboard players set @a[scores={MAIN_Game=1,AS_Deaths=0}] AS_Dota_Killstreak 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Deaths=1}] AS_Dota_Multikill 0
+scoreboard players set @a[scores={MAIN_Game=1,AS_Deaths=1}] AS_Dota_Killstreak 0
 
 
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=2}] only ascendance:dota/double_kill
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=3}] only ascendance:dota/triple_kill
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=4}] only ascendance:dota/ultra_kill
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=5}] only ascendance:dota/rampage
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=2,AS_Kills=1}] only ascendance:dota/double_kill
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=3,AS_Kills=1}] only ascendance:dota/triple_kill
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=4,AS_Kills=1}] only ascendance:dota/ultra_kill
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Multikill=5,AS_Kills=1}] only ascendance:dota/rampage
 
-execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=2}] at @s run playsound dota.double_kill master @s
-execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=3}] at @s run playsound dota.triple_kill master @s
-execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=4}] at @s run playsound dota.ultra_kill master @s
-execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=5}] at @s run playsound dota.rampage master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=2,AS_Kills=1}] at @s run playsound dota.double_kill master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=3,AS_Kills=1}] at @s run playsound dota.triple_kill master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=4,AS_Kills=1}] at @s run playsound dota.ultra_kill master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Multikill=5,AS_Kills=1}] at @s run playsound dota.rampage master @s
 
 
 
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=3}] only ascendance:dota/killing_spree
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=4}] only ascendance:dota/dominating
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=5}] only ascendance:dota/mega_kill
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=6}] only ascendance:dota/unstoppable
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=7}] only ascendance:dota/wicked_sick
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=8}] only ascendance:dota/monster_kill
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=9}] only ascendance:dota/godlike
-advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=10..}] only ascendance:dota/holy_shit
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=3,AS_Kills=1}] only ascendance:dota/killing_spree
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=4,AS_Kills=1}] only ascendance:dota/dominating
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=5,AS_Kills=1}] only ascendance:dota/mega_kill
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=6,AS_Kills=1}] only ascendance:dota/unstoppable
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=7,AS_Kills=1}] only ascendance:dota/wicked_sick
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=8,AS_Kills=1}] only ascendance:dota/monster_kill
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=9,AS_Kills=1}] only ascendance:dota/godlike
+advancement grant @a[scores={MAIN_Game=1,AS_Dota_Killstreak=10..,AS_Kills=1}] only ascendance:dota/holy_shit
 
-execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=3}] at @s run playsound dota.killing_spree master @s
-execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=4}] at @s run playsound dota.dominating master @s
-execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=5}] at @s run playsound dota.mega_kill master @s
-execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=6}] at @s run playsound dota.unstoppable master @s
-execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=7}] at @s run playsound dota.wicked_sick master @s
-execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=8}] at @s run playsound dota.monster_kill master @s
-execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=9}] at @s run playsound dota.godlike master @s
-execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=10..}] at @s run playsound dota.holy_shit master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=3,AS_Kills=1}] at @s run playsound dota.killing_spree master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=4,AS_Kills=1}] at @s run playsound dota.dominating master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=5,AS_Kills=1}] at @s run playsound dota.mega_kill master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=6,AS_Kills=1}] at @s run playsound dota.unstoppable master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=7,AS_Kills=1}] at @s run playsound dota.wicked_sick master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=8,AS_Kills=1}] at @s run playsound dota.monster_kill master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=9,AS_Kills=1}] at @s run playsound dota.godlike master @s
+execute as @a[scores={MAIN_Game=1,AS_Dota_Killstreak=10..,AS_Kills=1}] at @s run playsound dota.holy_shit master @s

@@ -2,4 +2,4 @@ $scoreboard players add $(death) AS_Dominate_$(kill) 1
 $execute if score $(death) AS_Dominate_$(kill) matches 4 run execute as @a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}] at @s run playsound ascendance.dominating master @s ~ ~ ~ 0.25
 $execute if score $(death) AS_Dominate_$(kill) matches 4 run execute as @a[scores={MAIN_Game=1,AS_Mode=1,AS_Deaths=1..}] at @s run playsound ascendance.nemasis master @s ~ ~ ~ 0.25
 $execute if score $(death) AS_Dominate_$(kill) matches 4 run tellraw @a [{"selector":"@a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}]",color:blue},{text:" Is dominating ",italic:false,color:blue},{"selector":"@a[scores={MAIN_Game=1,AS_Mode=1,AS_Deaths=1..}]",color:blue}]
-advancement grant @a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}] only ascendance:ascendance/dominate
+$execute if score $(death) AS_Dominate_$(kill) matches 4 run advancement grant @a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}] only ascendance:ascendance/dominate
