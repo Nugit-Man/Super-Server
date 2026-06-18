@@ -1,8 +1,8 @@
 {
     "pack": {
-      "min_format": 88,
-      "max_format": 88,
-      "description": "Gorbino updated to 1.21.10 for super server"
+      "min_format": 94.1,
+      "max_format": 94.1,
+      "description": "Gorbino updated to 1.21.11 for super server"
     }
 }
   
