@@ -1,0 +1,24 @@
+{
+	"type": "multi_action",
+	"title": "Choose your Class",
+	"columns": 1,
+	"actions": [{
+		"label": "Assassin",
+		"on_click": {
+			"action": "run_command",
+			"command": "/dialog show @s mobodex:zombie"
+		}
+	},{
+		"label": "Chicken",
+		"on_click": {
+			"action": "run_command",
+			"command": "/dialog show @s mobodex:skeleton"
+		}
+	},{
+		"label": "Polar Bear",
+		"on_click": {
+			"action": "run_command",
+			"command": "/dialog show @s mobodex:creeper"
+		}
+	}]
+}
