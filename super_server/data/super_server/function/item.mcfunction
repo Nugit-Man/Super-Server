@@ -43,3 +43,5 @@ execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_
 execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Iron=1..}] weapon.mainhand *[custom_data~{FI_Iron_Gem:1b}] run tellraw @s [{text:"Your gem is still on cooldown",color:"red"}]
 execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Diamond=1..}] weapon.mainhand *[custom_data~{FI_Diamond_Gem:1b}] run tellraw @s [{text:"Your gem is still on cooldown",color:"red"}]
 execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Tuff=1..}] weapon.mainhand *[custom_data~{FI_Tuff_Gem:1b}] run tellraw @s [{text:"Your gem is still on cooldown",color:"red"}]
+
+execute as @s[scores={MM_Test_Dash=100..,MM_Test_Dash2=0},tag=MM_Class_Assassin] if items entity @s weapon.mainhand *[custom_data~{MM_Test:1b}] run function mob_madness:classes/assassin/test_right

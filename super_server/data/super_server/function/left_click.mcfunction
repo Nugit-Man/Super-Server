@@ -1,0 +1,1 @@
+execute as @s[scores={MM_Test_Dash3=0},tag=MM_Class_Assassin] if items entity @s weapon.mainhand *[custom_data~{MM_Test:1b}] run function mob_madness:classes/assassin/test_left
