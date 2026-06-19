@@ -4,3 +4,4 @@ scoreboard objectives add MM_Test_Dash3 dummy
 scoreboard objectives add MM_Test_Dash4 dummy
 
 scoreboard objectives add MM_Chicken_Song dummy
+scoreboard objectives add MM_Chicken_Song_Type dummy

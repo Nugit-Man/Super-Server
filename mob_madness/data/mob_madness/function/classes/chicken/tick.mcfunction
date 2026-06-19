@@ -11,7 +11,13 @@ execute as @s[scores={MM_Chicken_Song=1},tag=MM_Class_Chicken] run effect clear 
 
 
 #Chicken Buffs
-execute at @a[tag=MM_Red,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=1..}] as @a[tag=MM_Red,distance=..5] run attribute @s minecraft:movement_speed modifier add mob_madness:chicken 0.015 add_value
-execute at @a[tag=MM_Red,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=0}] as @a[tag=MM_Red,distance=..5] run attribute @s minecraft:movement_speed modifier remove mob_madness:chicken
+execute at @a[tag=MM_Red,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=0,MM_Chicken_Song_Type=2}] as @a[tag=MM_Red,distance=..5] run attribute @s minecraft:movement_speed modifier remove mob_madness:chicken
+execute at @a[tag=MM_Red,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=2}] as @a[tag=MM_Red,distance=..5] run attribute @s minecraft:movement_speed modifier add mob_madness:chicken 0.015 add_value
+execute as @a[tag=!MM_Class_Chicken,tag=MM_Red] unless entity @a[tag=MM_Red,distance=..5,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=2}] run attribute @s minecraft:movement_speed modifier remove mob_madness:chicken
+
+execute at @a[tag=MM_Blue,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=0,MM_Chicken_Song_Type=2}] as @a[tag=MM_Blue,distance=..5] run attribute @s minecraft:movement_speed modifier remove mob_madness:chicken
+execute at @a[tag=MM_Blue,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=2}] as @a[tag=MM_Blue,distance=..5] run attribute @s minecraft:movement_speed modifier add mob_madness:chicken 0.015 add_value
+execute as @a[tag=!MM_Class_Chicken,tag=MM_Blue] unless entity @a[tag=MM_Blue,distance=..5,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=2}] run attribute @s minecraft:movement_speed modifier remove mob_madness:chicken
+
 
 tag @a[tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=0}] remove MM_Chicken_Song_Speed
