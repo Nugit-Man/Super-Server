@@ -13,3 +13,7 @@ rotate @n[type=item_display,tag=MM_Chicken_New] facing entity @s eyes
 
 tag @e[type=item_display,tag=MM_Chicken_Egg,tag=MM_Chicken_New] remove MM_Chicken_New
 tag @e[type=armor_stand,tag=MM_Chicken_Ride,tag=MM_Chicken_New] remove MM_Chicken_New
+
+scoreboard players remove @s MM_Chicken_Song_Bar 10
+scoreboard players set @s MM_Chicken_Song_Bar_Cooldown 20
+scoreboard players set @s MM_Chicken_Main_Cooldown 20
