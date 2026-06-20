@@ -1,4 +1,4 @@
 $execute if score $(kill) AS_Dominate_$(death) matches 4.. run tellraw @a [{"selector":"@a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}]",color:red},{text:" got revenge on ",italic:false,color:red},{"selector":"@a[scores={MAIN_Game=1,AS_Mode=1,AS_Deaths=1..}]",color:red}]
 $execute if score $(kill) AS_Dominate_$(death) matches 4.. run execute as @a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}] at @s run playsound ascendance.revenge master @s ~ ~ ~ 0.25
-$scoreboard players set $(kill) AS_Dominate_$(death) 0
 $execute if score $(kill) AS_Dominate_$(death) matches 4.. run advancement grant @a[scores={MAIN_Game=1,AS_Mode=1,AS_Kills=1..}] only ascendance:ascendance/revenge
+$scoreboard players set $(kill) AS_Dominate_$(death) 0
