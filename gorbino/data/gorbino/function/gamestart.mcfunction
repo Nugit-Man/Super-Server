@@ -1,4 +1,4 @@
-execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 0..1 run return run tellraw @a[scores={MAIN_Game=3,GB_Select=1}] "Fight was cancelled because no one quined"
+execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 0..1 run return run tellraw @a[scores={MAIN_Game=3,GB_Mode=2}] "Fight was cancelled because no one quined"
 scoreboard players set @a[scores={GB_Mode=2,MAIN_Game=3}] GB_Mode 1
 execute store result score GB_Map GB_Select run random value 0..22
 scoreboard players set 2 GB_Select 0
