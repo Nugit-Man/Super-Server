@@ -1,3 +1,5 @@
+schedule function final_island:main/advnacements 5t
+
 #beetroot milestones
 execute as @a[scores={MAIN_Game=2}] if items entity @s inventory.* beetroot run advancement grant @s only super_server:milestones/final_island/beetroot1
 execute as @a[scores={MAIN_Game=2}] if items entity @s hotbar.* beetroot run advancement grant @s only super_server:milestones/final_island/beetroot1
@@ -39,13 +41,6 @@ execute as @a[scores={MAIN_Game=2}] if items entity @s hotbar.* *[minecraft:cust
 
 advancement grant @a[scores={MAIN_Game=2,FI_Mana_Max=160..}] only final_island:manaflux
 advancement grant @a[scores={MAIN_Game=2,FI_Mana_Regen=3..}] only final_island:knowledge
-
-#stylish
-scoreboard players remove @a[scores={FI_Stylish=1..}] FI_Stylish 1
-execute at @e[type=marker,tag=FI_Stylish1,limit=1] run scoreboard players set @a[distance=..1] FI_Stylish 3
-execute at @e[type=marker,tag=FI_Stylish2,limit=1] run advancement grant @a[distance=..1,scores={FI_Stylish=1..}] only final_island:stylish
-execute at @e[type=marker,tag=FI_Stylish2,limit=1] run playsound final_island.stylish master @a[distance=..1,scores={FI_Stylish=1..}]
-execute at @e[type=marker,tag=FI_Stylish2,limit=1] run scoreboard players set @a[distance=..1,scores={FI_Stylish=1..}] FI_Stylish 0
 
 
 execute as @a[scores={MAIN_Game=2}] run execute store result score @s FI_gray_crystal_check run clear @s player_head[minecraft:custom_data~{FI_Mana_Crystal_Gray:1b}] 0

@@ -1,9 +1,9 @@
-function final_island:main/abilities
-function final_island:main/armor_sets
-function final_island:main/mana
-function final_island:main/advnacements
-function final_island:main/barrel
-function final_island:main/talks
+execute if entity @a[scores={MAIN_Game=2}] run function final_island:main/abilities
+execute if entity @a[scores={MAIN_Game=2}] run function final_island:main/armor_sets
+execute if entity @a[scores={MAIN_Game=2}] run function final_island:main/mana
+execute if entity @a[scores={MAIN_Game=2}] run function final_island:main/barrel
+execute if entity @a[scores={MAIN_Game=2}] run function final_island:main/talks
+
 
 scoreboard players set FI_Zombie_Armor_Checker FI_Misc 0
 execute at @e[type=armor_stand,tag=FI_Zombie_Armor_Checker] run execute as @a[distance=..300] run scoreboard players add FI_Zombie_Armor_Checker FI_Misc 1
@@ -68,3 +68,11 @@ execute as @a[scores={MAIN_Game=2,FI_Fish_Check=1..,FI_Misc=1..18}] if items ent
 execute as @a[scores={MAIN_Game=2,FI_Fish_Check=1..,FI_Misc=1..18}] if items entity @s weapon.mainhand *[custom_data~{FI_Double_Catch_9:1b}] run tellraw @s "Double Catch!"
 execute as @a[scores={MAIN_Game=2,FI_Fish_Check=1..,FI_Misc=1..20}] if items entity @s weapon.mainhand *[custom_data~{FI_Double_Catch_10:1b}] at @s run loot give @s fish final_island:gameplay/fishing/fi_default ~ ~ ~
 execute as @a[scores={MAIN_Game=2,FI_Fish_Check=1..,FI_Misc=1..20}] if items entity @s weapon.mainhand *[custom_data~{FI_Double_Catch_10:1b}] run tellraw @s "Double Catch!"
+
+
+#stylish
+scoreboard players remove @a[scores={FI_Stylish=1..}] FI_Stylish 1
+execute at @e[type=marker,tag=FI_Stylish1,limit=1] run scoreboard players set @a[distance=..1] FI_Stylish 3
+execute at @e[type=marker,tag=FI_Stylish2,limit=1] run advancement grant @a[distance=..1,scores={FI_Stylish=1..}] only final_island:stylish
+execute at @e[type=marker,tag=FI_Stylish2,limit=1] run playsound final_island.stylish master @a[distance=..1,scores={FI_Stylish=1..}]
+execute at @e[type=marker,tag=FI_Stylish2,limit=1] run scoreboard players set @a[distance=..1,scores={FI_Stylish=1..}] FI_Stylish 0
