@@ -120,7 +120,7 @@ execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199
 execute as @a[tag=MM_Blue] at @s if entity @a[tag=MM_Class_Chicken,tag=MM_Blue,scores={MM_Chicken_Heal=1..,MM_Chicken_Song=1..,MM_Chicken_Song_Type=3},distance=..5] run scoreboard players add @s MM_Health 1
 execute as @a[tag=MM_Red] at @s if entity @a[tag=MM_Class_Chicken,tag=MM_Red,scores={MM_Chicken_Heal=1..,MM_Chicken_Song=1..,MM_Chicken_Song_Type=3},distance=..5] run scoreboard players add @s MM_Health 1
 scoreboard players remove @a[tag=MM_Class_Chicken,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=3,MM_Health=1..}] MM_Chicken_Heal 1
-
+tag @a[scores={MM_Chicken_Song=0}] remove MM_Chicken_Song_Regen
 
 #Chicken defense
 execute as @a[tag=MM_Blue] at @s if entity @a[tag=MM_Class_Chicken,tag=MM_Blue,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=1},distance=..5] run scoreboard players add @s MM_Defense 30
