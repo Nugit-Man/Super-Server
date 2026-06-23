@@ -153,6 +153,7 @@ execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run attribute @s jump_
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run attribute @s entity_interaction_range base set 10
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run attribute @s minecraft:max_health base set 40
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run attribute @s minecraft:step_height base set 1
+execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s movement_speed base set 0.12
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s scale base set 0.6
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s jump_strength base set 0.4
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s entity_interaction_range base set 2
