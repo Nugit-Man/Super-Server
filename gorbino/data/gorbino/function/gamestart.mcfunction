@@ -157,7 +157,7 @@ execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s sca
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s jump_strength base set 0.4
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s entity_interaction_range base set 2
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s minecraft:max_health base set 14
-effect give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] speed infinite 4 true
+execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s movement_speed base set 0.15
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run advancement grant @s[tag=GB_shrink] only gorbino:size
 #shotgun and super shotgun code need fixing
 #give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shotgun] crossbow[charged_projectiles=[{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:2,explosions:[{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"}]}}}],unbreakable={},tooltip_display={hide_tooltip:true}]
