@@ -29,6 +29,7 @@ scoreboard objectives add MAIN_Game dummy
 
 #Numbers for fucking operations because this shit sucks so much ass
 scoreboard objectives add MAIN_Num dummy
+scoreboard players set -1 MAIN_Num -1
 scoreboard players set 0 MAIN_Num 0
 scoreboard players set 1 MAIN_Num 1
 scoreboard players set 2 MAIN_Num 2

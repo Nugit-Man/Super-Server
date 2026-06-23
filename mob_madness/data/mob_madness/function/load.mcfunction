@@ -8,3 +8,14 @@ scoreboard objectives add MM_Chicken_Song_Type dummy
 scoreboard objectives add MM_Chicken_Song_Bar dummy
 scoreboard objectives add MM_Chicken_Song_Bar_Cooldown dummy
 scoreboard objectives add MM_Chicken_Main_Cooldown dummy
+scoreboard objectives add MM_Chicken_Heal dummy
+
+scoreboard objectives add MM_Ice dummy
+scoreboard objectives add MM_Ice_Chain dummy
+scoreboard objectives add MM_Ice_State dummy
+scoreboard objectives add MM_Ice_Velocity dummy
+
+scoreboard objectives add MM_Misc dummy
+scoreboard objectives add MM_Health dummy
+scoreboard objectives add MM_Defense dummy
+scoreboard objectives add MM_Damage dummy
