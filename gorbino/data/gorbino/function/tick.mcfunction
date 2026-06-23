@@ -233,7 +233,7 @@ kill @e[tag=GB_Lava,scores={GB_velocity=300}]
 #scoreboard players add @a[tag=GB_GB_archer] GB_Arrow 1
 #execute as @a[tag=GB_GB_archer] run execute store result score @s GB_velocity run clear @s arrow 0
 #give @a[scores={GB_Mode=1,GB_velocity=..2},tag=GB_GB_archer] arrow
-execute if score MAIN_5s MAIN_Time matches 100 run give @a[scores={MAIN_Game=3,GB_Mode=1},tag=GB_archer] arrow
+execute if score MAIN_10s MAIN_Time matches 100 run give @a[scores={MAIN_Game=3,GB_Mode=1},tag=GB_archer] arrow
 
 #Timer
 #execute as @e[tag=GB_Timer] run scoreboard players set @s GB_velocity 0
