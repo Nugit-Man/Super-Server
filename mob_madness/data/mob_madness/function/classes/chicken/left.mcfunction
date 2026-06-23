@@ -15,5 +15,7 @@ tag @e[type=item_display,tag=MM_Chicken_Egg,tag=MM_Chicken_New] remove MM_Chicke
 tag @e[type=armor_stand,tag=MM_Chicken_Ride,tag=MM_Chicken_New] remove MM_Chicken_New
 
 scoreboard players remove @s MM_Chicken_Song_Bar 10
-scoreboard players set @s MM_Chicken_Song_Bar_Cooldown 20
-scoreboard players set @s MM_Chicken_Main_Cooldown 20
+scoreboard players set @s MM_Chicken_Song_Bar_Cooldown 10
+scoreboard players set @s MM_Chicken_Main_Cooldown 10
+
+playsound minecraft:entity.egg.throw master @a ~ ~ ~ 100 0

@@ -15,21 +15,20 @@ execute as @s[scores={MM_Chicken_Song=1},tag=MM_Class_Chicken] run effect clear 
 
 
 #Chicken Buffs
+execute as @s[scores={MM_Chicken_Song=2,MM_Chicken_Song=1..}] run scoreboard players set @s MM_Chicken_Song_Bar_Cooldown 2
 
-
-
+#heal
+execute as @s[scores={MM_Chicken_Song=2,MM_Chicken_Song=1..,MM_Chicken_Song_Type=3}] run scoreboard players remove @s MM_Chicken_Song_Bar 1
 
 #Speed
-execute as @s[scores={MM_Chicken_Song=2,MM_Chicken_Song=1..}] run scoreboard players set @s MM_Chicken_Song_Bar_Cooldown 2
-execute as @s[scores={MM_Chicken_Song=2,MM_Chicken_Song=1..}] run scoreboard players remove @s MM_Chicken_Song_Bar 2
-
+execute as @s[scores={MM_Chicken_Song=2,MM_Chicken_Song=1..,MM_Chicken_Song_Type=2}] run scoreboard players remove @s MM_Chicken_Song_Bar 2
 
 execute at @a[tag=MM_Red,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=0,MM_Chicken_Song_Type=2}] as @a[tag=MM_Red,distance=..5] run attribute @s minecraft:movement_speed modifier remove mob_madness:chicken
-execute at @a[tag=MM_Red,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=2}] as @a[tag=MM_Red,distance=..5] run attribute @s minecraft:movement_speed modifier add mob_madness:chicken 0.030 add_value
+execute at @a[tag=MM_Red,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=2}] as @a[tag=MM_Red,distance=..5] run attribute @s minecraft:movement_speed modifier add mob_madness:chicken 0.045 add_value
 execute as @a[tag=!MM_Class_Chicken,tag=MM_Red] unless entity @a[tag=MM_Red,distance=..5,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=2}] run attribute @s minecraft:movement_speed modifier remove mob_madness:chicken
 
 execute at @a[tag=MM_Blue,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=0,MM_Chicken_Song_Type=2}] as @a[tag=MM_Blue,distance=..5] run attribute @s minecraft:movement_speed modifier remove mob_madness:chicken
-execute at @a[tag=MM_Blue,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=2}] as @a[tag=MM_Blue,distance=..5] run attribute @s minecraft:movement_speed modifier add mob_madness:chicken 0.030 add_value
+execute at @a[tag=MM_Blue,tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=2}] as @a[tag=MM_Blue,distance=..5] run attribute @s minecraft:movement_speed modifier add mob_madness:chicken 0.045 add_value
 execute as @a[tag=!MM_Class_Chicken,tag=MM_Blue] unless entity @a[tag=MM_Blue,distance=..5,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=2}] run attribute @s minecraft:movement_speed modifier remove mob_madness:chicken
 
 
@@ -38,7 +37,8 @@ tag @a[tag=MM_Class_Chicken,tag=MM_Chicken_Song_Speed,scores={MM_Chicken_Song=0}
 
 
 
-
+#Defense
+execute as @s[scores={MM_Chicken_Song=2,MM_Chicken_Song=1..,MM_Chicken_Song_Type=1}] run scoreboard players remove @s MM_Chicken_Song_Bar 4
 
 
 
@@ -76,3 +76,30 @@ item replace entity @s[scores={MM_Chicken_Song_Bar=270..279}] hotbar.4 with coal
 item replace entity @s[scores={MM_Chicken_Song_Bar=280..289}] hotbar.4 with coal[custom_model_data={strings:[bar328]}]
 item replace entity @s[scores={MM_Chicken_Song_Bar=290..299}] hotbar.4 with coal[custom_model_data={strings:[bar329]}]
 item replace entity @s[scores={MM_Chicken_Song_Bar=300}] hotbar.4 with coal[custom_model_data={strings:[bar330]}]
+
+item replace entity @s hotbar.7 with coal[custom_model_data={strings:[chicken]}]
+
+item replace entity @s[scores={MM_Chicken_Heal=0}] hotbar.8 with coal[custom_model_data={strings:[count00]}]
+item replace entity @s[scores={MM_Chicken_Heal=1..10}] hotbar.8 with coal[custom_model_data={strings:[count01]}]
+item replace entity @s[scores={MM_Chicken_Heal=11..20}] hotbar.8 with coal[custom_model_data={strings:[count02]}]
+item replace entity @s[scores={MM_Chicken_Heal=21..30}] hotbar.8 with coal[custom_model_data={strings:[count03]}]
+item replace entity @s[scores={MM_Chicken_Heal=31..40}] hotbar.8 with coal[custom_model_data={strings:[count04]}]
+item replace entity @s[scores={MM_Chicken_Heal=41..50}] hotbar.8 with coal[custom_model_data={strings:[count05]}]
+item replace entity @s[scores={MM_Chicken_Heal=51..60}] hotbar.8 with coal[custom_model_data={strings:[count06]}]
+item replace entity @s[scores={MM_Chicken_Heal=61..70}] hotbar.8 with coal[custom_model_data={strings:[count07]}]
+item replace entity @s[scores={MM_Chicken_Heal=71..80}] hotbar.8 with coal[custom_model_data={strings:[count08]}]
+item replace entity @s[scores={MM_Chicken_Heal=81..90}] hotbar.8 with coal[custom_model_data={strings:[count09]}]
+item replace entity @s[scores={MM_Chicken_Heal=91..}] hotbar.8 with coal[custom_model_data={strings:[count10]}]
+
+\
+
+#song particles
+execute if score MAIN_2t MAIN_Time matches 1 store result score @s MM_Misc run random value 1..8
+execute if score MAIN_2t MAIN_Time matches 1 run execute at @s[scores={MM_Misc=1,MM_Chicken_Song=1..}] run particle note ~ ~1.6 ~5 0.2 0.2 0.2 1 10 normal
+execute if score MAIN_2t MAIN_Time matches 1 run execute at @s[scores={MM_Misc=2,MM_Chicken_Song=1..}] run particle note ~5 ~1.6 ~ 0.2 0.2 0.2 1 10 normal
+execute if score MAIN_2t MAIN_Time matches 1 run execute at @s[scores={MM_Misc=3,MM_Chicken_Song=1..}] run particle note ~ ~1.6 ~-5 0.2 0.2 0.2 1 10 normal
+execute if score MAIN_2t MAIN_Time matches 1 run execute at @s[scores={MM_Misc=4,MM_Chicken_Song=1..}] run particle note ~-5 ~1.6 ~ 0.2 0.2 0.2 1 10 normal
+execute if score MAIN_2t MAIN_Time matches 1 run execute at @s[scores={MM_Misc=5,MM_Chicken_Song=1..}] run particle note ~4.5 ~1.6 ~4.5 0.2 0.2 0.2 1 10 normal
+execute if score MAIN_2t MAIN_Time matches 1 run execute at @s[scores={MM_Misc=6,MM_Chicken_Song=1..}] run particle note ~-4.5 ~1.6 ~4.5 0.2 0.2 0.2 1 10 normal
+execute if score MAIN_2t MAIN_Time matches 1 run execute at @s[scores={MM_Misc=7,MM_Chicken_Song=1..}] run particle note ~-4.5 ~1.6 ~-4.5 0.2 0.2 0.2 1 10 normal
+execute if score MAIN_2t MAIN_Time matches 1 run execute at @s[scores={MM_Misc=8,MM_Chicken_Song=1..}] run particle note ~4.5 ~1.6 ~-4.5 0.2 0.2 0.2 1 10 normal
