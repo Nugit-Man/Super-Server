@@ -181,3 +181,7 @@ item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Hazmat] armor.legs 
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Hazmat] armor.feet with leather_boots[trim={pattern:sentry,material:netherite},dyed_color=16776960,custom_name=[{text:"Hazmat Suit",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] arrow 8
+
+execute in gorbino:game run setblock 1011 1 0 stone_button[facing=east]
+execute in gorbino:game run setblock 4004 1 15 stone_button[facing=east]
+execute in gorbino:game run setblock 14000 1 13 minecraft:stone_button[facing=south]
