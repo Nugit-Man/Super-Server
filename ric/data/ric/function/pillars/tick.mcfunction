@@ -29,3 +29,6 @@ clear @a[scores={MAIN_Game=7,RIC_Deaths=1}]
 
 execute if score MAIN_10s MAIN_Time matches 1 run function ric:pillars/random
 
+
+#deal with spectators
+execute if score $In_Game RIC_Pillars matches 0 run scoreboard players set @a[scores={MAIN_Game=7,RIC_Main=5}] RIC_Main 0
