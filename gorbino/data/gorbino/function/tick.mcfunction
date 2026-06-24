@@ -72,6 +72,7 @@ execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s armor base reset
 execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s attack_damage base reset
 execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s attack_knockback base reset
 execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s attack_speed base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s movement_speed base reset
 
 
 #sclae
@@ -84,7 +85,7 @@ execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s entity_intera
 execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s attack_damage base reset
 execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s attack_knockback base reset
 execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s attack_speed base reset
-
+execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s movement_speed base reset
 
 #Check Deaths
 clear @a[scores={GB_Deaths=1..,MAIN_Game=3}]
