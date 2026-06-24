@@ -4,6 +4,7 @@
 #2 - Lobby PVP
 #3 - Spectating
 #4 - Pillars
+#5 - Spectating Pillar
 
 scoreboard players set @a[scores={MAIN_Game=7},tag=!RIC_Welcome] RIC_Menu 0
 tag @a[scores={MAIN_Game=7}] add RIC_Welcome

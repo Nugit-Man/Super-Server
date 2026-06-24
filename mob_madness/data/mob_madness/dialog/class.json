@@ -3,7 +3,7 @@
 	"title": "Choose your Class",
 	"columns": 1,
 	"actions": [{
-		"label": "Assassin",
+		"label": "Cat",
 		"on_click": {
 			"action": "run_command",
 			"command": "/dialog show @s mobodex:zombie"
