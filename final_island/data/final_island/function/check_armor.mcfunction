@@ -174,6 +174,11 @@ execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_4:1b}] run effect give @s speed 1 3 true
 execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_5:1b}] run effect give @s speed 1 4 true
 
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_1:1b}] run scoreboard players set @s FI_Stylish 0
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_2:1b}] run scoreboard players set @s FI_Stylish 0
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_3:1b}] run scoreboard players set @s FI_Stylish 0
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_4:1b}] run scoreboard players set @s FI_Stylish 0
+execute as @a[scores={MAIN_Game=2}] if items entity @s armor.legs *[custom_data~{FI_Speed_Pants_5:1b}] run scoreboard players set @s FI_Stylish 0
 
 
 
