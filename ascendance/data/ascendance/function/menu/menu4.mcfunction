@@ -12,7 +12,7 @@ item replace entity @s inventory.10 with minecraft:bow[custom_name={text:"Defaul
 item replace entity @s[advancements={ascendance:ascendance/chicken_dinner=true}] inventory.11 with minecraft:target[custom_name={text:"Trainging Bow",italic:false}]
 item replace entity @s[advancements={final_island:bow=true}] inventory.12 with minecraft:bone[custom_name={text:"Ancient Bow",italic:false}]
 item replace entity @s[advancements={gorbino:shooter_mcgee=true}] inventory.13 with minecraft:diamond[custom_name={text:"Empowered Bow",italic:false}]
-item replace entity @s[advancements={ascendance:ascendance/gamblers_philosophy=true}] inventory.14 with minecraft:emerald[custom_name={text:"Enriched Bow",italic:false}]
+#item replace entity @s[advancements={ascendance:ascendance/gamblers_philosophy=true}] inventory.14 with minecraft:emerald[custom_name={text:"Enriched Bow",italic:false}]
 item replace entity @s[advancements={super_server:milestones/ascendance/par1=true}] inventory.15 with minecraft:golden_sword[custom_name={text:"Legendary Bow",italic:false}]
 item replace entity @s[advancements={super_server:milestones/ascendance/par9=true}] inventory.16 with minecraft:chorus_fruit[custom_name={text:"Notch",italic:false},custom_model_data={strings:['Random']}]
 item replace entity @s inventory.17 with minecraft:air
