@@ -1,10 +1,10 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:elytra"
+      "id": "minecraft:waxed_exposed_cut_copper_stairs"
     },
-    "title": "Bomber Plane",
-    "description": "Mr. President, a player has hit the second pillar",
+    "title": "The funny block",
+    "description": "You love it, I love it, We all love it",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

@@ -1,16 +1,16 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:elytra"
+      "id": "minecraft:golden_helmet"
     },
-    "title": "Bomber Plane",
-    "description": "Mr. President, a player has hit the second pillar",
+    "title": "Skill or luck?",
+    "description": "Win 3 games of RIC Classic in a row",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ric:crafting_table",
+  "parent": "ric:root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

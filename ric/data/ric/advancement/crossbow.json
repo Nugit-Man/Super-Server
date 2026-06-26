@@ -10,7 +10,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ric:root",
+  "parent": "ric:netherite",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

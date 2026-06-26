@@ -1,16 +1,16 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:elytra"
+      "id": "minecraft:enchanting_table"
     },
-    "title": "Bomber Plane",
-    "description": "Mr. President, a player has hit the second pillar",
+    "title": "Try hard",
+    "description": "You really are going all out in this stupid game?",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ric:crafting_table",
+  "parent": "ric:root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

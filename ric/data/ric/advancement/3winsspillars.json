@@ -1,16 +1,16 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:elytra"
+      "id": "minecraft:diamond_helmet"
     },
-    "title": "Bomber Plane",
-    "description": "Mr. President, a player has hit the second pillar",
+    "title": "Devine Intellect",
+    "description": "Win 3 games of RIC Pillars in a row",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ric:crafting_table",
+  "parent": "ric:3wins",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"
