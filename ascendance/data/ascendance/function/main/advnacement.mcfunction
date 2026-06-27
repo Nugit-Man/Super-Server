@@ -35,14 +35,20 @@ advancement grant @a[scores={MAIN_Game=1,AS_Crown_Take=20,AS_Gamemode=1}] only a
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Deaths=250..}] only super_server:milestones/ascendance/philip_moment
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Deaths=500..}] only super_server:milestones/ascendance/osmar_moment
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Deaths=1000..}] only super_server:milestones/ascendance/classic_even
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Deaths=2500..}] only super_server:milestones/ascendance/glitch_moment
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Deaths=5000..}] only super_server:milestones/ascendance/sitck_drift
 
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Kills=250..}] only super_server:milestones/ascendance/killing_spree
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Kills=500..}] only super_server:milestones/ascendance/mass_murder
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Kills=1000..}] only super_server:milestones/ascendance/big_kill
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Kills=2500..}] only super_server:milestones/ascendance/quick_shot
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Kills=5000..}] only super_server:milestones/ascendance/aimbot
 
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=250..}] only super_server:milestones/ascendance/shots_fired
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=1000..}] only super_server:milestones/ascendance/suppressing_fire
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=2500..}] only super_server:milestones/ascendance/heavy_arms
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=5000..}] only super_server:milestones/ascendance/full_auto
+advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Shots=10000..}] only super_server:milestones/ascendance/fuller_auto
 
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Wins=10..}] only super_server:milestones/ascendance/good_at_this_game
 advancement grant @a[scores={MAIN_Game=1,AS_Milestone_Wins=25..}] only super_server:milestones/ascendance/really_good_at_this_game

@@ -92,6 +92,7 @@ advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=1500..}] only super_
 advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=2000..}] only super_server:milestones/gorbino/gorbino_gladiator
 advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=2500..}] only super_server:milestones/gorbino/gorbino_gear
 advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=5000..}] only super_server:milestones/gorbino/gorbino_gamer
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=10000..}] only super_server:milestones/gorbino/gorbino_god
 
 
 
