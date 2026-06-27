@@ -94,6 +94,9 @@ schedule function gorbino:border/clear 3s
 scoreboard players set @a GB_Dash_Check 0
 scoreboard players set @a GB_Heal_Check 0
 
+#W no W
+tag @a[scores={GB_Mode=1,MAIN_Game=3}] add GB_NoW
+
 
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_simple_armor] armor.chest with minecraft:leather_chestplate[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_simple_armor] armor.legs with minecraft:leather_leggings[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]

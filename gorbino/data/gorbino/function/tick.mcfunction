@@ -31,6 +31,7 @@ title @a[scores={GB_Mode=2,MAIN_Game=3}] actionbar "You Are Joining The Fight"
 #check what gamestate the game us currentlyt in
 function gorbino:playerchecker
 
+tag @a[predicate=super_server:forward] remove GB_NoW
 
 #Cleanup
 execute at @a[scores={GB_Mode=2..,MAIN_Game=3}] run fill ~20 ~9 ~20 ~-20 ~-9 ~-20 minecraft:stone replace minecraft:slime_block
