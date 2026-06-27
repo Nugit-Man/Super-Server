@@ -1,4 +1,4 @@
-execute as @a[scores={MAIN_Game=7,RIC_Main=1}] run execute store result score @s RIC_Random run random value 0..1469
+execute as @a[scores={MAIN_Game=7,RIC_Main=1}] run execute store result score @s RIC_Random run random value 0..1486
 tellraw @a[scores={MAIN_Game=7,RIC_Main=1}] {text:"New Item Drop",color:yellow,italic:false}
 
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=0}] acacia_boat 3
@@ -1471,3 +1471,20 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1466}] zombie_head 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1467}] zombie_horse_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1468}] zombie_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1469}] zombie_villager_spawn_egg 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1470}] copper_nautilus_armor 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1471}] iron_nautilus_armor 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1472}] golden_nautilus_armor 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1473}] diamond_nautilus_armor 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1474}] netherite_nautilus_armor 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1475}] netherite_horse_armor 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1476}] wooden_spear 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1477}] stone_spear 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1478}] iron_spear 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1479}] golden_spear 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1480}] diamond_spear 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1481}] netherite_spear 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1482}] camel_husk_spawn_egg 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1483}] nautilus_spawn_egg 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1484}] parched_spawn_egg 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1485}] zombie_nautilus_spawn_egg 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1486}] copper_spear 63
