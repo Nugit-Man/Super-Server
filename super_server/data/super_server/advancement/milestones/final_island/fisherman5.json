@@ -1,16 +1,16 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:salmon"
+        "id": "minecraft:tropical_fish"
       },
-      "title": "FISH",
-      "description": "Catch 500 fish",
+      "title": "Baiterless Master",
+      "description": "Catch 2500 fish",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "super_server:milestones/final_island/fisherman2",
+    "parent": "super_server:milestones/final_island/fisherman4",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"

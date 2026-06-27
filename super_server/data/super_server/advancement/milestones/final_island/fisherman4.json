@@ -15,9 +15,6 @@
       "requirement": {
         "trigger": "minecraft:impossible"
       }
-    },
-    "rewards": {
-      "function": "final_island:advancement/milestones/fish/4"
     }
   }
   

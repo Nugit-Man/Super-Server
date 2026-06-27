@@ -1,15 +1,15 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:wooden_sword"
+      "id": "minecraft:lava_bucket"
     },
-    "title": "Big Killer",
-    "description": "Get 250 total kills",
+    "title": "Full Auto",
+    "description": "Shoot a total of 5000 arrows",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "super_server:milestones/ascendnace",
+  "parent": "super_server:milestones/ascendance/heavy_arms",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

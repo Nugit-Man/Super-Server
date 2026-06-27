@@ -1,16 +1,16 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:diamond"
+      "id": "minecraft:pale_oak_door"
     },
-    "title": "Gorbino Great",
-    "description": "Win a total of 100 games",
+    "title": "SICK DRIFT!! FUCKING STICK DRIFT!!!!",
+    "description": "Die a total of 5000 times",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "super_server:milestones/gorbino/gorbino_guy",
+  "parent": "super_server:milestones/ascendance/glitch_moment",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

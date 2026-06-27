@@ -1,16 +1,16 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:salmon"
+        "id": "minecraft:prismarine_shard"
       },
-      "title": "FISH",
-      "description": "Catch 500 fish",
+      "title": "Average Hunter",
+      "description": "Killer 2500 Mobs",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "super_server:milestones/final_island/fisherman2",
+    "parent": "super_server:milestones/final_island/mobkills/mob4",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"

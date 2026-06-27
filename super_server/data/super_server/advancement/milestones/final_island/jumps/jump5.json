@@ -1,16 +1,16 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:salmon"
+        "id": "minecraft:wind_charge"
       },
-      "title": "FISH",
-      "description": "Catch 500 fish",
+      "title": "Space Bar Enjoyer",
+      "description": "Jump 10000 Times",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "super_server:milestones/final_island/fisherman2",
+    "parent": "super_server:milestones/final_island/jumps/jump4",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"
