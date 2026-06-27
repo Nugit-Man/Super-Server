@@ -1,16 +1,16 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:tnt"
+      "id": "minecraft:zombie_head"
     },
-    "title": "Oh boy...",
-    "description": "Get the Osmar Classic",
+    "title": "Back from the dead",
+    "description": "You thought you can kill me that easily?",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ric:elytra",
+  "parent": "ric:underdog",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

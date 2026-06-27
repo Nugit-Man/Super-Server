@@ -1,16 +1,16 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:tnt"
+      "id": "minecraft:music_disc_lava_chicken"
     },
-    "title": "Oh boy...",
-    "description": "Get the Osmar Classic",
+    "title": "Composer",
+    "description": "This is better then Mozart!",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ric:elytra",
+  "parent": "ric:crafting_table",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

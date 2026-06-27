@@ -1,16 +1,16 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:tnt"
+      "id": "minecraft:diorite"
     },
-    "title": "Oh boy...",
-    "description": "Get the Osmar Classic",
+    "title": "Whats this?",
+    "description": "No clue what it's used for",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ric:elytra",
+  "parent": "ric:crafting_table",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"
