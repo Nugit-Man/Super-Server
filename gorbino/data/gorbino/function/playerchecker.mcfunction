@@ -98,7 +98,10 @@ advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=10000..}] only super
 
 execute if score 1 GB_Select matches 1 run scoreboard players set @a[scores={GB_Mode=1,MAIN_Game=3}] GB_Mode 2
 
-execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 0..1 run schedule clear gorbino:gamestart
+scoreboard players set 3 GB_Select 0
+execute if score 2 GB_Select matches -1 as @a[scores={GB_Mode=2,MAIN_Game=3}] run scoreboard players add 3 GB_Select 1
+execute if score 2 GB_Select matches -1 run execute if score 3 GB_Select matches 0..1 run schedule clear gorbino:gamestart
+execute if score 2 GB_Select matches -1 run execute if score 3 GB_Select matches 0..1 run scoreboard players set 2 GB_Select 0
 execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 2..16 run schedule function gorbino:gamestart 3s
 execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 2..16 run title @a[scores={GB_Mode=0,MAIN_Game=3}] subtitle "Make Sure To Join!"
 execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 2..16 run title @a[scores={GB_Mode=0..2,MAIN_Game=3}] title "A New Fight Is Starting!"
