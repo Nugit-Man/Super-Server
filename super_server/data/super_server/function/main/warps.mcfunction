@@ -62,6 +62,6 @@ execute in super_server:kanye if score MAIN_2t MAIN_Time matches 1 run tp @a[tag
 tag @a remove GoTo_Kanye
 
 #Lobby --> Mob Madness
-execute in mob_madness:game run spawnpoint @a[tag=GoTo_Final_Island] 0 0 0 90 0
-execute in mob_madness:game run tp @a[tag=GoTo_Final_Island] 0 0 0 90 0
+execute in mob_madness:game run spawnpoint @a[tag=GoTo_Mob_Madness] 0 0 0 90 0
+execute in mob_madness:game run tp @a[tag=GoTo_Mob_Madness] 0 0 0 90 0
 tag @a remove GoTo_Mob_Madness

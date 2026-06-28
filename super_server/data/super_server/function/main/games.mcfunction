@@ -22,3 +22,4 @@ execute as @a[nbt={Dimension:"super_server:mace_master"}] run scoreboard players
 execute as @a[nbt={Dimension:"ric:game"}] run scoreboard players set @s MAIN_Game 7
 execute as @a[nbt={Dimension:"ric:lobby"}] run scoreboard players set @s MAIN_Game 7
 execute as @a[nbt={Dimension:"super_server:kanye"}] run scoreboard players set @s MAIN_Game 8
+execute as @a[nbt={Dimension:"mob_madness:game"}] run scoreboard players set @s MAIN_Game 9
