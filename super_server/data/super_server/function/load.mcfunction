@@ -17,6 +17,7 @@ scoreboard objectives add MAIN_Jumps minecraft.custom:minecraft.jump
 scoreboard objectives add MAIN_break_wood_sword minecraft.broken:wooden_sword
 scoreboard objectives add MAIN_break_gold_sword minecraft.broken:golden_sword
 scoreboard objectives add MAIN_obtain_sugar_cane minecraft.picked_up:minecraft.sugar_cane
+scoreboard objectives add MAIN_Enchanting minecraft.custom:enchant_item
 
 #Check what game you are in
 #0 - lobby

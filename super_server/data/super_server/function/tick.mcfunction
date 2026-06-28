@@ -115,7 +115,9 @@ scoreboard players set @a[scores={MAIN_Leave=1..}] MAIN_Leave 0
 #4 - Parkor
 #5 - Skyblock
 #6 - Mace master
-
+#7 - RIC
+#8 - Kanye
+#9 - Mob Madness
 
 execute as @a[nbt={Dimension:"super_server:lobby"}] run scoreboard players set @s MAIN_Game 0
 execute as @a[nbt={Dimension:"ascendance:game"}] run scoreboard players set @s MAIN_Game 1
@@ -165,6 +167,8 @@ execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Death
 execute as @a[scores={MAIN_Game=3}] run scoreboard players operation @s GB_Shotgun = @s MAIN_Crossbow_Used
 
 execute as @a[scores={MAIN_Game=7}] run scoreboard players operation @s RIC_Deaths = @s MAIN_Deaths
+execute as @a[scores={MAIN_Game=7}] run scoreboard players operation @s RIC_Kills = @s MAIN_Player_Kills
+execute as @a[scores={MAIN_Game=7}] run scoreboard players operation @s RIC_Enchantment = @s MAIN_Enchanting
 
 
 #Reset things like sneak time
@@ -179,6 +183,7 @@ scoreboard players set @a MAIN_Bow_Used 0
 scoreboard players set @a MAIN_break_gold_sword 0
 scoreboard players set @a MAIN_break_wood_sword 0
 scoreboard players set @a MAIN_obtain_sugar_cane 0
+scoreboard players set @a MAIN_Enchanting 0
 
 
 

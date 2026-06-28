@@ -1,4 +1,4 @@
-execute as @a[scores={MAIN_Game=7,RIC_Main=1}] run execute store result score @s RIC_Random run random value 0..1486
+execute as @a[scores={MAIN_Game=7,RIC_Main=1}] run execute store result score @s RIC_Random run random value 0..1487
 tellraw @a[scores={MAIN_Game=7,RIC_Main=1}] {text:"New Item Drop",color:yellow,italic:false}
 
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=0}] acacia_boat 3
@@ -1487,4 +1487,10 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1482}] camel_husk_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1483}] nautilus_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1484}] parched_spawn_egg 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1485}] zombie_nautilus_spawn_egg 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1486}] copper_spear 63
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1486}] copper_spear 3
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1487}] diamond[minecraft:custom_model_data={strings:[Kanye]},custom_name={text:"Kanye",italic:false}]
+advancement grant @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=1487}] only ric:kanye
+
+
+execute as @a[scores={MAIN_Game=7,RIC_Main=1}] if score @s RIC_Random = @s RIC_Last_Item run advancement grant @s only ric:double
+execute as @a[scores={MAIN_Game=7,RIC_Main=1}] run scoreboard players operation @s RIC_Last_Item = @s RIC_Random
