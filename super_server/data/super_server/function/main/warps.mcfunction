@@ -60,3 +60,8 @@ tag @a remove GoTo_RIC
 execute in super_server:kanye if score MAIN_2t MAIN_Time matches 2 run tp @a[tag=GoTo_Kanye] 155.30 -28.00 -33.70 -45 14
 execute in super_server:kanye if score MAIN_2t MAIN_Time matches 1 run tp @a[tag=GoTo_Kanye] 257.70 -28.00 132.70 135 14
 tag @a remove GoTo_Kanye
+
+#Lobby --> Mob Madness
+execute in mob_madness:game run spawnpoint @a[tag=GoTo_Final_Island] 0 0 0 90 0
+execute in mob_madness:game run tp @a[tag=GoTo_Final_Island] 0 0 0 90 0
+tag @a remove GoTo_Mob_Madness
