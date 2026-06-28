@@ -6,3 +6,4 @@ $execute if entity @s[scores={MAIN_Game=5}] run team modify $(uuid) suffix {text
 $execute if entity @s[scores={MAIN_Game=6}] run team modify $(uuid) suffix {text: " [MACE]",color:white}
 $execute if entity @s[scores={MAIN_Game=7}] run team modify $(uuid) suffix {text: " [RIC]",color:white}
 $execute if entity @s[scores={MAIN_Game=8}] run team modify $(uuid) suffix {text: " [YE]",color:white}
+$execute if entity @s[scores={MAIN_Game=9}] run team modify $(uuid) suffix {text: " [MM]",color:white}
