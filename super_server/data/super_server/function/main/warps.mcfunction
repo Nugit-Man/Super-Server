@@ -2,6 +2,9 @@
 ###
 ###interaction warps
 
+#Turn on final Island genorators
+execute if entity @a[tag=GoTo_Final_Island] run function final_island:optimize/schedule_boot
+
 #Lobby --> Final Island
 execute in final_island:game run spawnpoint @a[tag=GoTo_Final_Island] 0 1 0 90 0
 execute in final_island:game run tp @a[tag=GoTo_Final_Island] 0 1 0 90 0

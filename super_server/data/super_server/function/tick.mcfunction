@@ -5,9 +5,6 @@ execute as @a at @s if block ~ ~-1 ~ farmland run effect give @s slow_falling 1 
 effect give @a[scores={MAIN_Game=0}] saturation 1 0 true
 
 
-
-
-
 #I use arch btw
 #and I'm keeping it that way
 
@@ -16,8 +13,6 @@ function super_server:main/logon
 function super_server:main/games
 function super_server:main/scoreboards
 function super_server:skyblock/advancement
-
-
 
 #Awarding Xp
 #scoreboard players set @a[scores={MAIN_Game=1..}] MAIN_XP_Timer 0
@@ -40,8 +35,6 @@ function super_server:main/barrels
 execute as @a[scores={MAIN_Game=0,MAIN_Menu=0}] run function super_server:menu/menu0
 execute as @a[scores={MAIN_Game=0,MAIN_Menu=1}] run function super_server:menu/menu1
 execute as @a[scores={MAIN_Game=0,MAIN_Menu=2}] run function super_server:menu/menu2
-
-
 
 function super_server:team/make
 
