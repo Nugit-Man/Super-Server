@@ -136,4 +136,5 @@ execute in ric:pillars run fill 14 -64 -14 14 200 -14 bedrock
 execute in ric:pillars run fill -14 -64 -14 -14 200 -14 bedrock
 execute in ric:pillars run fill -14 -64 14 -14 200 14 bedrock
 
+
 execute at @a[nbt={Dimension:"ric:pillars"}] run kill @e[distance=..300,type=!player]
