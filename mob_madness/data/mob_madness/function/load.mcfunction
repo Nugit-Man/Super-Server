@@ -19,3 +19,6 @@ scoreboard objectives add MM_Misc dummy
 scoreboard objectives add MM_Health dummy
 scoreboard objectives add MM_Defense dummy
 scoreboard objectives add MM_Damage dummy
+
+
+scoreboard objectives add MM_Joingame trigger

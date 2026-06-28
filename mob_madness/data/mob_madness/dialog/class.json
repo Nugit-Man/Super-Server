@@ -1,24 +1,55 @@
 {
-	"type": "multi_action",
-	"title": "Choose your Class",
-	"columns": 1,
-	"actions": [{
-		"label": "Cat",
-		"on_click": {
-			"action": "run_command",
-			"command": "/dialog show @s mobodex:zombie"
-		}
-	},{
-		"label": "Chicken",
-		"on_click": {
-			"action": "run_command",
-			"command": "/dialog show @s mobodex:skeleton"
-		}
-	},{
-		"label": "Polar Bear",
-		"on_click": {
-			"action": "run_command",
-			"command": "/dialog show @s mobodex:creeper"
-		}
-	}]
+  "type": "minecraft:multi_action",
+  "title": "Choose your Class",
+  "pause": false,
+  "actions": [
+    {
+      "label": "Cat - Red",
+      "tooltip": "Class type: Assassin",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 1"
+      }
+    },
+    {
+      "label": "Cat - Blue",
+      "tooltip": "Class type: Assassin",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 2"
+      }
+    },
+    {
+      "label": "Chicken - Red",
+      "tooltip": "Class type: Healer",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 3"
+      }
+    },
+    {
+      "label": "Chicken - Blue",
+      "tooltip": "Class type: Healer",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 4"
+      }
+    },
+    {
+      "label": "Polar Bear - Red",
+      "tooltip": "Class type: Tank",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 5"
+      }
+    },
+    {
+      "label": "Polar Bear - Blue",
+      "tooltip": "Class type: Tank",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 6"
+      }
+    }
+  ]
 }
