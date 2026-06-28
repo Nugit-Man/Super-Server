@@ -14,6 +14,7 @@ scoreboard objectives add MM_Ice dummy
 scoreboard objectives add MM_Ice_Chain dummy
 scoreboard objectives add MM_Ice_State dummy
 scoreboard objectives add MM_Ice_Velocity dummy
+scoreboard objectives add MM_Polar_Cooldown dummy
 
 scoreboard objectives add MM_Misc dummy
 scoreboard objectives add MM_Health dummy
