@@ -117,9 +117,9 @@ execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199
 
 
 #Chicken heal
-execute as @a[tag=MM_Blue] at @s if entity @a[tag=MM_Class_Chicken,tag=MM_Blue,scores={MM_Chicken_Heal=1..,MM_Chicken_Song=1..,MM_Chicken_Song_Type=3},distance=..5] run scoreboard players add @s MM_Health 1
-execute as @a[tag=MM_Red] at @s if entity @a[tag=MM_Class_Chicken,tag=MM_Red,scores={MM_Chicken_Heal=1..,MM_Chicken_Song=1..,MM_Chicken_Song_Type=3},distance=..5] run scoreboard players add @s MM_Health 1
-scoreboard players remove @a[tag=MM_Class_Chicken,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=3,MM_Health=1..}] MM_Chicken_Heal 1
+execute if score MAIN_2t MAIN_Time matches 1 run execute as @a[tag=MM_Blue] at @s if entity @a[tag=MM_Class_Chicken,tag=MM_Blue,scores={MM_Chicken_Heal=1..,MM_Chicken_Song=1..,MM_Chicken_Song_Type=3},distance=..5] run scoreboard players add @s MM_Health 1
+execute if score MAIN_2t MAIN_Time matches 1 run execute as @a[tag=MM_Red] at @s if entity @a[tag=MM_Class_Chicken,tag=MM_Red,scores={MM_Chicken_Heal=1..,MM_Chicken_Song=1..,MM_Chicken_Song_Type=3},distance=..5] run scoreboard players add @s MM_Health 1
+execute if score MAIN_2t MAIN_Time matches 1 run scoreboard players remove @a[tag=MM_Class_Chicken,scores={MM_Chicken_Song=1..,MM_Chicken_Song_Type=3,MM_Health=1..}] MM_Chicken_Heal 1
 tag @a[scores={MM_Chicken_Song=0}] remove MM_Chicken_Song_Regen
 
 #Chicken defense
@@ -229,3 +229,12 @@ execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=13}] run data 
 execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=12}] run data modify entity @s transformation.scale[2] set value 1.5
 execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=11}] run data modify entity @s transformation.scale[2] set value 2
 execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=10}] run data modify entity @s transformation.scale[2] set value 2.5
+
+
+
+#Joingame
+execute as @a[scores={MAIN_Game=9,MM_Joingame=1..}] run function mob_madness:joingame
+
+
+#clear
+execute at @e[type=marker,limit=1,tag=MM_Clear] run function mob_madness:clear

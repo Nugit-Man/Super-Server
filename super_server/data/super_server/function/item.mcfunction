@@ -45,10 +45,10 @@ execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_
 execute as @s[scores={MAIN_Game=2}] if items entity @s[scores={FI_Mana_Cooldown_Gem_Tuff=1..}] weapon.mainhand *[custom_data~{FI_Tuff_Gem:1b}] run tellraw @s [{text:"Your gem is still on cooldown",color:"red"}]
 
 execute as @s[scores={MM_Test_Dash=100..,MM_Test_Dash2=0},tag=MM_Class_Assassin] if items entity @s weapon.mainhand *[custom_data~{MM_Test:1b}] run function mob_madness:classes/assassin/test_right
-execute as @s[tag=MM_Class_Chicken,scores={MM_Chicken_Song_Bar=300,MM_Chicken_Song=0}] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken:1b}] run function mob_madness:classes/chicken/right
-execute as @s[tag=MM_Class_Chicken,scores={MM_Chicken_Song_Bar=300,MM_Chicken_Song=0}] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken2:1b}] run function mob_madness:classes/chicken/right2
-execute as @s[tag=MM_Class_Chicken,scores={MM_Chicken_Song_Bar=300,MM_Chicken_Song=0}] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken3:1b}] run function mob_madness:classes/chicken/right3
-execute as @s[tag=MM_Class_Chicken,scores={MM_Chicken_Song_Bar=300,MM_Chicken_Song=0,MM_Chicken_Heal=1..}] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken4:1b}] run function mob_madness:classes/chicken/right4
+execute as @s[tag=MM_Class_Chicken,scores={MM_Chicken_Song_Bar=600,MM_Chicken_Song=0}] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken:1b}] run function mob_madness:classes/chicken/right
+execute as @s[tag=MM_Class_Chicken,scores={MM_Chicken_Song_Bar=600,MM_Chicken_Song=0}] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken2:1b}] run function mob_madness:classes/chicken/right2
+execute as @s[tag=MM_Class_Chicken,scores={MM_Chicken_Song_Bar=600,MM_Chicken_Song=0}] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken3:1b}] run function mob_madness:classes/chicken/right3
+execute as @s[tag=MM_Class_Chicken,scores={MM_Chicken_Song_Bar=600,MM_Chicken_Song=0,MM_Chicken_Heal=1..}] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken4:1b}] run function mob_madness:classes/chicken/right4
 execute as @s[tag=MM_Class_Chicken,scores={MM_Chicken_Song_Bar=0..,MM_Chicken_Song=1..}] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken:1b}] run function mob_madness:classes/chicken/right
 execute as @s[tag=MM_Class_Chicken,scores={MM_Chicken_Song_Bar=0..,MM_Chicken_Song=1..}] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken2:1b}] run function mob_madness:classes/chicken/right2
 execute as @s[tag=MM_Class_Chicken,scores={MM_Chicken_Song_Bar=0..,MM_Chicken_Song=1..}] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken3:1b}] run function mob_madness:classes/chicken/right3

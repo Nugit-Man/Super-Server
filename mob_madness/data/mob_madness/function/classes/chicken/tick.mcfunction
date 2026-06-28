@@ -1,6 +1,6 @@
 scoreboard players remove @a[scores={MM_Chicken_Song=1..},tag=MM_Class_Chicken] MM_Chicken_Song 1
-scoreboard players add @a[scores={MM_Chicken_Song_Bar=..299,MM_Chicken_Song_Bar_Cooldown=0},tag=MM_Class_Chicken] MM_Chicken_Song_Bar 3
-scoreboard players set @a[scores={MM_Chicken_Song_Bar=301..},tag=MM_Class_Chicken] MM_Chicken_Song_Bar 300
+scoreboard players add @a[scores={MM_Chicken_Song_Bar=..599,MM_Chicken_Song_Bar_Cooldown=0},tag=MM_Class_Chicken] MM_Chicken_Song_Bar 5
+scoreboard players set @a[scores={MM_Chicken_Song_Bar=601..},tag=MM_Class_Chicken] MM_Chicken_Song_Bar 600
 scoreboard players remove @a[scores={MM_Chicken_Song_Bar_Cooldown=1..},tag=MM_Class_Chicken] MM_Chicken_Song_Bar_Cooldown 1
 scoreboard players remove @a[scores={MM_Chicken_Main_Cooldown=1..},tag=MM_Class_Chicken] MM_Chicken_Main_Cooldown 1
 
@@ -45,37 +45,37 @@ execute as @s[scores={MM_Chicken_Song=2,MM_Chicken_Song=1..,MM_Chicken_Song_Type
 
 
 #hotbar
-item replace entity @s[scores={MM_Chicken_Song_Bar=0..9}] hotbar.4 with coal[custom_model_data={strings:[bar300]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=10..19}] hotbar.4 with coal[custom_model_data={strings:[bar301]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=20..29}] hotbar.4 with coal[custom_model_data={strings:[bar302]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=30..39}] hotbar.4 with coal[custom_model_data={strings:[bar303]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=40..49}] hotbar.4 with coal[custom_model_data={strings:[bar304]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=50..59}] hotbar.4 with coal[custom_model_data={strings:[bar305]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=60..69}] hotbar.4 with coal[custom_model_data={strings:[bar306]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=70..79}] hotbar.4 with coal[custom_model_data={strings:[bar307]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=80..89}] hotbar.4 with coal[custom_model_data={strings:[bar308]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=90..99}] hotbar.4 with coal[custom_model_data={strings:[bar309]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=100..109}] hotbar.4 with coal[custom_model_data={strings:[bar310]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=110..119}] hotbar.4 with coal[custom_model_data={strings:[bar311]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=120..129}] hotbar.4 with coal[custom_model_data={strings:[bar312]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=130..139}] hotbar.4 with coal[custom_model_data={strings:[bar313]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=140..149}] hotbar.4 with coal[custom_model_data={strings:[bar314]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=150..159}] hotbar.4 with coal[custom_model_data={strings:[bar315]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=160..169}] hotbar.4 with coal[custom_model_data={strings:[bar316]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=170..179}] hotbar.4 with coal[custom_model_data={strings:[bar317]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=180..189}] hotbar.4 with coal[custom_model_data={strings:[bar318]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=190..199}] hotbar.4 with coal[custom_model_data={strings:[bar319]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=200..209}] hotbar.4 with coal[custom_model_data={strings:[bar320]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=210..219}] hotbar.4 with coal[custom_model_data={strings:[bar321]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=220..229}] hotbar.4 with coal[custom_model_data={strings:[bar322]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=230..239}] hotbar.4 with coal[custom_model_data={strings:[bar323]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=240..249}] hotbar.4 with coal[custom_model_data={strings:[bar324]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=250..259}] hotbar.4 with coal[custom_model_data={strings:[bar325]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=260..269}] hotbar.4 with coal[custom_model_data={strings:[bar326]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=270..279}] hotbar.4 with coal[custom_model_data={strings:[bar327]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=280..289}] hotbar.4 with coal[custom_model_data={strings:[bar328]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=290..299}] hotbar.4 with coal[custom_model_data={strings:[bar329]}]
-item replace entity @s[scores={MM_Chicken_Song_Bar=300}] hotbar.4 with coal[custom_model_data={strings:[bar330]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=0..19}] hotbar.4 with coal[custom_model_data={strings:[bar300]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=20..39}] hotbar.4 with coal[custom_model_data={strings:[bar301]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=40..59}] hotbar.4 with coal[custom_model_data={strings:[bar302]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=60..79}] hotbar.4 with coal[custom_model_data={strings:[bar303]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=80..99}] hotbar.4 with coal[custom_model_data={strings:[bar304]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=100..119}] hotbar.4 with coal[custom_model_data={strings:[bar305]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=120..139}] hotbar.4 with coal[custom_model_data={strings:[bar306]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=140..159}] hotbar.4 with coal[custom_model_data={strings:[bar307]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=160..179}] hotbar.4 with coal[custom_model_data={strings:[bar308]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=180..199}] hotbar.4 with coal[custom_model_data={strings:[bar309]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=200..219}] hotbar.4 with coal[custom_model_data={strings:[bar310]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=220..239}] hotbar.4 with coal[custom_model_data={strings:[bar311]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=240..259}] hotbar.4 with coal[custom_model_data={strings:[bar312]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=260..279}] hotbar.4 with coal[custom_model_data={strings:[bar313]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=280..299}] hotbar.4 with coal[custom_model_data={strings:[bar314]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=300..319}] hotbar.4 with coal[custom_model_data={strings:[bar315]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=320..339}] hotbar.4 with coal[custom_model_data={strings:[bar316]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=340..359}] hotbar.4 with coal[custom_model_data={strings:[bar317]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=360..379}] hotbar.4 with coal[custom_model_data={strings:[bar318]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=380..399}] hotbar.4 with coal[custom_model_data={strings:[bar319]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=400..419}] hotbar.4 with coal[custom_model_data={strings:[bar320]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=420..439}] hotbar.4 with coal[custom_model_data={strings:[bar321]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=440..459}] hotbar.4 with coal[custom_model_data={strings:[bar322]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=460..479}] hotbar.4 with coal[custom_model_data={strings:[bar323]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=480..499}] hotbar.4 with coal[custom_model_data={strings:[bar324]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=500..519}] hotbar.4 with coal[custom_model_data={strings:[bar325]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=520..539}] hotbar.4 with coal[custom_model_data={strings:[bar326]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=540..559}] hotbar.4 with coal[custom_model_data={strings:[bar327]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=560..579}] hotbar.4 with coal[custom_model_data={strings:[bar328]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=580..599}] hotbar.4 with coal[custom_model_data={strings:[bar329]}]
+item replace entity @s[scores={MM_Chicken_Song_Bar=600}] hotbar.4 with coal[custom_model_data={strings:[bar330]}]
 
 item replace entity @s hotbar.7 with coal[custom_model_data={strings:[chicken]}]
 
@@ -91,7 +91,7 @@ item replace entity @s[scores={MM_Chicken_Heal=71..80}] hotbar.8 with coal[custo
 item replace entity @s[scores={MM_Chicken_Heal=81..90}] hotbar.8 with coal[custom_model_data={strings:[count09]}]
 item replace entity @s[scores={MM_Chicken_Heal=91..}] hotbar.8 with coal[custom_model_data={strings:[count10]}]
 
-\
+
 
 #song particles
 execute if score MAIN_2t MAIN_Time matches 1 store result score @s MM_Misc run random value 1..8
