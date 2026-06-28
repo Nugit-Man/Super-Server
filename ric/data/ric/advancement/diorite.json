@@ -15,5 +15,8 @@
     "requirement": {
       "trigger": "minecraft:impossible"
     }
+  },
+  "rewards": {
+    "function": "ric:advancements/diorite"
   }
 }
