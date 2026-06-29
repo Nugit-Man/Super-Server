@@ -1,0 +1,15 @@
+{
+  "pack": {
+    "min_format": 94,
+    "max_format": 94,
+    "description": "Mob Madness for Super server Version 9"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "advancements?"
+      }
+    ]
+  }
+}

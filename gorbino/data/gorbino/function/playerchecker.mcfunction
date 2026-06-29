@@ -69,7 +69,7 @@ execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,GB_Po
 
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3}] store result score @s GB_Shotgun run data get entity @s Pos[1] 1
 execute if score 1 GB_Select matches 1 run execute as @a run execute at @s run advancement grant @s[scores={GB_Mode=1,MAIN_Game=3,GB_Shotgun=..-40}] only gorbino:falling
-execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=!GB_archer] run execute as @s[tag=!GB_knight] run execute as @s[tag=!GB_lumberjack] run execute as @s[tag=!GB_mace_master] run execute as @s[tag=!GB_burst_charm] run execute as @s[tag=!GB_freeze_bolt] run execute as @s[tag=!GB_fireball] run execute as @s[tag=!GB_ground_slam] run execute as @s[tag=!GB_dripstone] run execute as @s[tag=!GB_bomber] run execute as @s[tag=!GB_shotgun] run execute as @s[tag=!GB_lightning_bolt] run execute as @s[tag=!GB_curry] run execute as @s[tag=!GB_super_shotgun] run advancement grant @s[tag=!GB_laser] only gorbino:peace
+execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=!GB_archer] run execute as @s[tag=!GB_knight] run execute as @s[tag=!GB_lumberjack] run execute as @s[tag=!GB_mace_master] run execute as @s[tag=!GB_burst_charm] run execute as @s[tag=!GB_freeze_bolt] run execute as @s[tag=!GB_fireball] run execute as @s[tag=!GB_ground_slam] run execute as @s[tag=!GB_dripstone] run execute as @s[tag=!GB_bomber] run execute as @s[tag=!GB_shotgun] run execute as @s[tag=!GB_gamble] run execute as @s[tag=!GB_curry] run execute as @s[tag=!GB_lava] run advancement grant @s[tag=!GB_knockback] only gorbino:peace
 #execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=mace_master] run execute as @s[tag=ground_slam] run advancement grant @s[tag=dripstone,scores={GB_Points=4}] only gorbino:crush
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_heavy_armor] run execute as @s[tag=GB_grow] run advancement grant @s[tag=GB_lumberjack,scores={GB_Points=5}] only gorbino:little_baby_man
 #execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=archer] run advancement grant @s[tag=laser,scores={GB_Points=4}] only gorbino:professionals
@@ -82,6 +82,12 @@ execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run execute as @s[tag=GB_heavy_armor] run advancement grant @s[tag=GB_lumberjack,scores={GB_Points=5}] only gorbino:joust
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] run execute as @s[tag=GB_burst_charm] run advancement grant @s[tag=GB_lumberjack,scores={GB_Points=4}] only gorbino:ranges
 
+#w mo w
+execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_NoW] run advancement grant @s only gorbino:wnow
+
+#Banana map achievement
+execute if score 1 GB_Select matches 1 if score GB_Map GB_Select matches 12 as Nugit_Man if entity @s[scores={MAIN_Game=3}] run advancement grant @a[scores={GB_Mode=1,MAIN_Game=3}] only gorbino:banana
+
 #Milestones
 advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=25..}] only super_server:milestones/gorbino/gorbino_guy
 advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=100..}] only super_server:milestones/gorbino/gorbino_great
@@ -92,11 +98,16 @@ advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=1500..}] only super_
 advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=2000..}] only super_server:milestones/gorbino/gorbino_gladiator
 advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=2500..}] only super_server:milestones/gorbino/gorbino_gear
 advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=5000..}] only super_server:milestones/gorbino/gorbino_gamer
+advancement grant @a[scores={MAIN_Game=3,GB_Milestones_Wins=10000..}] only super_server:milestones/gorbino/gorbino_god
 
 
 
 execute if score 1 GB_Select matches 1 run scoreboard players set @a[scores={GB_Mode=1,MAIN_Game=3}] GB_Mode 2
 
+scoreboard players set 3 GB_Select 0
+execute if score 2 GB_Select matches -1 as @a[scores={GB_Mode=2,MAIN_Game=3}] run scoreboard players add 3 GB_Select 1
+execute if score 2 GB_Select matches -1 run execute if score 3 GB_Select matches 0..1 run schedule clear gorbino:gamestart
+execute if score 2 GB_Select matches -1 run execute if score 3 GB_Select matches 0..1 run scoreboard players set 2 GB_Select 0
 execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 2..16 run schedule function gorbino:gamestart 3s
 execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 2..16 run title @a[scores={GB_Mode=0,MAIN_Game=3}] subtitle "Make Sure To Join!"
 execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 2..16 run title @a[scores={GB_Mode=0..2,MAIN_Game=3}] title "A New Fight Is Starting!"
@@ -106,3 +117,4 @@ execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 
 #LMAO what is this?
 #I don't man, Imma go out on a date with Brook's ex
 #Man, why wasn't I allowed? It would have been so funny
+#Because it turns out she was a bitch all along!!!

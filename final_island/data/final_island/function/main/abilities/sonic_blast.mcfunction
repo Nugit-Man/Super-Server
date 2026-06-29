@@ -1,0 +1,14 @@
+summon marker ^ ^ ^16 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^3 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^4 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^5 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^6 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^7 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^8 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^9 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^10 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^11 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^12 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^13 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^14 {Tags:[FI_Sonic_Blast_Marker]}
+summon marker ^ ^ ^15 {Tags:[FI_Sonic_Blast_Marker]}

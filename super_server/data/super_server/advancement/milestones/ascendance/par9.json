@@ -10,7 +10,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "super_server:milestones/ascendance/par5",
+  "parent": "super_server:milestones/ascendance/par7",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

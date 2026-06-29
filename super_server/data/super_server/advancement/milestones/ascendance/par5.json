@@ -3,7 +3,7 @@
     "icon": {
       "id": "minecraft:arrow"
     },
-    "title": "Maximum velocity",
+    "title": "Crazy fast",
     "description": "Clear 5 Par times",
     "frame": "task",
     "show_toast": true,

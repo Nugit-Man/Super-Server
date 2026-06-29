@@ -31,6 +31,7 @@ title @a[scores={GB_Mode=2,MAIN_Game=3}] actionbar "You Are Joining The Fight"
 #check what gamestate the game us currentlyt in
 function gorbino:playerchecker
 
+tag @a[predicate=super_server:forward] remove GB_NoW
 
 #Cleanup
 execute at @a[scores={GB_Mode=2..,MAIN_Game=3}] run fill ~20 ~9 ~20 ~-20 ~-9 ~-20 minecraft:stone replace minecraft:slime_block
@@ -72,6 +73,7 @@ execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s armor base reset
 execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s attack_damage base reset
 execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s attack_knockback base reset
 execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s attack_speed base reset
+execute as @a[scores={GB_Mode=0,MAIN_Game=3}] run attribute @s movement_speed base reset
 
 
 #sclae
@@ -84,7 +86,7 @@ execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s entity_intera
 execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s attack_damage base reset
 execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s attack_knockback base reset
 execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s attack_speed base reset
-
+execute as @a[scores={GB_Deaths=1..,MAIN_Game=3}] run attribute @s movement_speed base reset
 
 #Check Deaths
 clear @a[scores={GB_Deaths=1..,MAIN_Game=3}]
@@ -102,9 +104,11 @@ execute in gorbino:lobby run item replace block 74 -18 42 container.13 with mine
 execute in gorbino:lobby run item replace block 100 -37 21 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in gorbino:lobby run item replace block 85 1 66 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in gorbino:game run item replace block 3991 12 -11 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in gorbino:game run item replace block 3991 12 -11 container.0 with air
 execute in gorbino:lobby run item replace block 30 36 -50 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in gorbino:lobby run item replace block 49 21 18 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in gorbino:game run item replace block 3000 7 0 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
+execute in gorbino:game run item replace block 3000 7 0 container.0 with air
 execute in gorbino:lobby run item replace block -52 10 149 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 execute in gorbino:lobby run item replace block 80 -25 38 container.13 with minecraft:sunflower[custom_name=[{text:"A Secret",italic:false}],lore=[[{text:"What Could",italic:false}],[{text:"This Be?",italic:false}]],custom_model_data={strings:['Barrel']}]
 
@@ -233,7 +237,7 @@ kill @e[tag=GB_Lava,scores={GB_velocity=300}]
 #scoreboard players add @a[tag=GB_GB_archer] GB_Arrow 1
 #execute as @a[tag=GB_GB_archer] run execute store result score @s GB_velocity run clear @s arrow 0
 #give @a[scores={GB_Mode=1,GB_velocity=..2},tag=GB_GB_archer] arrow
-execute if score MAIN_5s MAIN_Time matches 100 run give @a[scores={MAIN_Game=3,GB_Mode=1},tag=GB_archer] arrow
+execute if score MAIN_10s MAIN_Time matches 100 run give @a[scores={MAIN_Game=3,GB_Mode=1},tag=GB_archer] arrow
 
 #Timer
 #execute as @e[tag=GB_Timer] run scoreboard players set @s GB_velocity 0

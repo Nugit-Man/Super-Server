@@ -1,3 +1,4 @@
+execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 0..1 run return run tellraw @a[scores={MAIN_Game=3,GB_Mode=2}] "Fight was cancelled because no one quined"
 scoreboard players set @a[scores={GB_Mode=2,MAIN_Game=3}] GB_Mode 1
 execute store result score GB_Map GB_Select run random value 0..22
 scoreboard players set 2 GB_Select 0
@@ -54,7 +55,7 @@ execute in gorbino:game run execute if score GB_Map GB_Select matches 22 run tp 
 
 #more border
 execute in gorbino:game run worldborder set 100
-execute in gorbino:game run worldborder set 33 180
+execute in gorbino:game run worldborder set 33 180s
 schedule clear gorbino:border/sudden_death
 schedule clear gorbino:border/border2
 schedule function gorbino:border/border2 180s
@@ -93,6 +94,9 @@ schedule function gorbino:border/clear 3s
 scoreboard players set @a GB_Dash_Check 0
 scoreboard players set @a GB_Heal_Check 0
 
+#W no W
+tag @a[scores={GB_Mode=1,MAIN_Game=3}] add GB_NoW
+
 
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_simple_armor] armor.chest with minecraft:leather_chestplate[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_simple_armor] armor.legs with minecraft:leather_leggings[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
@@ -114,18 +118,18 @@ scoreboard players set @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] GB_Arrow
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knight] weapon.offhand with minecraft:shield[unbreakable={},tooltip_display={hidden_components:[unbreakable]}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_knockback] stick[custom_name=[{text:"Knockback Stick",italic: false}],enchantments={knockback:3}]
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_dash] sugar[custom_name=[{text:"Dash",italic:false,color:"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.05,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:2}]
-give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_burst_charm] nether_star[custom_name=[{"text":"Burst Charm","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:1,animation:brush,sound:"block.amethyst_block.resonate",has_consume_particles:0b},use_cooldown={seconds:10}]
-give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_freeze_bolt] breeze_rod[custom_name=[{"text":"Freeze Bolt","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.2,animation:spear,sound:"entity.player.hurt_freeze",has_consume_particles:0b},use_cooldown={seconds:7.5}]
+give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_burst_charm] nether_star[custom_name=[{"text":"Burst Charm","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:1,animation:brush,sound:"block.amethyst_block.resonate",has_consume_particles:0b},use_cooldown={seconds:10},use_effects={speed_multiplier:1,can_sprint:true}]
+give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_freeze_bolt] breeze_rod[custom_name=[{"text":"Freeze Bolt","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.2,animation:trident,sound:"entity.player.hurt_freeze",has_consume_particles:0b},use_cooldown={seconds:7.5}]
 #give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_builder] minecraft:oak_planks[custom_name=[{text:"Builder",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0.5,animation:block,sound:"entity.horse.step_wood",has_consume_particles:0b},use_cooldown={seconds:7.5}]
-give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_fireball] fire_charge[custom_name=[{"text":"Fireball","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.2,animation:spear,sound:"entity.ghast.shoot",has_consume_particles:0b},use_cooldown={seconds:5}]
+give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_fireball] fire_charge[custom_name=[{"text":"Fireball","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.2,animation:trident,sound:"entity.ghast.shoot",has_consume_particles:0b},use_cooldown={seconds:5}]
 #give @a[tag=GB_frog,scores={GB_Mode=1,MAIN_Game=3}] minecraft:ochre_froglight[custom_name=[{text:"Frog",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.frog.ambient",has_consume_particles:0b},use_cooldown={seconds:10}]
-give @a[tag=GB_dripstone,scores={GB_Mode=1,MAIN_Game=3}] dripstone_block[custom_name=[{"text":"Dripstone","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.2,animation:spear,sound:"block.pointed_dripstone.place",has_consume_particles:0b},use_cooldown={seconds:6}]
-give @a[tag=GB_ground_slam,scores={GB_Mode=1,MAIN_Game=3}] dirt[custom_name=[{"text":"Ground Slam","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.05,animation:spear,sound:"entity.generic.explode",has_consume_particles:0b},use_cooldown={seconds:5}]
+give @a[tag=GB_dripstone,scores={GB_Mode=1,MAIN_Game=3}] dripstone_block[custom_name=[{"text":"Dripstone","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.2,animation:trident,sound:"block.pointed_dripstone.place",has_consume_particles:0b},use_cooldown={seconds:6}]
+give @a[tag=GB_ground_slam,scores={GB_Mode=1,MAIN_Game=3}] dirt[custom_name=[{"text":"Ground Slam","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.05,animation:trident,sound:"entity.generic.explode",has_consume_particles:0b},use_cooldown={seconds:5}]
 #give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_mace_master] mace[unbreakable={show_in_tooltip:false}]
 #give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_wind_waker] wind_charge 64
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_cancer] prismarine_crystals[custom_name=[{"text":"Cancer","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.05,animation:block,sound:"entity.generic.extinguish_fire",has_consume_particles:0b}]
-give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_lava] magma_block[custom_name=[{"text":"Lava","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.75,animation:block,sound:"entity.generic.burn",has_consume_particles:0b},use_cooldown={seconds:10}]
-give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Piss] honey_bottle[custom_name=[{"text":"Super Laser Piss","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.05,animation:"spear",sound:"block.honey_block.fall",has_consume_particles:0b},use_cooldown={seconds:20}]
+give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_lava] magma_block[custom_name=[{"text":"Lava","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.75,animation:block,sound:"entity.generic.burn",has_consume_particles:0b},use_cooldown={seconds:10},use_effects={speed_multiplier:0,can_sprint:false}]
+give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Piss] honey_bottle[custom_name=[{"text":"Super Laser Piss","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.05,animation:"trident",sound:"block.honey_block.fall",has_consume_particles:0b},use_cooldown={seconds:20}]
 #give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_chad] minecraft:diamond[custom_name=[{text:"Chad",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:10,animation:block,sound:"entity.experience_orb.pickup",has_consume_particles:0b},use_cooldown={seconds:24}]
 #give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_lightning_bolt] minecraft:lightning_rod[custom_name=[{text:"Lightning Bolt",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:.2,animation:spyglass,sound:"entity.lightning_bolt.thunder",has_consume_particles:0b},use_cooldown={seconds:6}]
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_elytra] armor.head with end_rod[glider={},equippable={slot:head}]
@@ -153,11 +157,12 @@ execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run attribute @s jump_
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run attribute @s entity_interaction_range base set 10
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run attribute @s minecraft:max_health base set 40
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run attribute @s minecraft:step_height base set 1
+execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s movement_speed base set 0.12
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s scale base set 0.6
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s jump_strength base set 0.4
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s entity_interaction_range base set 2
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s minecraft:max_health base set 14
-effect give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] speed infinite 4 true
+execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run attribute @s movement_speed base set 0.15
 execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_grow] run advancement grant @s[tag=GB_shrink] only gorbino:size
 #shotgun and super shotgun code need fixing
 #give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shotgun] crossbow[charged_projectiles=[{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:2,explosions:[{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"},{shape:"small_ball"}]}}}],unbreakable={},tooltip_display={hide_tooltip:true}]
@@ -180,3 +185,7 @@ item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Hazmat] armor.legs 
 item replace entity @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Hazmat] armor.feet with leather_boots[trim={pattern:sentry,material:netherite},dyed_color=16776960,custom_name=[{text:"Hazmat Suit",italic:false}],unbreakable={},tooltip_display={hidden_components:[attribute_modifiers,dyed_color,trim,unbreakable]},enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
 give @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] arrow 8
+
+execute in gorbino:game run setblock 1011 1 0 stone_button[facing=east]
+execute in gorbino:game run setblock 4004 1 15 stone_button[facing=east]
+execute in gorbino:game run setblock 14000 1 13 minecraft:stone_button[facing=south]

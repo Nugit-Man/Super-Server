@@ -10,9 +10,7 @@
     "hidden": false
   },
   "parent": "ascendance:berrel/barrel4",
-  "rewards":{
-    "function": "final_island:advancement/barrel/balloon"
-  },
+
   "criteria": {
     "requirement": {
       "trigger": "minecraft:impossible"

@@ -1,6 +1,7 @@
 
 scoreboard players set @a[scores={MAIN_Game=7,RIC_Menu=2}] RIC_Main 4
 scoreboard players set @a[scores={MAIN_Game=7,RIC_Menu=2}] RIC_Menu 0
+tag @a[scores={MAIN_Game=7,RIC_Menu=2}] add RIC_WnoW
 clear @a[scores={MAIN_Game=7,RIC_Main=4}]
 
 tag @a[scores={MAIN_Game=7,RIC_Main=4}] add RIC_Pillar_Spawn

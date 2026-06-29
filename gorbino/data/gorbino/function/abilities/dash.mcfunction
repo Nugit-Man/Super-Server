@@ -1,88 +1,12 @@
-tag @s add dasher
 particle minecraft:smoke ~ ~1 ~ .4 .4 .4 .01 1000 normal
-summon marker ~ ~ ~ {Tags:["Dash1"]}
-execute anchored eyes run tp @e[tag=Dash1,limit=1,sort=nearest] ^ ^ ^0.5 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash2"]}
-execute anchored eyes run tp @e[tag=Dash2,limit=1,sort=nearest] ^ ^ ^1 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash3"]}
-execute anchored eyes run tp @e[tag=Dash3,limit=1,sort=nearest] ^ ^ ^1.5 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash4"]}
-execute anchored eyes run tp @e[tag=Dash4,limit=1,sort=nearest] ^ ^ ^2 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash5"]}
-execute anchored eyes run tp @e[tag=Dash5,limit=1,sort=nearest] ^ ^ ^2.5 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash6"]}
-execute anchored eyes run tp @e[tag=Dash6,limit=1,sort=nearest] ^ ^ ^3 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash7"]}
-execute anchored eyes run tp @e[tag=Dash7,limit=1,sort=nearest] ^ ^ ^3.5 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash8"]}
-execute anchored eyes run tp @e[tag=Dash8,limit=1,sort=nearest] ^ ^ ^4 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash9"]}
-execute anchored eyes run tp @e[tag=Dash9,limit=1,sort=nearest] ^ ^ ^4.5 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash10"]}
-execute anchored eyes run tp @e[tag=Dash10,limit=1,sort=nearest] ^ ^1 ^5 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash11"]}
-execute anchored eyes run tp @e[tag=Dash11,limit=1,sort=nearest] ^ ^ ^5.5 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash12"]}
-execute anchored eyes run tp @e[tag=Dash12,limit=1,sort=nearest] ^ ^ ^6 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash13"]}
-execute anchored eyes run tp @e[tag=Dash13,limit=1,sort=nearest] ^ ^ ^6.5 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash14"]}
-execute anchored eyes run tp @e[tag=Dash14,limit=1,sort=nearest] ^ ^ ^7 ~ ~
-summon marker ~ ~ ~ {Tags:["Dash15"]}
-execute anchored eyes run tp @e[tag=Dash15,limit=1,sort=nearest] ^ ^ ^7.5 ~ ~
 
+scoreboard players set $x player_motion.api.launch 0
+scoreboard players set $y player_motion.api.launch 100
+scoreboard players set $z player_motion.api.launch 1000
+scoreboard players set $strength player_motion.api.launch 15000
 
-scoreboard players set @s GB_velocity 0
+function player_motion:api/launch_looking
 
-execute if score @s GB_velocity matches 0 run execute at @e[tag=Dash1,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 1
-execute if score @s GB_velocity matches 1 run execute at @e[tag=Dash2,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 2
-execute if score @s GB_velocity matches 2 run execute at @e[tag=Dash3,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 3
-execute if score @s GB_velocity matches 3 run execute at @e[tag=Dash4,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 4
-execute if score @s GB_velocity matches 4 run execute at @e[tag=Dash5,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 5
-execute if score @s GB_velocity matches 5 run execute at @e[tag=Dash6,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 6
-execute if score @s GB_velocity matches 6 run execute at @e[tag=Dash7,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 7
-execute if score @s GB_velocity matches 7 run execute at @e[tag=Dash8,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 8
-execute if score @s GB_velocity matches 8 run execute at @e[tag=Dash9,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 9
-execute if score @s GB_velocity matches 9 run execute at @e[tag=Dash10,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 10
-execute if score @s GB_velocity matches 10 run execute at @e[tag=Dash11,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 11
-execute if score @s GB_velocity matches 11 run execute at @e[tag=Dash12,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 12
-execute if score @s GB_velocity matches 12 run execute at @e[tag=Dash13,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 13
-execute if score @s GB_velocity matches 13 run execute at @e[tag=Dash14,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 14
-execute if score @s GB_velocity matches 14 run execute at @e[tag=Dash15,limit=1,sort=nearest] run execute if block ~ ~ ~ air run scoreboard players set @p[tag=dasher] GB_velocity 15
-
-execute if score @s GB_velocity matches 1 run tp @s @e[limit=1,sort=nearest,tag=Dash1]
-execute if score @s GB_velocity matches 2 run tp @s @e[limit=1,sort=nearest,tag=Dash2]
-execute if score @s GB_velocity matches 3 run tp @s @e[limit=1,sort=nearest,tag=Dash3]
-execute if score @s GB_velocity matches 4 run tp @s @e[limit=1,sort=nearest,tag=Dash4]
-execute if score @s GB_velocity matches 5 run tp @s @e[limit=1,sort=nearest,tag=Dash5]
-execute if score @s GB_velocity matches 6 run tp @s @e[limit=1,sort=nearest,tag=Dash6]
-execute if score @s GB_velocity matches 7 run tp @s @e[limit=1,sort=nearest,tag=Dash7]
-execute if score @s GB_velocity matches 8 run tp @s @e[limit=1,sort=nearest,tag=Dash8]
-execute if score @s GB_velocity matches 9 run tp @s @e[limit=1,sort=nearest,tag=Dash9]
-execute if score @s GB_velocity matches 10 run tp @s @e[limit=1,sort=nearest,tag=Dash10]
-execute if score @s GB_velocity matches 11 run tp @s @e[limit=1,sort=nearest,tag=Dash11]
-execute if score @s GB_velocity matches 12 run tp @s @e[limit=1,sort=nearest,tag=Dash12]
-execute if score @s GB_velocity matches 13 run tp @s @e[limit=1,sort=nearest,tag=Dash13]
-execute if score @s GB_velocity matches 14 run tp @s @e[limit=1,sort=nearest,tag=Dash14]
-execute if score @s GB_velocity matches 15 run tp @s @e[limit=1,sort=nearest,tag=Dash15]
-
-kill @e[type=marker,tag=Dash1]
-kill @e[type=marker,tag=Dash2]
-kill @e[type=marker,tag=Dash3]
-kill @e[type=marker,tag=Dash4]
-kill @e[type=marker,tag=Dash5]
-kill @e[type=marker,tag=Dash6]
-kill @e[type=marker,tag=Dash7]
-kill @e[type=marker,tag=Dash8]
-kill @e[type=marker,tag=Dash9]
-kill @e[type=marker,tag=Dash10]
-kill @e[type=marker,tag=Dash11]
-kill @e[type=marker,tag=Dash12]
-kill @e[type=marker,tag=Dash13]
-kill @e[type=marker,tag=Dash14]
-kill @e[type=marker,tag=Dash15]
-
-tag @s remove dasher
 give @s sugar[custom_name=[{"text":"Dash","italic":false,"color":"white"}],food={nutrition:0,saturation:0,can_always_eat:1b},consumable={consume_seconds:0.05,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:2}]
 #give @s[tag=lightweight] sugar[custom_name=[{text:"Dash",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:10}]
 #give @s[tag=elytra] sugar[custom_name=[{text:"Dash",italic:false}],consumable={nutrition:0,saturation:0,can_always_eat:1b,consume_seconds:0,sound:"entity.armadillo.brush",has_consume_particles:0b},use_cooldown={seconds:10}]

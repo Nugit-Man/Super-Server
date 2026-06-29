@@ -229,7 +229,7 @@ item replace entity @s[tag=GB_shrink] inventory.15 with pufferfish[custom_name=[
 item replace entity @s[tag=!GB_lava] inventory.7 with lava_bucket[custom_name=[{text:"Lava [2]",italic:false}],lore=[{text:"Creates a 5x5 area of lava in the ground in front of you",color:dark_gray},{text:"Takes time to charge up",color:dark_gray}]]
 item replace entity @s[tag=GB_lava] inventory.7 with lava_bucket[custom_name=[{text:"Lava [2]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
-item replace entity @s[tag=!GB_heal] inventory.1 with red_dye[custom_name=[{text:"Heal [1]",italic:false}]]
+item replace entity @s[tag=!GB_heal] inventory.1 with red_dye[custom_name=[{text:"Heal [1]",italic:false}],lore=[{text:"Full heal",color:dark_gray},{text:"Takes a second to use",color:dark_gray},{text:"Very long cooldown",color:dark_gray}]]
 item replace entity @s[tag=GB_heal] inventory.1 with red_dye[custom_name=[{text:"Heal [1]",italic:false}],enchantment_glint_override=true,lore=[{text:"selected",italic:false,color:gray}]]
 
 item replace entity @s[tag=!GB_cancer] inventory.25 with prismarine_crystals[custom_name=[{text:"Cancer [1]",italic:false}],lore=[{text:"*Cough Cough",color:dark_gray}]]

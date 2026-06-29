@@ -165,3 +165,8 @@ scoreboard objectives add FI_Mana_Cooldown_Gem_Tuff dummy
 scoreboard objectives add FI_Sugar_Cane dummy
 
 scoreboard objectives add FI_Mana_Cooldown_iron_axe dummy
+
+
+#optimize
+function final_island:main/advnacements
+function final_island:optimize/schedule
