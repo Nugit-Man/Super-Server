@@ -7,7 +7,7 @@ execute as @a[tag=MM_Class_Chicken] run function mob_madness:classes/chicken/tic
 
 
 #Heal one self
-effect clear @a regeneration
+effect clear @a[scores={MAIN_Game=9}] regeneration
 effect give @a[scores={MM_Health=5..}] regeneration 1 255 true
 scoreboard players remove @a[scores={MM_Health=5..}] MM_Health 5
 
