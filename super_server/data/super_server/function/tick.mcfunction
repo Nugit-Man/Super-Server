@@ -42,3 +42,8 @@ function super_server:team/make
 #Bonus Barrels
 scoreboard players set @a[tag=!MAIN_Bonus_Barrel_Reset] MAIN_Barrels_Bonus 0
 tag @a add MAIN_Bonus_Barrel_Reset
+
+
+tag @a[scores={MAIN_Game=0}] remove MM_Class_Assassin
+tag @a[scores={MAIN_Game=0}] remove MM_Class_Chicken
+tag @a[scores={MAIN_Game=0}] remove MM_Class_Polar_Bear
