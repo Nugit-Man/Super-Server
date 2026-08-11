@@ -1,4 +1,4 @@
-execute at @s[tag=MM_Blue] anchored eyes run summon armor_stand ^ ^ ^1 {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["MM_Chicken_New","MM_Chicken_Ride","MM_Blue"],Passengers:[{id:"minecraft:item_display",Tags:["MM_Chicken_Egg","MM_Chicken_New","MM_Blue"],item:{id:"minecraft:egg",count:1}}]}
+execute at @s[tag=MM_Blue] run summon armor_stand ^ ^ ^1 {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["MM_Chicken_New","MM_Chicken_Ride","MM_Blue"],Passengers:[{id:"minecraft:item_display",Tags:["MM_Chicken_Egg","MM_Chicken_New","MM_Blue"],item:{id:"minecraft:egg",count:1}}]}
 execute at @s[tag=MM_Red] run summon armor_stand ^ ^ ^1 {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["MM_Chicken_New","MM_Chicken_Ride","MM_Red"],Passengers:[{id:"minecraft:item_display",Tags:["MM_Chicken_Egg","MM_Chicken_New","MM_Red"],item:{id:"minecraft:egg",count:1}}]}
 #summon armor_stand ^ ^ ^1 {NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["MM_Chicken_New","MM_Chicken_Ride"]}
 #execute as @n[type=armor_stand,tag=MM_Chicken_New] at @s run tp @s ~ ~1.62 ~

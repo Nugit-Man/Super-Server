@@ -1,1 +1,1 @@
-execute anchored eyes positioned ^ ^ ^ summon item_display run function mob_madness:classes/polar_bear/bounce/velocity
+execute anchored eyes positioned ^ ^ ^2 summon item_display run function mob_madness:classes/polar_bear/bounce/velocity

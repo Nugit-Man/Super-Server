@@ -16,28 +16,6 @@ scoreboard players remove @a[scores={MM_Health=5..}] MM_Health 5
 #remove defense every tick cuz i am dumb
 scoreboard players set @a MM_Defense 0
 
-#ASsassin Projectile
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power1] 4 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power1] 4 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power2] 5 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power2] 5 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power3] 6 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power3] 6 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power4] 7 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power4] 7 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power5] 8 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power5] 8 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power6] 9 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power6] 9 generic
-scoreboard players add @e[type=item_display,tag=MM_Dash_Test] MM_Test_Dash 1
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power1] at @s run tp @s ^ ^ ^-0.1
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power2] at @s run tp @s ^ ^ ^-0.2
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power3] at @s run tp @s ^ ^ ^-0.3
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power4] at @s run tp @s ^ ^ ^-0.4
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power5] at @s run tp @s ^ ^ ^-0.5
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power6] at @s run tp @s ^ ^ ^-0.6
-kill @e[type=item_display,tag=MM_Dash_Test,scores={MM_Test_Dash=5..}]
-
 
 #Chicken projectile
 scoreboard players add @e[type=armor_stand,tag=MM_Chicken_Ride] MM_Chicken_Song 1
@@ -159,6 +137,13 @@ kill @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=18}]
 
 scoreboard players add @e[type=armor_stand,tag=MM_Ice] MM_Ice 1
 
+#Damage
+execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=9}] at @s run scoreboard players add @a[tag=MM_Blue,distance=..2] MM_Damage 18 
+execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=9}] at @s run scoreboard players add @a[tag=MM_Red,distance=..2] MM_Damage 18 
+
+
+
+
 #make the next one
 scoreboard players add @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=2}] MM_Ice_Chain 1
 execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=3,MM_Ice_Chain=..100}] at @s run scoreboard players operation @n[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] MM_Ice_Chain = @s MM_Ice_Chain
@@ -230,6 +215,9 @@ execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=12}] run data 
 execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=11}] run data modify entity @s transformation.scale[2] set value 2
 execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=10}] run data modify entity @s transformation.scale[2] set value 2.5
 
+#Damage Time
+execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=8}] at @s run scoreboard players add @a[tag=MM_Blue,distance=..2] MM_Damage 15
+execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=8}] at @s run scoreboard players add @a[tag=MM_Red,distance=..2] MM_Damage 15
 
 
 #Joingame
