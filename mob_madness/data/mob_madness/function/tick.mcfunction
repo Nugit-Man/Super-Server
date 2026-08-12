@@ -114,7 +114,7 @@ execute as @a[scores={MM_Damage=5..}] run function mob_madness:main/damage
 
 
 #Ice block
-execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] at @s run summon item_display ~ ~ ~ {width:2f,height:4f,item:{id:"minecraft:ice",count:1}}
+execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] at @s run summon item_display ~ ~ ~ {item:{id:"minecraft:ice",count:1}}
 execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] at @s run data modify entity @n[type=minecraft:item_display] transformation.scale[0] set value 3f
 execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] at @s run data modify entity @n[type=minecraft:item_display] transformation.scale[2] set value 3f
 execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] at @s run data modify entity @n[type=minecraft:item_display] transformation.scale[1] set value 0.5f
@@ -139,8 +139,8 @@ kill @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=18}]
 scoreboard players add @e[type=armor_stand,tag=MM_Ice] MM_Ice 1
 
 #Damage
-execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=9}] at @s run scoreboard players add @a[tag=MM_Blue,distance=..2] MM_Damage 18 
-execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=9}] at @s run scoreboard players add @a[tag=MM_Red,distance=..2] MM_Damage 18 
+execute as @e[type=armor_stand,tag=MM_Ice_Red,scores={MM_Ice=9}] at @s run scoreboard players add @a[tag=MM_Blue,distance=..2] MM_Damage 18 
+execute as @e[type=armor_stand,tag=MM_Ice_Blue,scores={MM_Ice=9}] at @s run scoreboard players add @a[tag=MM_Red,distance=..2] MM_Damage 18 
 
 
 
@@ -148,7 +148,8 @@ execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=9}] at @s run scoreboar
 #make the next one
 scoreboard players add @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=2}] MM_Ice_Chain 1
 execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=3,MM_Ice_Chain=..100}] at @s run scoreboard players operation @n[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] MM_Ice_Chain = @s MM_Ice_Chain
-execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=2,MM_Ice_Chain=..100}] at @s run summon armor_stand ~ ~ ~ {Tags:[MM_Ice,MM_Ice_Spawn],Invisible:1b,NoGravity:1b}
+execute as @e[type=armor_stand,tag=MM_Ice_Red,scores={MM_Ice=2,MM_Ice_Chain=..100}] at @s run summon armor_stand ~ ~ ~ {Tags:[MM_Ice,MM_Ice_Spawn,MM_Ice_Red],Invisible:1b,NoGravity:1b}
+execute as @e[type=armor_stand,tag=MM_Ice_Blue,scores={MM_Ice=2,MM_Ice_Chain=..100}] at @s run summon armor_stand ~ ~ ~ {Tags:[MM_Ice,MM_Ice_Spawn,MM_Ice_Blue],Invisible:1b,NoGravity:1b}
 execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=2,MM_Ice_Chain=..100}] at @s run tp @n[type=armor_stand,tag=MM_Ice,tag=MM_Ice_Spawn] ~ ~ ~ ~ 0
 
 
