@@ -4,6 +4,7 @@ scoreboard players set @a[scores={MAIN_Game=9,MM_Polar_Cooldown=..-1},tag=MM_Cla
 #Run your class
 execute as @a[tag=MM_Class_Assassin] run function mob_madness:classes/assassin/tick
 execute as @a[tag=MM_Class_Chicken] run function mob_madness:classes/chicken/tick
+execute as @a[tag=MM_Class_Polar_Bear] run function mob_madness:classes/polar_bear/tick
 
 
 #Heal one self
