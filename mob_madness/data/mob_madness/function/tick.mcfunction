@@ -218,8 +218,8 @@ execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=11}] run data 
 execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=10}] run data modify entity @s transformation.scale[2] set value 2.5
 
 #Damage Time
-execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=8}] at @s run scoreboard players add @a[tag=MM_Blue,distance=..2] MM_Damage 15
-execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=8}] at @s run scoreboard players add @a[tag=MM_Red,distance=..2] MM_Damage 15
+execute as @e[type=item_display,tag=MM_Ice_Pinball_Red,scores={MM_Ice=8}] at @s run scoreboard players add @a[tag=MM_Blue,distance=..2] MM_Damage 15
+execute as @e[type=item_display,tag=MM_Ice_Pinball_Blue,scores={MM_Ice=8}] at @s run scoreboard players add @a[tag=MM_Red,distance=..2] MM_Damage 15
 
 
 #Joingame

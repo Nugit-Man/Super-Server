@@ -1,1 +1,2 @@
-execute anchored eyes positioned ^ ^ ^2 summon item_display run function mob_madness:classes/polar_bear/bounce/velocity
+execute if entity @s[tag=MM_Red] anchored eyes positioned ^ ^ ^2 summon item_display run function mob_madness:classes/polar_bear/bounce/velocity_red
+execute if entity @s[tag=MM_Blue] anchored eyes positioned ^ ^ ^2 summon item_display run function mob_madness:classes/polar_bear/bounce/velocity_blue

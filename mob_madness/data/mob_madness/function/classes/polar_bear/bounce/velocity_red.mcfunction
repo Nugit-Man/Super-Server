@@ -17,3 +17,5 @@ execute store result entity @s Motion[2] double 1 run scoreboard players operati
 
 tag @s add MM_Ice_Pinball
 scoreboard players set @s MM_Ice_Chain 0
+
+tag @s add MM_Ice_Pinball_Red
