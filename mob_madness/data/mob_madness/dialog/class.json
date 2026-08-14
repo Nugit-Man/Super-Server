@@ -1,7 +1,13 @@
 {
   "type": "minecraft:multi_action",
   "title": "Choose your Class",
+  "external_title": "MM_Class_Select",
+  "can_close_with_escape": true,
   "pause": false,
+  "exit_action": {
+    "label": "How to play",
+    "tooltip": "Learn how to play each class"
+  },
   "actions": [
     {
       "label": "Cat - Red",
@@ -21,7 +27,7 @@
     },
     {
       "label": "Chicken - Red",
-      "tooltip": "Class type: Healer",
+      "tooltip": "Class type: Buffer",
       "action": {
         "type": "minecraft:run_command",
         "command": "trigger MM_Joingame set 3"
@@ -29,7 +35,7 @@
     },
     {
       "label": "Chicken - Blue",
-      "tooltip": "Class type: Healer",
+      "tooltip": "Class type: Buffer",
       "action": {
         "type": "minecraft:run_command",
         "command": "trigger MM_Joingame set 4"
@@ -49,6 +55,54 @@
       "action": {
         "type": "minecraft:run_command",
         "command": "trigger MM_Joingame set 6"
+      }
+    },
+    {
+      "label": "Skeleton - Red",
+      "tooltip": "Class type: Sniper",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 7"
+      }
+    },
+    {
+      "label": "Skeleton - Blue",
+      "tooltip": "Class type: Sniper",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 8"
+      }
+    },
+    {
+      "label": "Horse - Red",
+      "tooltip": "Class type: Pressure",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 9"
+      }
+    },
+    {
+      "label": "Horse - Blue",
+      "tooltip": "Class type: Pressure",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 10"
+      }
+    },
+    {
+      "label": "Warden - Red",
+      "tooltip": "Class type: Snowballer",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 11"
+      }
+    },
+    {
+      "label": "Warden - Blue",
+      "tooltip": "Class type: Snowballer",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger MM_Joingame set 12"
       }
     }
   ]

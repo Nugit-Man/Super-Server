@@ -5,6 +5,7 @@ scoreboard players set @a[scores={MAIN_Game=9,MM_Polar_Cooldown=..-1},tag=MM_Cla
 execute as @a[tag=MM_Class_Assassin] run function mob_madness:classes/assassin/tick
 execute as @a[tag=MM_Class_Chicken] run function mob_madness:classes/chicken/tick
 execute as @a[tag=MM_Class_Polar_Bear] run function mob_madness:classes/polar_bear/tick
+execute as @a[tag=MM_Class_Skeleton] run function mob_madness:classes/skeleton/tick
 
 
 #Heal one self
@@ -228,3 +229,33 @@ execute as @a[scores={MAIN_Game=9,MM_Joingame=1..}] run function mob_madness:joi
 
 #clear
 execute at @e[type=marker,limit=1,tag=MM_Clear] run function mob_madness:clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Skeleton stuff
+scoreboard players add @e[type=armor_stand,tag=MM_Skeleton_Arrow] MM_Skeleton_Arrow 1
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=100..}] at @s run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=100..}] at @s run kill @s
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s run tp @s ^ ^ ^0.8
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @s
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s run tp @s ^ ^ ^0.8
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @s
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s run tp @s ^ ^ ^0.8
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @s
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s run tp @s ^ ^ ^0.8
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @s

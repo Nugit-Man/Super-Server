@@ -6,3 +6,4 @@ execute as @s[scores={MM_Chicken_Main_Cooldown=0,MM_Chicken_Song_Bar=10..},tag=M
 execute as @s[scores={MM_Chicken_Main_Cooldown=0,MM_Chicken_Song_Bar=10..},tag=MM_Class_Chicken] if items entity @s weapon.mainhand *[custom_data~{MM_Chicken4:1b}] run function mob_madness:classes/chicken/left
 
 execute as @s[tag=MM_Class_Polar_Bear,scores={MM_Polar_Cooldown=0}] if items entity @s weapon.mainhand *[custom_data~{MM_Polar:1b}] run function mob_madness:classes/polar_bear/left
+execute as @s[tag=MM_Class_Skeleton,scores={MM_Skeleton_Arrow=2..,MM_Skeleton_Arrow_Cooldown=0..15}] if items entity @s weapon.mainhand *[custom_data~{MM_Skeleton:1b}] run function mob_madness:classes/skeleton/left
