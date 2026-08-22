@@ -5,6 +5,6 @@ execute if entity @s[scores={MM_Skeleton_Bone_Phase=3}] if entity @s[tag=MM_Blue
 tp @n[type=armor_stand,tag=MM_Skeleton_Arrow] ^ ^ ^1 ~ ~
 execute if entity @s[scores={MM_Skeleton_Bone_Phase=0..2}] run scoreboard players set @s MM_Skeleton_Arrow_Cooldown 22
 execute if entity @s[scores={MM_Skeleton_Bone_Phase=0..2}] run scoreboard players remove @s MM_Skeleton_Arrow 2
-execute if entity @s[scores={MM_Skeleton_Bone_Phase=3}] run scoreboard players set @s MM_Skeleton_Arrow_Cooldown 18
+execute if entity @s[scores={MM_Skeleton_Bone_Phase=3}] run scoreboard players set @s MM_Skeleton_Arrow_Cooldown 16
 execute if entity @s[scores={MM_Skeleton_Bone_Phase=3}] run scoreboard players remove @s MM_Skeleton_Arrow 1
 
