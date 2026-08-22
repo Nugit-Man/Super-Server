@@ -13,7 +13,8 @@ effect clear @a[scores={MAIN_Game=9}] regeneration
 effect give @a[scores={MM_Health=5..}] regeneration 1 255 true
 scoreboard players remove @a[scores={MM_Health=5..}] MM_Health 5
 
-
+#Saturation
+effect give @a[scores={MAIN_Game=9}] saturation infinite 255 true
 
 #remove defense every tick cuz i am dumb
 scoreboard players set @a MM_Defense 0
@@ -245,6 +246,9 @@ execute at @e[type=marker,limit=1,tag=MM_Clear] run function mob_madness:clear
 
 #Skeleton stuff
 scoreboard players add @e[type=armor_stand,tag=MM_Skeleton_Arrow] MM_Skeleton_Arrow 1
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,tag=MM_Dead2] at @s run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,tag=MM_Dead2] at @s run kill @s
+tag @e[type=armor_stand,tag=MM_Skeleton_Arrow,tag=MM_Dead] add MM_Dead2
 execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=100..}] at @s run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
 execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=100..}] at @s run kill @s
 function mob_madness:classes/skeleton/arrow/move

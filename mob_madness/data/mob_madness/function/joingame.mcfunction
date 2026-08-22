@@ -39,5 +39,5 @@ tag @s[scores={MM_Joingame=11}] add MM_Red
 
 scoreboard players set @s MM_Joingame 0
 
-scoreboard players set @s MM_Health 100
+scoreboard players set @s MM_Health 200
 effect give @s saturation 5 10

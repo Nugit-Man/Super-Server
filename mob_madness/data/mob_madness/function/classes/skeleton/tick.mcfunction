@@ -8,6 +8,7 @@ scoreboard players remove @s[scores={MM_Skeleton_Bone_Phase=1..3,MM_Skeleton_Bon
 scoreboard players set @s[scores={MM_Skeleton_Bone_Phase=1,MM_Skeleton_Bone_Charge=0}] MM_Skeleton_Bone_Charge 125
 scoreboard players set @s[scores={MM_Skeleton_Bone_Phase=1,MM_Skeleton_Bone_Charge=125}] MM_Skeleton_Bone_Phase 2
 
+attribute @s[scores={MM_Skeleton_Bone_Phase=3,MM_Skeleton_Bone_Charge=0}] movement_speed base set 0.16
 scoreboard players set @s[scores={MM_Skeleton_Bone_Phase=2..3,MM_Skeleton_Bone_Charge=0}] MM_Skeleton_Bone_Phase 0
 
 
