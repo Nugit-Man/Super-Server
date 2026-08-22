@@ -1,4 +1,5 @@
 execute if entity @s[scores={MM_Skeleton_Bone_Phase=2,MM_Damage=5..}] run function mob_madness:classes/skeleton/parry/block
+execute if entity @s[scores={MM_Skeleton_Bone_Phase=1,MM_Damage=5..}] run function mob_madness:classes/skeleton/parry/parry
 
 
 damage @s[scores={MM_Damage=150..}] 30 generic
