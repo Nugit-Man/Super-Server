@@ -247,15 +247,7 @@ execute at @e[type=marker,limit=1,tag=MM_Clear] run function mob_madness:clear
 scoreboard players add @e[type=armor_stand,tag=MM_Skeleton_Arrow] MM_Skeleton_Arrow 1
 execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=100..}] at @s run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
 execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=100..}] at @s run kill @s
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s run tp @s ^ ^ ^0.8
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @s
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s run tp @s ^ ^ ^0.8
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @s
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s run tp @s ^ ^ ^0.8
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @s
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s run tp @s ^ ^ ^0.8
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
-execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=1..}] at @s unless block ~ ~1.4 ~ air run kill @s
+function mob_madness:classes/skeleton/arrow/move
+function mob_madness:classes/skeleton/arrow/move
+function mob_madness:classes/skeleton/arrow/move
+function mob_madness:classes/skeleton/arrow/move
