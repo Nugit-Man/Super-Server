@@ -1,1 +1,1 @@
-say right
+scoreboard players set @s MM_Skeleton_Bone_Charge 0

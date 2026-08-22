@@ -18,6 +18,8 @@ scoreboard objectives add MM_Polar_Cooldown dummy
 
 scoreboard objectives add MM_Skeleton_Arrow dummy
 scoreboard objectives add MM_Skeleton_Arrow_Cooldown dummy
+scoreboard objectives add MM_Skeleton_Bone_Phase dummy
+scoreboard objectives add MM_Skeleton_Bone_Charge dummy
 
 scoreboard objectives add MM_Misc dummy
 scoreboard objectives add MM_Health dummy
