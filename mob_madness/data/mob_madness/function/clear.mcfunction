@@ -9,6 +9,8 @@ tag @a[distance=..5] remove MM_Class_Skeleton
 execute as @a[distance=..5] run attribute @s max_health base reset
 execute as @a[distance=..5] run attribute @s movement_speed base reset
 
+scoreboard players set @a[distance=..5] MM_Damage 0
+
 
 scoreboard players set @a[distance=..5] MM_Test_Dash 0
 scoreboard players set @a[distance=..5] MM_Test_Dash2 0
