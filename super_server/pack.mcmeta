@@ -2,7 +2,7 @@
   "pack": {
     "min_format": 94.1,
     "max_format": 94.1,
-    "description": "Super server pack connecter. Version: 1.10"
+    "description": "Super server pack connecter. Version: 1.10.2"
   },
   "filter": {
     "block": [
