@@ -4,6 +4,8 @@ scoreboard players set @a[scores={MAIN_Game=9,MM_Polar_Cooldown=..-1},tag=MM_Cla
 #Run your class
 execute as @a[tag=MM_Class_Assassin] run function mob_madness:classes/assassin/tick
 execute as @a[tag=MM_Class_Chicken] run function mob_madness:classes/chicken/tick
+execute as @a[tag=MM_Class_Polar_Bear] run function mob_madness:classes/polar_bear/tick
+execute as @a[tag=MM_Class_Skeleton] run function mob_madness:classes/skeleton/tick
 
 
 #Heal one self
@@ -11,32 +13,11 @@ effect clear @a[scores={MAIN_Game=9}] regeneration
 effect give @a[scores={MM_Health=5..}] regeneration 1 255 true
 scoreboard players remove @a[scores={MM_Health=5..}] MM_Health 5
 
-
+#Saturation
+effect give @a[scores={MAIN_Game=9}] saturation infinite 255 true
 
 #remove defense every tick cuz i am dumb
 scoreboard players set @a MM_Defense 0
-
-#ASsassin Projectile
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power1] 4 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power1] 4 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power2] 5 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power2] 5 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power3] 6 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power3] 6 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power4] 7 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power4] 7 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power5] 8 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power5] 8 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Red,tag=MM_Power6] 9 generic
-execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red] positioned ~ ~-1 ~ run damage @p[distance=..2,tag=MM_Blue,tag=MM_Power6] 9 generic
-scoreboard players add @e[type=item_display,tag=MM_Dash_Test] MM_Test_Dash 1
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power1] at @s run tp @s ^ ^ ^-0.1
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power2] at @s run tp @s ^ ^ ^-0.2
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power3] at @s run tp @s ^ ^ ^-0.3
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power4] at @s run tp @s ^ ^ ^-0.4
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power5] at @s run tp @s ^ ^ ^-0.5
-execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power6] at @s run tp @s ^ ^ ^-0.6
-kill @e[type=item_display,tag=MM_Dash_Test,scores={MM_Test_Dash=5..}]
 
 
 #Chicken projectile
@@ -135,7 +116,7 @@ execute as @a[scores={MM_Damage=5..}] run function mob_madness:main/damage
 
 
 #Ice block
-execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] at @s run summon item_display ~ ~ ~ {width:2f,height:4f,item:{id:"minecraft:ice",count:1}}
+execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] at @s run summon item_display ~ ~ ~ {item:{id:"minecraft:ice",count:1}}
 execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] at @s run data modify entity @n[type=minecraft:item_display] transformation.scale[0] set value 3f
 execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] at @s run data modify entity @n[type=minecraft:item_display] transformation.scale[2] set value 3f
 execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] at @s run data modify entity @n[type=minecraft:item_display] transformation.scale[1] set value 0.5f
@@ -159,10 +140,18 @@ kill @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=18}]
 
 scoreboard players add @e[type=armor_stand,tag=MM_Ice] MM_Ice 1
 
+#Damage
+execute as @e[type=armor_stand,tag=MM_Ice_Red,scores={MM_Ice=9}] at @s run scoreboard players add @a[tag=MM_Blue,distance=..2] MM_Damage 18 
+execute as @e[type=armor_stand,tag=MM_Ice_Blue,scores={MM_Ice=9}] at @s run scoreboard players add @a[tag=MM_Red,distance=..2] MM_Damage 18 
+
+
+
+
 #make the next one
 scoreboard players add @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=2}] MM_Ice_Chain 1
 execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=3,MM_Ice_Chain=..100}] at @s run scoreboard players operation @n[type=armor_stand,tag=MM_Ice,scores={MM_Ice=1}] MM_Ice_Chain = @s MM_Ice_Chain
-execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=2,MM_Ice_Chain=..100}] at @s run summon armor_stand ~ ~ ~ {Tags:[MM_Ice,MM_Ice_Spawn],Invisible:1b,NoGravity:1b}
+execute as @e[type=armor_stand,tag=MM_Ice_Red,scores={MM_Ice=2,MM_Ice_Chain=..100}] at @s run summon armor_stand ~ ~ ~ {Tags:[MM_Ice,MM_Ice_Spawn,MM_Ice_Red],Invisible:1b,NoGravity:1b}
+execute as @e[type=armor_stand,tag=MM_Ice_Blue,scores={MM_Ice=2,MM_Ice_Chain=..100}] at @s run summon armor_stand ~ ~ ~ {Tags:[MM_Ice,MM_Ice_Spawn,MM_Ice_Blue],Invisible:1b,NoGravity:1b}
 execute as @e[type=armor_stand,tag=MM_Ice,scores={MM_Ice=2,MM_Ice_Chain=..100}] at @s run tp @n[type=armor_stand,tag=MM_Ice,tag=MM_Ice_Spawn] ~ ~ ~ ~ 0
 
 
@@ -230,6 +219,9 @@ execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=12}] run data 
 execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=11}] run data modify entity @s transformation.scale[2] set value 2
 execute as @e[type=item_display,tag=MM_Ice_Pinball,scores={MM_Ice=10}] run data modify entity @s transformation.scale[2] set value 2.5
 
+#Damage Time
+execute as @e[type=item_display,tag=MM_Ice_Pinball_Red,scores={MM_Ice=8}] at @s run scoreboard players add @a[tag=MM_Blue,distance=..2] MM_Damage 15
+execute as @e[type=item_display,tag=MM_Ice_Pinball_Blue,scores={MM_Ice=8}] at @s run scoreboard players add @a[tag=MM_Red,distance=..2] MM_Damage 15
 
 
 #Joingame
@@ -238,3 +230,28 @@ execute as @a[scores={MAIN_Game=9,MM_Joingame=1..}] run function mob_madness:joi
 
 #clear
 execute at @e[type=marker,limit=1,tag=MM_Clear] run function mob_madness:clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Skeleton stuff
+scoreboard players add @e[type=armor_stand,tag=MM_Skeleton_Arrow] MM_Skeleton_Arrow 1
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,tag=MM_Dead2] at @s run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,tag=MM_Dead2] at @s run kill @s
+tag @e[type=armor_stand,tag=MM_Skeleton_Arrow,tag=MM_Dead] add MM_Dead2
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=100..}] at @s run kill @n[type=item_display,tag=MM_Skeleton_Arrow]
+execute as @e[type=armor_stand,tag=MM_Skeleton_Arrow,scores={MM_Skeleton_Arrow=100..}] at @s run kill @s
+function mob_madness:classes/skeleton/arrow/move
+function mob_madness:classes/skeleton/arrow/move
+function mob_madness:classes/skeleton/arrow/move
+function mob_madness:classes/skeleton/arrow/move

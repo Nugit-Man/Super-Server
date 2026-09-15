@@ -24,3 +24,24 @@ item replace entity @s[scores={MM_Test_Dash4=501..}] hotbar.7 with coal[custom_m
 
 
 
+#ASsassin Projectile
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue,tag=MM_Power1] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Red] MM_Damage 20
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red,tag=MM_Power1] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Blue] MM_Damage 20
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue,tag=MM_Power2] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Red] MM_Damage 24
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red,tag=MM_Power2] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Blue] MM_Damage 24
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue,tag=MM_Power3] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Red] MM_Damage 28
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red,tag=MM_Power3] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Blue] MM_Damage 28
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue,tag=MM_Power4] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Red] MM_Damage 32
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red,tag=MM_Power4] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Blue] MM_Damage 32
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue,tag=MM_Power5] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Red] MM_Damage 36
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red,tag=MM_Power5] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Blue] MM_Damage 36
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Blue,tag=MM_Power6] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Red] MM_Damage 40
+execute at @e[type=item_display,tag=MM_Dash_Test,tag=MM_Red,tag=MM_Power6] positioned ~ ~-1 ~ run scoreboard players add @a[distance=..2,tag=MM_Blue] MM_Damage 40
+scoreboard players add @e[type=item_display,tag=MM_Dash_Test] MM_Test_Dash 1
+execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power1] at @s run tp @s ^ ^ ^-0.1
+execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power2] at @s run tp @s ^ ^ ^-0.2
+execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power3] at @s run tp @s ^ ^ ^-0.3
+execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power4] at @s run tp @s ^ ^ ^-0.4
+execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power5] at @s run tp @s ^ ^ ^-0.5
+execute as @e[type=item_display,tag=MM_Dash_Test,tag=MM_Power6] at @s run tp @s ^ ^ ^-0.6
+kill @e[type=item_display,tag=MM_Dash_Test,scores={MM_Test_Dash=5..}]

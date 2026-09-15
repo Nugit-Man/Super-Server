@@ -1,1 +1,3 @@
 give @s brick[minecraft:piercing_weapon={},minecraft:enchantments={"super_server:left_click":1},food={nutrition:0,saturation:0,can_always_eat:true},consumable={consume_seconds:1000000,animation:"trident",has_consume_particles:false},minecraft:use_effects={can_sprint:true,speed_multiplier:1},custom_data={MM_Test:1b},attribute_modifiers=[{id:"attack_speed",type:"attack_speed",amount:-3,operation:"add_value",slot:"mainhand",display:{type:"hidden"}}]]
+attribute @s max_health base set 16
+attribute @s minecraft:movement_speed base set 0.164
