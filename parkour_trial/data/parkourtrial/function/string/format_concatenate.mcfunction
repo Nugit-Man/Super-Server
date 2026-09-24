@@ -1,0 +1,1 @@
+$data modify storage parkourtrial:scratchpad formatted_time set value "$(minutes):$(seconds_prefix)$(seconds).$(centiseconds_prefix)$(centiseconds)"

@@ -1,0 +1,1 @@
+data modify storage parkourtrial:record_info record.splits append value 72000

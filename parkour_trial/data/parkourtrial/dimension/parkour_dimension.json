@@ -1,0 +1,10 @@
+{
+    "type": "parkourtrial:parkour_dimension",
+    "generator": {
+        "type": "flat",
+        "settings": {
+            "layers": [],
+            "biome": "minecraft:the_void"
+        }
+    }
+}
