@@ -27,73 +27,73 @@ execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=200..
 kill @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=200..}]
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s run tp @s ^ ^ ^-0.3
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s unless block ~ ~1.2 ~ air run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s run tp @s ^ ^ ^-0.3
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s unless block ~ ~1.2 ~ air run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s run tp @s ^ ^ ^-0.3
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s unless block ~ ~1.2 ~ air run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s run tp @s ^ ^ ^-0.3
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s unless block ~ ~1.2 ~ air run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s run tp @s ^ ^ ^-0.3
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s unless block ~ ~1.2 ~ air run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s run tp @s ^ ^ ^-0.3
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s unless block ~ ~1.2 ~ air run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s run tp @s ^ ^ ^-0.3
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199}] at @s unless block ~ ~1.2 ~ air run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Red,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Red,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Blue] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Red,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
-execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run damage @p[tag=MM_Blue,distance=..1] 4 generic
+execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ run scoreboard players add @p[tag=MM_Blue,distance=..1] MM_Damage 20
 execute as @e[type=armor_stand,tag=MM_Chicken_Ride,scores={MM_Chicken_Song=..199},tag=MM_Red] at @s positioned ~ ~1 ~ if entity @p[tag=MM_Blue,distance=..1] run scoreboard players set @s MM_Chicken_Song 200
 
 
