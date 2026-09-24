@@ -733,7 +733,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=728}] lime_concrete_powder 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=729}] lime_dye 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=730}] lime_glazed_terracotta 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=731}] lime_harness 3
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=732}] lime_shulker_box 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=732}] lime_shulker_box 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=733}] lime_stained_glass 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=734}] lime_stained_glass_pane 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=735}] lime_terracotta 64
@@ -753,7 +753,7 @@ give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=748}] magenta_concrete_powder 
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=749}] magenta_dye 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=750}] magenta_glazed_terracotta 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=751}] magenta_harness 64
-give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=752}] magenta_shulker_box 64
+give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=752}] magenta_shulker_box 3
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=753}] magenta_stained_glass 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=754}] magenta_stained_glass_pane 64
 give @a[scores={MAIN_Game=7,RIC_Main=1,RIC_Random=755}] magenta_terracotta 64
