@@ -10,7 +10,7 @@ item replace entity @s inventory.8 with minecraft:air
 item replace entity @s inventory.9 with minecraft:air
 item replace entity @s inventory.10 with minecraft:ender_eye[custom_name={text:"Spectate Classic",italic:false}]
 item replace entity @s inventory.11 with minecraft:air
-item replace entity @s inventory.12 with minecraft:chorus_fruit[custom_name={text:"TIC Classic",italic:false},custom_model_data={strings:['Random']}]
+item replace entity @s inventory.12 with minecraft:chorus_fruit[custom_name={text:"RIC Classic",italic:false},custom_model_data={strings:['Random']}]
 item replace entity @s inventory.13 with minecraft:air
 item replace entity @s inventory.14 with minecraft:bedrock[custom_name={text:"RIC Pillars",italic:false}]
 item replace entity @s inventory.15 with minecraft:air
