@@ -56,3 +56,6 @@ function ascendance:main/scoreadd
 
 #FUCK CROSSBOW
 tag @a[scores={AS_Mode=0}] remove AS_Curse
+
+#Deathmessages
+execute if entity @a[scores={MAIN_Game=1,AS_Deaths=1..}] run tellraw @a[scores={MAIN_Game=1}] [{"selector":"@a[scores={AS_Kills=1..}]"},{text:" ---> "},{"selector":"@a[scores={AS_Deaths=1..}]"}]
