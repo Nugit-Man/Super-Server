@@ -118,3 +118,4 @@ execute if score 1 GB_Select matches 0 run execute if score 2 GB_Select matches 
 #I don't man, Imma go out on a date with Brook's ex
 #Man, why wasn't I allowed? It would have been so funny
 #Because it turns out she was a bitch all along!!!
+#yeah, life has its way of running things

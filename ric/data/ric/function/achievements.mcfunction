@@ -1,4 +1,4 @@
-schedule function ric:achievements 5s
+schedule function ric:achievements 5t
 
 scoreboard players set @a[scores={MAIN_Game=7,RIC_Main=1..4}] RIC_Achievement_Check 0
 execute as @a[scores={MAIN_Game=7,RIC_Main=1..4}] store result score @s RIC_Achievement_Check run clear @s crafting_table 0
@@ -173,8 +173,11 @@ execute as @a run execute at @s run advancement grant @s[y=-44,dy=-20,scores={MA
 execute as @a run execute at @s run advancement grant @s[y=-44,dy=-20,scores={MAIN_Game=7,RIC_Main=4}] only ric:fall
 execute as @a run execute at @s run advancement grant @s[y=-44,dy=-20,scores={MAIN_Game=7,RIC_Main=1}] only ric:deep
 execute as @a run execute at @s run advancement grant @s[y=300,dy=15,scores={MAIN_Game=7,RIC_Main=4}] only ric:skybase
-execute as @a run execute at @s run tag @s[y=300,dy=15,scores={MAIN_Game=7,RIC_Main=4}] add RIC_Underdog
-execute as @a run execute at @s run tag @s[y=300,dy=15,scores={MAIN_Game=7,RIC_Main=4}] add RIC_No_Water
+execute as @a run execute at @s run tag @s[y=-50,dy=15,scores={MAIN_Game=7,RIC_Main=4}] add RIC_Underdog
+execute as @a run execute at @s run tag @s[y=-50,dy=15,scores={MAIN_Game=7,RIC_Main=4}] add RIC_No_Water
 
-execute as @a run execute at @s run advancement grant @s[y=200,dy=20,scores={MAIN_Game=7,RIC_Main=1},tag=RIC_Underdog] only ric:underdog
-execute as @a run execute at @s run advancement grant @s[y=200,dy=20,scores={MAIN_Game=7,RIC_Main=1},tag=RIC_No_Water] only ric:no_water
+execute as @a[scores={MAIN_Game=7,RIC_Main=1..4}] store result score @s RIC_Achievement_Check run clear @s water_bucket 0
+tag @a[scores={MAIN_Game=7,RIC_Main=1..4,RIC_Achievement_Check=1..}] remove RIC_No_Water
+
+execute if score $In_Game RIC_Pillars matches 1 run execute as @a run execute at @s run advancement grant @s[y=200,dy=20,scores={MAIN_Game=7,RIC_Main=4},tag=RIC_Underdog] only ric:underdog
+execute as @a run execute at @s run advancement grant @s[y=200,dy=20,scores={MAIN_Game=7,RIC_Main=4},tag=RIC_No_Water] only ric:no_water
