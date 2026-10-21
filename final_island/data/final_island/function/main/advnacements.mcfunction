@@ -58,3 +58,7 @@ advancement grant @a[scores={MAIN_Game=2,FI_Sword_Break_Wood=1..}] only final_is
 advancement grant @a[scores={MAIN_Game=2,FI_Sword_Break_Gold=1..}] only final_island:break2
 
 advancement grant @a[scores={MAIN_Game=2,FI_Sugar_Cane=10000..}] only final_island:road_to_1mil
+
+
+advancement grant @a[scores={MAIN_Game=2},tag=FI_Quest_Village_Bookshelf] only final_island:quest
+advancement grant @a[scores={MAIN_Game=2},tag=FI_Quest_Village_Anvil] only final_island:quest
