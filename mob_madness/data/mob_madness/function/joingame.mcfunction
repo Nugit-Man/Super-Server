@@ -20,6 +20,8 @@ tag @s[scores={MM_Joingame=5..6}] add MM_Class_Polar_Bear
 execute as @s[scores={MM_Joingame=5..6}] run function mob_madness:classes/polar_bear/test
 tag @s[scores={MM_Joingame=7..8}] add MM_Class_Skeleton
 execute as @s[scores={MM_Joingame=7..8}] run function mob_madness:classes/skeleton/test
+tag @s[scores={MM_Joingame=9..10}] add MM_Class_Horse
+execute as @s[scores={MM_Joingame=9..10}] run function mob_madness:classes/horse/test
 
 tag @s[scores={MM_Joingame=2}] add MM_Blue
 tag @s[scores={MM_Joingame=4}] add MM_Blue

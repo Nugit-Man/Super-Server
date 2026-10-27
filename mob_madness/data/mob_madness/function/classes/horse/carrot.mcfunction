@@ -1,0 +1,1 @@
+scoreboard players remove @s MM_Horse_Carrot 50

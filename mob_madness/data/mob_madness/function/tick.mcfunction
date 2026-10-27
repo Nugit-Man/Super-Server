@@ -6,6 +6,7 @@ execute as @a[tag=MM_Class_Assassin] run function mob_madness:classes/assassin/t
 execute as @a[tag=MM_Class_Chicken] run function mob_madness:classes/chicken/tick
 execute as @a[tag=MM_Class_Polar_Bear] run function mob_madness:classes/polar_bear/tick
 execute as @a[tag=MM_Class_Skeleton] run function mob_madness:classes/skeleton/tick
+execute as @a[tag=MM_Class_Horse] run function mob_madness:classes/horse/tick
 
 
 #Heal one self

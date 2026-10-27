@@ -21,6 +21,11 @@ scoreboard objectives add MM_Skeleton_Arrow_Cooldown dummy
 scoreboard objectives add MM_Skeleton_Bone_Phase dummy
 scoreboard objectives add MM_Skeleton_Bone_Charge dummy
 
+scoreboard objectives add MM_Horse_Carrot dummy
+scoreboard objectives add MM_Horse_Jump dummy
+scoreboard objectives add MM_Horse_Jump_Release dummy
+scoreboard objectives add MM_Horse_Trample dummy
+
 scoreboard objectives add MM_Misc dummy
 scoreboard objectives add MM_Health dummy
 scoreboard objectives add MM_Defense dummy
