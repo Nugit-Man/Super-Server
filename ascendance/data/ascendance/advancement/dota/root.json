@@ -5,7 +5,6 @@
     },
     "title": "First Blood",
     "description": "get the first kill of a game",
-    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false

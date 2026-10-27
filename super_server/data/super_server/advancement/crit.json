@@ -1,11 +1,13 @@
 {
-    "criteria": {
-      "crit_damage": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "player": [
-            {
-              "condition": "minecraft:entity_properties",
+  "criteria": {
+    "crit_damage": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "predicate": {},
+          "terms": [{
+              "type": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
                 "movement": {
@@ -16,9 +18,9 @@
               }
             },
             {
-              "condition": "minecraft:inverted",
+              "type": "minecraft:inverted",
               "term": {
-                "condition": "minecraft:location_check",
+                "type": "minecraft:location_check",
                 "predicate": {
                   "block": {
                     "blocks": "#minecraft:climbable"
@@ -27,9 +29,9 @@
               }
             },
             {
-              "condition": "minecraft:inverted",
+              "type": "minecraft:inverted",
               "term": {
-                "condition": "minecraft:location_check",
+                "type": "minecraft:location_check",
                 "predicate": {
                   "fluid": {
                     "fluids": "#minecraft:water"
@@ -38,9 +40,9 @@
               }
             },
             {
-              "condition": "minecraft:inverted",
+              "type": "minecraft:inverted",
               "term": {
-                "condition": "minecraft:entity_properties",
+                "type": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
                   "effects": {
@@ -50,9 +52,9 @@
               }
             },
             {
-              "condition": "minecraft:inverted",
+              "type": "minecraft:inverted",
               "term": {
-                "condition": "minecraft:entity_properties",
+                "type": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
                   "effects": {
@@ -62,9 +64,9 @@
               }
             },
             {
-              "condition": "minecraft:inverted",
+              "type": "minecraft:inverted",
               "term": {
-                "condition": "minecraft:entity_properties",
+                "type": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
                   "vehicle": {}
@@ -72,9 +74,9 @@
               }
             },
             {
-              "condition": "minecraft:inverted",
+              "type": "minecraft:inverted",
               "term": {
-                "condition": "minecraft:entity_properties",
+                "type": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
                   "flags": {
@@ -82,12 +84,9 @@
                   }
                 }
               }
-            }
-          ]
+            }]
         }
       }
-    },
-    "rewards": {
-      "function": "super_server:crit"
     }
-  }
+  }       
+}

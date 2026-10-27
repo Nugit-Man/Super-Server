@@ -1,34 +1,32 @@
 {
-    "type": "minecraft:fishing",
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:loot_table",
-            "value": "final_island:gameplay/fishing/fi_default",
-            "conditions": [
-              {
-                "condition": "minecraft:location_check",
-                "predicate": {
-                  "dimension": "final_island:game"
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "value": "final_island:gameplay/fishing/fishing_vanilla",
-            "conditions": [
-              {
-                "condition": "minecraft:location_check",
-                "predicate": {
-                  "dimension": "minecraft:overworld"
-                }
-              }
-            ]
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "final_island:gameplay/fishing/fi_default",
+          "expand": false,
+          "condition": {
+            "type": "minecraft:location_check",
+            "predicate": {
+              "dimension": "final_island:game"
+            }
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "final_island:gameplay/fishing/fishing_vanilla",
+          "expand": false,
+          "condition": {
+            "type": "minecraft:location_check",
+            "predicate": {
+              "dimension": "minecraft:overworld"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
