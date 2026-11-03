@@ -41,8 +41,8 @@ execute as @e[type=interaction,limit=1,tag=GB_Lobby] on target run execute in su
 execute as @e[type=interaction,limit=1,tag=GB_Lobby] run data remove entity @s interaction
 
 #Lobby --> Mace
-execute in super_server:mace_master run spawnpoint @a[tag=GoTo_Mace_Masters] 0 301 0 0 0
-execute in super_server:mace_master run tp @a[tag=GoTo_Mace_Masters] 0 301 0 0 0
+execute in mace_masters:lobby run spawnpoint @a[tag=GoTo_Mace_Masters] 11 1 66 180 0
+execute in mace_masters:lobby run tp @a[tag=GoTo_Mace_Masters] 11 1 66 180 0
 tag @a remove GoTo_Mace_Masters
 
 #Lobby --> Ascendance

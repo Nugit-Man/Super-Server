@@ -1,0 +1,1 @@
+scoreboard objectives add MACE_Select dummy
