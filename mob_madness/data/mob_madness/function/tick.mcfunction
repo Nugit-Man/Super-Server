@@ -1,3 +1,5 @@
+function mob_madness:main/barrel
+
 scoreboard players remove @a[scores={MAIN_Game=9},tag=MM_Class_Polar_Bear] MM_Polar_Cooldown 1
 scoreboard players set @a[scores={MAIN_Game=9,MM_Polar_Cooldown=..-1},tag=MM_Class_Polar_Bear] MM_Polar_Cooldown 0
 

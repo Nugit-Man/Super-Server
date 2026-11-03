@@ -33,3 +33,6 @@ scoreboard objectives add MM_Damage dummy
 
 
 scoreboard objectives add MM_Joingame trigger
+
+scoreboard objectives add MM_Barrel_Pos dummy
+scoreboard objectives add MM_Barrel_Check dummy

@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:barrel"
+      },
+      "title": "Mob Madness Barrel 2",
+      "description": "Where the light doth shine",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mob_madness:barrel/tip",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "final_island:advancement/barrel/balloon"
+    }
+  }
+  
