@@ -50,8 +50,10 @@ $execute if score $Time_min $(map_name) matches 10 run function ascendance:gamin
 
 
 #Spawn points
-$execute at @e[type=marker,limit=1,sort=random,tag=$(map_spawn)] run spawnpoint @r[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1..}]
-
+$tag @e[type=marker,limit=1,sort=random,tag=$(map_spawn)] add AS_Set_Spawn
+$execute at @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1..}] run tag @e[type=marker,limit=1,sort=random,tag=$(map_spawn),distance=..7] remove AS_Set_Spawn
+$execute at @e[type=marker,limit=1,sort=random,tag=$(map_spawn),tag=AS_Set_Spawn] run spawnpoint @r[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=1..}]
+$tag @e[type=marker,limit=1,sort=random,tag=$(map_spawn)] remove AS_Set_Spawn
 
 #Winner but for singplayer
 $execute as @a[scores={MAIN_Game=1,AS_Map=$(map_parse),AS_Mode=2,AS_Score_Singleplayer=20}] run tellraw @s [{text:"Training complete, Time: ",italic:false},{score:{"objective":"$(map_name)","name":"$Time_min"}},{text:":"},{score:{"objective":"$(map_name)","name":"$Time_sec"}},{text:"."},{score:{"objective":"$(map_name)","name":"$Time_10s"}}]
