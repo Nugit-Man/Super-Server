@@ -65,3 +65,8 @@ scoreboard players add @s[advancements={super_server:barrel/hidden/well_2=true}]
 scoreboard players add @s[advancements={ric:barrel/trickshot=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={ric:barrel/tunel=true}] MAIN_Barrels 1
 scoreboard players add @s[advancements={ric:barrel/wall=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={mob_madness:barrel/jump=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={mob_madness:barrel/tip=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={mob_madness:barrel/light=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={mob_madness:barrel/peep=true}] MAIN_Barrels 1
+scoreboard players add @s[advancements={mace_masters:1=true}] MAIN_Barrels 1
