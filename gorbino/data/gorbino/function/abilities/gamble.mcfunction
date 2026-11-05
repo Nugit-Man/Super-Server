@@ -8,3 +8,4 @@ tellraw @s[scores={GB_Gamble=500..749}] "Attack Speed Up"
 attribute @s[scores={GB_Gamble=750..1000}] entity_interaction_range modifier add 1751433328294 0.3 add_value
 tellraw @s[scores={GB_Gamble=750..1000}] "Reach Up"
 advancement grant @s[scores={GB_Gamble=1001}] only gorbino:gamble
+title @s[scores={GB_Gamble=1001}] title "GOLD GOLD GOLD"
