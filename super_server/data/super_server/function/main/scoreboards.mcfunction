@@ -28,6 +28,9 @@ execute as @a[scores={MAIN_Game=7}] run scoreboard players operation @s RIC_Deat
 execute as @a[scores={MAIN_Game=7}] run scoreboard players operation @s RIC_Kills = @s MAIN_Player_Kills
 execute as @a[scores={MAIN_Game=7}] run scoreboard players operation @s RIC_Enchantment = @s MAIN_Enchanting
 
+execute as @a[scores={MAIN_Game=6}] run scoreboard players operation @s MACE_Kills = @s MAIN_Player_Kills
+execute as @a[scores={MAIN_Game=6}] run scoreboard players operation @s MACE_Deaths = @s MAIN_Deaths
+
 
 #Reset things like sneak time
 scoreboard players set @a MAIN_Sneak_Time 0
