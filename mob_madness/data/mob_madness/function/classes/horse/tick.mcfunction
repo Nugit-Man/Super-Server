@@ -65,3 +65,8 @@ execute as @s[scores={MM_Horse_Jump_Release=1,MM_Horse_Jump=451..500}] run score
 execute as @s[scores={MM_Horse_Jump_Release=1,MM_Horse_Jump=501..550}] run scoreboard players set $strength player_motion.api.launch 20000
 execute as @s[scores={MM_Horse_Jump_Release=1,MM_Horse_Jump=551..600}] run scoreboard players set $strength player_motion.api.launch 22000
 execute as @s[scores={MM_Horse_Jump_Release=1,MM_Horse_Jump=100..}] at @s run function player_motion:api/launch_looking
+
+
+#Carrot
+scoreboard players add @e[type=armor_stand,tag=MM_Horse_Carrot] MM_Horse_Carrot 1
+kill @e[type=armor_stand,tag=MM_Horse_Carrot,scores={MM_Horse_Carrot=400}]
