@@ -81,6 +81,7 @@ execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_chain_armor] run execute as @s[tag=GB_star] run advancement grant @s[tag=GB_heal,scores={GB_Points=5}] only gorbino:defense
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_shrink] run execute as @s[tag=GB_heavy_armor] run advancement grant @s[tag=GB_lumberjack,scores={GB_Points=5}] only gorbino:joust
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_archer] run execute as @s[tag=GB_burst_charm] run advancement grant @s[tag=GB_lumberjack,scores={GB_Points=4}] only gorbino:ranges
+execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_Hazmat] run execute as @s[tag=GB_gamble] run advancement grant @s[tag=GB_star,scores={GB_Points=5}] only gorbino:play
 
 #w mo w
 execute if score 1 GB_Select matches 1 run execute as @a[scores={GB_Mode=1,MAIN_Game=3},tag=GB_NoW] run advancement grant @s only gorbino:wnow
